@@ -1,0 +1,1 @@
+Vkontakte iOS SDK
