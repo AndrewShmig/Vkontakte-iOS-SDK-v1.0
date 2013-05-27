@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1A9A07E312B37B1763F3E826"
+               BuildableName = "Vkontakte iOS SDK_Project.app"
+               BlueprintName = "Vkontakte iOS SDK_Project"
+               ReferencedContainer = "container:Vkontakte iOS SDK_Project.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1A9A07E312B37B1763F3E826"
+            BuildableName = "Vkontakte iOS SDK_Project.app"
+            BlueprintName = "Vkontakte iOS SDK_Project"
+            ReferencedContainer = "container:Vkontakte iOS SDK_Project.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
