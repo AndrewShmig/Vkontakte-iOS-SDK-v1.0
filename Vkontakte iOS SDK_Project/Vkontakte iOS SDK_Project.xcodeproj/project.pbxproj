@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A9A00967E8158FDF1E0146B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A00F8FC30522F8F8380B8 /* README.md */; };
 		1A9A014718D9175C3C8270FA /* ASAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0039FBF01876E3E901F7 /* ASAAppDelegate.m */; };
 		1A9A01AD020E4163997D42CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A00D0DEE8CD2182094481 /* main.m */; };
 		1A9A04CABD11B20B973B082F /* ASAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A08B5F0DAB74B3E7667C0 /* ASAViewController.m */; };
 		1A9A0535D28C98D1320A8654 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A00B155BDE0A3ABC0211E /* Default@2x.png */; };
 		1A9A06A9086F2C4C5107D953 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A09A050E907471891CE6A /* Default-568h@2x.png */; };
+		1A9A08ADAD3F456B812C0EDD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0F537A72F39500B84D21 /* README.md */; };
 		1A9A094B5B316BF5F1F651CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A0C26456CC23158EF2CFF /* UIKit.framework */; };
 		1A9A0965BAB32B05C7F5A862 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A0EB7F488137826B7377F /* CoreGraphics.framework */; };
 		1A9A0B354CA71944B31A2615 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A018DF5DD1C6A555A49E8 /* Default.png */; };
@@ -26,7 +26,6 @@
 		1A9A0039FBF01876E3E901F7 /* ASAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAAppDelegate.m; sourceTree = "<group>"; };
 		1A9A00B155BDE0A3ABC0211E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1A9A00D0DEE8CD2182094481 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A9A00F8FC30522F8F8380B8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		1A9A018DF5DD1C6A555A49E8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1A9A03A0523C41FCB7623D7B /* Vkontakte iOS SDK_Project-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vkontakte iOS SDK_Project-Prefix.pch"; sourceTree = "<group>"; };
 		1A9A03EA9C581F0298146535 /* ASAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAAppDelegate.h; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		1A9A0C26456CC23158EF2CFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A9A0E4B20952890AA27EFC7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		1A9A0EB7F488137826B7377F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A9A0F537A72F39500B84D21 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,6 @@
 				1A9A09060D8321C9B15AAA77 /* ASAViewController.h */,
 				1A9A08B5F0DAB74B3E7667C0 /* ASAViewController.m */,
 				1A9A08D62A11B3F5E77C7492 /* ASAViewController.xib */,
-				1A9A00F8FC30522F8F8380B8 /* README.md */,
 			);
 			path = "Vkontakte iOS SDK_Project";
 			sourceTree = "<group>";
@@ -118,6 +117,7 @@
 				1A9A0874B600E50617904C9D /* Frameworks */,
 				1A9A0A7544AE5066586AEC74 /* Vkontakte iOS SDK_Project */,
 				1A9A09B96C68730C8D37CD75 /* VkontakteSDK_Source */,
+				1A9A0F537A72F39500B84D21 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,7 +177,7 @@
 				1A9A06A9086F2C4C5107D953 /* Default-568h@2x.png in Resources */,
 				1A9A0FD21D1892BE454A4C3B /* ASAViewController.xib in Resources */,
 				1A9A0E1419373D9C99A9FE86 /* README.md in Resources */,
-				1A9A00967E8158FDF1E0146B /* README.md in Resources */,
+				1A9A08ADAD3F456B812C0EDD /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
