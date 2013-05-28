@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/VKFavourites.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/VKFavourites</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

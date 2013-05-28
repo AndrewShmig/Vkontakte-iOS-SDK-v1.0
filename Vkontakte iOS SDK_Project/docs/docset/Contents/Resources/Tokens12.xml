@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/VKGroups.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/VKGroups</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>
