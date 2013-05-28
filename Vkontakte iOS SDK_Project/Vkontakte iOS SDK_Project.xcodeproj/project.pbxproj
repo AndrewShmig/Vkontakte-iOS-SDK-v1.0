@@ -12,10 +12,11 @@
 		1A9A04CABD11B20B973B082F /* ASAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A08B5F0DAB74B3E7667C0 /* ASAViewController.m */; };
 		1A9A0535D28C98D1320A8654 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A00B155BDE0A3ABC0211E /* Default@2x.png */; };
 		1A9A06A9086F2C4C5107D953 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A09A050E907471891CE6A /* Default-568h@2x.png */; };
-		1A9A08ADAD3F456B812C0EDD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0F537A72F39500B84D21 /* README.md */; };
+		1A9A0815944946E4D04DB2DB /* VKAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A076F97676056422FD08B /* VKAccessToken.m */; };
 		1A9A094B5B316BF5F1F651CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A0C26456CC23158EF2CFF /* UIKit.framework */; };
 		1A9A0965BAB32B05C7F5A862 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A0EB7F488137826B7377F /* CoreGraphics.framework */; };
 		1A9A0B354CA71944B31A2615 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A018DF5DD1C6A555A49E8 /* Default.png */; };
+		1A9A0D607B79AFC8041B6520 /* VKConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0F455C140DDD6C719282 /* VKConnector.m */; };
 		1A9A0DFFA6C38BD056D31C8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0E6E23C1FCE8D3FE60F1 /* InfoPlist.strings */; };
 		1A9A0E1419373D9C99A9FE86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0E4B20952890AA27EFC7 /* README.md */; };
 		1A9A0F0803D519C8C9EDBD1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A07FFEF91680BA2BD6228 /* Foundation.framework */; };
@@ -31,16 +32,20 @@
 		1A9A03EA9C581F0298146535 /* ASAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAAppDelegate.h; sourceTree = "<group>"; };
 		1A9A0681645720448F45ACE4 /* Vkontakte iOS SDK_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vkontakte iOS SDK_Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9A06ABFD2D61D549794D15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A9A070B6A7906D4AD8EFAEA /* VKMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMethods.h; sourceTree = "<group>"; };
+		1A9A076F97676056422FD08B /* VKAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAccessToken.m; sourceTree = "<group>"; };
 		1A9A077BAE0ACC5A30DD7CDA /* Vkontakte iOS SDK_Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "Vkontakte iOS SDK_Project-Info.plist"; sourceTree = "<group>"; };
+		1A9A07DF3B63FAEA7934C525 /* VKAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAccessToken.h; sourceTree = "<group>"; };
 		1A9A07FFEF91680BA2BD6228 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1A9A087000D823AF9A0021CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ASAViewController.xib; sourceTree = "<group>"; };
 		1A9A08B5F0DAB74B3E7667C0 /* ASAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAViewController.m; sourceTree = "<group>"; };
 		1A9A09060D8321C9B15AAA77 /* ASAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAViewController.h; sourceTree = "<group>"; };
 		1A9A09A050E907471891CE6A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1A9A0C26456CC23158EF2CFF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A9A0DFDBE1C877F0B132D35 /* VKConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKConnector.h; sourceTree = "<group>"; };
 		1A9A0E4B20952890AA27EFC7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		1A9A0EB7F488137826B7377F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1A9A0F537A72F39500B84D21 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
+		1A9A0F455C140DDD6C719282 /* VKConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKConnector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A9A001C5D81E2115B7B1F83 /* VKWall */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A05C28A58AA213BEB4803 /* VKWallPost */,
+			);
+			path = VKWall;
+			sourceTree = "<group>";
+		};
+		1A9A00CE1E7DDF7005EA6FC8 /* VKAudioAlbums */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A01666C6ACEE46AAEB396 /* VKAudio */,
+			);
+			path = VKAudioAlbums;
+			sourceTree = "<group>";
+		};
+		1A9A00DDE621F47C6F8AD479 /* VKVideoAlbums */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0DEC9D5FF8761D236D11 /* VKVideo */,
+			);
+			path = VKVideoAlbums;
+			sourceTree = "<group>";
+		};
+		1A9A0157F74B92B5602174C4 /* VKFriends */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKFriends;
+			sourceTree = "<group>";
+		};
+		1A9A01666C6ACEE46AAEB396 /* VKAudio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKAudio;
+			sourceTree = "<group>";
+		};
+		1A9A020E8A7DEDBDF7BFB633 /* VKDocs */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0216AE199EAE01A46301 /* VKDoc */,
+			);
+			path = VKDocs;
+			sourceTree = "<group>";
+		};
+		1A9A0216AE199EAE01A46301 /* VKDoc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKDoc;
+			sourceTree = "<group>";
+		};
+		1A9A0245151802445D8F5740 /* VKStatus */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKStatus;
+			sourceTree = "<group>";
+		};
+		1A9A0295DFEB03F31BEB283E /* VKGroup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKGroup;
+			sourceTree = "<group>";
+		};
+		1A9A02AA66CB4CA7DBF722A9 /* VKNotes */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0547325BE22F5266100B /* VKNote */,
+			);
+			path = VKNotes;
+			sourceTree = "<group>";
+		};
+		1A9A0347387B2677FBB61C5F /* VKPlace */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKPlace;
+			sourceTree = "<group>";
+		};
 		1A9A0384D54F92D2FFAD5351 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,12 +158,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1A9A0547325BE22F5266100B /* VKNote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKNote;
+			sourceTree = "<group>";
+		};
+		1A9A05C28A58AA213BEB4803 /* VKWallPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKWallPost;
+			sourceTree = "<group>";
+		};
+		1A9A05EEA89C06908A3A5591 /* VKConnector */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0DFDBE1C877F0B132D35 /* VKConnector.h */,
+				1A9A0F455C140DDD6C719282 /* VKConnector.m */,
+				1A9A070B6A7906D4AD8EFAEA /* VKMethods.h */,
+			);
+			path = VKConnector;
+			sourceTree = "<group>";
+		};
 		1A9A060E71A5EC0E5A9A2881 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				1A9A0681645720448F45ACE4 /* Vkontakte iOS SDK_Project.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1A9A0746EC056904BCEE8F36 /* VKMessage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKMessage;
 			sourceTree = "<group>";
 		};
 		1A9A0874B600E50617904C9D /* Frameworks */ = {
@@ -89,10 +207,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1A9A0935793CE2324E23A43F /* VKPhotoAlbums */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0BAD8EA54E7B3971AF30 /* VKPhoto */,
+			);
+			path = VKPhotoAlbums;
+			sourceTree = "<group>";
+		};
+		1A9A0960D673088D28F959DA /* VKPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0347387B2677FBB61C5F /* VKPlace */,
+			);
+			path = VKPlaces;
+			sourceTree = "<group>";
+		};
 		1A9A09B96C68730C8D37CD75 /* VkontakteSDK_Source */ = {
 			isa = PBXGroup;
 			children = (
 				1A9A0E4B20952890AA27EFC7 /* README.md */,
+				1A9A05EEA89C06908A3A5591 /* VKConnector */,
+				1A9A0BA3F3EE9306260F7E03 /* VKUser */,
+				1A9A0EB8F589AD61CC22490A /* VKAccessToken */,
+				1A9A001C5D81E2115B7B1F83 /* VKWall */,
+				1A9A0935793CE2324E23A43F /* VKPhotoAlbums */,
+				1A9A0157F74B92B5602174C4 /* VKFriends */,
+				1A9A0245151802445D8F5740 /* VKStatus */,
+				1A9A00CE1E7DDF7005EA6FC8 /* VKAudioAlbums */,
+				1A9A0E6347B0902CEFEA4B5E /* VKGroups */,
+				1A9A00DDE621F47C6F8AD479 /* VKVideoAlbums */,
+				1A9A02AA66CB4CA7DBF722A9 /* VKNotes */,
+				1A9A0960D673088D28F959DA /* VKPlaces */,
+				1A9A0F512FA90074BFF01AF0 /* VKMessages */,
+				1A9A0C635EF1CF31CB82DB13 /* VKNewsfeed */,
+				1A9A0FAD6484F5727BBBF8CB /* VKLikes */,
+				1A9A020E8A7DEDBDF7BFB633 /* VKDocs */,
+				1A9A0E20169C714616464115 /* VKFavourites */,
 			);
 			path = VkontakteSDK_Source;
 			sourceTree = "<group>";
@@ -117,8 +268,82 @@
 				1A9A0874B600E50617904C9D /* Frameworks */,
 				1A9A0A7544AE5066586AEC74 /* Vkontakte iOS SDK_Project */,
 				1A9A09B96C68730C8D37CD75 /* VkontakteSDK_Source */,
-				1A9A0F537A72F39500B84D21 /* README.md */,
 			);
+			sourceTree = "<group>";
+		};
+		1A9A0BA3F3EE9306260F7E03 /* VKUser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKUser;
+			sourceTree = "<group>";
+		};
+		1A9A0BAD8EA54E7B3971AF30 /* VKPhoto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKPhoto;
+			sourceTree = "<group>";
+		};
+		1A9A0C635EF1CF31CB82DB13 /* VKNewsfeed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKNewsfeed;
+			sourceTree = "<group>";
+		};
+		1A9A0D8828050BB941D46DCE /* VKLike */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKLike;
+			sourceTree = "<group>";
+		};
+		1A9A0DEC9D5FF8761D236D11 /* VKVideo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKVideo;
+			sourceTree = "<group>";
+		};
+		1A9A0E20169C714616464115 /* VKFavourites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VKFavourites;
+			sourceTree = "<group>";
+		};
+		1A9A0E6347B0902CEFEA4B5E /* VKGroups */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0295DFEB03F31BEB283E /* VKGroup */,
+			);
+			path = VKGroups;
+			sourceTree = "<group>";
+		};
+		1A9A0EB8F589AD61CC22490A /* VKAccessToken */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A076F97676056422FD08B /* VKAccessToken.m */,
+				1A9A07DF3B63FAEA7934C525 /* VKAccessToken.h */,
+			);
+			path = VKAccessToken;
+			sourceTree = "<group>";
+		};
+		1A9A0F512FA90074BFF01AF0 /* VKMessages */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0746EC056904BCEE8F36 /* VKMessage */,
+			);
+			path = VKMessages;
+			sourceTree = "<group>";
+		};
+		1A9A0FAD6484F5727BBBF8CB /* VKLikes */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A0D8828050BB941D46DCE /* VKLike */,
+			);
+			path = VKLikes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +402,6 @@
 				1A9A06A9086F2C4C5107D953 /* Default-568h@2x.png in Resources */,
 				1A9A0FD21D1892BE454A4C3B /* ASAViewController.xib in Resources */,
 				1A9A0E1419373D9C99A9FE86 /* README.md in Resources */,
-				1A9A08ADAD3F456B812C0EDD /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +415,8 @@
 				1A9A01AD020E4163997D42CA /* main.m in Sources */,
 				1A9A014718D9175C3C8270FA /* ASAAppDelegate.m in Sources */,
 				1A9A04CABD11B20B973B082F /* ASAViewController.m in Sources */,
+				1A9A0D607B79AFC8041B6520 /* VKConnector.m in Sources */,
+				1A9A0815944946E4D04DB2DB /* VKAccessToken.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
