@@ -46,6 +46,15 @@
 		1A9A0E1419373D9C99A9FE86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0E4B20952890AA27EFC7 /* README.md */; };
 		1A9A0F0803D519C8C9EDBD1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A07FFEF91680BA2BD6228 /* Foundation.framework */; };
 		1A9A0FD21D1892BE454A4C3B /* ASAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A08D62A11B3F5E77C7492 /* ASAViewController.xib */; };
+		D5B7164B1754C1B4009E5C9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A0C26456CC23158EF2CFF /* UIKit.framework */; };
+		D5B7164C1754C1B4009E5C9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A07FFEF91680BA2BD6228 /* Foundation.framework */; };
+		D5B7164D1754C1B4009E5C9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A0EB7F488137826B7377F /* CoreGraphics.framework */; };
+		D5B716531754C1B4009E5C9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5B716511754C1B4009E5C9D /* InfoPlist.strings */; };
+		D5B716551754C1B4009E5C9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B716541754C1B4009E5C9D /* main.m */; };
+		D5B716591754C1B4009E5C9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B716581754C1B4009E5C9D /* AppDelegate.m */; };
+		D5B7165B1754C1B4009E5C9D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B7165A1754C1B4009E5C9D /* Default.png */; };
+		D5B7165D1754C1B4009E5C9D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B7165C1754C1B4009E5C9D /* Default@2x.png */; };
+		D5B7165F1754C1B4009E5C9D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B7165E1754C1B4009E5C9D /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +130,16 @@
 		1A9A0F455C140DDD6C719282 /* VKConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKConnector.m; sourceTree = "<group>"; };
 		1A9A0FA6702D8DA45DB54F2E /* VKAudioAlbums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAudioAlbums.h; sourceTree = "<group>"; };
 		1A9A0FFFFA1104A648564B2A /* VKMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMessage.h; sourceTree = "<group>"; };
+		D5B7164A1754C1B4009E5C9D /* VkontakteSDK_Documentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkontakteSDK_Documentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B716501754C1B4009E5C9D /* VkontakteSDK_Documentation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VkontakteSDK_Documentation-Info.plist"; sourceTree = "<group>"; };
+		D5B716521754C1B4009E5C9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D5B716541754C1B4009E5C9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D5B716561754C1B4009E5C9D /* VkontakteSDK_Documentation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VkontakteSDK_Documentation-Prefix.pch"; sourceTree = "<group>"; };
+		D5B716571754C1B4009E5C9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D5B716581754C1B4009E5C9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D5B7165A1754C1B4009E5C9D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D5B7165C1754C1B4009E5C9D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D5B7165E1754C1B4009E5C9D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +150,16 @@
 				1A9A094B5B316BF5F1F651CD /* UIKit.framework in Frameworks */,
 				1A9A0F0803D519C8C9EDBD1D /* Foundation.framework in Frameworks */,
 				1A9A0965BAB32B05C7F5A862 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B716471754C1B4009E5C9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B7164B1754C1B4009E5C9D /* UIKit.framework in Frameworks */,
+				D5B7164C1754C1B4009E5C9D /* Foundation.framework in Frameworks */,
+				D5B7164D1754C1B4009E5C9D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				1A9A0681645720448F45ACE4 /* Vkontakte iOS SDK_Project.app */,
+				D5B7164A1754C1B4009E5C9D /* VkontakteSDK_Documentation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -371,6 +401,7 @@
 		1A9A0AA5A6CD6C1AC84F3B96 = {
 			isa = PBXGroup;
 			children = (
+				D5B7164E1754C1B4009E5C9D /* VkontakteSDK_Documentation */,
 				1A9A060E71A5EC0E5A9A2881 /* Products */,
 				1A9A0874B600E50617904C9D /* Frameworks */,
 				1A9A0A7544AE5066586AEC74 /* Vkontakte iOS SDK_Project */,
@@ -471,6 +502,30 @@
 			path = VKLikes;
 			sourceTree = "<group>";
 		};
+		D5B7164E1754C1B4009E5C9D /* VkontakteSDK_Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D5B716571754C1B4009E5C9D /* AppDelegate.h */,
+				D5B716581754C1B4009E5C9D /* AppDelegate.m */,
+				D5B7164F1754C1B4009E5C9D /* Supporting Files */,
+			);
+			path = VkontakteSDK_Documentation;
+			sourceTree = "<group>";
+		};
+		D5B7164F1754C1B4009E5C9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5B716501754C1B4009E5C9D /* VkontakteSDK_Documentation-Info.plist */,
+				D5B716511754C1B4009E5C9D /* InfoPlist.strings */,
+				D5B716541754C1B4009E5C9D /* main.m */,
+				D5B716561754C1B4009E5C9D /* VkontakteSDK_Documentation-Prefix.pch */,
+				D5B7165A1754C1B4009E5C9D /* Default.png */,
+				D5B7165C1754C1B4009E5C9D /* Default@2x.png */,
+				D5B7165E1754C1B4009E5C9D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -481,7 +536,6 @@
 				1A9A0BB06DB2CD59FABF4084 /* Sources */,
 				1A9A0A621197D5619F7F4DC5 /* Frameworks */,
 				1A9A0AB06059D64BF03FC389 /* Resources */,
-				D5B716451754B98E009E5C9D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -490,6 +544,24 @@
 			name = "Vkontakte iOS SDK_Project";
 			productName = "Vkontakte iOS SDK_Project";
 			productReference = 1A9A0681645720448F45ACE4 /* Vkontakte iOS SDK_Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5B716491754C1B4009E5C9D /* VkontakteSDK_Documentation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B716621754C1B4009E5C9D /* Build configuration list for PBXNativeTarget "VkontakteSDK_Documentation" */;
+			buildPhases = (
+				D5B716461754C1B4009E5C9D /* Sources */,
+				D5B716471754C1B4009E5C9D /* Frameworks */,
+				D5B716481754C1B4009E5C9D /* Resources */,
+				D5B716631754C1C8009E5C9D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VkontakteSDK_Documentation;
+			productName = VkontakteSDK_Documentation;
+			productReference = D5B7164A1754C1B4009E5C9D /* VkontakteSDK_Documentation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -513,6 +585,7 @@
 			projectRoot = "";
 			targets = (
 				1A9A07E312B37B1763F3E826 /* Vkontakte iOS SDK_Project */,
+				D5B716491754C1B4009E5C9D /* VkontakteSDK_Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -531,10 +604,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5B716481754C1B4009E5C9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B716531754C1B4009E5C9D /* InfoPlist.strings in Resources */,
+				D5B7165B1754C1B4009E5C9D /* Default.png in Resources */,
+				D5B7165D1754C1B4009E5C9D /* Default@2x.png in Resources */,
+				D5B7165F1754C1B4009E5C9D /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D5B716451754B98E009E5C9D /* ShellScript */ = {
+		D5B716631754C1C8009E5C9D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -587,6 +671,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5B716461754C1B4009E5C9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B716551754C1B4009E5C9D /* main.m in Sources */,
+				D5B716591754C1B4009E5C9D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -602,6 +695,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				1A9A06ABFD2D61D549794D15 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D5B716511754C1B4009E5C9D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5B716521754C1B4009E5C9D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -687,6 +788,30 @@
 			};
 			name = Debug;
 		};
+		D5B716601754C1B4009E5C9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkontakteSDK_Documentation/VkontakteSDK_Documentation-Prefix.pch";
+				INFOPLIST_FILE = "VkontakteSDK_Documentation/VkontakteSDK_Documentation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D5B716611754C1B4009E5C9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VkontakteSDK_Documentation/VkontakteSDK_Documentation-Prefix.pch";
+				INFOPLIST_FILE = "VkontakteSDK_Documentation/VkontakteSDK_Documentation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -707,6 +832,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D5B716621754C1B4009E5C9D /* Build configuration list for PBXNativeTarget "VkontakteSDK_Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B716601754C1B4009E5C9D /* Release */,
+				D5B716611754C1B4009E5C9D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

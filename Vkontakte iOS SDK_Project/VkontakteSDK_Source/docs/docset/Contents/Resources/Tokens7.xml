@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKDoc.html">
+	<File path="Classes/VKConnector.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKDoc</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/VKConnector</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKDoc.h</DeclaredIn>
+			<DeclaredIn>VKConnector.h</DeclaredIn>
 			
 			<NodeRef refid="7"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/initWithWebView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithWebView:(UIWebView *)webView</Declaration>
+			
+			
+			<Anchor>//api/name/initWithWebView:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/startOnCancelBlock:onSuccessBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>- (void)startOnCancelBlock:(void ( ^ ) ( void ))cancelBlock onSuccessBlock:(void ( ^ ) ( VKAccessToken *))acceptedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/startOnCancelBlock:onSuccessBlock:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
 		
 	</File>
 </Tokens>
