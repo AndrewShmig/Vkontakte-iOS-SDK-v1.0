@@ -81,8 +81,8 @@
 {
     NSTimeInterval currentTimestamp = [[NSDate date] timeIntervalSince1970];
 
-    if(_expirationTime == 0)
-        return NO; // we have "offline" permission
+    if(_expirationTime == 0 && [self hasPermission:@"offline"])
+        return NO;
     else
         return (_expirationTime < currentTimestamp);
 

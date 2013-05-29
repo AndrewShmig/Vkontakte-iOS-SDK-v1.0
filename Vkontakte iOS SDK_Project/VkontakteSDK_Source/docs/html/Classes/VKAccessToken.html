@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -73,10 +75,20 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Свойства">Свойства</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Методы инициализации">Методы инициализации</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Перегруженные методы">Перегруженные методы</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Публичные методы">Публичные методы</a></span></li>
 	
 </ul></li>
 
@@ -148,6 +160,24 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс содержит информацию о пользовательском токене доступа.</p>
+
+<p>Кроме самого токена доступа хранится следующая информация:</p>
+
+<ul>
+<li>список прав к которым есть доступ приложения (offline, photo, docs, friends, ex и др)</li>
+<li>срок истечения действия токена</li>
+<li>пользовательский идентификатор в социальной сети ВКонтакте</li>
+<li>токен доступа</li>
+</ul>
+
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -155,77 +185,101 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						
+						<a title="Свойства" name="task_Свойства"></a>
+						<h3 class="subsubtitle task-title">Свойства</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/permissions">&nbsp;&nbsp;permissions</a></code>
-		
+		<span class="tooltip"><p>Массив пользовательских разрешений к которым был получен доступ приложением</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/expirationTime">&nbsp;&nbsp;expirationTime</a></code>
-		
+		<span class="tooltip"><p>Время истечения действия токена.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/userID">&nbsp;&nbsp;userID</a></code>
-		
+		<span class="tooltip"><p>Пользовательский идентификатор в социальной сети ВКонтакте.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/token">&nbsp;&nbsp;token</a></code>
-		
+		<span class="tooltip"><p>Токен доступа.</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Методы инициализации" name="task_Методы инициализации"></a>
+						<h3 class="subsubtitle task-title">Методы инициализации</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithUserID:accessToken:expirationTime:permissions:">&ndash;&nbsp;initWithUserID:accessToken:expirationTime:permissions:</a></code>
-		
+		<span class="tooltip"><p>Основной метод инициализации.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithUserID:accessToken:expirationTime:">&ndash;&nbsp;initWithUserID:accessToken:expirationTime:</a></code>
-		
+		<span class="tooltip"><p>Вторичный метод инициализации класса.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/initWithUserID:accessToken:">&ndash;&nbsp;initWithUserID:accessToken:</a></code>
-		
+		<span class="tooltip"><p>Вторичный метод инициализации класса.</p></span>
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Перегруженные методы" name="task_Перегруженные методы"></a>
+						<h3 class="subsubtitle task-title">Перегруженные методы</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/description">&ndash;&nbsp;description</a></code>
-		
+		<span class="tooltip"><p>Описание состояния класса VKAccessToken.</p></span>
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Публичные методы" name="task_Публичные методы"></a>
+						<h3 class="subsubtitle task-title">Публичные методы</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/hasPermission:">&ndash;&nbsp;hasPermission:</a></code>
-		
+		<span class="tooltip"><p>Метод проверяет наличие определенного доступа в общем списке доступов данного токена.</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/isExpired">&ndash;&nbsp;isExpired</a></code>
-		
+		<span class="tooltip"><p>Метод проверяет истекло ли время действия текущего токена доступа или нет.</p></span>
 	</span>
 	
 	
@@ -247,10 +301,35 @@
 	<h3 class="subsubtitle method-title">expirationTime</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Время истечения действия токена.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSTimeInterval expirationTime</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAccessToken.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -258,10 +337,35 @@
 	<h3 class="subsubtitle method-title">permissions</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Массив пользовательских разрешений к которым был получен доступ приложением</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *permissions</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAccessToken.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -269,10 +373,35 @@
 	<h3 class="subsubtitle method-title">token</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Токен доступа.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *token</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAccessToken.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -280,10 +409,35 @@
 	<h3 class="subsubtitle method-title">userID</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Пользовательский идентификатор в социальной сети ВКонтакте.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger userID</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAccessToken.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -301,10 +455,40 @@
 	<h3 class="subsubtitle method-title">description</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Описание состояния класса VKAccessToken.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (NSString *)description</code></div>
 
     
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Строковое представление текущего класса.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAccessToken.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -312,10 +496,50 @@
 	<h3 class="subsubtitle method-title">hasPermission:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Метод проверяет наличие определенного доступа в общем списке доступов данного токена.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (BOOL)hasPermission:(NSString *)<em>permission</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>permission</em></dt>
+			<dd><p>Наименование доступа.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES - если такое право присутствует в общем списке, иначе - NO.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAccessToken.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -323,10 +547,71 @@
 	<h3 class="subsubtitle method-title">initWithUserID:accessToken:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Вторичный метод инициализации класса.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (id)initWithUserID:(NSUInteger)<em>userID</em> accessToken:(NSString *)<em>token</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userID</em></dt>
+			<dd><p>Пользовательский идентификатор в социальной сети ВКонтакте</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>token</em></dt>
+			<dd><p>Токен доступа.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Объект VKAccessToken класса.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="#//api/name/permissions">permissions</a> принимает значение по умолчанию @[].</p>
+
+<p><a href="#//api/name/expirationTime">expirationTime</a> принимает значение по умолчанию 0.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/initWithUserID:accessToken:expirationTime:permissions:">- initWithUserID:accessToken:expirationTime:permissions:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAccessToken.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -334,10 +619,74 @@
 	<h3 class="subsubtitle method-title">initWithUserID:accessToken:expirationTime:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Вторичный метод инициализации класса.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (id)initWithUserID:(NSUInteger)<em>userID</em> accessToken:(NSString *)<em>token</em> expirationTime:(NSTimeInterval)<em>expirationTime</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userID</em></dt>
+			<dd><p>Пользовательский идентификатор в социальной сети ВКонтакте.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>token</em></dt>
+			<dd><p>Токен доступа.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>expirationTime</em></dt>
+			<dd><p>Время истечения действия токена доступа.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Объект VKAccessToken класса.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p><a href="#//api/name/permissions">permissions</a> принимает значение по умолчанию  @[].</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/initWithUserID:accessToken:expirationTime:permissions:">- initWithUserID:accessToken:expirationTime:permissions:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAccessToken.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -345,10 +694,65 @@
 	<h3 class="subsubtitle method-title">initWithUserID:accessToken:expirationTime:permissions:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Основной метод инициализации.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (id)initWithUserID:(NSUInteger)<em>userID</em> accessToken:(NSString *)<em>token</em> expirationTime:(NSTimeInterval)<em>expirationTime</em> permissions:(NSArray *)<em>permissions</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userID</em></dt>
+			<dd><p>Пользовательский идентификатор в социальной сети ВКонтакте.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>token</em></dt>
+			<dd><p>Токен доступа.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>expirationTime</em></dt>
+			<dd><p>Время истечения действия токена доступа.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>permissions</em></dt>
+			<dd><p>Список полученных приложением прав.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Объект VKAccessToken класса.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAccessToken.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -356,10 +760,48 @@
 	<h3 class="subsubtitle method-title">isExpired</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Метод проверяет истекло ли время действия текущего токена доступа или нет.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (BOOL)isExpired</code></div>
 
     
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>YES - если токен всё еще действует, иначе - NO.</p>
+
+<p>Метод вернет YES в следующих случаях:</p>
+
+<ul>
+<li>Время истечения токена больше нуля и больше текущего времени.</li>
+<li>Время истечения токена равно нулю и в списке доступов присутствует &ldquo;offline&rdquo; доступ</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAccessToken.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -375,7 +817,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-05-28)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-05-29)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						
