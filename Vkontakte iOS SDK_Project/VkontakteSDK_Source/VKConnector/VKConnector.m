@@ -25,12 +25,21 @@
 #pragma mark - Init methods
 
 - (id)initWithWebView:(UIWebView *)webView
+                appID:(NSString *)appID
+          permissions:(NSArray *)permissions
 {
     self = [super init];
 
     if (self) {
-        _appID = kVKAppID;
-        _settings = kVKPermissionList;
+        _appID = [appID copy];
+        
+        NSMutableString *settingAsString = [[NSMutableString alloc] init];
+        for(NSString *permission in permissions){
+            [settingAsString appendFormat:@",%@", permission];
+        }
+        [settingAsString deleteCharactersInRange:NSMakeRange(0, 1)];
+        
+        _settings = settingAsString;
         _redirectURL = @"https://oauth.vk.com/blank.html";
         _display = @"touch";
 
@@ -86,8 +95,6 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
         if ([query_string hasPrefix:@"access_token"]) {
             NSArray *parts = [query_string componentsSeparatedByString:@"&"];
 
-            NSLog(@"parts: %@", parts);
-
             // user accepted our app, parsing response data
             NSString *access_token = [parts[0] componentsSeparatedByString:@"="][1];
             NSTimeInterval expiration_time = [[parts[1] componentsSeparatedByString:@"="][1] doubleValue];
@@ -97,7 +104,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
                     initWithUserID:user_id
                        accessToken:access_token
                     expirationTime:expiration_time
-                       permissions:[kVKPermissionList componentsSeparatedByString:@","]];
+                       permissions:[_settings componentsSeparatedByString:@","]];
 
             _acceptedBlock(vkAccessToken);
 

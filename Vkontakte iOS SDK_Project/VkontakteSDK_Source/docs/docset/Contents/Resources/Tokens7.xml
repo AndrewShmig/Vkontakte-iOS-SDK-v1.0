@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKConnector</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для получения приложением доступа к пользовательской учетной записи.</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>
 			
 			<NodeRef refid="7"/>
@@ -12,24 +12,45 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/initWithWebView:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/initWithWebView:appID:permissions:</TokenIdentifier>
+			<Abstract type="html">Основной метод инициализации.</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithWebView:(UIWebView *)webView</Declaration>
+			<Declaration>- (id)initWithWebView:(UIWebView *)webView appID:(NSString *)appID permissions:(NSArray *)permissions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>webView</Name>
+					<Abstract type="html">UIWebView с которым будет происходить взаимодействие пользователя
+и в котором будет отображаться страница запроса доступа приложения к пользовательской учетной записи.</Abstract>
+				</Parameter><Parameter>
+					<Name>appID</Name>
+					<Abstract type="html">Идентификатор приложения полученный при регистрации.</Abstract>
+				</Parameter><Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">Массив доступов (разрешений), которые необходимо получить приложению.</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/initWithWebView:</Anchor>
+			<Anchor>//api/name/initWithWebView:appID:permissions:</Anchor>
             <NodeRef refid="7"/>
 		</Token>
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/startOnCancelBlock:onSuccessBlock:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Метод инициирующий процесс получения доступа к пользовательской учетной записи.</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>			
 			
 			<Declaration>- (void)startOnCancelBlock:(void ( ^ ) ( void ))cancelBlock onSuccessBlock:(void ( ^ ) ( VKAccessToken *))acceptedBlock</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>cancelBlock</Name>
+					<Abstract type="html">Блок, который выполнится в случае, если пользователь откажется авторизовывать приложение.</Abstract>
+				</Parameter><Parameter>
+					<Name>acceptedBlock</Name>
+					<Abstract type="html">Блок, который выполнится в случае, если пользователь успешно авторизовал наше приложение.
+        Переданный параметр переменная типа VKAccessToken.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/startOnCancelBlock:onSuccessBlock:</Anchor>
             <NodeRef refid="7"/>

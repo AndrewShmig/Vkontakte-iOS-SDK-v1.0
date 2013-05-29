@@ -30,7 +30,9 @@ NSString *const kVKPermissionList = @"friends,status,wall,messages,offline,photo
     _webView = [[UIWebView alloc] initWithFrame:frame];
     [self.view addSubview:_webView];
 
-    _vk = [[VKConnector alloc] initWithWebView:_webView];
+    _vk = [[VKConnector alloc] initWithWebView:_webView
+                                         appID:kVKAppID
+                                   permissions:[kVKPermissionList componentsSeparatedByString:@","]];
 
 
     [_vk startOnCancelBlock:^

@@ -26,6 +26,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -41,7 +43,7 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/initWithWebView:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithWebView:</option>
+	<option value="//api/name/initWithWebView:appID:permissions:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithWebView:appID:permissions:</option>
 	
 	<option value="//api/name/startOnCancelBlock:onSuccessBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- startOnCancelBlock:onSuccessBlock:</option>
 	
@@ -54,10 +56,16 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Методы инициализации">Методы инициализации</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Публичные методы">Публичные методы</a></span></li>
 	
 </ul></li>
 
@@ -71,7 +79,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithWebView:">initWithWebView:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithWebView:appID:permissions:">initWithWebView:appID:permissions:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startOnCancelBlock:onSuccessBlock:">startOnCancelBlock:onSuccessBlock:</a></span></li>
 	
@@ -112,6 +120,14 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс предназначен для получения приложением доступа к пользовательской учетной записи.</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -119,21 +135,29 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						
+						<a title="Методы инициализации" name="task_Методы инициализации"></a>
+						<h3 class="subsubtitle task-title">Методы инициализации</h3>
 
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/initWithWebView:">&ndash;&nbsp;initWithWebView:</a></code>
-		
+		<code><a href="#//api/name/initWithWebView:appID:permissions:">&ndash;&nbsp;initWithWebView:appID:permissions:</a></code>
+		<span class="tooltip"><p>Основной метод инициализации.</p></span>
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Публичные методы" name="task_Публичные методы"></a>
+						<h3 class="subsubtitle task-title">Публичные методы</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/startOnCancelBlock:onSuccessBlock:">&ndash;&nbsp;startOnCancelBlock:onSuccessBlock:</a></code>
-		
+		<span class="tooltip"><p>Метод инициирующий процесс получения доступа к пользовательской учетной записи.</p></span>
 	</span>
 	
 	
@@ -155,14 +179,60 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/initWithWebView:" title="initWithWebView:"></a>
-	<h3 class="subsubtitle method-title">initWithWebView:</h3>
+	<a name="//api/name/initWithWebView:appID:permissions:" title="initWithWebView:appID:permissions:"></a>
+	<h3 class="subsubtitle method-title">initWithWebView:appID:permissions:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Основной метод инициализации.</p>
+	</div>		
+	
+    
 
-	<div class="method-subsection method-declaration"><code>- (id)initWithWebView:(UIWebView *)<em>webView</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)initWithWebView:(UIWebView *)<em>webView</em> appID:(NSString *)<em>appID</em> permissions:(NSArray *)<em>permissions</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>webView</em></dt>
+			<dd><p>UIWebView с которым будет происходить взаимодействие пользователя
+и в котором будет отображаться страница запроса доступа приложения к пользовательской учетной записи.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>appID</em></dt>
+			<dd><p>Идентификатор приложения полученный при регистрации.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>permissions</em></dt>
+			<dd><p>Массив доступов (разрешений), которые необходимо получить приложению.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -170,10 +240,51 @@
 	<h3 class="subsubtitle method-title">startOnCancelBlock:onSuccessBlock:</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Метод инициирующий процесс получения доступа к пользовательской учетной записи.</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>- (void)startOnCancelBlock:(void ( ^ ) ( void ))<em>cancelBlock</em> onSuccessBlock:(void ( ^ ) ( VKAccessToken *))<em>acceptedBlock</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cancelBlock</em></dt>
+			<dd><p>Блок, который выполнится в случае, если пользователь откажется авторизовывать приложение.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>acceptedBlock</em></dt>
+			<dd><p>Блок, который выполнится в случае, если пользователь успешно авторизовал наше приложение.
+        Переданный параметр переменная типа <a href="../Classes/VKAccessToken.html">VKAccessToken</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
