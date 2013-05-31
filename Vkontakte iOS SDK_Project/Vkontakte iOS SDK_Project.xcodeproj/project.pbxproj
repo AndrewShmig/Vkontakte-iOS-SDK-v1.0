@@ -55,6 +55,7 @@
 		D5B7165B1754C1B4009E5C9D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B7165A1754C1B4009E5C9D /* Default.png */; };
 		D5B7165D1754C1B4009E5C9D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B7165C1754C1B4009E5C9D /* Default@2x.png */; };
 		D5B7165F1754C1B4009E5C9D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5B7165E1754C1B4009E5C9D /* Default-568h@2x.png */; };
+		D5B716A217574CCA009E5C9D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B716A117574CCA009E5C9D /* SenTestingKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,7 @@
 		D5B7165A1754C1B4009E5C9D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D5B7165C1754C1B4009E5C9D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D5B7165E1754C1B4009E5C9D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D5B716A117574CCA009E5C9D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B716A217574CCA009E5C9D /* SenTestingKit.framework in Frameworks */,
 				1A9A094B5B316BF5F1F651CD /* UIKit.framework in Frameworks */,
 				1A9A0F0803D519C8C9EDBD1D /* Foundation.framework in Frameworks */,
 				1A9A0965BAB32B05C7F5A862 /* CoreGraphics.framework in Frameworks */,
@@ -333,6 +336,7 @@
 		1A9A0874B600E50617904C9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D5B716A117574CCA009E5C9D /* SenTestingKit.framework */,
 				1A9A0C26456CC23158EF2CFF /* UIKit.framework */,
 				1A9A07FFEF91680BA2BD6228 /* Foundation.framework */,
 				1A9A0EB7F488137826B7377F /* CoreGraphics.framework */,
@@ -769,6 +773,10 @@
 		1A9A0ADE4A1238B9CB0DC632 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vkontakte iOS SDK_Project/Vkontakte iOS SDK_Project-Prefix.pch";
 				INFOPLIST_FILE = "Vkontakte iOS SDK_Project/Vkontakte iOS SDK_Project-Info.plist";
@@ -780,6 +788,10 @@
 		1A9A0D4C0520FBC0D11BBBFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Vkontakte iOS SDK_Project/Vkontakte iOS SDK_Project-Prefix.pch";
 				INFOPLIST_FILE = "Vkontakte iOS SDK_Project/Vkontakte iOS SDK_Project-Info.plist";
@@ -840,6 +852,7 @@
 				D5B716611754C1B4009E5C9D /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

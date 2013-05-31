@@ -6,5 +6,11 @@
 #import <Foundation/Foundation.h>
 
 
+@class VKAccessToken;
+
+
 @interface VKFriends : NSObject
+
+- (id)initWithAccessToken:(VKAccessToken *)accessToken;
+
 @end

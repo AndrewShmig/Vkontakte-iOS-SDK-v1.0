@@ -6,5 +6,11 @@
 #import <Foundation/Foundation.h>
 
 
+@class VKAccessToken;
+
+
 @interface VKVideoAlbums : NSObject
+
+- (id)initWithAccessToken:(VKAccessToken *)accessToken;
+
 @end

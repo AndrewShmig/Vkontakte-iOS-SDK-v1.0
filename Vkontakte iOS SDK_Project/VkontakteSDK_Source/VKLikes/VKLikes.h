@@ -6,5 +6,11 @@
 #import <Foundation/Foundation.h>
 
 
+@class VKAccessToken;
+
+
 @interface VKLikes : NSObject
+
+- (id)initWithAccessToken:(VKAccessToken *)accessToken;
+
 @end

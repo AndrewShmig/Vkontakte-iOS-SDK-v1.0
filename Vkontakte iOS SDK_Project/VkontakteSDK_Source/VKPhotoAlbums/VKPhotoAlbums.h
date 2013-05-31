@@ -5,6 +5,10 @@
 //
 #import <Foundation/Foundation.h>
 
+@class VKAccessToken;
 
 @interface VKPhotoAlbums : NSObject
+
+- (id)initWithAccessToken:(VKAccessToken *)accessToken;
+
 @end

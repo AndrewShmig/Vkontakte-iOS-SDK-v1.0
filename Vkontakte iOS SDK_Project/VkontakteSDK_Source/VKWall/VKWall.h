@@ -5,6 +5,10 @@
 //
 #import <Foundation/Foundation.h>
 
+@class VKAccessToken;
 
 @interface VKWall : NSObject
+
+- (id)initWithAccessToken:(VKAccessToken *)accessToken;
+
 @end
