@@ -11,5 +11,17 @@
 		</Token>
 		
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/initWithAccessToken:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAccessToken:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
 	</File>
 </Tokens>

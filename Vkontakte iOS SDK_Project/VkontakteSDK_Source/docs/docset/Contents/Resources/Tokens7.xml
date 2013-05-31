@@ -4,7 +4,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKConnector</TokenIdentifier>
-			<Abstract type="html">Класс предназначен для получения приложением доступа к пользовательской учетной записи.</Abstract>
+			<Abstract type="html">Класс предназначен для получения приложением доступа к пользовательской учетной
+записи и осуществления запросов к API сервиса методами GET/POST.</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>
 			
 			<NodeRef refid="7"/>

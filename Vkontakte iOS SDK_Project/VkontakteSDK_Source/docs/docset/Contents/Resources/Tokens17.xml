@@ -11,5 +11,17 @@
 		</Token>
 		
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/initWithAccessToken:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAccessToken:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
 	</File>
 </Tokens>

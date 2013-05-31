@@ -11,5 +11,17 @@
 		</Token>
 		
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/initWithAccessToken:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAccessToken:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
 	</File>
 </Tokens>

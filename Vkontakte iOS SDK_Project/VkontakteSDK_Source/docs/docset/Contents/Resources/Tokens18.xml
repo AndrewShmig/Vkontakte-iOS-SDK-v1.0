@@ -11,5 +11,17 @@
 		</Token>
 		
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/initWithAccessToken:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAccessToken:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
 	</File>
 </Tokens>
