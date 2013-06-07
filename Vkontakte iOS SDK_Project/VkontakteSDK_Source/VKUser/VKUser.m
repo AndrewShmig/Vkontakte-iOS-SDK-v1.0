@@ -79,85 +79,112 @@
 
 - (VKStatus *)status
 {
-    _status = [[VKStatus alloc] initWithAccessToken:_token];
+    if(nil == _status)
+        _status = [[VKStatus alloc] initWithAccessToken:_token];
+    
     return _status;
 }
 
 - (VKWall *)wall
 {
-    _wall = [[VKWall alloc] initWithAccessToken:_token];
+    if(nil == _wall)
+        _wall = [[VKWall alloc] initWithAccessToken:_token];
+
     return _wall;
 }
 
 - (VKPhotoAlbums *)photoAlbums
 {
-    _photoAlbums = [[VKPhotoAlbums alloc] initWithAccessToken:_token];
+    if(nil == _photoAlbums)
+        _photoAlbums = [[VKPhotoAlbums alloc] initWithAccessToken:_token];
+    
     return _photoAlbums;
 }
 
 - (VKAudioAlbums *)audioAlbums
 {
-    _audioAlbums = [[VKAudioAlbums alloc] initWithAccessToken:_token];
+    if(nil == _audioAlbums)
+        _audioAlbums = [[VKAudioAlbums alloc] initWithAccessToken:_token];
+    
     return _audioAlbums;
 }
 
 - (VKVideoAlbums *)videoAlbums
 {
-    _videoAlbums = [[VKVideoAlbums alloc] initWithAccessToken:_token];
+    if(nil == _videoAlbums)
+        _videoAlbums = [[VKVideoAlbums alloc] initWithAccessToken:_token];
+    
     return _videoAlbums;
 }
 
 - (VKFriends *)friends
 {
-    _friends = [[VKFriends alloc] initWithAccessToken:_token];
+    if(nil == _friends)
+        _friends = [[VKFriends alloc] initWithAccessToken:_token];
     return _friends;
 }
 
 - (VKGroups *)groups
 {
-    _groups = [[VKGroups alloc] initWithAccessToken:_token];
+    if(nil == _groups)
+        _groups = [[VKGroups alloc] initWithAccessToken:_token];
+    
     return _groups;
 }
 
 - (VKNotes *)notes
 {
-    _notes = [[VKNotes alloc] initWithAccessToken:_token];
+    if(nil == _notes)
+        _notes = [[VKNotes alloc] initWithAccessToken:_token];
+    
     return _notes;
 }
 
 - (VKPlaces *)places
 {
-    _places = [[VKPlaces alloc] initWithAccessToken:_token];
+    if(nil == _places)
+        _places = [[VKPlaces alloc] initWithAccessToken:_token];
+    
     return _places;
 }
 
 - (VKMessages *)messages
 {
-    _messages = [[VKMessages alloc] initWithAccessToken:_token];
+    if(nil == _places)
+        _messages = [[VKMessages alloc] initWithAccessToken:_token];
+    
     return _messages;
 }
 
 - (VKNewsfeed *)newsfeed
 {
-    _newsfeed = [[VKNewsfeed alloc] initWithAccessToken:_token];
+    if(nil == _newsfeed)
+        _newsfeed = [[VKNewsfeed alloc] initWithAccessToken:_token];
+    
     return _newsfeed;
 }
 
 - (VKLikes *)likes
 {
-    _likes = [[VKLikes alloc] initWithAccessToken:_token];
+    if(nil == _likes)
+        _likes = [[VKLikes alloc] initWithAccessToken:_token];
+    
     return _likes;
 }
 
 - (VKDocs *)docs
 {
-    _docs = [[VKDocs alloc] initWithAccessToken:_token];
+    if(nil == _docs)
+        _docs = [[VKDocs alloc] initWithAccessToken:_token];
+    
     return _docs;
 }
 
 - (VKFavourites *)favourites
 {
-    _favourites = [[VKFavourites alloc] initWithAccessToken:_token];
+    if(nil == _favourites)
+        _favourites = [[VKFavourites alloc] initWithAccessToken:_token];
+    
     return _favourites;
 }
 
