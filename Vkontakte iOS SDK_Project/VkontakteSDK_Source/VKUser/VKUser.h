@@ -4,11 +4,10 @@
 // Copyright (c) AndrewShmig. All rights reserved.
 //
 #import <Foundation/Foundation.h>
+#import "VKRequest.h"
 
-typedef void (^VKCompletionBlock)(SEL selector, id response, NSError *error);
 
-
-@class VKAccessToken;
+@class VKAccessToken; //+
 @class VKStatus;
 @class VKWall;
 @class VKPhotoAlbums;

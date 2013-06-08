@@ -4,7 +4,7 @@
 // Copyright (c) AndrewShmig. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-
+#import "VKRequest.h"
 
 @interface VKAudio : NSObject
 @end

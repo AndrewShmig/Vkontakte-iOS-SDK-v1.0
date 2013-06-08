@@ -12,8 +12,9 @@
 #import <Foundation/Foundation.h>
 
 
-static NSString *const kVkontakteAPIURL = @"https://api.vk.com/method/";
+typedef void (^VKCompletionBlock)(SEL selector, id response, NSError *error);
 
+static NSString *const kVkontakteAPIURL = @"https://api.vk.com/method/";
 
 @class VKAccessToken;
 
