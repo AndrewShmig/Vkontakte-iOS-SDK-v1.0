@@ -9,12 +9,18 @@
 #import "ASAAppDelegate.h"
 
 #import "ASAViewController.h"
+#import "VKConnector.h"
+
+#warning Change these constants according to your app
+static NSString *const kVKAppID = @"YOUR_APP_ID";
+static NSString *const kVKPermissionsArray = @"permission1,permission2,permission3";
 
 @implementation ASAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	[[VKConnector sharedInstance] startWithAppID:kVKAppID permissons:[kVKPermissionsArray componentsSeparatedByString:@","]];
     // Override point for customization after application launch.
     self.viewController = [[ASAViewController alloc] initWithNibName:@"ASAViewController" bundle:nil];
     self.window.rootViewController = self.viewController;

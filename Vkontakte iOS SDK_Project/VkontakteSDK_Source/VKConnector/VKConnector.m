@@ -22,7 +22,29 @@
     void (^_acceptedBlock) (VKAccessToken *);
 }
 
+static VKConnector *instanceVKConnector = nil;
+
+
 #pragma mark - Init methods
+
++ (id) sharedInstance {
+	@synchronized(self) {
+		if (instanceVKConnector == nil) {
+			instanceVKConnector = [[self alloc] init]; //Пустая инициализация
+		}
+	}
+	return instanceVKConnector;
+}
+
+- (void)startWithAppID:(NSString*)appID permissons:(NSArray*)permissions {
+	_permissions = permissions;
+	_appID = appID;
+	if (self.parentView) {
+		// Код расположения всплывающего окна в parent view
+	} else {
+		// Код вызова модального окна
+	}
+}
 
 - (id)initWithWebView:(UIWebView *)webView
                 appID:(NSString *)appID
@@ -62,6 +84,11 @@
 }
 
 #pragma mark - Public VKConnector Methods
+
+- (void)setParentView:(UIView *)parentView {
+	_parentView = parentView;
+	
+}
 
 - (void)startOnCancelBlock:(void (^)(void))cancelBlock
             onSuccessBlock:(void (^)(VKAccessToken *))acceptedBlock
