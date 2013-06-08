@@ -37,6 +37,18 @@
 	
 	
 	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/parentView">&nbsp;&nbsp;&nbsp;&nbsp;parentView</option>
+	
+	<option value="//api/name/permissions">&nbsp;&nbsp;&nbsp;&nbsp;permissions</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sharedInstance">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedInstance</option>
 	
 	
 	
@@ -46,6 +58,8 @@
 	<option value="//api/name/initWithWebView:appID:permissions:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithWebView:appID:permissions:</option>
 	
 	<option value="//api/name/startOnCancelBlock:onSuccessBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- startOnCancelBlock:onSuccessBlock:</option>
+	
+	<option value="//api/name/startWithAppID:permissons:">&nbsp;&nbsp;&nbsp;&nbsp;- startWithAppID:permissons:</option>
 	
 	
 	
@@ -73,7 +87,21 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parentView">parentView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/permissions">permissions</a></span></li>
+	
+</ul></li>
 
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedInstance">sharedInstance</a></span></li>
+	
+</ul></li>
 
 
 
@@ -82,6 +110,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithWebView:appID:permissions:">initWithWebView:appID:permissions:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startOnCancelBlock:onSuccessBlock:">startOnCancelBlock:onSuccessBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startWithAppID:permissons:">startWithAppID:permissons:</a></span></li>
 	
 </ul></li>
 
@@ -125,6 +155,13 @@
 						<h2 class="subtitle subtitle-overview">Overview</h2>
 						<p>Класс предназначен для получения приложением доступа к пользовательской учетной
 записи и осуществления запросов к API сервиса методами GET/POST.</p>
+
+<pre><code>- (void)applicationDidFinishLaunching:(UIApplication *)application
+{
+    [[VKConnector sharedInstance] startWithAppID:@"YOUR_APP_ID"
+                                      permissons:@[@"friends",@"wall"]];
+}
+</code></pre>
 					</div>
 					
 					
@@ -134,6 +171,42 @@
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/permissions">&nbsp;&nbsp;permissions</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/parentView">&nbsp;&nbsp;parentView</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+		<span class="tooltip"><p>Метод класса для получения экземпляра сиглтона. Если объект отсутствует, то он будет создан. Не может быть равен nil или NULL.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startWithAppID:permissons:">&ndash;&nbsp;startWithAppID:permissons:</a></code>
+		<span class="tooltip"><p>Инициализирует запуск коннектора с заданными параметрами</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
 						
 						
 						<a title="Методы инициализации" name="task_Методы инициализации"></a>
@@ -171,7 +244,77 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/parentView" title="parentView"></a>
+	<h3 class="subsubtitle method-title">parentView</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIView *parentView</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/permissions" title="permissions"></a>
+	<h3 class="subsubtitle method-title">permissions</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSArray *permissions</code></div>
+
+    
+</div>
+						
+					</div>
 					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="subsubtitle method-title">sharedInstance</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Метод класса для получения экземпляра сиглтона. Если объект отсутствует, то он будет создан. Не может быть равен nil или NULL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)sharedInstance</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 					
@@ -264,6 +407,57 @@
 			<dt><em>acceptedBlock</em></dt>
 			<dd><p>Блок, который выполнится в случае, если пользователь успешно авторизовал наше приложение.
         Переданный параметр переменная типа <a href="../Classes/VKAccessToken.html">VKAccessToken</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startWithAppID:permissons:" title="startWithAppID:permissons:"></a>
+	<h3 class="subsubtitle method-title">startWithAppID:permissons:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Инициализирует запуск коннектора с заданными параметрами</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startWithAppID:(NSString *)<em>appID</em> permissons:(NSArray *)<em>permissions</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>appID</em></dt>
+			<dd><p>Идентификатор приложения полученный при регистрации.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>permissions</em></dt>
+			<dd><p>Массив доступов (разрешений), которые необходимо получить приложению.</p></dd>
 		</dl>
 		
 	</div>

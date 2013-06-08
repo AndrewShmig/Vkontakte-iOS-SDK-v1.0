@@ -13,6 +13,110 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/setPermissions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSArray *permissions</Declaration>
+			
+			
+			<Anchor>//api/name/permissions</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/permissions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSArray *permissions</Declaration>
+			
+			
+			<Anchor>//api/name/permissions</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKConnector/permissions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSArray *permissions</Declaration>
+			
+			
+			<Anchor>//api/name/permissions</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/setParentView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIView *parentView</Declaration>
+			
+			
+			<Anchor>//api/name/parentView</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/parentView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIView *parentView</Declaration>
+			
+			
+			<Anchor>//api/name/parentView</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKConnector/parentView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIView *parentView</Declaration>
+			
+			
+			<Anchor>//api/name/parentView</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/VKConnector/sharedInstance</TokenIdentifier>
+			<Abstract type="html">Метод класса для получения экземпляра сиглтона. Если объект отсутствует, то он будет создан. Не может быть равен nil или NULL.</Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>+ (id)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/startWithAppID:permissons:</TokenIdentifier>
+			<Abstract type="html">Инициализирует запуск коннектора с заданными параметрами</Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>- (void)startWithAppID:(NSString *)appID permissons:(NSArray *)permissions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appID</Name>
+					<Abstract type="html">Идентификатор приложения полученный при регистрации.</Abstract>
+				</Parameter><Parameter>
+					<Name>permissions</Name>
+					<Abstract type="html">Массив доступов (разрешений), которые необходимо получить приложению.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startWithAppID:permissons:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/initWithWebView:appID:permissions:</TokenIdentifier>
 			<Abstract type="html">Основной метод инициализации.</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>			

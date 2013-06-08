@@ -43,7 +43,6 @@
 		1A9A0D607B79AFC8041B6520 /* VKConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0F455C140DDD6C719282 /* VKConnector.m */; };
 		1A9A0DFFA6C38BD056D31C8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0E6E23C1FCE8D3FE60F1 /* InfoPlist.strings */; };
 		1A9A0E0DB89A0EF7F46D63EE /* VKMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9A0C1AFB20A72D20581CA0 /* VKMessages.m */; };
-		1A9A0E1419373D9C99A9FE86 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A0E4B20952890AA27EFC7 /* README.md */; };
 		1A9A0F0803D519C8C9EDBD1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A07FFEF91680BA2BD6228 /* Foundation.framework */; };
 		1A9A0FD21D1892BE454A4C3B /* ASAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A08D62A11B3F5E77C7492 /* ASAViewController.xib */; };
 		D53DFBF117632CF6001A058B /* VKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DFBF017632CF6001A058B /* VKRequest.m */; };
@@ -148,7 +147,6 @@
 		1A9A0D835AE6DB69D3202212 /* VKPlaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPlaces.h; sourceTree = "<group>"; };
 		1A9A0DFDBE1C877F0B132D35 /* VKConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKConnector.h; sourceTree = "<group>"; };
 		1A9A0E4288D94B4067010FFE /* VKFavourites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKFavourites.h; sourceTree = "<group>"; };
-		1A9A0E4B20952890AA27EFC7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		1A9A0E9B2A369374D8A7032F /* VKDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKDoc.m; sourceTree = "<group>"; };
 		1A9A0EB5B33B50156CCB4480 /* VKPlaces.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPlaces.m; sourceTree = "<group>"; };
 		1A9A0EB7F488137826B7377F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -420,7 +418,6 @@
 				D53DFC2617633602001A058B /* VKMethods */,
 				D53DFBF317632D6A001A058B /* Libraries */,
 				D53DFBEE17632CE1001A058B /* VKRequest */,
-				1A9A0E4B20952890AA27EFC7 /* README.md */,
 				1A9A05EEA89C06908A3A5591 /* VKConnector */,
 				1A9A0BA3F3EE9306260F7E03 /* VKUser */,
 				1A9A0EB8F589AD61CC22490A /* VKAccessToken */,
@@ -714,7 +711,6 @@
 				1A9A0535D28C98D1320A8654 /* Default@2x.png in Resources */,
 				1A9A06A9086F2C4C5107D953 /* Default-568h@2x.png in Resources */,
 				1A9A0FD21D1892BE454A4C3B /* ASAViewController.xib in Resources */,
-				1A9A0E1419373D9C99A9FE86 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
