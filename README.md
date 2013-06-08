@@ -2,7 +2,7 @@
 
 In progress...
 
-##MIT License
+##License
 Copyright (c) 2013 Andrew Shmig
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
