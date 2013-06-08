@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKPlaces.html">
+	<File path="Classes/VKMessage.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKPlaces</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/VKMessage</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKPlaces.h</DeclaredIn>
+			<DeclaredIn>VKMessage.h</DeclaredIn>
 			
 			<NodeRef refid="24"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/initWithAccessToken:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKPlaces.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/initWithAccessToken:</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
 		
 	</File>
 </Tokens>

@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKFavourites.html">
+	<File path="Classes/ASAViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKFavourites</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/ASAViewController</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKFavourites.h</DeclaredIn>
+			<DeclaredIn>ASAViewController.h</DeclaredIn>
 			
 			<NodeRef refid="10"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/initWithAccessToken:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKFavourites.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/initWithAccessToken:</Anchor>
-            <NodeRef refid="10"/>
-		</Token>
 		
 	</File>
 </Tokens>

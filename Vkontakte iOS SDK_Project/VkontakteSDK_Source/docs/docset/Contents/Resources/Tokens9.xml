@@ -1,25 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKDocs.html">
+	<File path="Classes/ASAAppDelegate.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKDocs</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/ASAAppDelegate</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKDocs.h</DeclaredIn>
+			<DeclaredIn>ASAAppDelegate.h</DeclaredIn>
 			
 			<NodeRef refid="9"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/initWithAccessToken:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/ASAAppDelegate/setWindow:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			<DeclaredIn>ASAAppDelegate.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
 			
 			
-			<Anchor>//api/name/initWithAccessToken:</Anchor>
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASAAppDelegate/window</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASAAppDelegate.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
+			
+			
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASAAppDelegate/window</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASAAppDelegate.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) UIWindow *window</Declaration>
+			
+			
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASAAppDelegate/setViewController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASAAppDelegate.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) ASAViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ASAAppDelegate/viewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASAAppDelegate.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) ASAViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ASAAppDelegate/viewController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ASAAppDelegate.h</DeclaredIn>			
+			
+			<Declaration>@property (strong, nonatomic) ASAViewController *viewController</Declaration>
+			
+			
+			<Anchor>//api/name/viewController</Anchor>
             <NodeRef refid="9"/>
 		</Token>
 		

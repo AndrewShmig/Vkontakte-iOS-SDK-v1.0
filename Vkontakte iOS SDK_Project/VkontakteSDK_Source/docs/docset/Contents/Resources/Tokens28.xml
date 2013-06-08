@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKVideoAlbums.html">
+	<File path="Classes/VKNotes.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKVideoAlbums</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/VKNotes</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>
+			<DeclaredIn>VKNotes.h</DeclaredIn>
 			
 			<NodeRef refid="28"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/initWithAccessToken:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/initWithAccessToken:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
 			
 			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
 			

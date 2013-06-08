@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKMessage.html">
+	<File path="Classes/VKDoc.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKMessage</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/VKDoc</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKMessage.h</DeclaredIn>
+			<DeclaredIn>VKDoc.h</DeclaredIn>
 			
 			<NodeRef refid="16"/>
 		</Token>

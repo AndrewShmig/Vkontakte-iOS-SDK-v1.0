@@ -8,6 +8,7 @@
 
 #import "ASAViewController.h"
 #import "VKConnector.h"
+#import "VKUser.h"
 
 
 NSString *const kVKAppID = @"3541027";
@@ -36,13 +37,17 @@ NSString *const kVKPermissionList = @"friends,status,wall,messages,offline,photo
 
 
     [_vk startOnCancelBlock:^
-    {
-        NSLog(@"Canceled...");
-    }
+     {
+         NSLog(@"Canceled...");
+     }
              onSuccessBlock:^(VKAccessToken *token)
-             {
-                 NSLog(@"accessToken: %@", token);
-             }];
+     {
+         
+         NSLog(@"token: %@", token);
+         
+         // example
+         
+     }];
 }
 
 - (void)didReceiveMemoryWarning
