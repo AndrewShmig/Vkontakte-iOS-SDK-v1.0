@@ -7,47 +7,12 @@
 //
 
 #import "ASAViewController.h"
-#import "VKConnector.h"
-#import "VKUser.h"
-
-
-NSString *const kVKAppID = @"3541027";
-NSString *const kVKPrivateKey = @"EImkkJQ8jF7obXFVSHIZ";
-NSString *const kVKPermissionList = @"friends,status,wall,messages,offline,photos,docs,audio";
-
 
 @implementation ASAViewController
-{
-    VKConnector *_vk;
-    UIWebView *_webView;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-	// Do any additional setup after loading the view, typically from a nib.
-    CGRect frame = [[UIScreen mainScreen] bounds];
-    _webView = [[UIWebView alloc] initWithFrame:frame];
-    [self.view addSubview:_webView];
-
-    _vk = [[VKConnector alloc] initWithWebView:_webView
-                                         appID:kVKAppID
-                                   permissions:[kVKPermissionList componentsSeparatedByString:@","]];
-
-
-    [_vk startOnCancelBlock:^
-     {
-         NSLog(@"Canceled...");
-     }
-             onSuccessBlock:^(VKAccessToken *token)
-     {
-         
-         NSLog(@"token: %@", token);
-         
-         // example
-         
-     }];
 }
 
 - (void)didReceiveMemoryWarning

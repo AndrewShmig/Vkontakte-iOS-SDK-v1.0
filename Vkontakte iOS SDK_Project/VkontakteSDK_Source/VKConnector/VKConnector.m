@@ -39,6 +39,7 @@ static VKConnector *instanceVKConnector = nil;
 - (void)startWithAppID:(NSString*)appID permissons:(NSArray*)permissions {
 	_permissions = permissions;
 	_appID = appID;
+
 	if (self.parentView) {
 		// Код расположения всплывающего окна в parent view
 	} else {

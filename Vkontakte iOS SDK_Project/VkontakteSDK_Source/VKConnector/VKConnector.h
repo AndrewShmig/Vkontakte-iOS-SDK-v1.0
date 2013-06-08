@@ -9,6 +9,7 @@
 
 @class VKAccessToken;
 
+
 /*!
  @interface
  @brief Класс предназначен для получения приложением доступа к пользовательской учетной
@@ -44,7 +45,8 @@
  @param appID Идентификатор приложения полученный при регистрации.
  @param permissions Массив доступов (разрешений), которые необходимо получить приложению.
  */
-- (void)startWithAppID:(NSString*)appID permissons:(NSArray*)permissions;
+- (void)startWithAppID:(NSString*)appID
+            permissons:(NSArray*)permissions;
 
 /** Основной метод инициализации.
  
