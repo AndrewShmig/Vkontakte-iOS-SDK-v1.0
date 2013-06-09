@@ -40,7 +40,7 @@
  - токен доступа
  */
 
-@interface VKAccessToken : NSObject
+@interface VKAccessToken : NSObject <NSCopying>
 
 /**
  @name Свойства

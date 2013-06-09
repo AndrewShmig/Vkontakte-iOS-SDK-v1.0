@@ -152,10 +152,12 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
                        permissions:[_settings componentsSeparatedByString:@","]];
 
             NSLog(@"Access token: %@", vkAccessToken);
+//            TODO: сохранение токена
 
         } else {
             
             NSLog(@"Пользователь отказался авторизовывать приложение");
+//            TODO: вызов какого-то обратного блока
 
         }
     }

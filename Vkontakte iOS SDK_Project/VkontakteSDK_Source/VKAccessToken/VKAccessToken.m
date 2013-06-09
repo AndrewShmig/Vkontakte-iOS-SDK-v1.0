@@ -52,10 +52,10 @@
          permissions:(NSArray *)permissions
 {
     if(self = [super init]){
-        _permissions = [permissions copy];
-        _expirationTime = expirationTime;
         _userID = userID;
         _token = [token copy];
+        _expirationTime = expirationTime;
+        _permissions = [permissions copy];
     }
 
     return self;
@@ -91,6 +91,16 @@
     };
 
     return [desc description];
+}
+
+- (VKAccessToken *)copyWithZone:(NSZone *)zone
+{
+    VKAccessToken *copyToken = [[VKAccessToken alloc] initWithUserID:self.userID
+                                                         accessToken:self.token
+                                                      expirationTime:self.expirationTime
+                                                         permissions:self.permissions];
+    
+    return copyToken;
 }
 
 #pragma mark - Public methods
