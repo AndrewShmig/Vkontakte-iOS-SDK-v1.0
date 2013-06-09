@@ -46,8 +46,8 @@
  */
 @interface VKConnector : NSObject <UIWebViewDelegate>
 
+@property (nonatomic, strong, readonly) NSString *appID;
 @property (nonatomic, strong, readonly) NSArray *permissions;
-@property (nonatomic, strong) UIView *parentView;
 
 /** Метод класса для получения экземпляра сиглтона.
 * Если объект отсутствует, то он будет создан. Не может быть равен nil или NULL.
@@ -59,7 +59,7 @@
  @param appID Идентификатор приложения полученный при регистрации.
  @param permissions Массив доступов (разрешений), которые необходимо получить приложению.
  */
-- (void)startWithAppID:(NSString*)appID
-            permissons:(NSArray*)permissions;
+- (void)startWithAppID:(NSString *)appID
+            permissons:(NSArray *)permissions;
 
 @end

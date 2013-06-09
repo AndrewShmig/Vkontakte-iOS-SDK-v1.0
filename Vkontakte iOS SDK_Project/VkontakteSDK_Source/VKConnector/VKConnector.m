@@ -38,8 +38,8 @@
 
 @implementation VKConnector
 {
-    const NSString *_appID;
-    const NSString *_settings;
+    NSString *_appID;
+    NSString *_settings;
     NSString *_redirectURL;
 
     UIWebView *_innerWebView;
@@ -60,6 +60,7 @@
 			instanceVKConnector = [[self alloc] init];
 		}
 	}
+    
 	return instanceVKConnector;
 }
 
@@ -152,7 +153,7 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
                        permissions:[_settings componentsSeparatedByString:@","]];
 
             NSLog(@"Access token: %@", vkAccessToken);
-//            TODO: сохранение токена
+//            TODO: сохранение токена в общем списке токенов
 
         } else {
             
