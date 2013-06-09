@@ -30,6 +30,10 @@
 
 #import "VKConnector.h"
 #import "VKAccessToken.h"
+#import "KGModal.h"
+
+
+#define MARGIN_WIDTH 50.0f // ширина отступа от границ экрана
 
 
 @implementation VKConnector
@@ -37,7 +41,6 @@
     const NSString *_appID;
     const NSString *_settings;
     NSString *_redirectURL;
-    NSString *_display;
 
     UIWebView *_innerWebView;
     UIActivityIndicatorView *_activityIndicator;
@@ -46,89 +49,80 @@
     void (^_acceptedBlock) (VKAccessToken *);
 }
 
-static VKConnector *instanceVKConnector = nil;
-
-
 #pragma mark - Init methods
 
-+ (id) sharedInstance {
++ (id) sharedInstance
+{
+    static VKConnector *instanceVKConnector = nil;
+    
 	@synchronized(self) {
 		if (instanceVKConnector == nil) {
-			instanceVKConnector = [[self alloc] init]; //Пустая инициализация
+			instanceVKConnector = [[self alloc] init];
 		}
 	}
 	return instanceVKConnector;
 }
 
-- (void)startWithAppID:(NSString*)appID permissons:(NSArray*)permissions {
+#pragma mark - VKConnector public methods
+
+- (void)startWithAppID:(NSString*)appID
+            permissons:(NSArray*)permissions
+{
 	_permissions = permissions;
 	_appID = appID;
 
-	if (self.parentView) {
-		// Код расположения всплывающего окна в parent view
-	} else {
-		// Код вызова модального окна
-	}
-}
-
-- (id)initWithWebView:(UIWebView *)webView
-                appID:(NSString *)appID
-          permissions:(NSArray *)permissions
-{
-    self = [super init];
-
-    if (self) {
-        _appID = [appID copy];
-        
-        NSMutableString *settingAsString = [[NSMutableString alloc] init];
-        for(NSString *permission in permissions){
-            [settingAsString appendFormat:@",%@", permission];
-        }
-        [settingAsString deleteCharactersInRange:NSMakeRange(0, 1)];
-        
-        _settings = settingAsString;
-        _redirectURL = @"https://oauth.vk.com/blank.html";
-        _display = @"touch";
-
-        _innerWebView = webView;
+    _settings = [_permissions componentsJoinedByString:@","];
+    _redirectURL = @"https://oauth.vk.com/blank.html";
+    
+    // настраиваем попап окно для отображения UIWebView
+    CGRect frame = [[UIScreen mainScreen] bounds];
+    frame.size.height -= MARGIN_WIDTH;
+    frame.size.width -= MARGIN_WIDTH;
+    UIView *view = [[UIView alloc] initWithFrame:frame];
+    
+    if(nil == _innerWebView){
+        _innerWebView = [[UIWebView alloc] initWithFrame:view.frame];
         [_innerWebView setDelegate:self];
-
-        CGPoint centerPoint = [_innerWebView center];
-        CGRect frame = CGRectMake(centerPoint.x - 20, centerPoint.y - 50, 30, 30);
+    }
+    
+    CGPoint centerPoint = [_innerWebView center];
+    CGRect activityIndicatorFrame = CGRectMake(centerPoint.x - 20, centerPoint.y - 50, 30, 30);
+    
+    if(nil == _activityIndicator){
         _activityIndicator = [[UIActivityIndicatorView alloc]
-                                                        initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+                              initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
         [_activityIndicator setColor:[UIColor darkGrayColor]];
-        [_activityIndicator setFrame:frame];
+        [_activityIndicator setFrame:activityIndicatorFrame];
         [_activityIndicator setHidesWhenStopped:YES];
-        [_activityIndicator setHidden:NO];
-
-        [_innerWebView addSubview:_activityIndicator];
+        [_activityIndicator startAnimating];
     }
 
-    return self;
-}
+    [_innerWebView addSubview:_activityIndicator];
+    [view addSubview:_innerWebView];
+    
+//    преобразование словаря параметров в строку параметров
+    NSDictionary *params = @{@"client_id": _appID,
+                             @"redirect_uri": _redirectURL,
+                             @"scope": _settings,
+                             @"response_type": @"token",
+                             @"display": @"touch"};
+    NSMutableString *urlAsString = [[NSMutableString alloc] init];
+    NSMutableArray *urlParams = [[NSMutableArray alloc] init];
+    
+    [urlAsString appendString:@"https://oauth.vk.com/authorize?"];
+    [params enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        [urlParams addObject:[NSString stringWithFormat:@"%@=%@", key, obj]];
+    }];
+    [urlAsString appendString:[urlParams componentsJoinedByString:@"&"]];
 
-#pragma mark - Public VKConnector Methods
-
-- (void)setParentView:(UIView *)parentView {
-	_parentView = parentView;
-	
-}
-
-- (void)startOnCancelBlock:(void (^)(void))cancelBlock
-            onSuccessBlock:(void (^)(VKAccessToken *))acceptedBlock
-{
-    _cancelBlock = cancelBlock;
-    _acceptedBlock = acceptedBlock;
-
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://oauth.vk.com/authorize?client_id=%@&redirect_uri=%@&scope=%@&response_type=token&display=%@",
-                                                                 _appID,
-                                                                 _redirectURL,
-                                                                 _settings,
-                                                                 _display]];
-
+//    запрос на страницу авторизации приложения
+    NSURL *url = [NSURL URLWithString:urlAsString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_innerWebView loadRequest:request];
+    
+//    отображаем попап
+    [[KGModal sharedInstance] showWithContentView:view
+                                      andAnimated:YES];
 }
 
 #pragma mark - WebView Delegate Methods
@@ -139,15 +133,14 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 {
     NSString *url = [[request URL] absoluteString];
 
-    // checking URL we are currently parsing
     if ([url hasPrefix:_redirectURL]) {
         NSString *query_string = [url substringFromIndex:[_redirectURL length] + 1];
 
-        // checking if user accepted application or not
+//        проверяем одобрил ли пользователь наше приложение или нет
         if ([query_string hasPrefix:@"access_token"]) {
             NSArray *parts = [query_string componentsSeparatedByString:@"&"];
 
-            // user accepted our app, parsing response data
+//            пользователь одобрил наше приложение, парсим полученные данные
             NSString *access_token = [parts[0] componentsSeparatedByString:@"="][1];
             NSTimeInterval expiration_time = [[parts[1] componentsSeparatedByString:@"="][1] doubleValue];
             NSUInteger user_id = [[parts[2] componentsSeparatedByString:@"="][1] unsignedIntValue];
@@ -158,11 +151,11 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
                     expirationTime:expiration_time
                        permissions:[_settings componentsSeparatedByString:@","]];
 
-            _acceptedBlock(vkAccessToken);
+            NSLog(@"Access token: %@", vkAccessToken);
 
         } else {
-            // user denied to authorize our app
-            _cancelBlock();
+            
+            NSLog(@"Пользователь отказался авторизовывать приложение");
 
         }
     }

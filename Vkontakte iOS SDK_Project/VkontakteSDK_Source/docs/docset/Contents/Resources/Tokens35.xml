@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/VKUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/VKUser</TokenIdentifier>
+			<Abstract type="html">Класс представляет пользователя социальной сети со связями вроде
+стены, аудиозаписей, видеозаписей, сообщений и тд.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setToken:</TokenIdentifier>
+			<Abstract type="html">Токен доступа</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) VKAccessToken *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/token</TokenIdentifier>
+			<Abstract type="html">Токен доступа</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) VKAccessToken *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/token</TokenIdentifier>
+			<Abstract type="html">Токен доступа</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readwrite) VKAccessToken *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setCompletionBlock:</TokenIdentifier>
+			<Abstract type="html">Блок-обработчик вызываемый после выполнения запросов.
+Выглядит следующим образом:</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readwrite) VKCompletionBlock completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/completionBlock</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/completionBlock</TokenIdentifier>
+			<Abstract type="html">Блок-обработчик вызываемый после выполнения запросов.
+Выглядит следующим образом:</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readwrite) VKCompletionBlock completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/completionBlock</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/completionBlock</TokenIdentifier>
+			<Abstract type="html">Блок-обработчик вызываемый после выполнения запросов.
+Выглядит следующим образом:</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy, readwrite) VKCompletionBlock completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/completionBlock</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setStatus:</TokenIdentifier>
+			<Abstract type="html">Статусы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/status</TokenIdentifier>
+			<Abstract type="html">Статусы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/status</TokenIdentifier>
+			<Abstract type="html">Статусы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKStatus *status</Declaration>
+			
+			
+			<Anchor>//api/name/status</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setWall:</TokenIdentifier>
+			<Abstract type="html">Стена.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKWall *wall</Declaration>
+			
+			
+			<Anchor>//api/name/wall</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/wall</TokenIdentifier>
+			<Abstract type="html">Стена.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKWall *wall</Declaration>
+			
+			
+			<Anchor>//api/name/wall</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/wall</TokenIdentifier>
+			<Abstract type="html">Стена.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKWall *wall</Declaration>
+			
+			
+			<Anchor>//api/name/wall</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setPhotoAlbums:</TokenIdentifier>
+			<Abstract type="html">Фото альбомы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKPhotoAlbums *photoAlbums</Declaration>
+			
+			
+			<Anchor>//api/name/photoAlbums</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/photoAlbums</TokenIdentifier>
+			<Abstract type="html">Фото альбомы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKPhotoAlbums *photoAlbums</Declaration>
+			
+			
+			<Anchor>//api/name/photoAlbums</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/photoAlbums</TokenIdentifier>
+			<Abstract type="html">Фото альбомы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKPhotoAlbums *photoAlbums</Declaration>
+			
+			
+			<Anchor>//api/name/photoAlbums</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setAudioAlbums:</TokenIdentifier>
+			<Abstract type="html">Аудио альбомы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKAudioAlbums *audioAlbums</Declaration>
+			
+			
+			<Anchor>//api/name/audioAlbums</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/audioAlbums</TokenIdentifier>
+			<Abstract type="html">Аудио альбомы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKAudioAlbums *audioAlbums</Declaration>
+			
+			
+			<Anchor>//api/name/audioAlbums</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/audioAlbums</TokenIdentifier>
+			<Abstract type="html">Аудио альбомы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKAudioAlbums *audioAlbums</Declaration>
+			
+			
+			<Anchor>//api/name/audioAlbums</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setVideoAlbums:</TokenIdentifier>
+			<Abstract type="html">Видео альбомы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKVideoAlbums *videoAlbums</Declaration>
+			
+			
+			<Anchor>//api/name/videoAlbums</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/videoAlbums</TokenIdentifier>
+			<Abstract type="html">Видео альбомы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKVideoAlbums *videoAlbums</Declaration>
+			
+			
+			<Anchor>//api/name/videoAlbums</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/videoAlbums</TokenIdentifier>
+			<Abstract type="html">Видео альбомы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKVideoAlbums *videoAlbums</Declaration>
+			
+			
+			<Anchor>//api/name/videoAlbums</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setFriends:</TokenIdentifier>
+			<Abstract type="html">Друзья пользователя.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKFriends *friends</Declaration>
+			
+			
+			<Anchor>//api/name/friends</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/friends</TokenIdentifier>
+			<Abstract type="html">Друзья пользователя.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKFriends *friends</Declaration>
+			
+			
+			<Anchor>//api/name/friends</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/friends</TokenIdentifier>
+			<Abstract type="html">Друзья пользователя.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKFriends *friends</Declaration>
+			
+			
+			<Anchor>//api/name/friends</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setGroups:</TokenIdentifier>
+			<Abstract type="html">Группы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKGroups *groups</Declaration>
+			
+			
+			<Anchor>//api/name/groups</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/groups</TokenIdentifier>
+			<Abstract type="html">Группы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKGroups *groups</Declaration>
+			
+			
+			<Anchor>//api/name/groups</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/groups</TokenIdentifier>
+			<Abstract type="html">Группы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKGroups *groups</Declaration>
+			
+			
+			<Anchor>//api/name/groups</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setNotes:</TokenIdentifier>
+			<Abstract type="html">Записи.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKNotes *notes</Declaration>
+			
+			
+			<Anchor>//api/name/notes</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/notes</TokenIdentifier>
+			<Abstract type="html">Записи.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKNotes *notes</Declaration>
+			
+			
+			<Anchor>//api/name/notes</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/notes</TokenIdentifier>
+			<Abstract type="html">Записи.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKNotes *notes</Declaration>
+			
+			
+			<Anchor>//api/name/notes</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setPlaces:</TokenIdentifier>
+			<Abstract type="html">Места.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKPlaces *places</Declaration>
+			
+			
+			<Anchor>//api/name/places</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/places</TokenIdentifier>
+			<Abstract type="html">Места.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKPlaces *places</Declaration>
+			
+			
+			<Anchor>//api/name/places</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/places</TokenIdentifier>
+			<Abstract type="html">Места.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKPlaces *places</Declaration>
+			
+			
+			<Anchor>//api/name/places</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setMessages:</TokenIdentifier>
+			<Abstract type="html">Сообщения.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKMessages *messages</Declaration>
+			
+			
+			<Anchor>//api/name/messages</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/messages</TokenIdentifier>
+			<Abstract type="html">Сообщения.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKMessages *messages</Declaration>
+			
+			
+			<Anchor>//api/name/messages</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/messages</TokenIdentifier>
+			<Abstract type="html">Сообщения.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKMessages *messages</Declaration>
+			
+			
+			<Anchor>//api/name/messages</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setNewsfeed:</TokenIdentifier>
+			<Abstract type="html">Новости.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKNewsfeed *newsfeed</Declaration>
+			
+			
+			<Anchor>//api/name/newsfeed</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/newsfeed</TokenIdentifier>
+			<Abstract type="html">Новости.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKNewsfeed *newsfeed</Declaration>
+			
+			
+			<Anchor>//api/name/newsfeed</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/newsfeed</TokenIdentifier>
+			<Abstract type="html">Новости.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKNewsfeed *newsfeed</Declaration>
+			
+			
+			<Anchor>//api/name/newsfeed</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setLikes:</TokenIdentifier>
+			<Abstract type="html">&quot;Мне нравится&quot;.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKLikes *likes</Declaration>
+			
+			
+			<Anchor>//api/name/likes</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/likes</TokenIdentifier>
+			<Abstract type="html">&quot;Мне нравится&quot;.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKLikes *likes</Declaration>
+			
+			
+			<Anchor>//api/name/likes</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/likes</TokenIdentifier>
+			<Abstract type="html">&quot;Мне нравится&quot;.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKLikes *likes</Declaration>
+			
+			
+			<Anchor>//api/name/likes</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setDocs:</TokenIdentifier>
+			<Abstract type="html">Документы/файлы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKDocs *docs</Declaration>
+			
+			
+			<Anchor>//api/name/docs</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/docs</TokenIdentifier>
+			<Abstract type="html">Документы/файлы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKDocs *docs</Declaration>
+			
+			
+			<Anchor>//api/name/docs</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/docs</TokenIdentifier>
+			<Abstract type="html">Документы/файлы.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKDocs *docs</Declaration>
+			
+			
+			<Anchor>//api/name/docs</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/setFavourites:</TokenIdentifier>
+			<Abstract type="html">Закладки.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKFavourites *favourites</Declaration>
+			
+			
+			<Anchor>//api/name/favourites</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/favourites</TokenIdentifier>
+			<Abstract type="html">Закладки.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKFavourites *favourites</Declaration>
+			
+			
+			<Anchor>//api/name/favourites</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKUser/favourites</TokenIdentifier>
+			<Abstract type="html">Закладки.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) VKFavourites *favourites</Declaration>
+			
+			
+			<Anchor>//api/name/favourites</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/initWithVKAccessToken:</TokenIdentifier>
+			<Abstract type="html">Основной метод инициализации.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithVKAccessToken:(VKAccessToken *)accessToken</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>accessToken</Name>
+					<Abstract type="html">Пользовательский токен доступа.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithVKAccessToken:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/info</TokenIdentifier>
+			<Abstract type="html">Запрос информации о текущем пользователе.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)info</Declaration>
+			
+			
+			<Anchor>//api/name/info</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/infoAboutUser:fields:</TokenIdentifier>
+			<Abstract type="html">Запрос информации об определенном пользователе.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)infoAboutUser:(VKUser *)user fields:(NSArray *)fields</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract type="html">Пользователь о котором необходимо получить данные.</Abstract>
+				</Parameter><Parameter>
+					<Name>fields</Name>
+					<Abstract type="html">Список полей (данных), которые необходимо запросить.
+С полным списком данных можно ознакомиться по этой ссылке: https://vk.com/dev/users.get</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/infoAboutUser:fields:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/isApplicationUser</TokenIdentifier>
+			<Abstract type="html">Запрос на проверку того, что пользователь установил наше приложение.
+С форматов возвращаемых сервером данных можно ознакомиться по этой ссылке: https://vk.com/dev/users.isAppUser</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)isApplicationUser</Declaration>
+			
+			
+			<Anchor>//api/name/isApplicationUser</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/subscriptionsCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список идентификаторов пользователей и групп, которые входят в список подписок пользователя.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)subscriptionsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">кол-во записей, которые необходимо вернуть.</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">cмещение необходимое для выборки определенного подмножества подписок.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/subscriptionsCount:offset:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKUser/followersCount:offset:fields:nameCase:</TokenIdentifier>
+			<Abstract type="html">Возвращает список идентификаторов пользователей, которые являются подписчиками пользователя. Идентификаторы пользователей в списке отсортированы в порядке убывания времени их добавления.</Abstract>
+			<DeclaredIn>VKUser.h</DeclaredIn>			
+			
+			<Declaration>- (void)followersCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSArray *)fields nameCase:(NSString *)nameCase</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество подписчиков, информацию о которых нужно получить.</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества подписчиков.</Abstract>
+				</Parameter><Parameter>
+					<Name>fields</Name>
+					<Abstract type="html">перечисленные через запятую поля анкет, необходимые для получения.</Abstract>
+				</Parameter><Parameter>
+					<Name>nameCase</Name>
+					<Abstract type="html">падеж для склонения имени и фамилии пользователя. Возможные значения: именительный – nom, родительный – gen, дательный – dat, винительный – acc, творительный – ins, предложный – abl.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/followersCount:offset:fields:nameCase:</Anchor>
+            <NodeRef refid="35"/>
+		</Token>
+		
+	</File>
+</Tokens>

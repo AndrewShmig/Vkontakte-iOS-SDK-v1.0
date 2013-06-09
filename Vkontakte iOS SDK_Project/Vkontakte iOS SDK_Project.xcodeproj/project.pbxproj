@@ -71,6 +71,14 @@
 		D53DFC2317632EB6001A058B /* NSString+encodeURL.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DFC1D17632EB6001A058B /* NSString+encodeURL.m */; };
 		D53DFC2417632EB6001A058B /* NSString+toBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DFC1F17632EB6001A058B /* NSString+toBase64.m */; };
 		D53DFC2517632EB6001A058B /* NSString+toBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DFC1F17632EB6001A058B /* NSString+toBase64.m */; };
+		D596EF8917647BC700D119CA /* KGModal.m in Sources */ = {isa = PBXBuildFile; fileRef = D596EF8817647BC700D119CA /* KGModal.m */; };
+		D596EF8A17647BC700D119CA /* KGModal.m in Sources */ = {isa = PBXBuildFile; fileRef = D596EF8817647BC700D119CA /* KGModal.m */; };
+		D596EF8C17647C8800D119CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D596EF8B17647C8800D119CA /* QuartzCore.framework */; };
+		D596EF8E17647CC000D119CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D596EF8D17647CC000D119CA /* SystemConfiguration.framework */; };
+		D596EF9017647CDD00D119CA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D596EF8F17647CDD00D119CA /* MobileCoreServices.framework */; };
+		D596EF9117647DD600D119CA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D596EF8F17647CDD00D119CA /* MobileCoreServices.framework */; };
+		D596EF9217647DDE00D119CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D596EF8D17647CC000D119CA /* SystemConfiguration.framework */; };
+		D596EF9317647E1200D119CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D596EF8B17647C8800D119CA /* QuartzCore.framework */; };
 		D5B7164B1754C1B4009E5C9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A0C26456CC23158EF2CFF /* UIKit.framework */; };
 		D5B7164C1754C1B4009E5C9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A07FFEF91680BA2BD6228 /* Foundation.framework */; };
 		D5B7164D1754C1B4009E5C9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9A0EB7F488137826B7377F /* CoreGraphics.framework */; };
@@ -182,6 +190,11 @@
 		D53DFC1E17632EB6001A058B /* NSString+toBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+toBase64.h"; sourceTree = "<group>"; };
 		D53DFC1F17632EB6001A058B /* NSString+toBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+toBase64.m"; sourceTree = "<group>"; };
 		D53DFC2717633613001A058B /* VKVkontakteMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKVkontakteMethods.h; sourceTree = "<group>"; };
+		D596EF8717647BC700D119CA /* KGModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGModal.h; sourceTree = "<group>"; };
+		D596EF8817647BC700D119CA /* KGModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGModal.m; sourceTree = "<group>"; };
+		D596EF8B17647C8800D119CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D596EF8D17647CC000D119CA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D596EF8F17647CDD00D119CA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D5B7164A1754C1B4009E5C9D /* VkontakteSDK_Documentation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkontakteSDK_Documentation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B716501754C1B4009E5C9D /* VkontakteSDK_Documentation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VkontakteSDK_Documentation-Info.plist"; sourceTree = "<group>"; };
 		D5B716521754C1B4009E5C9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -199,7 +212,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D596EF9317647E1200D119CA /* QuartzCore.framework in Frameworks */,
 				1A9A094B5B316BF5F1F651CD /* UIKit.framework in Frameworks */,
+				D596EF9217647DDE00D119CA /* SystemConfiguration.framework in Frameworks */,
+				D596EF9117647DD600D119CA /* MobileCoreServices.framework in Frameworks */,
 				1A9A0F0803D519C8C9EDBD1D /* Foundation.framework in Frameworks */,
 				1A9A0965BAB32B05C7F5A862 /* CoreGraphics.framework in Frameworks */,
 			);
@@ -210,6 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5B7164B1754C1B4009E5C9D /* UIKit.framework in Frameworks */,
+				D596EF9017647CDD00D119CA /* MobileCoreServices.framework in Frameworks */,
+				D596EF8E17647CC000D119CA /* SystemConfiguration.framework in Frameworks */,
+				D596EF8C17647C8800D119CA /* QuartzCore.framework in Frameworks */,
 				D5B7164C1754C1B4009E5C9D /* Foundation.framework in Frameworks */,
 				D5B7164D1754C1B4009E5C9D /* CoreGraphics.framework in Frameworks */,
 			);
@@ -385,6 +404,9 @@
 		1A9A0874B600E50617904C9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D596EF8F17647CDD00D119CA /* MobileCoreServices.framework */,
+				D596EF8D17647CC000D119CA /* SystemConfiguration.framework */,
+				D596EF8B17647C8800D119CA /* QuartzCore.framework */,
 				1A9A0C26456CC23158EF2CFF /* UIKit.framework */,
 				1A9A07FFEF91680BA2BD6228 /* Foundation.framework */,
 				1A9A0EB7F488137826B7377F /* CoreGraphics.framework */,
@@ -568,6 +590,8 @@
 		D53DFBF317632D6A001A058B /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D596EF8717647BC700D119CA /* KGModal.h */,
+				D596EF8817647BC700D119CA /* KGModal.m */,
 				D53DFC1A17632EB6001A058B /* NSData+toBase64.h */,
 				D53DFC1B17632EB6001A058B /* NSData+toBase64.m */,
 				D53DFC1C17632EB6001A058B /* NSString+encodeURL.h */,
@@ -791,6 +815,7 @@
 				D53DFC2017632EB6001A058B /* NSData+toBase64.m in Sources */,
 				D53DFC2217632EB6001A058B /* NSString+encodeURL.m in Sources */,
 				D53DFC2417632EB6001A058B /* NSString+toBase64.m in Sources */,
+				D596EF8917647BC700D119CA /* KGModal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,6 +838,7 @@
 				D53DFC2117632EB6001A058B /* NSData+toBase64.m in Sources */,
 				D53DFC2317632EB6001A058B /* NSString+encodeURL.m in Sources */,
 				D53DFC2517632EB6001A058B /* NSString+toBase64.m in Sources */,
+				D596EF8A17647BC700D119CA /* KGModal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
