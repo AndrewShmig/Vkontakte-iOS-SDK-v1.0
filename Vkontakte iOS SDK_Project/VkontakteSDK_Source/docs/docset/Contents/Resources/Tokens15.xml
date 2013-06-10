@@ -1,163 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKConnector.html">
+	<File path="Classes/VKAudioAlbums.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKConnector</TokenIdentifier>
-			<Abstract type="html">Класс предназначен для получения приложением доступа к пользовательской учетной
-записи и осуществления запросов к API сервиса методами GET/POST.</Abstract>
-			<DeclaredIn>VKConnector.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/VKAudioAlbums</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>
 			
 			<NodeRef refid="15"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/setPermissions:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/initWithAccessToken:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, strong, readonly) NSArray *permissions</Declaration>
-			
-			
-			<Anchor>//api/name/permissions</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/permissions</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKConnector.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, strong, readonly) NSArray *permissions</Declaration>
+			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
 			
 			
-			<Anchor>//api/name/permissions</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VKConnector/permissions</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKConnector.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, strong, readonly) NSArray *permissions</Declaration>
-			
-			
-			<Anchor>//api/name/permissions</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/setParentView:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKConnector.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, strong) UIView *parentView</Declaration>
-			
-			
-			<Anchor>//api/name/parentView</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/parentView</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKConnector.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, strong) UIView *parentView</Declaration>
-			
-			
-			<Anchor>//api/name/parentView</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VKConnector/parentView</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKConnector.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, strong) UIView *parentView</Declaration>
-			
-			
-			<Anchor>//api/name/parentView</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/VKConnector/sharedInstance</TokenIdentifier>
-			<Abstract type="html">Метод класса для получения экземпляра сиглтона. Если объект отсутствует, то он будет создан. Не может быть равен nil или NULL.</Abstract>
-			<DeclaredIn>VKConnector.h</DeclaredIn>			
-			
-			<Declaration>+ (id)sharedInstance</Declaration>
-			
-			
-			<Anchor>//api/name/sharedInstance</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/startWithAppID:permissons:</TokenIdentifier>
-			<Abstract type="html">Инициализирует запуск коннектора с заданными параметрами</Abstract>
-			<DeclaredIn>VKConnector.h</DeclaredIn>			
-			
-			<Declaration>- (void)startWithAppID:(NSString *)appID permissons:(NSArray *)permissions</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>appID</Name>
-					<Abstract type="html">Идентификатор приложения полученный при регистрации.</Abstract>
-				</Parameter><Parameter>
-					<Name>permissions</Name>
-					<Abstract type="html">Массив доступов (разрешений), которые необходимо получить приложению.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/startWithAppID:permissons:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/initWithWebView:appID:permissions:</TokenIdentifier>
-			<Abstract type="html">Основной метод инициализации.</Abstract>
-			<DeclaredIn>VKConnector.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithWebView:(UIWebView *)webView appID:(NSString *)appID permissions:(NSArray *)permissions</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>webView</Name>
-					<Abstract type="html">UIWebView с которым будет происходить взаимодействие пользователя
-и в котором будет отображаться страница запроса доступа приложения к пользовательской учетной записи.</Abstract>
-				</Parameter><Parameter>
-					<Name>appID</Name>
-					<Abstract type="html">Идентификатор приложения полученный при регистрации.</Abstract>
-				</Parameter><Parameter>
-					<Name>permissions</Name>
-					<Abstract type="html">Массив доступов (разрешений), которые необходимо получить приложению.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithWebView:appID:permissions:</Anchor>
-            <NodeRef refid="15"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/startOnCancelBlock:onSuccessBlock:</TokenIdentifier>
-			<Abstract type="html">Метод инициирующий процесс получения доступа к пользовательской учетной записи.</Abstract>
-			<DeclaredIn>VKConnector.h</DeclaredIn>			
-			
-			<Declaration>- (void)startOnCancelBlock:(void ( ^ ) ( void ))cancelBlock onSuccessBlock:(void ( ^ ) ( VKAccessToken *))acceptedBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>cancelBlock</Name>
-					<Abstract type="html">Блок, который выполнится в случае, если пользователь откажется авторизовывать приложение.</Abstract>
-				</Parameter><Parameter>
-					<Name>acceptedBlock</Name>
-					<Abstract type="html">Блок, который выполнится в случае, если пользователь успешно авторизовал наше приложение.
-        Переданный параметр переменная типа VKAccessToken.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/startOnCancelBlock:onSuccessBlock:</Anchor>
+			<Anchor>//api/name/initWithAccessToken:</Anchor>
             <NodeRef refid="15"/>
 		</Token>
 		

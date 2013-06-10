@@ -186,7 +186,6 @@
 		D53DFC1D17632EB6001A058B /* NSString+encodeURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+encodeURL.m"; sourceTree = "<group>"; };
 		D53DFC1E17632EB6001A058B /* NSString+toBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+toBase64.h"; sourceTree = "<group>"; };
 		D53DFC1F17632EB6001A058B /* NSString+toBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+toBase64.m"; sourceTree = "<group>"; };
-		D53DFC2717633613001A058B /* VKVkontakteMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKVkontakteMethods.h; sourceTree = "<group>"; };
 		D53E1D2D1764CEC40070F9D1 /* VKAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAccessToken.h; sourceTree = "<group>"; };
 		D53E1D2E1764CEC40070F9D1 /* VKAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAccessToken.m; sourceTree = "<group>"; };
 		D53E1D301764CEC40070F9D1 /* VKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequest.h; sourceTree = "<group>"; };
@@ -440,7 +439,6 @@
 		1A9A09B96C68730C8D37CD75 /* VkontakteSDK_Source */ = {
 			isa = PBXGroup;
 			children = (
-				D53DFC2617633602001A058B /* VKMethods */,
 				D53DFBF317632D6A001A058B /* Libraries */,
 				1A9A05EEA89C06908A3A5591 /* VKConnector */,
 				1A9A0BA3F3EE9306260F7E03 /* VKUser */,
@@ -610,14 +608,6 @@
 				D53DFC0717632D6A001A058B /* UIImageView+AFNetworking.m */,
 			);
 			path = AFNetworking;
-			sourceTree = "<group>";
-		};
-		D53DFC2617633602001A058B /* VKMethods */ = {
-			isa = PBXGroup;
-			children = (
-				D53DFC2717633613001A058B /* VKVkontakteMethods.h */,
-			);
-			path = VKMethods;
 			sourceTree = "<group>";
 		};
 		D53E1D2C1764CEC40070F9D1 /* VKAccessToken */ = {

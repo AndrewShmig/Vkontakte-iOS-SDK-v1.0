@@ -39,7 +39,7 @@
 	
 	<option value="properties">Properties</option>
 	
-	<option value="//api/name/parentView">&nbsp;&nbsp;&nbsp;&nbsp;parentView</option>
+	<option value="//api/name/appID">&nbsp;&nbsp;&nbsp;&nbsp;appID</option>
 	
 	<option value="//api/name/permissions">&nbsp;&nbsp;&nbsp;&nbsp;permissions</option>
 	
@@ -54,10 +54,6 @@
 	
 	
 	<option value="instance_methods">Instance Methods</option>
-	
-	<option value="//api/name/initWithWebView:appID:permissions:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithWebView:appID:permissions:</option>
-	
-	<option value="//api/name/startOnCancelBlock:onSuccessBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- startOnCancelBlock:onSuccessBlock:</option>
 	
 	<option value="//api/name/startWithAppID:permissons:">&nbsp;&nbsp;&nbsp;&nbsp;- startWithAppID:permissons:</option>
 	
@@ -77,10 +73,6 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Методы инициализации">Методы инициализации</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Публичные методы">Публичные методы</a></span></li>
-	
 </ul></li>
 
 
@@ -89,7 +81,7 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/parentView">parentView</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appID">appID</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/permissions">permissions</a></span></li>
 	
@@ -106,10 +98,6 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithWebView:appID:permissions:">initWithWebView:appID:permissions:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startOnCancelBlock:onSuccessBlock:">startOnCancelBlock:onSuccessBlock:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startWithAppID:permissons:">startWithAppID:permissons:</a></span></li>
 	
@@ -174,10 +162,17 @@
 						
 						
 						
-						<h3 class="subsubtitle task-title">Other Methods</h3>
+						
 
 						<ul class="task-list">
 							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/appID">&nbsp;&nbsp;appID</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/permissions">&nbsp;&nbsp;permissions</a></code>
 		
@@ -186,15 +181,9 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/parentView">&nbsp;&nbsp;parentView</a></code>
-		
-	</span>
-	<span class="task-item-suffix">property</span>
-	
-</li><li>
-	<span class="tooltip">
 		<code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
-		<span class="tooltip"><p>Метод класса для получения экземпляра сиглтона. Если объект отсутствует, то он будет создан. Не может быть равен nil или NULL.</p></span>
+		<span class="tooltip"><p>Метод класса для получения экземпляра сиглтона.
+Если объект отсутствует, то он будет создан. Не может быть равен nil или NULL.</p></span>
 	</span>
 	
 	
@@ -202,36 +191,6 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/startWithAppID:permissons:">&ndash;&nbsp;startWithAppID:permissons:</a></code>
 		<span class="tooltip"><p>Инициализирует запуск коннектора с заданными параметрами</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Методы инициализации" name="task_Методы инициализации"></a>
-						<h3 class="subsubtitle task-title">Методы инициализации</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/initWithWebView:appID:permissions:">&ndash;&nbsp;initWithWebView:appID:permissions:</a></code>
-		<span class="tooltip"><p>Основной метод инициализации.</p></span>
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Публичные методы" name="task_Публичные методы"></a>
-						<h3 class="subsubtitle task-title">Публичные методы</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/startOnCancelBlock:onSuccessBlock:">&ndash;&nbsp;startOnCancelBlock:onSuccessBlock:</a></code>
-		<span class="tooltip"><p>Метод инициирующий процесс получения доступа к пользовательской учетной записи.</p></span>
 	</span>
 	
 	
@@ -249,12 +208,12 @@
 						<h2 class="subtitle subtitle-methods">Properties</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/parentView" title="parentView"></a>
-	<h3 class="subsubtitle method-title">parentView</h3>
+	<a name="//api/name/appID" title="appID"></a>
+	<h3 class="subsubtitle method-title">appID</h3>
 	
 	
 
-	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIView *parentView</code></div>
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *appID</code></div>
 
     
 </div>
@@ -285,7 +244,8 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>Метод класса для получения экземпляра сиглтона. Если объект отсутствует, то он будет создан. Не может быть равен nil или NULL.</p>
+		<p>Метод класса для получения экземпляра сиглтона.
+Если объект отсутствует, то он будет создан. Не может быть равен nil или NULL.</p>
 	</div>		
 	
     
@@ -321,115 +281,6 @@
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
-						
-						<div class="section-method">
-	<a name="//api/name/initWithWebView:appID:permissions:" title="initWithWebView:appID:permissions:"></a>
-	<h3 class="subsubtitle method-title">initWithWebView:appID:permissions:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Основной метод инициализации.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (id)initWithWebView:(UIWebView *)<em>webView</em> appID:(NSString *)<em>appID</em> permissions:(NSArray *)<em>permissions</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>webView</em></dt>
-			<dd><p>UIWebView с которым будет происходить взаимодействие пользователя
-и в котором будет отображаться страница запроса доступа приложения к пользовательской учетной записи.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>appID</em></dt>
-			<dd><p>Идентификатор приложения полученный при регистрации.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>permissions</em></dt>
-			<dd><p>Массив доступов (разрешений), которые необходимо получить приложению.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">VKConnector.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/startOnCancelBlock:onSuccessBlock:" title="startOnCancelBlock:onSuccessBlock:"></a>
-	<h3 class="subsubtitle method-title">startOnCancelBlock:onSuccessBlock:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Метод инициирующий процесс получения доступа к пользовательской учетной записи.</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (void)startOnCancelBlock:(void ( ^ ) ( void ))<em>cancelBlock</em> onSuccessBlock:(void ( ^ ) ( VKAccessToken *))<em>acceptedBlock</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>cancelBlock</em></dt>
-			<dd><p>Блок, который выполнится в случае, если пользователь откажется авторизовывать приложение.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>acceptedBlock</em></dt>
-			<dd><p>Блок, который выполнится в случае, если пользователь успешно авторизовал наше приложение.
-        Переданный параметр переменная типа <a href="../Classes/VKAccessToken.html">VKAccessToken</a>.</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">VKConnector.h</code><br />
-	</div>				
-	
-	
-</div>
 						
 						<div class="section-method">
 	<a name="//api/name/startWithAppID:permissons:" title="startWithAppID:permissons:"></a>
@@ -495,7 +346,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-08)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-10)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

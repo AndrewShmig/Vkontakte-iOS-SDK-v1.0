@@ -44,6 +44,8 @@
 
     UIWebView *_innerWebView;
     UIActivityIndicatorView *_activityIndicator;
+    
+    VKAccessToken *_accessToken;
 
     void (^_cancelBlock) (void);
     void (^_acceptedBlock) (VKAccessToken *);

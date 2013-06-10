@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKFriends.html">
+	<File path="Classes/VKFavourites.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKFriends</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/VKFavourites</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKFriends.h</DeclaredIn>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>
 			
 			<NodeRef refid="19"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/initWithAccessToken:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/initWithAccessToken:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKFriends.h</DeclaredIn>			
+			<DeclaredIn>VKFavourites.h</DeclaredIn>			
 			
 			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
 			

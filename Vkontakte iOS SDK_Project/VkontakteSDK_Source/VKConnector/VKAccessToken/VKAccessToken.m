@@ -29,6 +29,9 @@
 #import "VKAccessToken.h"
 
 
+#define VkontakteSDKTokenKey @"VkontakteSDK_token"
+
+
 @implementation VKAccessToken
 {
     NSArray *_permissions;
@@ -79,6 +82,14 @@
                     permissions:@[]];
 }
 
+- (id)init
+{
+    return [self initWithUserID:0
+                    accessToken:nil
+                 expirationTime:0
+                    permissions:@[]];
+}
+
 #pragma mark - Overriden methods
 
 - (NSString *)description
@@ -118,7 +129,39 @@
         return NO;
     else
         return (_expirationTime < currentTimestamp);
+}
 
+- (BOOL)load
+{
+    NSDictionary *loadedToken = [[NSUserDefaults standardUserDefaults]
+                                 objectForKey:VkontakteSDKTokenKey];
+    
+    if(nil == loadedToken)
+        return NO;
+    
+    _userID = [loadedToken[@"userID"] integerValue];
+    _expirationTime = [loadedToken[@"expirationTime"] doubleValue];
+    _token = loadedToken[@"token"];
+    _permissions = loadedToken[@"permissions"];
+    
+    return YES;
+}
+
+- (void)save
+{
+    NSDictionary *tokenDescription = @{@"userID": @(self.userID),
+                                       @"expirationTime": @(self.expirationTime),
+                                       @"permissions": self.permissions,
+                                       @"token": self.token};
+    
+    [[NSUserDefaults standardUserDefaults] setObject:tokenDescription
+                                              forKey:VkontakteSDKTokenKey];
+}
+
+- (void)remove
+{
+    [[NSUserDefaults standardUserDefaults]
+     removeObjectForKey:VkontakteSDKTokenKey];
 }
 
 @end

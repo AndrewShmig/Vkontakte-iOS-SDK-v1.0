@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKDocs.html">
+	<File path="Classes/VKDoc.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKDocs</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/VKDoc</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKDocs.h</DeclaredIn>
+			<DeclaredIn>VKDoc.h</DeclaredIn>
 			
 			<NodeRef refid="17"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/initWithAccessToken:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKDocs.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/initWithAccessToken:</Anchor>
-            <NodeRef refid="17"/>
-		</Token>
 		
 	</File>
 </Tokens>
