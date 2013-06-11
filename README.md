@@ -1,5 +1,7 @@
 ##Vkontakte iOS SDK
 
+Appledoc по [этой](https://github.com/AndrewShmig/Vkontakte-iOS-SDK/tree/master/Vkontakte%20iOS%20SDK_Project/VkontakteSDK_Source/docs) ссылке.
+
 In progress...
 
 ##License
