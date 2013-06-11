@@ -38,42 +38,17 @@
 						<NodeRef refid="25"/>
 						<NodeRef refid="26"/>
 						<NodeRef refid="27"/>
-						<NodeRef refid="28"/>
-						<NodeRef refid="29"/>
-						<NodeRef refid="30"/>
-						<NodeRef refid="31"/>
-						<NodeRef refid="32"/>
-						<NodeRef refid="33"/>
-						<NodeRef refid="34"/>
-						<NodeRef refid="35"/>
-						<NodeRef refid="36"/>
-						<NodeRef refid="37"/>
-						<NodeRef refid="38"/>
-						<NodeRef refid="39"/>
 						
 					</Subnodes>
 				</Node>
 				
-				
-				<Node type="folder">
-					<Name>Categories</Name>
-					<Path>index.html</Path>
-					<Subnodes>
-						<NodeRef refid="40"/>
-						<NodeRef refid="41"/>
-						<NodeRef refid="42"/>
-						<NodeRef refid="43"/>
-						
-					</Subnodes>
-				</Node>
 				
 				
 				<Node type="folder">
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="44"/>
-						<NodeRef refid="45"/>
+						<NodeRef refid="28"/>
 						
 					</Subnodes>
 				</Node>
@@ -84,184 +59,116 @@
 	<Library>
 		
 		<Node id="1">
-			<Name>AFHTTPClient</Name>
-			<Path>Classes/AFHTTPClient.html</Path>
-		</Node>
-		<Node id="2">
-			<Name>AFHTTPRequestOperation</Name>
-			<Path>Classes/AFHTTPRequestOperation.html</Path>
-		</Node>
-		<Node id="3">
-			<Name>AFImageRequestOperation</Name>
-			<Path>Classes/AFImageRequestOperation.html</Path>
-		</Node>
-		<Node id="4">
-			<Name>AFJSONRequestOperation</Name>
-			<Path>Classes/AFJSONRequestOperation.html</Path>
-		</Node>
-		<Node id="5">
-			<Name>AFNetworkActivityIndicatorManager</Name>
-			<Path>Classes/AFNetworkActivityIndicatorManager.html</Path>
-		</Node>
-		<Node id="6">
-			<Name>AFPropertyListRequestOperation</Name>
-			<Path>Classes/AFPropertyListRequestOperation.html</Path>
-		</Node>
-		<Node id="7">
-			<Name>AFURLConnectionOperation</Name>
-			<Path>Classes/AFURLConnectionOperation.html</Path>
-		</Node>
-		<Node id="8">
-			<Name>AFXMLRequestOperation</Name>
-			<Path>Classes/AFXMLRequestOperation.html</Path>
-		</Node>
-		<Node id="9">
-			<Name>ASAAppDelegate</Name>
-			<Path>Classes/ASAAppDelegate.html</Path>
-		</Node>
-		<Node id="10">
-			<Name>ASAViewController</Name>
-			<Path>Classes/ASAViewController.html</Path>
-		</Node>
-		<Node id="11">
-			<Name>AppDelegate</Name>
-			<Path>Classes/AppDelegate.html</Path>
-		</Node>
-		<Node id="12">
-			<Name>KGModal</Name>
-			<Path>Classes/KGModal.html</Path>
-		</Node>
-		<Node id="13">
 			<Name>VKAccessToken</Name>
 			<Path>Classes/VKAccessToken.html</Path>
 		</Node>
-		<Node id="14">
+		<Node id="2">
 			<Name>VKAudio</Name>
 			<Path>Classes/VKAudio.html</Path>
 		</Node>
-		<Node id="15">
+		<Node id="3">
 			<Name>VKAudioAlbums</Name>
 			<Path>Classes/VKAudioAlbums.html</Path>
 		</Node>
-		<Node id="16">
+		<Node id="4">
 			<Name>VKConnector</Name>
 			<Path>Classes/VKConnector.html</Path>
 		</Node>
-		<Node id="17">
+		<Node id="5">
 			<Name>VKDoc</Name>
 			<Path>Classes/VKDoc.html</Path>
 		</Node>
-		<Node id="18">
+		<Node id="6">
 			<Name>VKDocs</Name>
 			<Path>Classes/VKDocs.html</Path>
 		</Node>
-		<Node id="19">
+		<Node id="7">
 			<Name>VKFavourites</Name>
 			<Path>Classes/VKFavourites.html</Path>
 		</Node>
-		<Node id="20">
+		<Node id="8">
 			<Name>VKFriends</Name>
 			<Path>Classes/VKFriends.html</Path>
 		</Node>
-		<Node id="21">
+		<Node id="9">
 			<Name>VKGroup</Name>
 			<Path>Classes/VKGroup.html</Path>
 		</Node>
-		<Node id="22">
+		<Node id="10">
 			<Name>VKGroups</Name>
 			<Path>Classes/VKGroups.html</Path>
 		</Node>
-		<Node id="23">
+		<Node id="11">
 			<Name>VKLike</Name>
 			<Path>Classes/VKLike.html</Path>
 		</Node>
-		<Node id="24">
+		<Node id="12">
 			<Name>VKLikes</Name>
 			<Path>Classes/VKLikes.html</Path>
 		</Node>
-		<Node id="25">
+		<Node id="13">
 			<Name>VKMessage</Name>
 			<Path>Classes/VKMessage.html</Path>
 		</Node>
-		<Node id="26">
+		<Node id="14">
 			<Name>VKMessages</Name>
 			<Path>Classes/VKMessages.html</Path>
 		</Node>
-		<Node id="27">
+		<Node id="15">
 			<Name>VKNewsfeed</Name>
 			<Path>Classes/VKNewsfeed.html</Path>
 		</Node>
-		<Node id="28">
+		<Node id="16">
 			<Name>VKNote</Name>
 			<Path>Classes/VKNote.html</Path>
 		</Node>
-		<Node id="29">
+		<Node id="17">
 			<Name>VKNotes</Name>
 			<Path>Classes/VKNotes.html</Path>
 		</Node>
-		<Node id="30">
+		<Node id="18">
 			<Name>VKPhoto</Name>
 			<Path>Classes/VKPhoto.html</Path>
 		</Node>
-		<Node id="31">
+		<Node id="19">
 			<Name>VKPhotoAlbums</Name>
 			<Path>Classes/VKPhotoAlbums.html</Path>
 		</Node>
-		<Node id="32">
+		<Node id="20">
 			<Name>VKPlace</Name>
 			<Path>Classes/VKPlace.html</Path>
 		</Node>
-		<Node id="33">
+		<Node id="21">
 			<Name>VKPlaces</Name>
 			<Path>Classes/VKPlaces.html</Path>
 		</Node>
-		<Node id="34">
+		<Node id="22">
 			<Name>VKStatus</Name>
 			<Path>Classes/VKStatus.html</Path>
 		</Node>
-		<Node id="35">
+		<Node id="23">
 			<Name>VKUser</Name>
 			<Path>Classes/VKUser.html</Path>
 		</Node>
-		<Node id="36">
+		<Node id="24">
 			<Name>VKVideo</Name>
 			<Path>Classes/VKVideo.html</Path>
 		</Node>
-		<Node id="37">
+		<Node id="25">
 			<Name>VKVideoAlbums</Name>
 			<Path>Classes/VKVideoAlbums.html</Path>
 		</Node>
-		<Node id="38">
+		<Node id="26">
 			<Name>VKWall</Name>
 			<Path>Classes/VKWall.html</Path>
 		</Node>
-		<Node id="39">
+		<Node id="27">
 			<Name>VKWallPost</Name>
 			<Path>Classes/VKWallPost.html</Path>
 		</Node>
 		
-		<Node id="40">
-			<Name>NSData(toBase64)</Name>
-			<Path>Categories/NSData+toBase64.html</Path>
-		</Node>
-		<Node id="41">
-			<Name>NSString(encodeURL)</Name>
-			<Path>Categories/NSString+encodeURL.html</Path>
-		</Node>
-		<Node id="42">
-			<Name>NSString(toBase64)</Name>
-			<Path>Categories/NSString+toBase64.html</Path>
-		</Node>
-		<Node id="43">
-			<Name>UIImageView(AFNetworking)</Name>
-			<Path>Categories/UIImageView+AFNetworking.html</Path>
-		</Node>
 		
-		<Node id="44">
-			<Name>AFMultipartFormData</Name>
-			<Path>Protocols/AFMultipartFormData.html</Path>
-		</Node>
-		<Node id="45">
+		<Node id="28">
 			<Name>VKConnectorProtocol</Name>
 			<Path>Protocols/VKConnectorProtocol.html</Path>
 		</Node>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKNewsfeed.html">
+	<File path="Classes/VKWallPost.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKNewsfeed</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/VKWallPost</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKNewsfeed.h</DeclaredIn>
+			<DeclaredIn>VKWallPost.h</DeclaredIn>
 			
 			<NodeRef refid="27"/>
 		</Token>

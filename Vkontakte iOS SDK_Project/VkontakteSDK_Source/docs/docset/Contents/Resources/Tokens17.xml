@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKDoc.html">
+	<File path="Classes/VKNotes.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKDoc</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/VKNotes</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKDoc.h</DeclaredIn>
+			<DeclaredIn>VKNotes.h</DeclaredIn>
 			
 			<NodeRef refid="17"/>
 		</Token>
