@@ -11,17 +11,5 @@
 		</Token>
 		
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/initWithAccessToken:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKDocs.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/initWithAccessToken:</Anchor>
-            <NodeRef refid="18"/>
-		</Token>
-		
 	</File>
 </Tokens>

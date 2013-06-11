@@ -11,17 +11,5 @@
 		</Token>
 		
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/initWithAccessToken:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/initWithAccessToken:</Anchor>
-            <NodeRef refid="31"/>
-		</Token>
-		
 	</File>
 </Tokens>

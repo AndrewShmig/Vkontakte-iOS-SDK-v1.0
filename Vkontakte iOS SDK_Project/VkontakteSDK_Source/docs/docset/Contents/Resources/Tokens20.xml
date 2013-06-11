@@ -11,17 +11,5 @@
 		</Token>
 		
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/initWithAccessToken:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKFriends.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/initWithAccessToken:</Anchor>
-            <NodeRef refid="20"/>
-		</Token>
-		
 	</File>
 </Tokens>

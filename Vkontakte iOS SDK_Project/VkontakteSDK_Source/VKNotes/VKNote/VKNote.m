@@ -31,7 +31,5 @@
 
 
 @implementation VKNote
-{
 
-}
 @end

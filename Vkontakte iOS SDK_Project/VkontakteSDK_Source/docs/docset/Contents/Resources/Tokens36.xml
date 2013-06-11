@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKUser.html">
+	<File path="Classes/VKVideo.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKUser</TokenIdentifier>
-			<Abstract type="html">Класс представляет пользователя социальной сети со связями вроде
-стены, аудиозаписей, видеозаписей, сообщений и тд.</Abstract>
-			<DeclaredIn>VKUser.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/VKVideo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKVideo.h</DeclaredIn>
 			
 			<NodeRef refid="36"/>
 		</Token>

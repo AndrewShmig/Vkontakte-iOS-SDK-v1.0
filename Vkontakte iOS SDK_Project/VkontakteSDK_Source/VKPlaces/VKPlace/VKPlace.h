@@ -31,4 +31,5 @@
 
 
 @interface VKPlace : NSObject
+
 @end

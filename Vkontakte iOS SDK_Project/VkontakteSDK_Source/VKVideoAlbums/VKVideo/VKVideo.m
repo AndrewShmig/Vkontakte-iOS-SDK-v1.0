@@ -31,7 +31,5 @@
 
 
 @implementation VKVideo
-{
 
-}
 @end

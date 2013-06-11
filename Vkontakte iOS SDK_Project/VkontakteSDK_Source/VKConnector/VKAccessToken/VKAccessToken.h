@@ -67,7 +67,6 @@
 @property (nonatomic, readonly) NSString *token;
 
 
-
 /**
  @name Методы инициализации
  */
@@ -153,6 +152,12 @@
  
  */
 - (BOOL)isExpired;
+
+/** Метод проверки токена на валидность.
+ 
+ Возвращает YES, если токен неравен nil и срок его действия не истек.
+ */
+- (BOOL)isValid;
 
 /** Загрузка токена доступа из NSUserDefaults.
  

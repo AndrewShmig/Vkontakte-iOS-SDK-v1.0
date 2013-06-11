@@ -30,4 +30,5 @@
 
 
 @interface VKGroup : NSObject
+
 @end

@@ -30,4 +30,5 @@
 
 
 @interface VKLike : NSObject
+
 @end

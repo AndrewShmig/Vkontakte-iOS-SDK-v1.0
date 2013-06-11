@@ -31,4 +31,5 @@
 
 
 @interface VKVideo : NSObject
+
 @end

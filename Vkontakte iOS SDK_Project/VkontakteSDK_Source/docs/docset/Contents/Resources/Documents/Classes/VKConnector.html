@@ -41,6 +41,8 @@
 	
 	<option value="//api/name/appID">&nbsp;&nbsp;&nbsp;&nbsp;appID</option>
 	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
 	<option value="//api/name/permissions">&nbsp;&nbsp;&nbsp;&nbsp;permissions</option>
 	
 	
@@ -54,6 +56,8 @@
 	
 	
 	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/performVKMethod:options:error:">&nbsp;&nbsp;&nbsp;&nbsp;- performVKMethod:options:error:</option>
 	
 	<option value="//api/name/startWithAppID:permissons:">&nbsp;&nbsp;&nbsp;&nbsp;- startWithAppID:permissons:</option>
 	
@@ -83,6 +87,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/appID">appID</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/permissions">permissions</a></span></li>
 	
 </ul></li>
@@ -98,6 +104,8 @@
 
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performVKMethod:options:error:">performVKMethod:options:error:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startWithAppID:permissons:">startWithAppID:permissons:</a></span></li>
 	
@@ -167,15 +175,22 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		<span class="tooltip"><p>Делегат VKConnector</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/appID">&nbsp;&nbsp;appID</a></code>
-		
+		<span class="tooltip"><p>Идентификатор приложения Вконтакте</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/permissions">&nbsp;&nbsp;permissions</a></code>
-		
+		<span class="tooltip"><p>Список разрешений</p></span>
 	</span>
 	<span class="task-item-suffix">property</span>
 	
@@ -191,6 +206,13 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/startWithAppID:permissons:">&ndash;&nbsp;startWithAppID:permissons:</a></code>
 		<span class="tooltip"><p>Инициализирует запуск коннектора с заданными параметрами</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performVKMethod:options:error:">&ndash;&nbsp;performVKMethod:options:error:</a></code>
+		<span class="tooltip"><p>Основной метод осуществления GET запросов.</p></span>
 	</span>
 	
 	
@@ -212,10 +234,71 @@
 	<h3 class="subsubtitle method-title">appID</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Идентификатор приложения Вконтакте</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSString *appID</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Делегат VKConnector</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;VKConnectorProtocol&gt; delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 						<div class="section-method">
@@ -223,10 +306,35 @@
 	<h3 class="subsubtitle method-title">permissions</h3>
 	
 	
+	
+	<div class="method-subsection brief-description">
+		<p>Список разрешений</p>
+	</div>		
+	
+    
 
 	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSArray *permissions</code></div>
 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
 </div>
 						
 					</div>
@@ -281,6 +389,69 @@
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/performVKMethod:options:error:" title="performVKMethod:options:error:"></a>
+	<h3 class="subsubtitle method-title">performVKMethod:options:error:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Основной метод осуществления GET запросов.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)performVKMethod:(NSString *)<em>methodName</em> options:(NSDictionary *)<em>options</em> error:(NSError **)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>methodName</em></dt>
+			<dd><p>Наименование метода к которому необходимо осуществить запрос.
+Со списком методов можно ознакомиться в документации по ссылке: <a href="https://vk.com/dev/methods">https://vk.com/dev/methods</a>
+либо в заголовочном файле VKMethods.h</p>
+
+<p><em>Возможные значения:</em> kVKUsersGet, @&ldquo;users.get&rdquo; и тд</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>Словарь ключей-значений требуемых для корректного осуществления запроса и получения информации.
+С каждым списком параметров можно ознакомиться в документации соответствующего метода.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>В случае возникновения ошибки она будет передана в данной переменной. Ошибки могут быть двух типов:
+ошибка запроса (прервалось соединение и тд) и ошибки парсинга ответа сервера.
+Возвращаемые ошибки сервером в запросе не подвергаются обработке.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/startWithAppID:permissons:" title="startWithAppID:permissons:"></a>
@@ -346,7 +517,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-10)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-11)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

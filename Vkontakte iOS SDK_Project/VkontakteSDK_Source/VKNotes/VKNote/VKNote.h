@@ -31,4 +31,5 @@
 
 
 @interface VKNote : NSObject
+
 @end

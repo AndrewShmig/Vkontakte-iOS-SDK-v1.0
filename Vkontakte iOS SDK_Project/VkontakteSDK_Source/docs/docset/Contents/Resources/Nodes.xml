@@ -50,7 +50,6 @@
 						<NodeRef refid="37"/>
 						<NodeRef refid="38"/>
 						<NodeRef refid="39"/>
-						<NodeRef refid="40"/>
 						
 					</Subnodes>
 				</Node>
@@ -60,10 +59,10 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="40"/>
 						<NodeRef refid="41"/>
 						<NodeRef refid="42"/>
 						<NodeRef refid="43"/>
-						<NodeRef refid="44"/>
 						
 					</Subnodes>
 				</Node>
@@ -73,6 +72,7 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="44"/>
 						<NodeRef refid="45"/>
 						
 					</Subnodes>
@@ -216,54 +216,54 @@
 			<Path>Classes/VKPlaces.html</Path>
 		</Node>
 		<Node id="34">
-			<Name>VKRequest</Name>
-			<Path>Classes/VKRequest.html</Path>
-		</Node>
-		<Node id="35">
 			<Name>VKStatus</Name>
 			<Path>Classes/VKStatus.html</Path>
 		</Node>
-		<Node id="36">
+		<Node id="35">
 			<Name>VKUser</Name>
 			<Path>Classes/VKUser.html</Path>
 		</Node>
-		<Node id="37">
+		<Node id="36">
 			<Name>VKVideo</Name>
 			<Path>Classes/VKVideo.html</Path>
 		</Node>
-		<Node id="38">
+		<Node id="37">
 			<Name>VKVideoAlbums</Name>
 			<Path>Classes/VKVideoAlbums.html</Path>
 		</Node>
-		<Node id="39">
+		<Node id="38">
 			<Name>VKWall</Name>
 			<Path>Classes/VKWall.html</Path>
 		</Node>
-		<Node id="40">
+		<Node id="39">
 			<Name>VKWallPost</Name>
 			<Path>Classes/VKWallPost.html</Path>
 		</Node>
 		
-		<Node id="41">
+		<Node id="40">
 			<Name>NSData(toBase64)</Name>
 			<Path>Categories/NSData+toBase64.html</Path>
 		</Node>
-		<Node id="42">
+		<Node id="41">
 			<Name>NSString(encodeURL)</Name>
 			<Path>Categories/NSString+encodeURL.html</Path>
 		</Node>
-		<Node id="43">
+		<Node id="42">
 			<Name>NSString(toBase64)</Name>
 			<Path>Categories/NSString+toBase64.html</Path>
 		</Node>
-		<Node id="44">
+		<Node id="43">
 			<Name>UIImageView(AFNetworking)</Name>
 			<Path>Categories/UIImageView+AFNetworking.html</Path>
 		</Node>
 		
-		<Node id="45">
+		<Node id="44">
 			<Name>AFMultipartFormData</Name>
 			<Path>Protocols/AFMultipartFormData.html</Path>
+		</Node>
+		<Node id="45">
+			<Name>VKConnectorProtocol</Name>
+			<Path>Protocols/VKConnectorProtocol.html</Path>
 		</Node>
 		
 	</Library>

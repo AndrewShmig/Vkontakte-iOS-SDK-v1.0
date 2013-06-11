@@ -28,13 +28,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "VKRequest.h"
 
-
-@class VKAccessToken;
 
 @interface VKWall : NSObject
-
-- (id)initWithAccessToken:(VKAccessToken *)accessToken;
 
 @end

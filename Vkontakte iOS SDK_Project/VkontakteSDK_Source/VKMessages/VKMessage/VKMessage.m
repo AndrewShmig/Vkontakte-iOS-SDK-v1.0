@@ -30,7 +30,5 @@
 
 
 @implementation VKMessage
-{
 
-}
 @end

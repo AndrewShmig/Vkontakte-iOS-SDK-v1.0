@@ -28,14 +28,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "VKRequest.h"
-
-
-@class VKAccessToken;
 
 
 @interface VKNewsfeed : NSObject
-
-- (id)initWithAccessToken:(VKAccessToken *)accessToken;
 
 @end

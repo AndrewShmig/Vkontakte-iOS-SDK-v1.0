@@ -54,6 +54,8 @@
       expirationTime:(NSTimeInterval)expirationTime
          permissions:(NSArray *)permissions
 {
+    NSLog(@"%s", __FUNCTION__);
+    
     if(self = [super init]){
         _userID = userID;
         _token = [token copy];
@@ -75,7 +77,7 @@
 }
 
 - (id)initWithUserID:(NSUInteger)userID accessToken:(NSString *)token
-{
+{    
     return [self initWithUserID:userID
                     accessToken:token
                  expirationTime:0
@@ -84,8 +86,10 @@
 
 - (id)init
 {
+    NSLog(@"%s", __FUNCTION__);
+    
     return [self initWithUserID:0
-                    accessToken:nil
+                    accessToken:@""
                  expirationTime:0
                     permissions:@[]];
 }
@@ -94,6 +98,8 @@
 
 - (NSString *)description
 {
+    NSLog(@"%s", __FUNCTION__);
+    
     NSDictionary *desc = @{
             @"User ID": @(self.userID),
             @"Expiration time": @(self.expirationTime),
@@ -106,6 +112,8 @@
 
 - (VKAccessToken *)copyWithZone:(NSZone *)zone
 {
+    NSLog(@"%s", __FUNCTION__);
+    
     VKAccessToken *copyToken = [[VKAccessToken alloc] initWithUserID:self.userID
                                                          accessToken:self.token
                                                       expirationTime:self.expirationTime
@@ -118,11 +126,15 @@
 
 - (BOOL)hasPermission:(NSString *)permission
 {
+    NSLog(@"%s", __FUNCTION__);
+    
     return [_permissions containsObject:permission];
 }
 
 - (BOOL)isExpired
 {
+    NSLog(@"%s", __FUNCTION__);
+    
     NSTimeInterval currentTimestamp = [[NSDate date] timeIntervalSince1970];
 
     if(_expirationTime == 0 && [self hasPermission:@"offline"])
@@ -131,8 +143,17 @@
         return (_expirationTime < currentTimestamp);
 }
 
+- (BOOL)isValid
+{
+    NSLog(@"%s", __FUNCTION__);
+    
+    return (nil != _token && ![self isExpired]);
+}
+
 - (BOOL)load
 {
+    NSLog(@"%s", __FUNCTION__);
+    
     NSDictionary *loadedToken = [[NSUserDefaults standardUserDefaults]
                                  objectForKey:VkontakteSDKTokenKey];
     
@@ -149,17 +170,21 @@
 
 - (void)save
 {
+    NSLog(@"%s", __FUNCTION__);
+    
     NSDictionary *tokenDescription = @{@"userID": @(self.userID),
                                        @"expirationTime": @(self.expirationTime),
                                        @"permissions": self.permissions,
                                        @"token": self.token};
-    
+
     [[NSUserDefaults standardUserDefaults] setObject:tokenDescription
                                               forKey:VkontakteSDKTokenKey];
 }
 
 - (void)remove
 {
+    NSLog(@"%s", __FUNCTION__);
+    
     [[NSUserDefaults standardUserDefaults]
      removeObjectForKey:VkontakteSDKTokenKey];
 }

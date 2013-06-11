@@ -1,88 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIImageView+AFNetworking.html">
+	<File path="Protocols/AFMultipartFormData.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIImageView(AFNetworking)</TokenIdentifier>
-			<Abstract type="html">This category adds methods to the UIKit framework&apos;s UIImageView class. The methods in this category provide support for loading remote images asynchronously from a URL.</Abstract>
-			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/AFMultipartFormData</TokenIdentifier>
+			<Abstract type="html">The AFMultipartFormData protocol defines the methods supported by the parameter in the block argument of AFHTTPClient -multipartFormRequestWithMethod:path:parameters:constructingBodyWithBlock:.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>
 			
 			<NodeRef refid="44"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIImageView(AFNetworking)/setImageWithURL:</TokenIdentifier>
-			<Abstract type="html">Creates and enqueues an image request operation, which asynchronously downloads the image from the specified URL, and sets it the request is finished. Any previous image request for the receiver will be cancelled. If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.</Abstract>
-			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithFileURL:name:error:</TokenIdentifier>
+			<Abstract type="html">Appends the HTTP header Content-Disposition: file; filename=#{generated filename}; name=#{name}&quot; and Content-Type: #{generated mimeType}, followed by the encoded file data and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
 			
-			<Declaration>- (void)setImageWithURL:(NSURL *)url</Declaration>
+			<Declaration>- (BOOL)appendPartWithFileURL:(NSURL *)fileURL name:(NSString *)name error:(NSError *__autoreleasing *)error</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">The URL used for the image request.</Abstract>
+					<Name>fileURL</Name>
+					<Abstract type="html">The URL corresponding to the file whose content will be appended to the form. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name to be associated with the specified data. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">If an error occurs, upon return contains an NSError object that describes the problem.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/setImageWithURL:</Anchor>
+			<ReturnValue><Abstract type="html">YES if the file data was successfully appended, otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/appendPartWithFileURL:name:error:</Anchor>
             <NodeRef refid="44"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIImageView(AFNetworking)/setImageWithURL:placeholderImage:</TokenIdentifier>
-			<Abstract type="html">Creates and enqueues an image request operation, which asynchronously downloads the image from the specified URL. Any previous image request for the receiver will be cancelled. If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.</Abstract>
-			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithFileURL:name:fileName:mimeType:error:</TokenIdentifier>
+			<Abstract type="html">Appends the HTTP header Content-Disposition: file; filename=#{filename}; name=#{name}&quot; and Content-Type: #{mimeType}, followed by the encoded file data and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
 			
-			<Declaration>- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholderImage</Declaration>
+			<Declaration>- (BOOL)appendPartWithFileURL:(NSURL *)fileURL name:(NSString *)name fileName:(NSString *)fileName mimeType:(NSString *)mimeType error:(NSError *__autoreleasing *)error</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">The URL used for the image request.</Abstract>
+					<Name>fileURL</Name>
+					<Abstract type="html">The URL corresponding to the file whose content will be appended to the form. This parameter must not be nil.</Abstract>
 				</Parameter><Parameter>
-					<Name>placeholderImage</Name>
-					<Abstract type="html">The image to be set initially, until the image request finishes. If nil, the image view will not change its image until the image request finishes.</Abstract>
+					<Name>name</Name>
+					<Abstract type="html">The name to be associated with the specified data. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The file name to be used in the Content-Disposition header. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">The declared MIME type of the file data. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">If an error occurs, upon return contains an NSError object that describes the problem.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/setImageWithURL:placeholderImage:</Anchor>
+			<ReturnValue><Abstract type="html">YES if the file data was successfully appended otherwise NO.</Abstract></ReturnValue>
+			<Anchor>//api/name/appendPartWithFileURL:name:fileName:mimeType:error:</Anchor>
             <NodeRef refid="44"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIImageView(AFNetworking)/setImageWithURLRequest:placeholderImage:success:failure:</TokenIdentifier>
-			<Abstract type="html">Creates and enqueues an image request operation, which asynchronously downloads the image with the specified URL request object. Any previous image request for the receiver will be cancelled. If the image is cached locally, the image is set immediately, otherwise the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.</Abstract>
-			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithInputStream:name:fileName:length:mimeType:</TokenIdentifier>
+			<Abstract type="html">Appends the HTTP header Content-Disposition: file; filename=#{filename}; name=#{name}&quot; and Content-Type: #{mimeType}, followed by the data from the input stream and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
 			
-			<Declaration>- (void)setImageWithURLRequest:(NSURLRequest *)urlRequest placeholderImage:(UIImage *)placeholderImage success:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , UIImage *image ))success failure:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , NSError *error ))failure</Declaration>
+			<Declaration>- (void)appendPartWithInputStream:(NSInputStream *)inputStream name:(NSString *)name fileName:(NSString *)fileName length:(unsigned long long)length mimeType:(NSString *)mimeType</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>urlRequest</Name>
-					<Abstract type="html">The URL request used for the image request.</Abstract>
+					<Name>inputStream</Name>
+					<Abstract type="html">The input stream to be appended to the form data</Abstract>
 				</Parameter><Parameter>
-					<Name>placeholderImage</Name>
-					<Abstract type="html">The image to be set initially, until the image request finishes. If nil, the image view will not change its image until the image request finishes.</Abstract>
+					<Name>name</Name>
+					<Abstract type="html">The name to be associated with the specified input stream. This parameter must not be nil.</Abstract>
 				</Parameter><Parameter>
-					<Name>success</Name>
-					<Abstract type="html">A block to be executed when the image request operation finishes successfully, with a status code in the 2xx range, and with an acceptable content type (e.g. image/png). This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the image created from the response data of request. If the image was returned from cache, the request and response parameters will be nil.</Abstract>
+					<Name>fileName</Name>
+					<Abstract type="html">The filename to be associated with the specified input stream. This parameter must not be nil.</Abstract>
 				</Parameter><Parameter>
-					<Name>failure</Name>
-					<Abstract type="html">A block object to be executed when the image request operation finishes unsuccessfully, or that finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the error object describing the network or parsing error that occurred.</Abstract>
+					<Name>length</Name>
+					<Abstract type="html">The length of the specified input stream in bytes.</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">The MIME type of the specified data. (For example, the MIME type for a JPEG image is image/jpeg.) For a list of valid MIME types, see http://www.iana.org/assignments/media-types/. This parameter must not be nil.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setImageWithURLRequest:placeholderImage:success:failure:</Anchor>
+			<Anchor>//api/name/appendPartWithInputStream:name:fileName:length:mimeType:</Anchor>
             <NodeRef refid="44"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/UIImageView(AFNetworking)/cancelImageRequestOperation</TokenIdentifier>
-			<Abstract type="html">Cancels any executing image request operation for the receiver, if one exists.</Abstract>
-			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithFileData:name:fileName:mimeType:</TokenIdentifier>
+			<Abstract type="html">Appends the HTTP header Content-Disposition: file; filename=#{filename}; name=#{name}&quot; and Content-Type: #{mimeType}, followed by the encoded file data and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
 			
-			<Declaration>- (void)cancelImageRequestOperation</Declaration>
+			<Declaration>- (void)appendPartWithFileData:(NSData *)data name:(NSString *)name fileName:(NSString *)fileName mimeType:(NSString *)mimeType</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to be encoded and appended to the form data.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name to be associated with the specified data. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">The filename to be associated with the specified data. This parameter must not be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">The MIME type of the specified data. (For example, the MIME type for a JPEG image is image/jpeg.) For a list of valid MIME types, see http://www.iana.org/assignments/media-types/. This parameter must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
 			
+			<Anchor>//api/name/appendPartWithFileData:name:fileName:mimeType:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithFormData:name:</TokenIdentifier>
+			<Abstract type="html">Appends the HTTP headers Content-Disposition: form-data; name=#{name}&quot;, followed by the encoded data and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
 			
-			<Anchor>//api/name/cancelImageRequestOperation</Anchor>
+			<Declaration>- (void)appendPartWithFormData:(NSData *)data name:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The data to be encoded and appended to the form data.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name to be associated with the specified data. This parameter must not be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/appendPartWithFormData:name:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/appendPartWithHeaders:body:</TokenIdentifier>
+			<Abstract type="html">Appends HTTP headers, followed by the encoded data and the multipart form boundary.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)appendPartWithHeaders:(NSDictionary *)headers body:(NSData *)body</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>headers</Name>
+					<Abstract type="html">The HTTP headers to be appended to the form data.</Abstract>
+				</Parameter><Parameter>
+					<Name>body</Name>
+					<Abstract type="html">The data to be encoded and appended to the form data.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/appendPartWithHeaders:body:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFMultipartFormData/throttleBandwidthWithPacketSize:delay:</TokenIdentifier>
+			<Abstract type="html">Throttles request bandwidth by limiting the packet size and adding a delay for each chunk read from the upload stream.</Abstract>
+			<DeclaredIn>AFHTTPClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)throttleBandwidthWithPacketSize:(NSUInteger)numberOfBytes delay:(NSTimeInterval)delay</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>numberOfBytes</Name>
+					<Abstract type="html">Maximum packet size, in number of bytes. The default packet size for an input stream is 32kb.</Abstract>
+				</Parameter><Parameter>
+					<Name>delay</Name>
+					<Abstract type="html">Duration of delay each time a packet is read. By default, no delay is set.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/throttleBandwidthWithPacketSize:delay:</Anchor>
             <NodeRef refid="44"/>
 		</Token>
 		

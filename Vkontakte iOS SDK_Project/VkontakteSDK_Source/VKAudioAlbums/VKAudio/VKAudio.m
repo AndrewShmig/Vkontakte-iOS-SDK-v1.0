@@ -30,7 +30,5 @@
 
 
 @implementation VKAudio
-{
 
-}
 @end

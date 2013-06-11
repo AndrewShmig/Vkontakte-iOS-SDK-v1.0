@@ -281,6 +281,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/isValid</TokenIdentifier>
+			<Abstract type="html">Метод проверки токена на валидность.</Abstract>
+			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/load</TokenIdentifier>
 			<Abstract type="html">Загрузка токена доступа из NSUserDefaults.</Abstract>
 			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
@@ -301,6 +313,18 @@
 			
 			
 			<Anchor>//api/name/save</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/remove</TokenIdentifier>
+			<Abstract type="html">Удаление токена доступа из NSUserDefaults.</Abstract>
+			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
+			
+			<Declaration>- (void)remove</Declaration>
+			
+			
+			<Anchor>//api/name/remove</Anchor>
             <NodeRef refid="13"/>
 		</Token>
 		

@@ -31,7 +31,5 @@
 
 
 @implementation VKPlace
-{
 
-}
 @end

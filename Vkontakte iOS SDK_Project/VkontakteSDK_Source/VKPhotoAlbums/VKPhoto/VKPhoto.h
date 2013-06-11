@@ -31,4 +31,5 @@
 
 
 @interface VKPhoto : NSObject
+
 @end

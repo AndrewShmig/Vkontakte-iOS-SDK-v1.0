@@ -31,4 +31,5 @@
 
 
 @interface VKWallPost : NSObject
+
 @end

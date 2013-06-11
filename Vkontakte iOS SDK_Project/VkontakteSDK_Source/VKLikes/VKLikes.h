@@ -25,14 +25,8 @@
 // THE SOFTWARE.
 //
 #import <Foundation/Foundation.h>
-#import "VKRequest.h"
-
-
-@class VKAccessToken;
 
 
 @interface VKLikes : NSObject
-
-- (id)initWithAccessToken:(VKAccessToken *)accessToken;
 
 @end

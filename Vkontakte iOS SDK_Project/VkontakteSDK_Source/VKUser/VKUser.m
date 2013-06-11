@@ -41,7 +41,6 @@
 #import "VKLikes.h"
 #import "VKDocs.h"
 #import "VKFavourites.h"
-#import "VKRequest.h"
 #import "VKMethods.h"
 #import "VKAccessToken.h"
 

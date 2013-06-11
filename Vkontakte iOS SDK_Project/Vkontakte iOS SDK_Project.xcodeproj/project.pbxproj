@@ -70,8 +70,6 @@
 		D53DFC2517632EB6001A058B /* NSString+toBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DFC1F17632EB6001A058B /* NSString+toBase64.m */; };
 		D53E1D321764CEC40070F9D1 /* VKAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = D53E1D2E1764CEC40070F9D1 /* VKAccessToken.m */; };
 		D53E1D331764CEC40070F9D1 /* VKAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = D53E1D2E1764CEC40070F9D1 /* VKAccessToken.m */; };
-		D53E1D341764CEC40070F9D1 /* VKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D53E1D311764CEC40070F9D1 /* VKRequest.m */; };
-		D53E1D351764CEC40070F9D1 /* VKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D53E1D311764CEC40070F9D1 /* VKRequest.m */; };
 		D596EF8917647BC700D119CA /* KGModal.m in Sources */ = {isa = PBXBuildFile; fileRef = D596EF8817647BC700D119CA /* KGModal.m */; };
 		D596EF8A17647BC700D119CA /* KGModal.m in Sources */ = {isa = PBXBuildFile; fileRef = D596EF8817647BC700D119CA /* KGModal.m */; };
 		D596EF8C17647C8800D119CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D596EF8B17647C8800D119CA /* QuartzCore.framework */; };
@@ -188,8 +186,6 @@
 		D53DFC1F17632EB6001A058B /* NSString+toBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+toBase64.m"; sourceTree = "<group>"; };
 		D53E1D2D1764CEC40070F9D1 /* VKAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAccessToken.h; sourceTree = "<group>"; };
 		D53E1D2E1764CEC40070F9D1 /* VKAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAccessToken.m; sourceTree = "<group>"; };
-		D53E1D301764CEC40070F9D1 /* VKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRequest.h; sourceTree = "<group>"; };
-		D53E1D311764CEC40070F9D1 /* VKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKRequest.m; sourceTree = "<group>"; };
 		D596EF8717647BC700D119CA /* KGModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGModal.h; sourceTree = "<group>"; };
 		D596EF8817647BC700D119CA /* KGModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGModal.m; sourceTree = "<group>"; };
 		D596EF8B17647C8800D119CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -205,6 +201,7 @@
 		D5B7165A1754C1B4009E5C9D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D5B7165C1754C1B4009E5C9D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D5B7165E1754C1B4009E5C9D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D5EB54D117678BED001E7552 /* VKConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKConnectorProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,10 +374,10 @@
 			isa = PBXGroup;
 			children = (
 				D53E1D2C1764CEC40070F9D1 /* VKAccessToken */,
-				D53E1D2F1764CEC40070F9D1 /* VKRequest */,
 				1A9A0DFDBE1C877F0B132D35 /* VKConnector.h */,
 				1A9A0F455C140DDD6C719282 /* VKConnector.m */,
 				1A9A070B6A7906D4AD8EFAEA /* VKMethods.h */,
+				D5EB54D117678BED001E7552 /* VKConnectorProtocol.h */,
 			);
 			path = VKConnector;
 			sourceTree = "<group>";
@@ -619,15 +616,6 @@
 			path = VKAccessToken;
 			sourceTree = "<group>";
 		};
-		D53E1D2F1764CEC40070F9D1 /* VKRequest */ = {
-			isa = PBXGroup;
-			children = (
-				D53E1D301764CEC40070F9D1 /* VKRequest.h */,
-				D53E1D311764CEC40070F9D1 /* VKRequest.m */,
-			);
-			path = VKRequest;
-			sourceTree = "<group>";
-		};
 		D5B7164E1754C1B4009E5C9D /* VkontakteSDK_Documentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -806,7 +794,6 @@
 				D53DFC2417632EB6001A058B /* NSString+toBase64.m in Sources */,
 				D596EF8917647BC700D119CA /* KGModal.m in Sources */,
 				D53E1D321764CEC40070F9D1 /* VKAccessToken.m in Sources */,
-				D53E1D341764CEC40070F9D1 /* VKRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,7 +817,6 @@
 				D53DFC2517632EB6001A058B /* NSString+toBase64.m in Sources */,
 				D596EF8A17647BC700D119CA /* KGModal.m in Sources */,
 				D53E1D331764CEC40070F9D1 /* VKAccessToken.m in Sources */,
-				D53E1D351764CEC40070F9D1 /* VKRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

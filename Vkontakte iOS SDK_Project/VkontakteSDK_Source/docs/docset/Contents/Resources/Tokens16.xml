@@ -13,8 +13,44 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/setDelegate:</TokenIdentifier>
+			<Abstract type="html">Делегат VKConnector</Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) id&lt;VKConnectorProtocol&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/delegate</TokenIdentifier>
+			<Abstract type="html">Делегат VKConnector</Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) id&lt;VKConnectorProtocol&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKConnector/delegate</TokenIdentifier>
+			<Abstract type="html">Делегат VKConnector</Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, weak) id&lt;VKConnectorProtocol&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/setAppID:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Идентификатор приложения Вконтакте</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, strong, readonly) NSString *appID</Declaration>
@@ -26,7 +62,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/appID</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Идентификатор приложения Вконтакте</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, strong, readonly) NSString *appID</Declaration>
@@ -38,7 +74,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/VKConnector/appID</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Идентификатор приложения Вконтакте</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, strong, readonly) NSString *appID</Declaration>
@@ -50,7 +86,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/setPermissions:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Список разрешений</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, strong, readonly) NSArray *permissions</Declaration>
@@ -62,7 +98,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/permissions</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Список разрешений</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, strong, readonly) NSArray *permissions</Declaration>
@@ -74,7 +110,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/VKConnector/permissions</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Список разрешений</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>			
 			
 			<Declaration>@property (nonatomic, strong, readonly) NSArray *permissions</Declaration>
@@ -114,6 +150,36 @@
 			</Parameters>
 			
 			<Anchor>//api/name/startWithAppID:permissons:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/performVKMethod:options:error:</TokenIdentifier>
+			<Abstract type="html">Основной метод осуществления GET запросов.</Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>- (id)performVKMethod:(NSString *)methodName options:(NSDictionary *)options error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>methodName</Name>
+					<Abstract type="html">Наименование метода к которому необходимо осуществить запрос.
+Со списком методов можно ознакомиться в документации по ссылке: https://vk.com/dev/methods
+либо в заголовочном файле VKMethods.h
+
+Возможные значения: kVKUsersGet, @&quot;users.get&quot; и тд</Abstract>
+				</Parameter><Parameter>
+					<Name>options</Name>
+					<Abstract type="html">Словарь ключей-значений требуемых для корректного осуществления запроса и получения информации.
+С каждым списком параметров можно ознакомиться в документации соответствующего метода.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">В случае возникновения ошибки она будет передана в данной переменной. Ошибки могут быть двух типов:
+ошибка запроса (прервалось соединение и тд) и ошибки парсинга ответа сервера.
+Возвращаемые ошибки сервером в запросе не подвергаются обработке.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/performVKMethod:options:error:</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		

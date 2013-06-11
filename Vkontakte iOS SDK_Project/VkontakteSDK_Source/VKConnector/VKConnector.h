@@ -31,7 +31,14 @@
 #import <Foundation/Foundation.h>
 
 
+typedef void (^VKCompletionBlock)(id response, NSError *error);
+
+
+static NSString *const kVkontakteAPIURL = @"https://api.vk.com/method/";
+
+
 @class VKAccessToken;
+@protocol VKConnectorProtocol;
 
 
 /** Класс предназначен для получения приложением доступа к пользовательской учетной
@@ -46,7 +53,16 @@
  */
 @interface VKConnector : NSObject <UIWebViewDelegate>
 
+/** Делегат VKConnector
+ */
+@property (nonatomic, weak) id<VKConnectorProtocol> delegate;
+
+/** Идентификатор приложения Вконтакте
+ */
 @property (nonatomic, strong, readonly) NSString *appID;
+
+/** Список разрешений
+ */
 @property (nonatomic, strong, readonly) NSArray *permissions;
 
 /** Метод класса для получения экземпляра сиглтона.
@@ -61,5 +77,24 @@
  */
 - (void)startWithAppID:(NSString *)appID
             permissons:(NSArray *)permissions;
+
+/** Основной метод осуществления GET запросов.
+ 
+ @param methodName Наименование метода к которому необходимо осуществить запрос.
+ Со списком методов можно ознакомиться в документации по ссылке: https://vk.com/dev/methods
+ либо в заголовочном файле VKMethods.h
+ 
+ _Возможные значения:_ kVKUsersGet, @"users.get" и тд
+ 
+ @param options Словарь ключей-значений требуемых для корректного осуществления запроса и получения информации.
+ С каждым списком параметров можно ознакомиться в документации соответствующего метода.
+ 
+ @param error В случае возникновения ошибки она будет передана в данной переменной. Ошибки могут быть двух типов:
+ ошибка запроса (прервалось соединение и тд) и ошибки парсинга ответа сервера.
+ Возвращаемые ошибки сервером в запросе не подвергаются обработке.
+ */
+- (id)performVKMethod:(NSString *)methodName
+              options:(NSDictionary *)options
+                error:(NSError **)error;
 
 @end

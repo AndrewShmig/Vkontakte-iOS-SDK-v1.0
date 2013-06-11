@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
 Path: /Users/new/Library/Developer/Shared/Documentation/DocSets/com.andrewshmig.VkontakteSDK.docset
-Time: 2013-06-10 10:20:22 +0000
+Time: 2013-06-11 17:24:23 +0000

@@ -30,4 +30,5 @@
 
 
 @interface VKMessage : NSObject
+
 @end

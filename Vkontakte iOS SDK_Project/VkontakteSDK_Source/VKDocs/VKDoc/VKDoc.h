@@ -27,7 +27,6 @@
 //
 //
 #import <Foundation/Foundation.h>
-#import "VKRequest.h"
 
 @interface VKDoc : NSObject
 @end

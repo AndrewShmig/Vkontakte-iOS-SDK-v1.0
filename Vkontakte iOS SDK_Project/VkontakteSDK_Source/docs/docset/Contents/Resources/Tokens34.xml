@@ -1,98 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKRequest.html">
+	<File path="Classes/VKStatus.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKRequest</TokenIdentifier>
-			<Abstract type="html">Класс VKRequest предназначен для осуществления запросов к социальной сети ВКонтакте.</Abstract>
-			<DeclaredIn>VKRequest.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/VKStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKStatus.h</DeclaredIn>
 			
 			<NodeRef refid="34"/>
 		</Token>
 		
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKRequest/setAccessToken:</TokenIdentifier>
-			<Abstract type="html">Токен доступа, который будет использоваться при осуществлении запросов.</Abstract>
-			<DeclaredIn>VKRequest.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) VKAccessToken *accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/accessToken</Anchor>
-            <NodeRef refid="34"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKRequest/accessToken</TokenIdentifier>
-			<Abstract type="html">Токен доступа, который будет использоваться при осуществлении запросов.</Abstract>
-			<DeclaredIn>VKRequest.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) VKAccessToken *accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/accessToken</Anchor>
-            <NodeRef refid="34"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/VKRequest/accessToken</TokenIdentifier>
-			<Abstract type="html">Токен доступа, который будет использоваться при осуществлении запросов.</Abstract>
-			<DeclaredIn>VKRequest.h</DeclaredIn>			
-			
-			<Declaration>@property (nonatomic, readonly) VKAccessToken *accessToken</Declaration>
-			
-			
-			<Anchor>//api/name/accessToken</Anchor>
-            <NodeRef refid="34"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKRequest/initWithAccessToken:</TokenIdentifier>
-			<Abstract type="html">Основной метод инициализации</Abstract>
-			<DeclaredIn>VKRequest.h</DeclaredIn>			
-			
-			<Declaration>- (id)initWithAccessToken:(VKAccessToken *)accessToken</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>accessToken</Name>
-					<Abstract type="html">Токен доступа, который будет использоваться при осуществлении запросов.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Объект типа VKRequest</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithAccessToken:</Anchor>
-            <NodeRef refid="34"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKRequest/performVKMethod:options:error:</TokenIdentifier>
-			<Abstract type="html">Основной метод осуществления GET запросов.</Abstract>
-			<DeclaredIn>VKRequest.h</DeclaredIn>			
-			
-			<Declaration>- (id)performVKMethod:(NSString *)methodName options:(NSDictionary *)options error:(NSError **)error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>methodName</Name>
-					<Abstract type="html">Наименование метода к которому необходимо осуществить запрос.
-Со списком методов можно ознакомиться в документации по ссылке: https://vk.com/dev/methods
-либо в заголовочном файле VKMethods.h
-
-Возможные значения: kVKUsersGet, @&quot;users.get&quot; и тд</Abstract>
-				</Parameter><Parameter>
-					<Name>options</Name>
-					<Abstract type="html">Словарь ключей-значений требуемых для корректного осуществления запроса и получения информации.
-С каждым списком параметров можно ознакомиться в документации соответствующего метода.</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">В случае возникновения ошибки она будет передана в данной переменной. Ошибки могут быть двух типов:
-ошибка запроса (прервалось соединение и тд) и ошибки парсинга ответа сервера.
-Возвращаемые ошибки сервером в запросе не подвергаются обработке.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/performVKMethod:options:error:</Anchor>
-            <NodeRef refid="34"/>
-		</Token>
 		
 	</File>
 </Tokens>
