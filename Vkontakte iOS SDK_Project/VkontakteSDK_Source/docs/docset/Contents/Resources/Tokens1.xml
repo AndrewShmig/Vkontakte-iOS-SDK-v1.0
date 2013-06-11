@@ -156,6 +156,81 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/setIsExpired:</TokenIdentifier>
+			<Abstract type="html">Истекло ли время действия текущего токена доступа или нет.
+NO - если токен всё еще действует, иначе - YES.</Abstract>
+			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isExpired</Declaration>
+			
+			
+			<Anchor>//api/name/isExpired</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/isExpired</TokenIdentifier>
+			<Abstract type="html">Истекло ли время действия текущего токена доступа или нет.
+NO - если токен всё еще действует, иначе - YES.</Abstract>
+			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isExpired</Declaration>
+			
+			
+			<Anchor>//api/name/isExpired</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKAccessToken/isExpired</TokenIdentifier>
+			<Abstract type="html">Истекло ли время действия текущего токена доступа или нет.
+NO - если токен всё еще действует, иначе - YES.</Abstract>
+			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isExpired</Declaration>
+			
+			
+			<Anchor>//api/name/isExpired</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/setIsValid:</TokenIdentifier>
+			<Abstract type="html">Действителен ли токен.</Abstract>
+			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/isValid</TokenIdentifier>
+			<Abstract type="html">Действителен ли токен.</Abstract>
+			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKAccessToken/isValid</TokenIdentifier>
+			<Abstract type="html">Действителен ли токен.</Abstract>
+			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL isValid</Declaration>
+			
+			
+			<Anchor>//api/name/isValid</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/initWithUserID:accessToken:expirationTime:permissions:</TokenIdentifier>
 			<Abstract type="html">Основной метод инициализации.</Abstract>
 			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
@@ -260,35 +335,6 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">YES - если такое право присутствует в общем списке, иначе - NO.</Abstract></ReturnValue>
 			<Anchor>//api/name/hasPermission:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/isExpired</TokenIdentifier>
-			<Abstract type="html">Метод проверяет истекло ли время действия текущего токена доступа или нет.</Abstract>
-			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)isExpired</Declaration>
-			
-			<ReturnValue><Abstract type="html">YES - если токен всё еще действует, иначе - NO.
-
-Метод вернет YES в следующих случаях:
-
-- Время истечения токена больше нуля и больше текущего времени.
-- Время истечения токена равно нулю и в списке доступов присутствует &quot;offline&quot; доступ</Abstract></ReturnValue>
-			<Anchor>//api/name/isExpired</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/isValid</TokenIdentifier>
-			<Abstract type="html">Метод проверки токена на валидность.</Abstract>
-			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
-			
-			<Declaration>- (BOOL)isValid</Declaration>
-			
-			
-			<Anchor>//api/name/isValid</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
