@@ -32,6 +32,7 @@
 #import "VKAccessToken.h"
 #import "NSString+encodeURL.h"
 #import "KGModal.h"
+#import "VKMethods.h"
 
 
 #define MARGIN_WIDTH 50.0f // ширина отступа от границ экрана

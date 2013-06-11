@@ -31,12 +31,6 @@
 #import <Foundation/Foundation.h>
 
 
-typedef void (^VKCompletionBlock)(id response, NSError *error);
-
-
-static NSString *const kVkontakteAPIURL = @"https://api.vk.com/method/";
-
-
 @class VKAccessToken;
 @class VKConnector;
 
