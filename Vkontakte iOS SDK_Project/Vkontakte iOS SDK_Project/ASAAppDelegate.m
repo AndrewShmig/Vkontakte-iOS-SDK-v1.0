@@ -9,7 +9,6 @@
 #import "ASAAppDelegate.h"
 #import "ASAViewController.h"
 #import "VKConnector.h"
-#import "VKConnectorProtocol.h"
 
 
 static NSString *const kVKAppID = @"3541027";

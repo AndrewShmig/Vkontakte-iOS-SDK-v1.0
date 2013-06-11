@@ -29,7 +29,6 @@
 //
 
 #import "VKConnector.h"
-#import "VKConnectorProtocol.h"
 #import "VKAccessToken.h"
 #import "NSString+encodeURL.h"
 #import "KGModal.h"
