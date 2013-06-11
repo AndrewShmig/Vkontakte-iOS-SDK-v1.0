@@ -38,7 +38,48 @@ static NSString *const kVkontakteAPIURL = @"https://api.vk.com/method/";
 
 
 @class VKAccessToken;
-@protocol VKConnectorProtocol;
+@class VKConnector;
+
+
+/** Протокол объявляет методы отслеживания изменения статуса токена доступа
+ хранимого классом VKConnector.
+ */
+@protocol VKConnectorProtocol <NSObject>
+
+@optional
+/** Метод, вызов которого сигнализирует о том, что токен стал недействительным,
+ срок его действия истёк.
+ 
+ @param connector объект класса VKConnector отправляющий сообщение.
+ @param accessToken токен доступа, срок действия которого истёк.
+ */
+- (void)VKConnector:(VKConnector *)connector
+accessTokenInvalidated:(VKAccessToken *)accessToken;
+
+/** Метод, вызов которого сигнализирует о том, что токен доступа успешно обновлён.
+ 
+ @param connector объект класса VKConnector отправляющий сообщение.
+ @param accessToken новый токен доступа, который был получен.
+ */
+- (void)VKConnector:(VKConnector *)connector
+ accessTokenRenewed:(VKAccessToken *)accessToken;
+
+/** Метод, вызов которого сигнализирует о том, что обновление токена доступа не
+ удалось.
+ Причиной ошибки может быть прерывание связи, либо пользователь отказался авторизовывать
+ приложение.
+ 
+ @param connector объект класса VKConnector отправляющего сообщение.
+ @param accessToken токен доступа (равен nil)
+ */
+- (void)VKConnector:(VKConnector *)connector
+accessTokenRenewalFailed:(VKAccessToken *)accessToken;
+
+@end
+
+
+
+
 
 
 /** Класс предназначен для получения приложением доступа к пользовательской учетной
