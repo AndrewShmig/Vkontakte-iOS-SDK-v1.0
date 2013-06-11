@@ -56,7 +56,7 @@ accessTokenInvalidated:(VKAccessToken *)accessToken;
  @param accessToken новый токен доступа, который был получен.
  */
 - (void)VKConnector:(VKConnector *)connector
- accessTokenRenewed:(VKAccessToken *)accessToken;
+ accessTokenRenewalSucceeded:(VKAccessToken *)accessToken;
 
 /** Метод, вызов которого сигнализирует о том, что обновление токена доступа не
  удалось.

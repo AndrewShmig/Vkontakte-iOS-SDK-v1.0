@@ -42,7 +42,7 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
     NSLog(@"%s", __FUNCTION__);
 }
 
-- (void)VKConnector:(VKConnector *)connector accessTokenRenewed:(VKAccessToken *)accessToken
+- (void)VKConnector:(VKConnector *)connector accessTokenRenewalSucceeded:(VKAccessToken *)accessToken
 {
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%@", accessToken);
