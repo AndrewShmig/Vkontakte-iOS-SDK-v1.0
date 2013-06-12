@@ -28,21 +28,20 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class VKStatus;
-@class VKWall;
-@class VKPhotoAlbums;
-@class VKAudioAlbums;
-@class VKVideoAlbums;
-@class VKFriends;
-@class VKGroups;
-@class VKNotes;
-@class VKPlaces;
-@class VKMessages;
-@class VKNewsfeed;
-@class VKLikes;
-@class VKDocs;
-@class VKFavourites;
+#import "VKStatus.h"
+#import "VKWall.h"
+#import "VKPhotoAlbums.h"
+#import "VKAudioAlbums.h"
+#import "VKVideoAlbums.h"
+#import "VKFriends.h"
+#import "VKGroups.h"
+#import "VKNotes.h"
+#import "VKPlaces.h"
+#import "VKMessages.h"
+#import "VKNewsfeed.h"
+#import "VKLikes.h"
+#import "VKDocs.h"
+#import "VKFavourites.h"
 
 /**
  Класс представляет пользователя социальной сети со связями вроде

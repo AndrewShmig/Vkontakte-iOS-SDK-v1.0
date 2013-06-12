@@ -48,7 +48,7 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%@", accessToken);
     
-    NSLog(@"User info: %@", [[VKUser currentUser] followers]);
+    NSLog(@"response: %@", [[[VKUser currentUser] status] setStatus:@"Hello world!"]);
 }
 
 @end

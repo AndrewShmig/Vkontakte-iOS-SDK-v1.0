@@ -29,7 +29,36 @@
 
 #import <Foundation/Foundation.h>
 
-
+/** Класс предназначен для работы со статусами пользователя/группы.
+ Детальная информация находится по этой ссылке: https://vk.com/dev/status
+ */
 @interface VKStatus : NSObject
+
+/** Получает текст статуса текущего пользователя
+ 
+ @return ответ на запрос в виде Foundation объекта
+ */
+- (id)status;
+
+/** Получает текст статуса пользователя
+ 
+ @param userID идентификатор пользователя статус которого необходимо получить
+ @return ответ на запрос в виде Foundation объекта
+ */
+- (id)statusUserID:(NSUInteger)userID;
+
+/** Получает текст статуса сообщества
+ 
+ @param groupID идентификатор сообщества, информацию о статусе которого необходимо получить
+ @return ответ на запрос в виде Foundation объекта
+ */
+- (id)statusGroupID:(NSUInteger)groupID;
+
+/** Устанавливает новый статус текущему пользователю
+ 
+ @param newStatusText текст нового статуса
+ @return ответ на запрос в виде Foundation объекта
+ */
+- (id)setStatus:(NSString *)newStatusText;
 
 @end

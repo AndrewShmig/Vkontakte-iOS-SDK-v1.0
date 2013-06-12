@@ -27,7 +27,43 @@
 //
 //
 #import "VKStatus.h"
+#import "VKConnector.h"
+#import "VKMethods.h"
+#import "VKUser.h"
 
 @implementation VKStatus
+
+#pragma mark - VKStatus methods
+
+- (id)status
+{
+    return [self obtainStatusWithGroupOrUserID:[[VKUser currentUser] userID]];
+}
+
+- (id)statusGroupID:(NSUInteger)groupID
+{
+    return [self obtainStatusWithGroupOrUserID:groupID];
+}
+
+- (id)statusUserID:(NSUInteger)userID
+{
+    return [self obtainStatusWithGroupOrUserID:userID];
+}
+
+- (id)setStatus:(NSString *)newStatusText
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKStatusSet
+                                                 options:@{@"text": newStatusText}
+                                                   error:nil];
+}
+
+#pragma mark - Hidden methods
+
+- (id)obtainStatusWithGroupOrUserID:(NSUInteger)objectID
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKStatsGet
+                                                 options:@{@"uid": @(objectID)}
+                                                   error:nil];
+}
 
 @end

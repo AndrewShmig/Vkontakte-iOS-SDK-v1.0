@@ -26,6 +26,12 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
 	
 	
 	
@@ -35,6 +41,15 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/setStatus:">&nbsp;&nbsp;&nbsp;&nbsp;- setStatus:</option>
+	
+	<option value="//api/name/status">&nbsp;&nbsp;&nbsp;&nbsp;- status</option>
+	
+	<option value="//api/name/statusGroupID:">&nbsp;&nbsp;&nbsp;&nbsp;- statusGroupID:</option>
+	
+	<option value="//api/name/statusUserID:">&nbsp;&nbsp;&nbsp;&nbsp;- statusUserID:</option>
 	
 	
 	
@@ -45,6 +60,14 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
 
 
 
@@ -54,7 +77,17 @@
 
 
 
-
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStatus:">setStatus:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/status">status</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/statusGroupID:">statusGroupID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/statusUserID:">statusUserID:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -88,6 +121,58 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс предназначен для работы со статусами пользователя/группы.
+Детальная информация находится по этой ссылке: <a href="https://vk.com/dev/status">https://vk.com/dev/status</a></p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/status">&ndash;&nbsp;status</a></code>
+		<span class="tooltip"><p>Получает текст статуса текущего пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/statusUserID:">&ndash;&nbsp;statusUserID:</a></code>
+		<span class="tooltip"><p>Получает текст статуса пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/statusGroupID:">&ndash;&nbsp;statusGroupID:</a></code>
+		<span class="tooltip"><p>Получает текст статуса сообщества</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStatus:">&ndash;&nbsp;setStatus:</a></code>
+		<span class="tooltip"><p>Устанавливает новый статус текущему пользователю</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
@@ -97,6 +182,205 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/setStatus:" title="setStatus:"></a>
+	<h3 class="subsubtitle method-title">setStatus:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Устанавливает новый статус текущему пользователю</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)setStatus:(NSString *)<em>newStatusText</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newStatusText</em></dt>
+			<dd><p>текст нового статуса</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKStatus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/status" title="status"></a>
+	<h3 class="subsubtitle method-title">status</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Получает текст статуса текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)status</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKStatus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/statusGroupID:" title="statusGroupID:"></a>
+	<h3 class="subsubtitle method-title">statusGroupID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Получает текст статуса сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)statusGroupID:(NSUInteger)<em>groupID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupID</em></dt>
+			<dd><p>идентификатор сообщества, информацию о статусе которого необходимо получить</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKStatus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/statusUserID:" title="statusUserID:"></a>
+	<h3 class="subsubtitle method-title">statusUserID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Получает текст статуса пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)statusUserID:(NSUInteger)<em>userID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userID</em></dt>
+			<dd><p>идентификатор пользователя статус которого необходимо получить</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKStatus.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>
