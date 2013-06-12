@@ -26,7 +26,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKStatus/statusUserID:</TokenIdentifier>
-			<Abstract type="html">Получает текст статуса пользователя</Abstract>
+			<Abstract type="html">Получает текст статуса пользователя c указанным идентификатором</Abstract>
 			<DeclaredIn>VKStatus.h</DeclaredIn>			
 			
 			<Declaration>- (id)statusUserID:(NSUInteger)userID</Declaration>
@@ -43,7 +43,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKStatus/statusGroupID:</TokenIdentifier>
-			<Abstract type="html">Получает текст статуса сообщества</Abstract>
+			<Abstract type="html">Получает текст статуса сообщества c указанным идентификатором</Abstract>
 			<DeclaredIn>VKStatus.h</DeclaredIn>			
 			
 			<Declaration>- (id)statusGroupID:(NSUInteger)groupID</Declaration>
