@@ -27,7 +27,67 @@
 //
 //
 #import "VKFriends.h"
+#import "VKConnector.h"
+#import "VKUser.h"
+
 
 @implementation VKFriends
+
+#pragma mark - Visible VKFriends methods
+
+- (id)friendsCount:(NSUInteger)count
+{
+    NSDictionary *options = @{@"order": @"hints",
+                              @"count": @(count),
+                              @"fields": @"first_name,last_name,sex,bdate,photo_medium"};
+    
+    return [self friendsCustomOptions:options];
+}
+
+- (id)friendsCount:(NSUInteger)count fields:(NSString *)fields
+{
+    NSDictionary *options = @{@"count": @(count),
+                              @"fields": fields,
+                              @"order": @"hints"};
+    
+    return [self friendsCustomOptions:options];
+}
+
+- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset
+{
+    NSDictionary *options = @{@"count": @(count),
+                              @"offset": @(offset),
+                              @"fields": @"first_name,last_name,sex,bdate,photo_medium",
+                              @"order": @"hints"};
+    
+    return [self friendsCustomOptions:options];
+}
+
+- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSString *)fields
+{
+    NSDictionary *options = @{@"count": @(count),
+                              @"offset": @(offset),
+                              @"fields": fields,
+                              @"order": @"hints"};
+    
+    return [self friendsCustomOptions:options];
+}
+
+- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset order:(NSString *)order fields:(NSString *)fields
+{
+    NSDictionary *options = @{@"count": @(count),
+                              @"offset": @(offset),
+                              @"order": order,
+                              @"fields": fields};
+    
+    return [self friendsCustomOptions:options];
+}
+
+- (id)friendsCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKFriendsGet
+                                                 options:options
+                                                   error:nil];
+}
 
 @end

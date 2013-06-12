@@ -48,9 +48,7 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%@", accessToken);
     
-    id tmp = [[[VKUser currentUser] likes] likeObjectWithID:45546
-                                                       type:@"post"
-                                                    ownerID:1];
+    id tmp = [[[VKUser currentUser] friends] friendsCount:20];
     NSLog(@"%@", tmp);
 }
 

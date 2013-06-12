@@ -30,4 +30,14 @@
 
 @interface VKFriends : NSObject
 
+- (id)friendsCount:(NSUInteger)count;
+- (id)friendsCount:(NSUInteger)count fields:(NSString *)fields;
+
+- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset;
+- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSString *)fields;
+
+- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset order:(NSString *)order fields:(NSString *)fields;
+
+- (id)friendsCustomOptions:(NSDictionary *)options;
+
 @end
