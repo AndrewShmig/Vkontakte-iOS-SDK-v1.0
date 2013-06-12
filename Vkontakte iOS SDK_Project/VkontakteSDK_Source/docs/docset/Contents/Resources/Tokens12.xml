@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKLikes.html">
+	<File path="Classes/VKPhotoAlbums.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKLikes</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/VKPhotoAlbums</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKLikes.h</DeclaredIn>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>
 			
 			<NodeRef refid="12"/>
 		</Token>

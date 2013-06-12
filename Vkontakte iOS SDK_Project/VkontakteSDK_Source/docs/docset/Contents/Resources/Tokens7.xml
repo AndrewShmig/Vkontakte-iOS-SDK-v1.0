@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKFavourites.html">
+	<File path="Classes/VKGroups.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKFavourites</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/VKGroups</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKFavourites.h</DeclaredIn>
+			<DeclaredIn>VKGroups.h</DeclaredIn>
 			
 			<NodeRef refid="7"/>
 		</Token>

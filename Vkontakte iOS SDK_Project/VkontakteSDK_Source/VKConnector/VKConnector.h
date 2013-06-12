@@ -29,7 +29,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "VKMethods.h"
 
 @class VKAccessToken;
 @class VKConnector;

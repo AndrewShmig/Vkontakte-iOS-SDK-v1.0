@@ -26,6 +26,12 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
 	
 	
 	
@@ -35,6 +41,17 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/isLikedObjectWithID:type:">&nbsp;&nbsp;&nbsp;&nbsp;- isLikedObjectWithID:type:</option>
+	
+	<option value="//api/name/isLikedObjectWithID:type:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- isLikedObjectWithID:type:ownerID:</option>
+	
+	<option value="//api/name/likeObjectWithID:type:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- likeObjectWithID:type:ownerID:</option>
+	
+	<option value="//api/name/obtainListWithOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- obtainListWithOptions:</option>
+	
+	<option value="//api/name/unlikeObjectWithID:type:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- unlikeObjectWithID:type:ownerID:</option>
 	
 	
 	
@@ -45,6 +62,14 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
 
 
 
@@ -54,7 +79,19 @@
 
 
 
-
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLikedObjectWithID:type:">isLikedObjectWithID:type:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isLikedObjectWithID:type:ownerID:">isLikedObjectWithID:type:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/likeObjectWithID:type:ownerID:">likeObjectWithID:type:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/obtainListWithOptions:">obtainListWithOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unlikeObjectWithID:type:ownerID:">unlikeObjectWithID:type:ownerID:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -88,6 +125,65 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс предназначен для работы с лайками пользователя</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/likeObjectWithID:type:ownerID:">&ndash;&nbsp;likeObjectWithID:type:ownerID:</a></code>
+		<span class="tooltip"><p>Добавляет указанный объект в список &ldquo;Мне нравится&rdquo; текущего пользователя.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unlikeObjectWithID:type:ownerID:">&ndash;&nbsp;unlikeObjectWithID:type:ownerID:</a></code>
+		<span class="tooltip"><p>Удаляет указанный объект из списка &ldquo;Мне нравится&rdquo; текущего пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLikedObjectWithID:type:">&ndash;&nbsp;isLikedObjectWithID:type:</a></code>
+		<span class="tooltip"><p>Проверяет, находится ли объект в списке &ldquo;Мне нравится&rdquo; текущего пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isLikedObjectWithID:type:ownerID:">&ndash;&nbsp;isLikedObjectWithID:type:ownerID:</a></code>
+		<span class="tooltip"><p>Проверяет, находится ли объект в списке &ldquo;Мне нравится&rdquo; текущего пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/obtainListWithOptions:">&ndash;&nbsp;obtainListWithOptions:</a></code>
+		<span class="tooltip"><p>Получает список идентификаторов пользователей, которые добавили заданный
+объект в свой список &ldquo;Мне нравится&rdquo;</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
@@ -97,6 +193,335 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/isLikedObjectWithID:type:" title="isLikedObjectWithID:type:"></a>
+	<h3 class="subsubtitle method-title">isLikedObjectWithID:type:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Проверяет, находится ли объект в списке &ldquo;Мне нравится&rdquo; текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)isLikedObjectWithID:(NSUInteger)<em>objectID</em> type:(NSString *)<em>type</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectID</em></dt>
+			<dd><p>идентификатор объекта</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>тип объекта ( со списком возможных типов объекта можно ознакомиться по
+этой ссылке <a href="https://vk.com/dev/likes.add">https://vk.com/dev/likes.add</a> )</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> вызывается метод <a href="#//api/name/isLikedObjectWithID:type:ownerID:">isLikedObjectWithID:type:ownerID:</a> с последним параметром
+равным идентификатору текущего пользователя.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/isLikedObjectWithID:type:ownerID:">- isLikedObjectWithID:type:ownerID:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKLikes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isLikedObjectWithID:type:ownerID:" title="isLikedObjectWithID:type:ownerID:"></a>
+	<h3 class="subsubtitle method-title">isLikedObjectWithID:type:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Проверяет, находится ли объект в списке &ldquo;Мне нравится&rdquo; текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)isLikedObjectWithID:(NSUInteger)<em>objectID</em> type:(NSString *)<em>type</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectID</em></dt>
+			<dd><p>идентификатор объекта</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>тип объекта ( со списком возможных типов объекта можно ознакомиться по
+этой ссылке <a href="https://vk.com/dev/likes.add">https://vk.com/dev/likes.add</a> )</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца Like-объекта</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/isLikedObjectWithID:type:ownerID:">- isLikedObjectWithID:type:ownerID:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKLikes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/likeObjectWithID:type:ownerID:" title="likeObjectWithID:type:ownerID:"></a>
+	<h3 class="subsubtitle method-title">likeObjectWithID:type:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Добавляет указанный объект в список &ldquo;Мне нравится&rdquo; текущего пользователя.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)likeObjectWithID:(NSUInteger)<em>objectID</em> type:(NSString *)<em>type</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectID</em></dt>
+			<dd><p>идентификатор объекта</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>тип объекта ( со списком возможных типов объекта можно ознакомиться по
+этой ссылке <a href="https://vk.com/dev/likes.add">https://vk.com/dev/likes.add</a> )</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца объекта</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKLikes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/obtainListWithOptions:" title="obtainListWithOptions:"></a>
+	<h3 class="subsubtitle method-title">obtainListWithOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Получает список идентификаторов пользователей, которые добавили заданный
+объект в свой список &ldquo;Мне нравится&rdquo;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)obtainListWithOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>описания списка опций можно найти на этой странице <a href="https://vk.com/dev/likes.getList">https://vk.com/dev/likes.getList</a></p>
+
+<p>Опции представляют собой список ключ-значение:</p>
+
+<pre><code> @{@"type": @"comment", @"filter": @"copies"}
+</code></pre></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKLikes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unlikeObjectWithID:type:ownerID:" title="unlikeObjectWithID:type:ownerID:"></a>
+	<h3 class="subsubtitle method-title">unlikeObjectWithID:type:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет указанный объект из списка &ldquo;Мне нравится&rdquo; текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)unlikeObjectWithID:(NSUInteger)<em>objectID</em> type:(NSString *)<em>type</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectID</em></dt>
+			<dd><p>идентификатор объекта</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>тип объекта ( со списком возможных типов объекта можно ознакомиться по
+этой ссылке <a href="https://vk.com/dev/likes.add">https://vk.com/dev/likes.add</a> )</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца объекта</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKLikes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>

@@ -26,7 +26,68 @@
 //
 #import <Foundation/Foundation.h>
 
-
+/** Класс предназначен для работы с лайками пользователя
+ */
 @interface VKLikes : NSObject
+
+/** Добавляет указанный объект в список "Мне нравится" текущего пользователя.
+ 
+ @param objectID идентификатор объекта
+ @param type тип объекта ( со списком возможных типов объекта можно ознакомиться по
+ этой ссылке https://vk.com/dev/likes.add )
+ @param ownerID идентификатор владельца объекта
+ 
+ @return ответ на запрос в виде Foundation объекта
+ */
+- (id)likeObjectWithID:(NSUInteger)objectID type:(NSString *)type ownerID:(NSUInteger)ownerID;
+
+/** Удаляет указанный объект из списка "Мне нравится" текущего пользователя
+ 
+ @param objectID идентификатор объекта
+ @param type тип объекта ( со списком возможных типов объекта можно ознакомиться по
+ этой ссылке https://vk.com/dev/likes.add )
+ @param ownerID идентификатор владельца объекта
+ @return ответ на запрос в виде Foundation объекта
+ */
+- (id)unlikeObjectWithID:(NSUInteger)objectID type:(NSString *)type ownerID:(NSUInteger)ownerID;
+
+/** Проверяет, находится ли объект в списке "Мне нравится" текущего пользователя
+ 
+ @param objectID идентификатор объекта
+ @param type тип объекта ( со списком возможных типов объекта можно ознакомиться по
+ этой ссылке https://vk.com/dev/likes.add )
+ @return ответ на запрос в виде Foundation объекта
+ 
+ @see isLikedObjectWithID:type:ownerID:
+ 
+ @warning вызывается метод isLikedObjectWithID:type:ownerID: с последним параметром
+ равным идентификатору текущего пользователя.
+ */
+- (id)isLikedObjectWithID:(NSUInteger)objectID type:(NSString *)type;
+
+/** Проверяет, находится ли объект в списке "Мне нравится" текущего пользователя
+ 
+ @param objectID идентификатор объекта
+ @param type тип объекта ( со списком возможных типов объекта можно ознакомиться по
+ этой ссылке https://vk.com/dev/likes.add )
+ @param ownerID идентификатор владельца Like-объекта
+ @return ответ на запрос в виде Foundation объекта
+ 
+ @see isLikedObjectWithID:type:ownerID:
+ */
+- (id)isLikedObjectWithID:(NSUInteger)objectID type:(NSString *)type ownerID:(NSUInteger)ownerID;
+
+/** Получает список идентификаторов пользователей, которые добавили заданный 
+ объект в свой список "Мне нравится"
+ 
+ @param options описания списка опций можно найти на этой странице https://vk.com/dev/likes.getList
+ 
+ Опции представляют собой список ключ-значение:
+ 
+     @{@"type": @"comment", @"filter": @"copies"}
+ 
+ @return ответ на запрос в виде Foundation объекта
+ */
+- (id)obtainListWithOptions:(NSDictionary *)options;
 
 @end

@@ -27,7 +27,63 @@
 //
 //
 #import "VKLikes.h"
+#import "VKUser.h"
+#import "VKConnector.h"
 
 @implementation VKLikes
+
+#pragma mark - VKLikes methods
+
+- (id)likeObjectWithID:(NSUInteger)objectID type:(NSString *)type ownerID:(NSUInteger)ownerID
+{
+    NSDictionary *params = @{@"item_id": @(objectID),
+                             @"type": type,
+                             @"owner_id": @(ownerID),
+                             @"access_key": @""};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKLikesAdd
+                                                 options:params
+                                                   error:nil];
+}
+
+- (id)unlikeObjectWithID:(NSUInteger)objectID type:(NSString *)type ownerID:(NSUInteger)ownerID
+{
+    NSDictionary *params = @{@"item_id": @(objectID),
+                             @"owner_id": @(ownerID),
+                             @"type": type};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKLikesDelete
+                                                 options:params
+                                                   error:nil];
+}
+
+- (id)isLikedObjectWithID:(NSUInteger)objectID type:(NSString *)type ownerID:(NSUInteger)ownerID
+{
+    NSUInteger userID = [[VKUser currentUser] userID];
+    NSDictionary *params = @{@"user_id": @(userID),
+                             @"type": type,
+                             @"owner_id": @(ownerID),
+                             @"item_id": @(objectID)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKLikesIsLiked
+                                                 options:params
+                                                   error:nil];
+}
+
+- (id)isLikedObjectWithID:(NSUInteger)objectID type:(NSString *)type
+{
+    NSUInteger userID = [[VKUser currentUser] userID];
+    
+    return [self isLikedObjectWithID:objectID
+                                type:type
+                             ownerID:userID];
+}
+
+- (id)obtainListWithOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKLikesGetList
+                                                 options:options
+                                                   error:nil];
+}
 
 @end

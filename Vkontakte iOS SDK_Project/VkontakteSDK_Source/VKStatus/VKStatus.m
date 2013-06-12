@@ -28,7 +28,6 @@
 //
 #import "VKStatus.h"
 #import "VKConnector.h"
-#import "VKMethods.h"
 #import "VKUser.h"
 
 @implementation VKStatus

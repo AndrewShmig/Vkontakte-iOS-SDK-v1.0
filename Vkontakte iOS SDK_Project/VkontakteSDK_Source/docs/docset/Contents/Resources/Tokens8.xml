@@ -1,15 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/VKFriends.html">
+	<File path="Classes/VKLikes.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/VKFriends</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>VKFriends.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/VKLikes</TokenIdentifier>
+			<Abstract type="html">Класс предназначен для работы с лайками пользователя</Abstract>
+			<DeclaredIn>VKLikes.h</DeclaredIn>
 			
 			<NodeRef refid="8"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKLikes/likeObjectWithID:type:ownerID:</TokenIdentifier>
+			<Abstract type="html">Добавляет указанный объект в список &quot;Мне нравится&quot; текущего пользователя.</Abstract>
+			<DeclaredIn>VKLikes.h</DeclaredIn>			
+			
+			<Declaration>- (id)likeObjectWithID:(NSUInteger)objectID type:(NSString *)type ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectID</Name>
+					<Abstract type="html">идентификатор объекта</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">тип объекта ( со списком возможных типов объекта можно ознакомиться по
+этой ссылке https://vk.com/dev/likes.add )</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца объекта</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/likeObjectWithID:type:ownerID:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKLikes/unlikeObjectWithID:type:ownerID:</TokenIdentifier>
+			<Abstract type="html">Удаляет указанный объект из списка &quot;Мне нравится&quot; текущего пользователя</Abstract>
+			<DeclaredIn>VKLikes.h</DeclaredIn>			
+			
+			<Declaration>- (id)unlikeObjectWithID:(NSUInteger)objectID type:(NSString *)type ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectID</Name>
+					<Abstract type="html">идентификатор объекта</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">тип объекта ( со списком возможных типов объекта можно ознакомиться по
+этой ссылке https://vk.com/dev/likes.add )</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца объекта</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/unlikeObjectWithID:type:ownerID:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKLikes/isLikedObjectWithID:type:</TokenIdentifier>
+			<Abstract type="html">Проверяет, находится ли объект в списке &quot;Мне нравится&quot; текущего пользователя</Abstract>
+			<DeclaredIn>VKLikes.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/VKLikes/isLikedObjectWithID:type:ownerID:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)isLikedObjectWithID:(NSUInteger)objectID type:(NSString *)type</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectID</Name>
+					<Abstract type="html">идентификатор объекта</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">тип объекта ( со списком возможных типов объекта можно ознакомиться по
+этой ссылке https://vk.com/dev/likes.add )</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/isLikedObjectWithID:type:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKLikes/isLikedObjectWithID:type:ownerID:</TokenIdentifier>
+			<Abstract type="html">Проверяет, находится ли объект в списке &quot;Мне нравится&quot; текущего пользователя</Abstract>
+			<DeclaredIn>VKLikes.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/VKLikes/isLikedObjectWithID:type:ownerID:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)isLikedObjectWithID:(NSUInteger)objectID type:(NSString *)type ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectID</Name>
+					<Abstract type="html">идентификатор объекта</Abstract>
+				</Parameter><Parameter>
+					<Name>type</Name>
+					<Abstract type="html">тип объекта ( со списком возможных типов объекта можно ознакомиться по
+этой ссылке https://vk.com/dev/likes.add )</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца Like-объекта</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/isLikedObjectWithID:type:ownerID:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKLikes/obtainListWithOptions:</TokenIdentifier>
+			<Abstract type="html">Получает список идентификаторов пользователей, которые добавили заданный
+объект в свой список &quot;Мне нравится&quot;</Abstract>
+			<DeclaredIn>VKLikes.h</DeclaredIn>			
+			
+			<Declaration>- (id)obtainListWithOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">описания списка опций можно найти на этой странице https://vk.com/dev/likes.getList
+
+Опции представляют собой список ключ-значение:
+
+     @{@&quot;type&quot;: @&quot;comment&quot;, @&quot;filter&quot;: @&quot;copies&quot;}</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/obtainListWithOptions:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
 		
 	</File>
 </Tokens>

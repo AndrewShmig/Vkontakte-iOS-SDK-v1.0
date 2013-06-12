@@ -29,7 +29,6 @@
 
 #import "VKConnector.h"
 #import "VKUser.h"
-#import "VKMethods.h"
 #import "VKAccessToken.h"
 
 
@@ -71,7 +70,7 @@
 
 #pragma mark - Singleton methods
 
-+ (id)currentUser
++ (instancetype)currentUser
 {
     static VKUser *me;
     static dispatch_once_t onceToken;
