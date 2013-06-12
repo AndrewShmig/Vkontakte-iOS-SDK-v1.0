@@ -201,7 +201,6 @@
 		D5B7165A1754C1B4009E5C9D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D5B7165C1754C1B4009E5C9D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D5B7165E1754C1B4009E5C9D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D5EB54D21767A2C6001E7552 /* VKBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBlocks.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,7 +376,6 @@
 				1A9A0DFDBE1C877F0B132D35 /* VKConnector.h */,
 				1A9A0F455C140DDD6C719282 /* VKConnector.m */,
 				1A9A070B6A7906D4AD8EFAEA /* VKMethods.h */,
-				D5EB54D21767A2C6001E7552 /* VKBlocks.h */,
 			);
 			path = VKConnector;
 			sourceTree = "<group>";

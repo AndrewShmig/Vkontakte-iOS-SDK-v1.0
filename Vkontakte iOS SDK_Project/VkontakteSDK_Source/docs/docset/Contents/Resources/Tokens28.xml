@@ -34,11 +34,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/VKConnectorProtocol/VKConnector:accessTokenRenewed:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/VKConnectorProtocol/VKConnector:accessTokenRenewalSucceeded:</TokenIdentifier>
 			<Abstract type="html">Метод, вызов которого сигнализирует о том, что токен доступа успешно обновлён.</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>			
 			
-			<Declaration>- (void)VKConnector:(VKConnector *)connector accessTokenRenewed:(VKAccessToken *)accessToken</Declaration>
+			<Declaration>- (void)VKConnector:(VKConnector *)connector accessTokenRenewalSucceeded:(VKAccessToken *)accessToken</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>connector</Name>
@@ -49,7 +49,7 @@
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/VKConnector:accessTokenRenewed:</Anchor>
+			<Anchor>//api/name/VKConnector:accessTokenRenewalSucceeded:</Anchor>
             <NodeRef refid="28"/>
 		</Token>
 		

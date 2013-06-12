@@ -8,7 +8,7 @@
 
 #import "ASAAppDelegate.h"
 #import "ASAViewController.h"
-#import "VKConnector.h"
+#import "VKUser.h"
 
 
 static NSString *const kVKAppID = @"3541027";
@@ -35,6 +35,7 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
 - (void)VKConnector:(VKConnector *)connector accessTokenInvalidated:(VKAccessToken *)accessToken
 {
     NSLog(@"%s", __FUNCTION__);
+    NSLog(@"%@", accessToken);
 }
 
 - (void)VKConnector:(VKConnector *)connector accessTokenRenewalFailed:(VKAccessToken *)accessToken
@@ -46,6 +47,8 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
 {
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%@", accessToken);
+    
+    NSLog(@"User info: %@", [[VKUser currentUser] followers]);
 }
 
 @end

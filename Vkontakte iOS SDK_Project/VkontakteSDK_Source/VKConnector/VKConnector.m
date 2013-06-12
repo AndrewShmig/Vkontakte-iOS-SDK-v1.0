@@ -146,8 +146,6 @@
               options:(NSDictionary *)options
                 error:(NSError **)error
 {
-//    проверяем истек ли срок действия токена
-//    если истек - вызываем метод делегата
     if(![_accessToken isValid]){
         
         if([self.delegate respondsToSelector:@selector(VKConnector:accessTokenInvalidated:)])
@@ -157,7 +155,7 @@
         return nil;
     }
     
-    // формируем УРЛ на который буде отправлен запрос
+//    формируем УРЛ на который буде отправлен запрос
     NSMutableString *fullRequestURL = [NSMutableString stringWithFormat:@"%@%@",
                                        kVkontakteAPIURL, methodName];
     
@@ -170,17 +168,17 @@
     
     [fullRequestURL appendFormat:@"access_token=%@", _accessToken.token];
     
-    // performing HTTP GET request to vkURLMethodSignature URL
     NSURL *url = [NSURL URLWithString:fullRequestURL];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     
+//    отправка запроса
     NSHTTPURLResponse *httpResponse;
     NSError *requestError;
     NSData *response = [NSURLConnection sendSynchronousRequest:urlRequest
                                              returningResponse:&httpResponse
                                                          error:&requestError];
     
-    // error performing request
+//    во время запроса произошла ошибка
     if(nil != requestError){
         *error = requestError;
         
@@ -192,15 +190,14 @@
                                                       options:NSJSONReadingMutableContainers
                                                         error:&jsonParsingError];
     
-    // error parsing JSON response
+//    ошибка парсинга ответа сервера
     if(nil != jsonParsingError){
         *error = jsonParsingError;
         
         return nil;
     }
     
-    // final response
-    *error = nil;
+//    результат
     return jsonResponse;
 }
 
@@ -236,9 +233,9 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
             [_accessToken save];
             
 //            уведомляем программиста, что токен был обновлён
-            if([self.delegate respondsToSelector:@selector(VKConnector:accessTokenRenewed:)])
+            if([self.delegate respondsToSelector:@selector(VKConnector:accessTokenRenewalSucceeded:)])
                 [self.delegate VKConnector:self
-                        accessTokenRenewed:_accessToken];
+               accessTokenRenewalSucceeded:_accessToken];
 
         } else {
 //            пользователь отказался авторизовать приложение

@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VKConnector.h"
+
 
 @class ASAViewController;
-@protocol VKConnectorProtocol;
 
 
 @interface ASAAppDelegate : UIResponder <UIApplicationDelegate, VKConnectorProtocol>
 
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) ASAViewController *viewController;
 
 @end
