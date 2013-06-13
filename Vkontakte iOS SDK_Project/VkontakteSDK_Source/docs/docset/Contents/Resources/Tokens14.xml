@@ -25,11 +25,11 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKStatus/statusUserID:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKStatus/userID:</TokenIdentifier>
 			<Abstract type="html">Получает текст статуса пользователя c указанным идентификатором</Abstract>
 			<DeclaredIn>VKStatus.h</DeclaredIn>			
 			
-			<Declaration>- (id)statusUserID:(NSUInteger)userID</Declaration>
+			<Declaration>- (id)userID:(NSUInteger)userID</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>userID</Name>
@@ -37,16 +37,16 @@
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/statusUserID:</Anchor>
+			<Anchor>//api/name/userID:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKStatus/statusGroupID:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKStatus/groupID:</TokenIdentifier>
 			<Abstract type="html">Получает текст статуса сообщества c указанным идентификатором</Abstract>
 			<DeclaredIn>VKStatus.h</DeclaredIn>			
 			
-			<Declaration>- (id)statusGroupID:(NSUInteger)groupID</Declaration>
+			<Declaration>- (id)groupID:(NSUInteger)groupID</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>groupID</Name>
@@ -54,7 +54,7 @@
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/statusGroupID:</Anchor>
+			<Anchor>//api/name/groupID:</Anchor>
             <NodeRef refid="14"/>
 		</Token>
 		

@@ -49,14 +49,14 @@
  @param userID идентификатор пользователя статус которого необходимо получить
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)statusUserID:(NSUInteger)userID;
+- (id)userID:(NSUInteger)userID;
 
 /** Получает текст статуса сообщества c указанным идентификатором
  
  @param groupID идентификатор сообщества, информацию о статусе которого необходимо получить
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)statusGroupID:(NSUInteger)groupID;
+- (id)groupID:(NSUInteger)groupID;
 
 /**
  @name Изменение статуса

@@ -43,13 +43,13 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/groupID:">&nbsp;&nbsp;&nbsp;&nbsp;- groupID:</option>
+	
 	<option value="//api/name/setStatus:">&nbsp;&nbsp;&nbsp;&nbsp;- setStatus:</option>
 	
 	<option value="//api/name/status">&nbsp;&nbsp;&nbsp;&nbsp;- status</option>
 	
-	<option value="//api/name/statusGroupID:">&nbsp;&nbsp;&nbsp;&nbsp;- statusGroupID:</option>
-	
-	<option value="//api/name/statusUserID:">&nbsp;&nbsp;&nbsp;&nbsp;- statusUserID:</option>
+	<option value="//api/name/userID:">&nbsp;&nbsp;&nbsp;&nbsp;- userID:</option>
 	
 	
 	
@@ -83,13 +83,13 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/groupID:">groupID:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStatus:">setStatus:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/status">status</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/statusGroupID:">statusGroupID:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/statusUserID:">statusUserID:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/userID:">userID:</a></span></li>
 	
 </ul></li>
 
@@ -154,14 +154,14 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/statusUserID:">&ndash;&nbsp;statusUserID:</a></code>
+		<code><a href="#//api/name/userID:">&ndash;&nbsp;userID:</a></code>
 		<span class="tooltip"><p>Получает текст статуса пользователя c указанным идентификатором</p></span>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/statusGroupID:">&ndash;&nbsp;statusGroupID:</a></code>
+		<code><a href="#//api/name/groupID:">&ndash;&nbsp;groupID:</a></code>
 		<span class="tooltip"><p>Получает текст статуса сообщества c указанным идентификатором</p></span>
 	</span>
 	
@@ -197,6 +197,57 @@
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/groupID:" title="groupID:"></a>
+	<h3 class="subsubtitle method-title">groupID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Получает текст статуса сообщества c указанным идентификатором</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)groupID:(NSUInteger)<em>groupID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupID</em></dt>
+			<dd><p>идентификатор сообщества, информацию о статусе которого необходимо получить</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKStatus.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/setStatus:" title="setStatus:"></a>
@@ -291,59 +342,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/statusGroupID:" title="statusGroupID:"></a>
-	<h3 class="subsubtitle method-title">statusGroupID:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>Получает текст статуса сообщества c указанным идентификатором</p>
-	</div>		
-	
-    
-
-	<div class="method-subsection method-declaration"><code>- (id)statusGroupID:(NSUInteger)<em>groupID</em></code></div>
-
-    
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>groupID</em></dt>
-			<dd><p>идентификатор сообщества, информацию о статусе которого необходимо получить</p></dd>
-		</dl>
-		
-	</div>
-	
-	
-	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>ответ на запрос в виде Foundation объекта</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">VKStatus.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/statusUserID:" title="statusUserID:"></a>
-	<h3 class="subsubtitle method-title">statusUserID:</h3>
+	<a name="//api/name/userID:" title="userID:"></a>
+	<h3 class="subsubtitle method-title">userID:</h3>
 	
 	
 	
@@ -353,7 +353,7 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)statusUserID:(NSUInteger)<em>userID</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (id)userID:(NSUInteger)<em>userID</em></code></div>
 
     
 	

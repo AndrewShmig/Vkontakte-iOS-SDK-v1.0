@@ -35,94 +35,94 @@
 
 #pragma mark - Visible VKFriends methods
 
-- (id)friendsCount:(NSUInteger)count
+- (id)count:(NSUInteger)count
 {
     NSDictionary *options = @{@"order": @"hints",
                               @"count": @(count),
                               @"fields": @"first_name,last_name,sex,bdate,photo_medium"};
     
-    return [self friendsCustomOptions:options];
+    return [self customOptions:options];
 }
 
-- (id)friendsCount:(NSUInteger)count fields:(NSString *)fields
+- (id)count:(NSUInteger)count fields:(NSString *)fields
 {
     NSDictionary *options = @{@"count": @(count),
                               @"fields": fields,
                               @"order": @"hints"};
     
-    return [self friendsCustomOptions:options];
+    return [self customOptions:options];
 }
 
-- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset
+- (id)count:(NSUInteger)count offset:(NSUInteger)offset
 {
     NSDictionary *options = @{@"count": @(count),
                               @"offset": @(offset),
                               @"fields": @"first_name,last_name,sex,bdate,photo_medium",
                               @"order": @"hints"};
     
-    return [self friendsCustomOptions:options];
+    return [self customOptions:options];
 }
 
-- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSString *)fields
+- (id)count:(NSUInteger)count offset:(NSUInteger)offset fields:(NSString *)fields
 {
     NSDictionary *options = @{@"count": @(count),
                               @"offset": @(offset),
                               @"fields": fields,
                               @"order": @"hints"};
     
-    return [self friendsCustomOptions:options];
+    return [self customOptions:options];
 }
 
-- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset order:(NSString *)order fields:(NSString *)fields
+- (id)count:(NSUInteger)count offset:(NSUInteger)offset order:(NSString *)order fields:(NSString *)fields
 {
     NSDictionary *options = @{@"count": @(count),
                               @"offset": @(offset),
                               @"order": order,
                               @"fields": fields};
     
-    return [self friendsCustomOptions:options];
+    return [self customOptions:options];
 }
 
-- (id)friendsCustomOptions:(NSDictionary *)options
+- (id)customOptions:(NSDictionary *)options
 {
     return [[VKConnector sharedInstance] performVKMethod:kVKFriendsGet
                                                  options:options
                                                    error:nil];
 }
 
-- (id)friendsOnlineCustomOptions:(NSDictionary *)options
+- (id)onlineCustomOptions:(NSDictionary *)options
 {
     return [[VKConnector sharedInstance] performVKMethod:kVKFriendsGetOnline
                                                  options:options
                                                    error:nil];
 }
 
-- (id)friendsOnlineCount:(NSUInteger)count offset:(NSUInteger)offset
+- (id)onlineCount:(NSUInteger)count offset:(NSUInteger)offset
 {
     NSUInteger userID = [[VKUser currentUser] userID];
     NSDictionary *options = @{@"count": @(count),
                               @"offset": @(offset),
                               @"uid": @(userID)};
     
-    return [self friendsOnlineCustomOptions:options];
+    return [self onlineCustomOptions:options];
 }
 
-- (id)friendsOnline
+- (id)online
 {
     NSUInteger userID = [[VKUser currentUser] userID];
     NSDictionary *options = @{@"uid": @(userID)};
     
-    return [self friendsCustomOptions:options];
+    return [self onlineCustomOptions:options];
 }
 
-- (id)friendsMutualCustomOptions:(NSDictionary *)options
+- (id)mutualCustomOptions:(NSDictionary *)options
 {
     return [[VKConnector sharedInstance] performVKMethod:kVKFriendsGetMutual
                                                  options:options
                                                    error:nil];
 }
 
-- (id)friendsMutualWithUserID:(NSUInteger)userID count:(NSUInteger)count offset:(NSUInteger)offset
+- (id)mutualWithUserID:(NSUInteger)userID count:(NSUInteger)count offset:(NSUInteger)offset
 {
     NSUInteger currentUserID = [[VKUser currentUser] userID];
     NSDictionary *options = @{@"source_uid": @(currentUserID),
@@ -130,26 +130,26 @@
                               @"count": @(count),
                               @"offset": @(offset)};
     
-    return [self friendsOnlineCustomOptions:options];
+    return [self mutualCustomOptions:options];
 }
 
-- (id)friendsMutualWithUserID:(NSUInteger)userID count:(NSUInteger)count
+- (id)mutualWithUserID:(NSUInteger)userID count:(NSUInteger)count
 {
-    return [self friendsMutualWithUserID:userID
-                                   count:count
-                                  offset:0];
+    return [self mutualWithUserID:userID
+                            count:count
+                           offset:0];
 }
 
-- (id)friendsMutualWithUserID:(NSUInteger)userID
+- (id)mutualWithUserID:(NSUInteger)userID
 {
     NSUInteger currentUserID = [[VKUser currentUser] userID];
     NSDictionary *options = @{@"source_uid": @(currentUserID),
                               @"target_uid": @(userID)};
     
-    return [self friendsMutualCustomOptions:options];
+    return [self mutualCustomOptions:options];
 }
 
-- (id)friendsGetRecentCount:(NSUInteger)count
+- (id)recentCount:(NSUInteger)count
 {
     NSDictionary *options = @{@"count": @(count)};
     
@@ -158,50 +158,50 @@
                                                    error:nil];
 }
 
-- (id)friendsGetRecent
+- (id)recent
 {
-    return [self friendsGetRecentCount:100];
+    return [self recentCount:100];
 }
 
-- (id)friendsRequestsCustomOptions:(NSDictionary *)options
+- (id)requestsCustomOptions:(NSDictionary *)options
 {
     return [[VKConnector sharedInstance] performVKMethod:kVKFriendsGetRequests
                                                  options:options
                                                    error:nil];
 }
 
-- (id)friendsOutRequestsCount:(NSUInteger)count offset:(NSUInteger)offset
+- (id)outRequestsCount:(NSUInteger)count offset:(NSUInteger)offset
 {
     NSDictionary *options = @{@"need_count": @1,
                               @"offset": @(offset),
                               @"count": @(count),
                               @"out": @(1)};
     
-    return [self friendsRequestsCustomOptions:options];
+    return [self requestsCustomOptions:options];
 }
 
-- (id)friendsOutRequestsCount:(NSUInteger)count
+- (id)outRequestsCount:(NSUInteger)count
 {
-    return [self friendsOutRequestsCount:count
-                                  offset:0];
+    return [self outRequestsCount:count
+                           offset:0];
 }
 
-- (id)friendsInRequestsCount:(NSUInteger)count offset:(NSUInteger)offset
+- (id)inRequestsCount:(NSUInteger)count offset:(NSUInteger)offset
 {
     NSDictionary *options = @{@"need_count": @1,
                               @"offset": @(offset),
                               @"count": @(count),
                               @"out": @(0)};
     
-    return [self friendsRequestsCustomOptions:options];
+    return [self requestsCustomOptions:options];
 }
 
-- (id)friendsInRequestsCount:(NSUInteger)count
+- (id)inRequestsCount:(NSUInteger)count
 {
-    return [self friendsInRequestsCount:count offset:0];
+    return [self inRequestsCount:count offset:0];
 }
 
-- (id)friendsAddUserID:(NSUInteger)userID text:(NSString *)text
+- (id)addUserID:(NSUInteger)userID text:(NSString *)text
 {
     NSDictionary *options = @{@"uid": @(userID),
                               @"text": text};
@@ -211,19 +211,19 @@
                                                    error:nil];
 }
 
-- (id)friendsAddUserID:(NSUInteger)userID
+- (id)addUserID:(NSUInteger)userID
 {
-    return [self friendsAddUserID:userID text:@""];
+    return [self addUserID:userID text:@""];
 }
 
-- (id)friendsEditCustomOptions:(NSDictionary *)options
+- (id)editCustomOptions:(NSDictionary *)options
 {
     return [[VKConnector sharedInstance] performVKMethod:kVKFriendsEdit
                                                  options:options
                                                    error:nil];
 }
 
-- (id)friendsRemoveUserID:(NSUInteger)userID
+- (id)removeUserID:(NSUInteger)userID
 {
     NSDictionary *options = @{@"uid": @(userID)};
     
@@ -232,14 +232,14 @@
                                                    error:nil];
 }
 
-- (id)friendsLists
+- (id)lists
 {
     return [[VKConnector sharedInstance] performVKMethod:kVKFriendsGetLists
                                                  options:@{}
                                                    error:nil];
 }
 
-- (id)friendsCreateNewList:(NSString *)listName friendsIDs:(NSArray *)friendsIDs
+- (id)createNewList:(NSString *)listName friendsIDs:(NSArray *)friendsIDs
 {
     NSDictionary *options = @{@"name": listName,
                               @"uids": [friendsIDs componentsJoinedByString:@","]};
@@ -249,20 +249,20 @@
                                                    error:nil];
 }
 
-- (id)friendsCreateNewList:(NSString *)listName
+- (id)createNewList:(NSString *)listName
 {
-    return [self friendsCreateNewList:listName
-                           friendsIDs:@[]];
+    return [self createNewList:listName
+                    friendsIDs:@[]];
 }
 
-- (id)friendsEditListCustomOptions:(NSDictionary *)options
+- (id)editListCustomOptions:(NSDictionary *)options
 {
     return [[VKConnector sharedInstance] performVKMethod:kVKFriendsEditList
                                                  options:options
                                                    error:nil];
 }
 
-- (id)friendsDeleteListID:(NSUInteger)listID
+- (id)deleteListID:(NSUInteger)listID
 {
     NSDictionary *options = @{@"lid": @(listID)};
     
@@ -271,14 +271,14 @@
                                                    error:nil];
 }
 
-- (id)friendsInCurrentApplication
+- (id)inCurrentApplication
 {
     return [[VKConnector sharedInstance] performVKMethod:kVKFriendsGetAppUsers
                                                  options:@{}
                                                    error:nil];
 }
 
-- (id)friendsByPhones:(NSArray *)phones fields:(NSArray *)fields
+- (id)byPhones:(NSArray *)phones fields:(NSArray *)fields
 {
     NSDictionary *options = @{@"phones": [phones componentsJoinedByString:@","],
                               @"fields": [fields componentsJoinedByString:@","]};
@@ -288,48 +288,48 @@
                                                    error:nil];
 }
 
-- (id)friendsDeleteRequests
+- (id)deleteRequests
 {
     return [[VKConnector sharedInstance] performVKMethod:kVKFriendsDeleteAllRequests
                                                  options:@{}
                                                    error:nil];
 }
 
-- (id)friendsSuggestionsCustomOptions:(NSDictionary *)options
+- (id)suggestionsCustomOptions:(NSDictionary *)options
 {
     return [[VKConnector sharedInstance] performVKMethod:kVKFriendsGetSuggestions
                                                  options:options
                                                    error:nil];
 }
 
-- (id)friendsSuggestionsCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSArray *)fields
+- (id)suggestionsCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSArray *)fields
 {
     NSDictionary *options = @{@"count": @(count),
                               @"offset": @(offset),
                               @"fields": [fields componentsJoinedByString:@","]};
     
-    return [self friendsSuggestionsCustomOptions:options];
+    return [self suggestionsCustomOptions:options];
 }
 
-- (id)friendsSuggestionsCount:(NSUInteger)count offset:(NSUInteger)offset
+- (id)suggestionsCount:(NSUInteger)count offset:(NSUInteger)offset
 {
-    return [self friendsSuggestionsCount:count
-                                  offset:offset
-                                  fields:@[]];
+    return [self suggestionsCount:count
+                           offset:offset
+                           fields:@[]];
 }
 
-- (id)friendsSuggestionsCount:(NSUInteger)count
+- (id)suggestionsCount:(NSUInteger)count
 {
-    return [self friendsSuggestionsCount:count
-                                  offset:0];
+    return [self suggestionsCount:count
+                           offset:0];
 }
 
-- (id)friendsSuggestions
+- (id)suggestions
 {
-    return [self friendsSuggestionsCustomOptions:@{}];
+    return [self suggestionsCustomOptions:@{}];
 }
 
-- (id)friendsWithUsers:(NSArray *)userIDs
+- (id)withUsers:(NSArray *)userIDs
 {
     NSDictionary *options = @{@"uids": [userIDs componentsJoinedByString:@","]};
     

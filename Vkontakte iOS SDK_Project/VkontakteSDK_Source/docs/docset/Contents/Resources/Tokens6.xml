@@ -13,11 +13,11 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsCount:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/count:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов друзей пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsCount:(NSUInteger)count</Declaration>
+			<Declaration>- (id)count:(NSUInteger)count</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -25,16 +25,16 @@
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsCount:</Anchor>
+			<Anchor>//api/name/count:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsCount:fields:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/count:fields:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов друзей пользователя и расширенную информацию о друзьях пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsCount:(NSUInteger)count fields:(NSString *)fields</Declaration>
+			<Declaration>- (id)count:(NSUInteger)count fields:(NSString *)fields</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -45,16 +45,16 @@
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsCount:fields:</Anchor>
+			<Anchor>//api/name/count:fields:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsCount:offset:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/count:offset:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов друзей пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Declaration>- (id)count:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -65,16 +65,16 @@
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsCount:offset:</Anchor>
+			<Anchor>//api/name/count:offset:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsCount:offset:fields:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/count:offset:fields:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов друзей пользователя или расширенную информацию о друзьях пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSString *)fields</Declaration>
+			<Declaration>- (id)count:(NSUInteger)count offset:(NSUInteger)offset fields:(NSString *)fields</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -88,16 +88,16 @@
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsCount:offset:fields:</Anchor>
+			<Anchor>//api/name/count:offset:fields:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsCount:offset:order:fields:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/count:offset:order:fields:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов друзей пользователя или расширенную информацию о друзьях пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset order:(NSString *)order fields:(NSString *)fields</Declaration>
+			<Declaration>- (id)count:(NSUInteger)count offset:(NSUInteger)offset order:(NSString *)order fields:(NSString *)fields</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -118,16 +118,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsCount:offset:order:fields:</Anchor>
+			<Anchor>//api/name/count:offset:order:fields:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsCustomOptions:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/customOptions:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов друзей пользователя или расширенную информацию о друзьях пользователя (при использовании параметра fields).</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsCustomOptions:(NSDictionary *)options</Declaration>
+			<Declaration>- (id)customOptions:(NSDictionary *)options</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>options</Name>
@@ -135,28 +135,28 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsCustomOptions:</Anchor>
+			<Anchor>//api/name/customOptions:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsOnline</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/online</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов друзей пользователя, находящихся на сайте</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsOnline</Declaration>
+			<Declaration>- (id)online</Declaration>
 			
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsOnline</Anchor>
+			<Anchor>//api/name/online</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsOnlineCount:offset:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/onlineCount:offset:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов друзей пользователя, находящихся на сайте</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsOnlineCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Declaration>- (id)onlineCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -167,16 +167,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsOnlineCount:offset:</Anchor>
+			<Anchor>//api/name/onlineCount:offset:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsOnlineCustomOptions:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/onlineCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов друзей пользователя, находящихся на сайте</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsOnlineCustomOptions:(NSDictionary *)options</Declaration>
+			<Declaration>- (id)onlineCustomOptions:(NSDictionary *)options</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>options</Name>
@@ -184,16 +184,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsOnlineCustomOptions:</Anchor>
+			<Anchor>//api/name/onlineCustomOptions:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsMutualWithUserID:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/mutualWithUserID:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов общих друзей между текущим пользователем и указанным пользователем</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsMutualWithUserID:(NSUInteger)userID</Declaration>
+			<Declaration>- (id)mutualWithUserID:(NSUInteger)userID</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>userID</Name>
@@ -201,16 +201,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsMutualWithUserID:</Anchor>
+			<Anchor>//api/name/mutualWithUserID:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsMutualWithUserID:count:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/mutualWithUserID:count:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов общих друзей между текущим пользователем и указанным пользователем</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsMutualWithUserID:(NSUInteger)userID count:(NSUInteger)count</Declaration>
+			<Declaration>- (id)mutualWithUserID:(NSUInteger)userID count:(NSUInteger)count</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>userID</Name>
@@ -221,16 +221,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsMutualWithUserID:count:</Anchor>
+			<Anchor>//api/name/mutualWithUserID:count:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsMutualWithUserID:count:offset:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/mutualWithUserID:count:offset:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов общих друзей между текущим пользователем и указанным пользователем</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsMutualWithUserID:(NSUInteger)userID count:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Declaration>- (id)mutualWithUserID:(NSUInteger)userID count:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>userID</Name>
@@ -244,16 +244,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsMutualWithUserID:count:offset:</Anchor>
+			<Anchor>//api/name/mutualWithUserID:count:offset:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsMutualCustomOptions:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/mutualCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов общих друзей между парой пользователей</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsMutualCustomOptions:(NSDictionary *)options</Declaration>
+			<Declaration>- (id)mutualCustomOptions:(NSDictionary *)options</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>options</Name>
@@ -261,28 +261,28 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsMutualCustomOptions:</Anchor>
+			<Anchor>//api/name/mutualCustomOptions:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsGetRecent</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/recent</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов недавно добавленных друзей текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsGetRecent</Declaration>
+			<Declaration>- (id)recent</Declaration>
 			
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsGetRecent</Anchor>
+			<Anchor>//api/name/recent</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsGetRecentCount:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/recentCount:</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов недавно добавленных друзей текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsGetRecentCount:(NSUInteger)count</Declaration>
+			<Declaration>- (id)recentCount:(NSUInteger)count</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -290,16 +290,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsGetRecentCount:</Anchor>
+			<Anchor>//api/name/recentCount:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsInRequestsCount:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/inRequestsCount:</TokenIdentifier>
 			<Abstract type="html">Возвращает информацию о полученных заявках на добавление в друзья для текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsInRequestsCount:(NSUInteger)count</Declaration>
+			<Declaration>- (id)inRequestsCount:(NSUInteger)count</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -307,16 +307,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsInRequestsCount:</Anchor>
+			<Anchor>//api/name/inRequestsCount:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsInRequestsCount:offset:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/inRequestsCount:offset:</TokenIdentifier>
 			<Abstract type="html">Возвращает информацию о полученных заявках на добавление в друзья для текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsInRequestsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Declaration>- (id)inRequestsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -327,16 +327,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsInRequestsCount:offset:</Anchor>
+			<Anchor>//api/name/inRequestsCount:offset:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsOutRequestsCount:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/outRequestsCount:</TokenIdentifier>
 			<Abstract type="html">Возвращает информацию об отправленных заявках на добавление в друзья для текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsOutRequestsCount:(NSUInteger)count</Declaration>
+			<Declaration>- (id)outRequestsCount:(NSUInteger)count</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -344,16 +344,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsOutRequestsCount:</Anchor>
+			<Anchor>//api/name/outRequestsCount:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsOutRequestsCount:offset:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/outRequestsCount:offset:</TokenIdentifier>
 			<Abstract type="html">Возвращает информацию об отправленных заявках на добавление в друзья для текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsOutRequestsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Declaration>- (id)outRequestsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -364,16 +364,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsOutRequestsCount:offset:</Anchor>
+			<Anchor>//api/name/outRequestsCount:offset:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsRequestsCustomOptions:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/requestsCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Возвращает информацию о полученных или отправленных заявках на добавление в друзья для текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsRequestsCustomOptions:(NSDictionary *)options</Declaration>
+			<Declaration>- (id)requestsCustomOptions:(NSDictionary *)options</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>options</Name>
@@ -381,16 +381,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsRequestsCustomOptions:</Anchor>
+			<Anchor>//api/name/requestsCustomOptions:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsAddUserID:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/addUserID:</TokenIdentifier>
 			<Abstract type="html">Одобряет или создает заявку на добавление в друзья.</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsAddUserID:(NSUInteger)userID</Declaration>
+			<Declaration>- (id)addUserID:(NSUInteger)userID</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>userID</Name>
@@ -398,16 +398,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsAddUserID:</Anchor>
+			<Anchor>//api/name/addUserID:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsAddUserID:text:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/addUserID:text:</TokenIdentifier>
 			<Abstract type="html">Одобряет или создает заявку на добавление в друзья.</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsAddUserID:(NSUInteger)userID text:(NSString *)text</Declaration>
+			<Declaration>- (id)addUserID:(NSUInteger)userID text:(NSString *)text</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>userID</Name>
@@ -418,16 +418,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsAddUserID:text:</Anchor>
+			<Anchor>//api/name/addUserID:text:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsEditCustomOptions:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/editCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Редактирует списки друзей для выбранного друга</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsEditCustomOptions:(NSDictionary *)options</Declaration>
+			<Declaration>- (id)editCustomOptions:(NSDictionary *)options</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>options</Name>
@@ -435,16 +435,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsEditCustomOptions:</Anchor>
+			<Anchor>//api/name/editCustomOptions:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsRemoveUserID:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/removeUserID:</TokenIdentifier>
 			<Abstract type="html">Удаляет пользователя из списка друзей или отклоняет заявку в друзья.</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsRemoveUserID:(NSUInteger)userID</Declaration>
+			<Declaration>- (id)removeUserID:(NSUInteger)userID</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>userID</Name>
@@ -452,28 +452,28 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsRemoveUserID:</Anchor>
+			<Anchor>//api/name/removeUserID:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsLists</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/lists</TokenIdentifier>
 			<Abstract type="html">Возвращает список меток друзей текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsLists</Declaration>
+			<Declaration>- (id)lists</Declaration>
 			
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsLists</Anchor>
+			<Anchor>//api/name/lists</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsCreateNewList:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/createNewList:</TokenIdentifier>
 			<Abstract type="html">Создает новый список друзей у текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsCreateNewList:(NSString *)listName</Declaration>
+			<Declaration>- (id)createNewList:(NSString *)listName</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>listName</Name>
@@ -481,16 +481,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsCreateNewList:</Anchor>
+			<Anchor>//api/name/createNewList:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsCreateNewList:friendsIDs:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/createNewList:friendsIDs:</TokenIdentifier>
 			<Abstract type="html">Создает новый список друзей у текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsCreateNewList:(NSString *)listName friendsIDs:(NSArray *)friendsIDs</Declaration>
+			<Declaration>- (id)createNewList:(NSString *)listName friendsIDs:(NSArray *)friendsIDs</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>listName</Name>
@@ -501,7 +501,7 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsCreateNewList:friendsIDs:</Anchor>
+			<Anchor>//api/name/createNewList:friendsIDs:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
@@ -523,11 +523,11 @@ random - возвращает друзей в случайном порядке.
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsDeleteListID:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/deleteListID:</TokenIdentifier>
 			<Abstract type="html">Удаляет существующий список друзей текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsDeleteListID:(NSUInteger)listID</Declaration>
+			<Declaration>- (id)deleteListID:(NSUInteger)listID</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>listID</Name>
@@ -535,28 +535,28 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsDeleteListID:</Anchor>
+			<Anchor>//api/name/deleteListID:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsInCurrentApplication</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/inCurrentApplication</TokenIdentifier>
 			<Abstract type="html">Возвращает список идентификаторов друзей текущего пользователя, которые установили данное приложение</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsInCurrentApplication</Declaration>
+			<Declaration>- (id)inCurrentApplication</Declaration>
 			
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsInCurrentApplication</Anchor>
+			<Anchor>//api/name/inCurrentApplication</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsByPhones:fields:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/byPhones:fields:</TokenIdentifier>
 			<Abstract type="html">Возвращает список друзей пользователя, у которых завалидированные или указанные в профиле телефонные номера входят в заданный список</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsByPhones:(NSArray *)phones fields:(NSArray *)fields</Declaration>
+			<Declaration>- (id)byPhones:(NSArray *)phones fields:(NSArray *)fields</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>phones</Name>
@@ -567,40 +567,40 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsByPhones:fields:</Anchor>
+			<Anchor>//api/name/byPhones:fields:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsDeleteRequests</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/deleteRequests</TokenIdentifier>
 			<Abstract type="html">Отмечает все входящие заявки на добавление в друзья как просмотренные</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsDeleteRequests</Declaration>
+			<Declaration>- (id)deleteRequests</Declaration>
 			
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsDeleteRequests</Anchor>
+			<Anchor>//api/name/deleteRequests</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsSuggestions</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/suggestions</TokenIdentifier>
 			<Abstract type="html">Возвращает список профилей пользователей, которые могут быть друзьями текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsSuggestions</Declaration>
+			<Declaration>- (id)suggestions</Declaration>
 			
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsSuggestions</Anchor>
+			<Anchor>//api/name/suggestions</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsSuggestionsCount:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/suggestionsCount:</TokenIdentifier>
 			<Abstract type="html">Возвращает список профилей пользователей, которые могут быть друзьями текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsSuggestionsCount:(NSUInteger)count</Declaration>
+			<Declaration>- (id)suggestionsCount:(NSUInteger)count</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -608,16 +608,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsSuggestionsCount:</Anchor>
+			<Anchor>//api/name/suggestionsCount:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsSuggestionsCount:offset:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/suggestionsCount:offset:</TokenIdentifier>
 			<Abstract type="html">Возвращает список профилей пользователей, которые могут быть друзьями текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsSuggestionsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Declaration>- (id)suggestionsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -628,16 +628,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsSuggestionsCount:offset:</Anchor>
+			<Anchor>//api/name/suggestionsCount:offset:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsSuggestionsCount:offset:fields:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/suggestionsCount:offset:fields:</TokenIdentifier>
 			<Abstract type="html">Возвращает список профилей пользователей, которые могут быть друзьями текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsSuggestionsCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSArray *)fields</Declaration>
+			<Declaration>- (id)suggestionsCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSArray *)fields</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>count</Name>
@@ -651,16 +651,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsSuggestionsCount:offset:fields:</Anchor>
+			<Anchor>//api/name/suggestionsCount:offset:fields:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsSuggestionsCustomOptions:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/suggestionsCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Возвращает список профилей пользователей, которые могут быть друзьями текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsSuggestionsCustomOptions:(NSDictionary *)options</Declaration>
+			<Declaration>- (id)suggestionsCustomOptions:(NSDictionary *)options</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>options</Name>
@@ -668,16 +668,16 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsSuggestionsCustomOptions:</Anchor>
+			<Anchor>//api/name/suggestionsCustomOptions:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsWithUsers:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/withUsers:</TokenIdentifier>
 			<Abstract type="html">Возвращает информацию о том, добавлен ли текущий пользователь в друзья у указанных пользователей.</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsWithUsers:(NSArray *)userIDs</Declaration>
+			<Declaration>- (id)withUsers:(NSArray *)userIDs</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>userIDs</Name>
@@ -685,7 +685,7 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsWithUsers:</Anchor>
+			<Anchor>//api/name/withUsers:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		

@@ -42,7 +42,7 @@
  @param count количество друзей, которое нужно вернуть
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsCount:(NSUInteger)count;
+- (id)count:(NSUInteger)count;
 
 /** Возвращает список идентификаторов друзей пользователя и расширенную информацию о друзьях пользователя
  
@@ -50,7 +50,7 @@
  @param fields перечисленные через запятую поля анкет, необходимые для получения
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsCount:(NSUInteger)count fields:(NSString *)fields;
+- (id)count:(NSUInteger)count fields:(NSString *)fields;
 
 /** Возвращает список идентификаторов друзей пользователя
  
@@ -58,7 +58,7 @@
  @param offset смещение, необходимое для выборки определенного подмножества друзей
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset;
+- (id)count:(NSUInteger)count offset:(NSUInteger)offset;
 
 /** Возвращает список идентификаторов друзей пользователя или расширенную информацию о друзьях пользователя
  
@@ -67,7 +67,7 @@
  @param fields перечисленные через запятую поля анкет, необходимые для получения
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSString *)fields;
+- (id)count:(NSUInteger)count offset:(NSUInteger)offset fields:(NSString *)fields;
 
 /** Возвращает список идентификаторов друзей пользователя или расширенную информацию о друзьях пользователя
  
@@ -81,14 +81,14 @@
  @param fields перечисленные через запятую поля анкет, необходимые для получения
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsCount:(NSUInteger)count offset:(NSUInteger)offset order:(NSString *)order fields:(NSString *)fields;
+- (id)count:(NSUInteger)count offset:(NSUInteger)offset order:(NSString *)order fields:(NSString *)fields;
 
 /** Возвращает список идентификаторов друзей пользователя или расширенную информацию о друзьях пользователя (при использовании параметра fields).
  
  @param options словарь ключи-значения ( со списком ключей можно ознакомиться по этой ссылке https://vk.com/dev/friends.get )
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsCustomOptions:(NSDictionary *)options;
+- (id)customOptions:(NSDictionary *)options;
 
 /**
  @name friends.getOnline
@@ -97,7 +97,7 @@
  
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsOnline;
+- (id)online;
 
 /** Возвращает список идентификаторов друзей пользователя, находящихся на сайте
  
@@ -105,14 +105,14 @@
  @param offset смещение, необходимое для выборки определенного подмножества друзей онлайн
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsOnlineCount:(NSUInteger)count offset:(NSUInteger)offset;
+- (id)onlineCount:(NSUInteger)count offset:(NSUInteger)offset;
 
 /** Возвращает список идентификаторов друзей пользователя, находящихся на сайте
  
  @param options словарь ключи-значения ( со списком ключей можно ознакомиться по этой ссылке https://vk.com/dev/friends.getOnline )
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsOnlineCustomOptions:(NSDictionary *)options;
+- (id)onlineCustomOptions:(NSDictionary *)options;
 
 /**
  @name friends.getMutual
@@ -122,7 +122,7 @@
  @param userID идентификатор пользователя общих друзей с котором необходимо определить
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsMutualWithUserID:(NSUInteger)userID;
+- (id)mutualWithUserID:(NSUInteger)userID;
 
 /** Возвращает список идентификаторов общих друзей между текущим пользователем и указанным пользователем
  
@@ -130,7 +130,7 @@
  @param count количество общих друзей, которое нужно вернуть
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsMutualWithUserID:(NSUInteger)userID count:(NSUInteger)count;
+- (id)mutualWithUserID:(NSUInteger)userID count:(NSUInteger)count;
 
 /** Возвращает список идентификаторов общих друзей между текущим пользователем и указанным пользователем
  
@@ -139,7 +139,7 @@
  @param offset смещение, необходимое для выборки определенного подмножества общих друзей
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsMutualWithUserID:(NSUInteger)userID count:(NSUInteger)count offset:(NSUInteger)offset;
+- (id)mutualWithUserID:(NSUInteger)userID count:(NSUInteger)count offset:(NSUInteger)offset;
 
 /** Возвращает список идентификаторов общих друзей между парой пользователей
  
@@ -155,7 +155,7 @@
  @param options словарь ключи-значения
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsMutualCustomOptions:(NSDictionary *)options;
+- (id)mutualCustomOptions:(NSDictionary *)options;
 
 /**
  @name friends.getRecent
@@ -164,14 +164,14 @@
  
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsGetRecent;
+- (id)recent;
 
 /** Возвращает список идентификаторов недавно добавленных друзей текущего пользователя
  
  @param count максимальное количество недавно добавленных друзей, которое необходимо получить (не более 1000).
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsGetRecentCount:(NSUInteger)count;
+- (id)recentCount:(NSUInteger)count;
 
 /**
  @name friends.getRequests
@@ -181,7 +181,7 @@
  @param count максимальное количество заявок на добавление в друзья, которые необходимо получить (не более 1000)
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsInRequestsCount:(NSUInteger)count;
+- (id)inRequestsCount:(NSUInteger)count;
 
 /** Возвращает информацию о полученных заявках на добавление в друзья для текущего пользователя
  
@@ -189,14 +189,14 @@
  @param offset смещение, необходимое для выборки определенного подмножества заявок на добавление в друзья
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsInRequestsCount:(NSUInteger)count offset:(NSUInteger)offset;
+- (id)inRequestsCount:(NSUInteger)count offset:(NSUInteger)offset;
 
 /** Возвращает информацию об отправленных заявках на добавление в друзья для текущего пользователя
  
  @param count максимальное количество заявок на добавление в друзья, которые необходимо получить (не более 1000)
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsOutRequestsCount:(NSUInteger)count;
+- (id)outRequestsCount:(NSUInteger)count;
 
 /** Возвращает информацию об отправленных заявках на добавление в друзья для текущего пользователя
  
@@ -204,7 +204,7 @@
  @param offset смещение, необходимое для выборки определенного подмножества заявок на добавление в друзья
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsOutRequestsCount:(NSUInteger)count offset:(NSUInteger)offset;
+- (id)outRequestsCount:(NSUInteger)count offset:(NSUInteger)offset;
 
 /** Возвращает информацию о полученных или отправленных заявках на добавление в друзья для текущего пользователя
  
@@ -220,7 +220,7 @@
  @param options словарь ключи-значения
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsRequestsCustomOptions:(NSDictionary *)options;
+- (id)requestsCustomOptions:(NSDictionary *)options;
 
 /**
  @name friends.add
@@ -232,7 +232,7 @@
  @param userID идентификатор пользователя
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsAddUserID:(NSUInteger)userID;
+- (id)addUserID:(NSUInteger)userID;
 
 /** Одобряет или создает заявку на добавление в друзья.
  
@@ -242,7 +242,7 @@
  @param text текст сопроводительного сообщения для заявки на добавление в друзья. Максимальная длина сообщения — 500 символов.
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsAddUserID:(NSUInteger)userID text:(NSString *)text;
+- (id)addUserID:(NSUInteger)userID text:(NSString *)text;
 
 /**
  @name friends.edit
@@ -259,7 +259,7 @@
  @param options словарь ключи-значения
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsEditCustomOptions:(NSDictionary *)options;
+- (id)editCustomOptions:(NSDictionary *)options;
 
 /**
  @name friends.delete
@@ -271,7 +271,7 @@
  @param userID идентификатор пользователя
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsRemoveUserID:(NSUInteger)userID;
+- (id)removeUserID:(NSUInteger)userID;
 
 /**
  @name friends.getLists
@@ -280,7 +280,7 @@
  
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsLists;
+- (id)lists;
 
 /**
  @name friends.addList
@@ -290,7 +290,7 @@
  @param listName название создаваемого списка друзей
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsCreateNewList:(NSString *)listName;
+- (id)createNewList:(NSString *)listName;
 
 /** Создает новый список друзей у текущего пользователя
  
@@ -298,7 +298,7 @@
  @param friendsIDs идентификаторы друзей пользователя, которых необходимо включить в создаваемый список. Идентификаторы пользователей, не являющихся друзьями текущего пользователя, игнорируются
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsCreateNewList:(NSString *)listName friendsIDs:(NSArray *)friendsIDs;
+- (id)createNewList:(NSString *)listName friendsIDs:(NSArray *)friendsIDs;
 
 /**
  @name friends.editList
@@ -318,7 +318,7 @@
  @param listID идентификатор списка друзей, который необходимо удалить
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsDeleteListID:(NSUInteger)listID;
+- (id)deleteListID:(NSUInteger)listID;
 
 /**
  @name friends.getAppUsers
@@ -327,7 +327,7 @@
  
  @return ответ на запрос в виде Foundation объекта 
  */
-- (id)friendsInCurrentApplication;
+- (id)inCurrentApplication;
 
 /**
  @name friends.getByPhones
@@ -338,7 +338,7 @@
  @param fields перечисленные через запятую поля анкет, необходимые для получения
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsByPhones:(NSArray *)phones fields:(NSArray *)fields;
+- (id)byPhones:(NSArray *)phones fields:(NSArray *)fields;
 
 /**
  @name friends.deleteAllRequests
@@ -347,7 +347,7 @@
  
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsDeleteRequests;
+- (id)deleteRequests;
 
 /**
  @name friends.getSuggestions
@@ -356,14 +356,14 @@
  
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsSuggestions;
+- (id)suggestions;
 
 /** Возвращает список профилей пользователей, которые могут быть друзьями текущего пользователя
  
  @param count количество рекомендаций, которое необходимо вернуть
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsSuggestionsCount:(NSUInteger)count;
+- (id)suggestionsCount:(NSUInteger)count;
 
 /** Возвращает список профилей пользователей, которые могут быть друзьями текущего пользователя
  
@@ -371,7 +371,7 @@
  @param offset смещение, необходимое для выбора определённого подмножества списка
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsSuggestionsCount:(NSUInteger)count offset:(NSUInteger)offset;
+- (id)suggestionsCount:(NSUInteger)count offset:(NSUInteger)offset;
 
 /** Возвращает список профилей пользователей, которые могут быть друзьями текущего пользователя
  
@@ -380,14 +380,14 @@
  @param fields перечисленные через запятую поля анкет, необходимые для получения
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsSuggestionsCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSArray *)fields;
+- (id)suggestionsCount:(NSUInteger)count offset:(NSUInteger)offset fields:(NSArray *)fields;
 
 /** Возвращает список профилей пользователей, которые могут быть друзьями текущего пользователя
  
  @param options словарь ключей-значений, детальная информация по этой ссылке : https://vk.com/dev/friends.getSuggestions
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsSuggestionsCustomOptions:(NSDictionary *)options;
+- (id)suggestionsCustomOptions:(NSDictionary *)options;
 
 /**
  @name friends.areFriends
@@ -399,6 +399,6 @@
  @param userIDs Список идентификаторов пользователей, статус дружбы с которыми необходимо получить
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsWithUsers:(NSArray *)userIDs;
+- (id)withUsers:(NSArray *)userIDs;
 
 @end
