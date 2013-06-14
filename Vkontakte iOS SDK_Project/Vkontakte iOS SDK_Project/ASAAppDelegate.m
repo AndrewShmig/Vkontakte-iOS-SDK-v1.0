@@ -49,4 +49,16 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
     NSLog(@"%@", accessToken);
 }
 
+- (void)VKConnector:(VKConnector *)connector connectionErrorOccured:(NSError *)error
+{
+    NSLog(@"%s", __FUNCTION__);
+    NSLog(@"error: %@", error);
+}
+
+- (void)VKConnector:(VKConnector *)connector parsingErrorOccured:(NSError *)error
+{
+    NSLog(@"%s", __FUNCTION__);
+    NSLog(@"error: %@", error);
+}
+
 @end

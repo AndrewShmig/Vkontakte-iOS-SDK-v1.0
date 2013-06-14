@@ -69,6 +69,22 @@ accessTokenInvalidated:(VKAccessToken *)accessToken;
 - (void)VKConnector:(VKConnector *)connector
 accessTokenRenewalFailed:(VKAccessToken *)accessToken;
 
+/** Метод, вызов которого сигнализирует о том, что произошла ошибка соединения при попытке осуществить запрос
+ 
+ @param connector объект класса VKConnector отправляющего сообщение
+ @param error объект ошибки содержащий описание причины возникновения ошибки
+ */
+- (void)VKConnector:(VKConnector *)connector
+connectionErrorOccured:(NSError *)error;
+
+/** Метод, вызов которого сигнализирует о том, что произошла ошибка при парсинге JSON ответа сервера
+ 
+ @param connector объект класса VKConnector отправляющего сообщение
+ @param error объект ошибки содержащий описание причины возникновения ошибки
+ */
+- (void)VKConnector:(VKConnector *)connector
+parsingErrorOccured:(NSError *)error;
+
 @end
 
 

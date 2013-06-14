@@ -76,5 +76,45 @@
             <NodeRef refid="18"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/VKConnectorProtocol/VKConnector:connectionErrorOccured:</TokenIdentifier>
+			<Abstract type="html">Метод, вызов которого сигнализирует о том, что произошла ошибка соединения при попытке осуществить запрос</Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>- (void)VKConnector:(VKConnector *)connector connectionErrorOccured:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connector</Name>
+					<Abstract type="html">объект класса VKConnector отправляющего сообщение</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">объект ошибки содержащий описание причины возникновения ошибки</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/VKConnector:connectionErrorOccured:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/VKConnectorProtocol/VKConnector:parsingErrorOccured:</TokenIdentifier>
+			<Abstract type="html">Метод, вызов которого сигнализирует о том, что произошла ошибка при парсинге JSON ответа сервера</Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>- (void)VKConnector:(VKConnector *)connector parsingErrorOccured:(NSError *)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>connector</Name>
+					<Abstract type="html">объект класса VKConnector отправляющего сообщение</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">объект ошибки содержащий описание причины возникновения ошибки</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/VKConnector:parsingErrorOccured:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
 	</File>
 </Tokens>

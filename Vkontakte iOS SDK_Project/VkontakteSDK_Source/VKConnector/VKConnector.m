@@ -181,6 +181,10 @@
     if(nil != requestError){
         *error = requestError;
         
+        if([self.delegate respondsToSelector:@selector(VKConnector:connectionErrorOccured:)])
+            [self.delegate VKConnector:self
+                connectionErrorOccured:*error];
+        
         return nil;
     }
     
@@ -192,6 +196,10 @@
 //    ошибка парсинга ответа сервера
     if(nil != jsonParsingError){
         *error = jsonParsingError;
+        
+        if([self.delegate respondsToSelector:@selector(VKConnector:parsingErrorOccured:)])
+            [self.delegate VKConnector:self
+                   parsingErrorOccured:*error];
         
         return nil;
     }

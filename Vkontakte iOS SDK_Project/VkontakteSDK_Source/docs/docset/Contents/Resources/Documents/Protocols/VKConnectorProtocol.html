@@ -49,6 +49,10 @@
 	
 	<option value="//api/name/VKConnector:accessTokenRenewalSucceeded:">&nbsp;&nbsp;&nbsp;&nbsp;- VKConnector:accessTokenRenewalSucceeded:</option>
 	
+	<option value="//api/name/VKConnector:connectionErrorOccured:">&nbsp;&nbsp;&nbsp;&nbsp;- VKConnector:connectionErrorOccured:</option>
+	
+	<option value="//api/name/VKConnector:parsingErrorOccured:">&nbsp;&nbsp;&nbsp;&nbsp;- VKConnector:parsingErrorOccured:</option>
+	
 	
 	
 </select>
@@ -82,6 +86,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/VKConnector:accessTokenRenewalFailed:">VKConnector:accessTokenRenewalFailed:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/VKConnector:accessTokenRenewalSucceeded:">VKConnector:accessTokenRenewalSucceeded:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/VKConnector:connectionErrorOccured:">VKConnector:connectionErrorOccured:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/VKConnector:parsingErrorOccured:">VKConnector:parsingErrorOccured:</a></span></li>
 	
 </ul></li>
 
@@ -159,6 +167,20 @@
 удалось.
 Причиной ошибки может быть прерывание связи, либо пользователь отказался авторизовывать
 приложение.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/VKConnector:connectionErrorOccured:">&ndash;&nbsp;VKConnector:connectionErrorOccured:</a></code>
+		<span class="tooltip"><p>Метод, вызов которого сигнализирует о том, что произошла ошибка соединения при попытке осуществить запрос</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/VKConnector:parsingErrorOccured:">&ndash;&nbsp;VKConnector:parsingErrorOccured:</a></code>
+		<span class="tooltip"><p>Метод, вызов которого сигнализирует о том, что произошла ошибка при парсинге JSON ответа сервера</p></span>
 	</span>
 	
 	
@@ -312,6 +334,108 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>accessToken</em></dt>
 			<dd><p>новый токен доступа, который был получен.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/VKConnector:connectionErrorOccured:" title="VKConnector:connectionErrorOccured:"></a>
+	<h3 class="subsubtitle method-title">VKConnector:connectionErrorOccured:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Метод, вызов которого сигнализирует о том, что произошла ошибка соединения при попытке осуществить запрос</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)VKConnector:(VKConnector *)<em>connector</em> connectionErrorOccured:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connector</em></dt>
+			<dd><p>объект класса <a href="../Classes/VKConnector.html">VKConnector</a> отправляющего сообщение</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>объект ошибки содержащий описание причины возникновения ошибки</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/VKConnector:parsingErrorOccured:" title="VKConnector:parsingErrorOccured:"></a>
+	<h3 class="subsubtitle method-title">VKConnector:parsingErrorOccured:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Метод, вызов которого сигнализирует о том, что произошла ошибка при парсинге JSON ответа сервера</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)VKConnector:(VKConnector *)<em>connector</em> parsingErrorOccured:(NSError *)<em>error</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connector</em></dt>
+			<dd><p>объект класса <a href="../Classes/VKConnector.html">VKConnector</a> отправляющего сообщение</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>error</em></dt>
+			<dd><p>объект ошибки содержащий описание причины возникновения ошибки</p></dd>
 		</dl>
 		
 	</div>
