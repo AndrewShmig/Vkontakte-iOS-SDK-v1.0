@@ -26,6 +26,12 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
 	
 	
 	
@@ -35,6 +41,41 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addComment:noteID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- addComment:noteID:ownerID:</option>
+	
+	<option value="//api/name/addComment:noteID:ownerID:replyToUserID:">&nbsp;&nbsp;&nbsp;&nbsp;- addComment:noteID:ownerID:replyToUserID:</option>
+	
+	<option value="//api/name/addTitle:text:privacy:commentPrivacy:">&nbsp;&nbsp;&nbsp;&nbsp;- addTitle:text:privacy:commentPrivacy:</option>
+	
+	<option value="//api/name/commentsWithID:count:offset:sort:">&nbsp;&nbsp;&nbsp;&nbsp;- commentsWithID:count:offset:sort:</option>
+	
+	<option value="//api/name/count:">&nbsp;&nbsp;&nbsp;&nbsp;- count:</option>
+	
+	<option value="//api/name/count:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- count:offset:</option>
+	
+	<option value="//api/name/count:offset:sort:">&nbsp;&nbsp;&nbsp;&nbsp;- count:offset:sort:</option>
+	
+	<option value="//api/name/deleteCommentWithID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteCommentWithID:ownerID:</option>
+	
+	<option value="//api/name/deleteWithID:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteWithID:</option>
+	
+	<option value="//api/name/editCommentWithID:comment:">&nbsp;&nbsp;&nbsp;&nbsp;- editCommentWithID:comment:</option>
+	
+	<option value="//api/name/editWithID:title:text:privacy:commentPrivacy:">&nbsp;&nbsp;&nbsp;&nbsp;- editWithID:title:text:privacy:commentPrivacy:</option>
+	
+	<option value="//api/name/friendsNotesCount:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- friendsNotesCount:offset:</option>
+	
+	<option value="//api/name/noteWithID:">&nbsp;&nbsp;&nbsp;&nbsp;- noteWithID:</option>
+	
+	<option value="//api/name/noteWithID:wiki:">&nbsp;&nbsp;&nbsp;&nbsp;- noteWithID:wiki:</option>
+	
+	<option value="//api/name/noteWithID:wiki:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- noteWithID:wiki:ownerID:</option>
+	
+	<option value="//api/name/restoreCommentWithID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- restoreCommentWithID:ownerID:</option>
+	
+	<option value="//api/name/withIDs:count:offset:sort:">&nbsp;&nbsp;&nbsp;&nbsp;- withIDs:count:offset:sort:</option>
 	
 	
 	
@@ -45,6 +86,36 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_notes.get">notes.get</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_notes.getByID">notes.getByID</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_notes.getFriendsNotes">notes.getFriendsNotes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_notes.add">notes.add</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_notes.edit">notes.edit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_notes.delete">notes.delete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_notes.getComments">notes.getComments</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_notes.createComment">notes.createComment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_notes.editComment">notes.editComment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_notes.deleteComment">notes.deleteComment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_notes.restoreComment">notes.restoreComment</a></span></li>
+	
+</ul></li>
 
 
 
@@ -54,7 +125,43 @@
 
 
 
-
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addComment:noteID:ownerID:">addComment:noteID:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addComment:noteID:ownerID:replyToUserID:">addComment:noteID:ownerID:replyToUserID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addTitle:text:privacy:commentPrivacy:">addTitle:text:privacy:commentPrivacy:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/commentsWithID:count:offset:sort:">commentsWithID:count:offset:sort:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/count:">count:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/count:offset:">count:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/count:offset:sort:">count:offset:sort:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteCommentWithID:ownerID:">deleteCommentWithID:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteWithID:">deleteWithID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editCommentWithID:comment:">editCommentWithID:comment:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editWithID:title:text:privacy:commentPrivacy:">editWithID:title:text:privacy:commentPrivacy:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/friendsNotesCount:offset:">friendsNotesCount:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/noteWithID:">noteWithID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/noteWithID:wiki:">noteWithID:wiki:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/noteWithID:wiki:ownerID:">noteWithID:wiki:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreCommentWithID:ownerID:">restoreCommentWithID:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/withIDs:count:offset:sort:">withIDs:count:offset:sort:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -88,6 +195,228 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс предназначен для работы с заметками пользователя</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="notes.get" name="task_notes.get"></a>
+						<h3 class="subsubtitle task-title">notes.get</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/count:">&ndash;&nbsp;count:</a></code>
+		<span class="tooltip"><p>Возвращает список заметок, созданных пользователем</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/count:offset:">&ndash;&nbsp;count:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список заметок, созданных пользователем</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/count:offset:sort:">&ndash;&nbsp;count:offset:sort:</a></code>
+		<span class="tooltip"><p>Возвращает список заметок, созданных пользователем</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/withIDs:count:offset:sort:">&ndash;&nbsp;withIDs:count:offset:sort:</a></code>
+		<span class="tooltip"><p>Возвращает список заметок, созданных пользователем</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="notes.getByID" name="task_notes.getByID"></a>
+						<h3 class="subsubtitle task-title">notes.getByID</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/noteWithID:">&ndash;&nbsp;noteWithID:</a></code>
+		<span class="tooltip"><p>Возвращает заметку по её id, владельцем является текущий пользователь</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/noteWithID:wiki:">&ndash;&nbsp;noteWithID:wiki:</a></code>
+		<span class="tooltip"><p>Возвращает заметку по её id, владельцем является текущий пользователь</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/noteWithID:wiki:ownerID:">&ndash;&nbsp;noteWithID:wiki:ownerID:</a></code>
+		<span class="tooltip"><p>Возвращает заметку по её id</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="notes.getFriendsNotes" name="task_notes.getFriendsNotes"></a>
+						<h3 class="subsubtitle task-title">notes.getFriendsNotes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/friendsNotesCount:offset:">&ndash;&nbsp;friendsNotesCount:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список заметок друзей пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="notes.add" name="task_notes.add"></a>
+						<h3 class="subsubtitle task-title">notes.add</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addTitle:text:privacy:commentPrivacy:">&ndash;&nbsp;addTitle:text:privacy:commentPrivacy:</a></code>
+		<span class="tooltip"><p>Создает новую заметку у текущего пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="notes.edit" name="task_notes.edit"></a>
+						<h3 class="subsubtitle task-title">notes.edit</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editWithID:title:text:privacy:commentPrivacy:">&ndash;&nbsp;editWithID:title:text:privacy:commentPrivacy:</a></code>
+		<span class="tooltip"><p>Редактирует заметку текущего пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="notes.delete" name="task_notes.delete"></a>
+						<h3 class="subsubtitle task-title">notes.delete</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteWithID:">&ndash;&nbsp;deleteWithID:</a></code>
+		<span class="tooltip"><p>Удаляет заметку текущего пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="notes.getComments" name="task_notes.getComments"></a>
+						<h3 class="subsubtitle task-title">notes.getComments</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/commentsWithID:count:offset:sort:">&ndash;&nbsp;commentsWithID:count:offset:sort:</a></code>
+		<span class="tooltip"><p>Возвращает список комментариев к заметке</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="notes.createComment" name="task_notes.createComment"></a>
+						<h3 class="subsubtitle task-title">notes.createComment</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addComment:noteID:ownerID:">&ndash;&nbsp;addComment:noteID:ownerID:</a></code>
+		<span class="tooltip"><p>Добавляет новый комментарий к заметке</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addComment:noteID:ownerID:replyToUserID:">&ndash;&nbsp;addComment:noteID:ownerID:replyToUserID:</a></code>
+		<span class="tooltip"><p>Добавляет новый комментарий к заметке</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="notes.editComment" name="task_notes.editComment"></a>
+						<h3 class="subsubtitle task-title">notes.editComment</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editCommentWithID:comment:">&ndash;&nbsp;editCommentWithID:comment:</a></code>
+		<span class="tooltip"><p>Редактирует указанный комментарий у заметки</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="notes.deleteComment" name="task_notes.deleteComment"></a>
+						<h3 class="subsubtitle task-title">notes.deleteComment</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteCommentWithID:ownerID:">&ndash;&nbsp;deleteCommentWithID:ownerID:</a></code>
+		<span class="tooltip"><p>Удаляет комментарий к заметке</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="notes.restoreComment" name="task_notes.restoreComment"></a>
+						<h3 class="subsubtitle task-title">notes.restoreComment</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restoreCommentWithID:ownerID:">&ndash;&nbsp;restoreCommentWithID:ownerID:</a></code>
+		<span class="tooltip"><p>Восстанавливает удалённый комментарий</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
@@ -97,6 +426,1032 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addComment:noteID:ownerID:" title="addComment:noteID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">addComment:noteID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Добавляет новый комментарий к заметке</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addComment:(NSString *)<em>comment</em> noteID:(NSUInteger)<em>noteID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>comment</em></dt>
+			<dd><p>текст комментария</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>noteID</em></dt>
+			<dd><p>идентификатор заметки</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца заметки</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addComment:noteID:ownerID:replyToUserID:" title="addComment:noteID:ownerID:replyToUserID:"></a>
+	<h3 class="subsubtitle method-title">addComment:noteID:ownerID:replyToUserID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Добавляет новый комментарий к заметке</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addComment:(NSString *)<em>comment</em> noteID:(NSUInteger)<em>noteID</em> ownerID:(NSUInteger)<em>ownerID</em> replyToUserID:(NSUInteger)<em>userID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>comment</em></dt>
+			<dd><p>текст комментария</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>noteID</em></dt>
+			<dd><p>идентификатор заметки</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца заметки</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userID</em></dt>
+			<dd><p>идентификатор пользователя, ответом на комментарий которого является добавляемый комментарий (не передаётся, если комментарий не является ответом)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addTitle:text:privacy:commentPrivacy:" title="addTitle:text:privacy:commentPrivacy:"></a>
+	<h3 class="subsubtitle method-title">addTitle:text:privacy:commentPrivacy:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Создает новую заметку у текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addTitle:(NSString *)<em>title</em> text:(NSString *)<em>text</em> privacy:(NSUInteger)<em>privacy</em> commentPrivacy:(NSUInteger)<em>commentPrivacy</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>заголовок заметки</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>текст заметки</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>privacy</em></dt>
+			<dd><p>уровень доступа к заметке. Возможные значения:
+0 — все пользователи, 1 — только друзья, 2 — друзья и друзья друзей, 3 — только пользователь.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>commentPrivacy</em></dt>
+			<dd><p>уровень доступа к комментированию заметки. Возможные значения:
+0 — все пользователи, 1 — только друзья, 2 — друзья и друзья друзей, 3 — только пользователь.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/commentsWithID:count:offset:sort:" title="commentsWithID:count:offset:sort:"></a>
+	<h3 class="subsubtitle method-title">commentsWithID:count:offset:sort:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список комментариев к заметке</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)commentsWithID:(NSUInteger)<em>noteID</em> count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em> sort:(NSUInteger)<em>sort</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>noteID</em></dt>
+			<dd><p>идентификатор заметки, информацию о комментариях к которой нужно вернуть</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество комментариев, которое необходимо получить</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества комментариев</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sort</em></dt>
+			<dd><p>сортировка результатов (0 — по дате добавления в порядке возрастания, 1 — по дате добавления в порядке убывания)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/count:" title="count:"></a>
+	<h3 class="subsubtitle method-title">count:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список заметок, созданных пользователем</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)count:(NSUInteger)<em>count</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество заметок, информацию о которых необходимо получить</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Заметки отсортированы по дате создания в порядке убывания.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/count:offset:" title="count:offset:"></a>
+	<h3 class="subsubtitle method-title">count:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список заметок, созданных пользователем</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество заметок, информацию о которых необходимо получить</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества заметок</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Заметки отсортированы по дате создания в порядке убывания.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/count:offset:sort:" title="count:offset:sort:"></a>
+	<h3 class="subsubtitle method-title">count:offset:sort:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список заметок, созданных пользователем</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em> sort:(NSUInteger)<em>sort</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество заметок, информацию о которых необходимо получить</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества заметок</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sort</em></dt>
+			<dd><p>сортировка результатов (0 — по дате создания в порядке убывания, 1 - по дате создания в порядке возрастания).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteCommentWithID:ownerID:" title="deleteCommentWithID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">deleteCommentWithID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет комментарий к заметке</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)deleteCommentWithID:(NSUInteger)<em>commentID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>commentID</em></dt>
+			<dd><p>идентификатор комментария</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца заметки</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteWithID:" title="deleteWithID:"></a>
+	<h3 class="subsubtitle method-title">deleteWithID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет заметку текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)deleteWithID:(NSUInteger)<em>noteID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>noteID</em></dt>
+			<dd><p>идентификатор заметки</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editCommentWithID:comment:" title="editCommentWithID:comment:"></a>
+	<h3 class="subsubtitle method-title">editCommentWithID:comment:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Редактирует указанный комментарий у заметки</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)editCommentWithID:(NSUInteger)<em>commentID</em> comment:(NSString *)<em>comment</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>commentID</em></dt>
+			<dd><p>идентификатор комментария</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>comment</em></dt>
+			<dd><p>новый текст комментария</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editWithID:title:text:privacy:commentPrivacy:" title="editWithID:title:text:privacy:commentPrivacy:"></a>
+	<h3 class="subsubtitle method-title">editWithID:title:text:privacy:commentPrivacy:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Редактирует заметку текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)editWithID:(NSUInteger)<em>noteID</em> title:(NSString *)<em>title</em> text:(NSString *)<em>text</em> privacy:(NSUInteger)<em>privacy</em> commentPrivacy:(NSUInteger)<em>commentPrivacy</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>noteID</em></dt>
+			<dd><p>идентификатор редактируемой заметки.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>заголовок заметки</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>текст заметки</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>privacy</em></dt>
+			<dd><p>уровень доступа к заметке. Возможные значения:
+0 — все пользователи, 1 — только друзья, 2 — друзья и друзья друзей, 3 — только пользователь</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>commentPrivacy</em></dt>
+			<dd><p>уровень доступа к комментированию заметки. Возможные значения:
+0 — все пользователи, 1 — только друзья, 2 — друзья и друзья друзей, 3 — только пользователь</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/friendsNotesCount:offset:" title="friendsNotesCount:offset:"></a>
+	<h3 class="subsubtitle method-title">friendsNotesCount:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список заметок друзей пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)friendsNotesCount:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество заметок, информацию о которых необходимо получить.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества заметок</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/noteWithID:" title="noteWithID:"></a>
+	<h3 class="subsubtitle method-title">noteWithID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает заметку по её id, владельцем является текущий пользователь</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)noteWithID:(NSUInteger)<em>noteID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>noteID</em></dt>
+			<dd><p>идентификатор заметки</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/noteWithID:wiki:" title="noteWithID:wiki:"></a>
+	<h3 class="subsubtitle method-title">noteWithID:wiki:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает заметку по её id, владельцем является текущий пользователь</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)noteWithID:(NSUInteger)<em>noteID</em> wiki:(NSUInteger)<em>wiki</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>noteID</em></dt>
+			<dd><p>идентификатор заметки</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wiki</em></dt>
+			<dd><p>определяет, требуется ли в ответе wiki-представление заметки (работает, только если запрашиваются заметки текущего пользователя)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/noteWithID:wiki:ownerID:" title="noteWithID:wiki:ownerID:"></a>
+	<h3 class="subsubtitle method-title">noteWithID:wiki:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает заметку по её id</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)noteWithID:(NSUInteger)<em>noteID</em> wiki:(NSUInteger)<em>wiki</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>noteID</em></dt>
+			<dd><p>идентификатор заметки</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>wiki</em></dt>
+			<dd><p>определяет, требуется ли в ответе wiki-представление заметки (работает, только если запрашиваются заметки текущего пользователя)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца заметки</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restoreCommentWithID:ownerID:" title="restoreCommentWithID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">restoreCommentWithID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Восстанавливает удалённый комментарий</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)restoreCommentWithID:(NSUInteger)<em>commentID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>commentID</em></dt>
+			<dd><p>идентификатор удаленного комментария</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца заметки</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/withIDs:count:offset:sort:" title="withIDs:count:offset:sort:"></a>
+	<h3 class="subsubtitle method-title">withIDs:count:offset:sort:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список заметок, созданных пользователем</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)withIDs:(NSArray *)<em>notesIDs</em> count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em> sort:(NSUInteger)<em>sort</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>notesIDs</em></dt>
+			<dd><p>идентификаторы заметок, информацию о которых необходимо получить</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество заметок, информацию о которых необходимо получить</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества заметок</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sort</em></dt>
+			<dd><p>сортировка результатов (0 — по дате создания в порядке убывания, 1 - по дате создания в порядке возрастания).</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKNotes.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>
@@ -109,7 +1464,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-13)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-14)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

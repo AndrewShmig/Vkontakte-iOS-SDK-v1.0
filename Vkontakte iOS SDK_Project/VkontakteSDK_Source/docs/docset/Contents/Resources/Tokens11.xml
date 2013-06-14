@@ -4,12 +4,389 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKNotes</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для работы с заметками пользователя</Abstract>
 			<DeclaredIn>VKNotes.h</DeclaredIn>
 			
 			<NodeRef refid="11"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/count:</TokenIdentifier>
+			<Abstract type="html">Возвращает список заметок, созданных пользователем</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)count:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество заметок, информацию о которых необходимо получить</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/count:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/count:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список заметок, созданных пользователем</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)count:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество заметок, информацию о которых необходимо получить</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества заметок</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/count:offset:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/count:offset:sort:</TokenIdentifier>
+			<Abstract type="html">Возвращает список заметок, созданных пользователем</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)count:(NSUInteger)count offset:(NSUInteger)offset sort:(NSUInteger)sort</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество заметок, информацию о которых необходимо получить</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества заметок</Abstract>
+				</Parameter><Parameter>
+					<Name>sort</Name>
+					<Abstract type="html">сортировка результатов (0 — по дате создания в порядке убывания, 1 - по дате создания в порядке возрастания).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/count:offset:sort:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/withIDs:count:offset:sort:</TokenIdentifier>
+			<Abstract type="html">Возвращает список заметок, созданных пользователем</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)withIDs:(NSArray *)notesIDs count:(NSUInteger)count offset:(NSUInteger)offset sort:(NSUInteger)sort</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notesIDs</Name>
+					<Abstract type="html">идентификаторы заметок, информацию о которых необходимо получить</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество заметок, информацию о которых необходимо получить</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества заметок</Abstract>
+				</Parameter><Parameter>
+					<Name>sort</Name>
+					<Abstract type="html">сортировка результатов (0 — по дате создания в порядке убывания, 1 - по дате создания в порядке возрастания).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/withIDs:count:offset:sort:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/noteWithID:</TokenIdentifier>
+			<Abstract type="html">Возвращает заметку по её id, владельцем является текущий пользователь</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)noteWithID:(NSUInteger)noteID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>noteID</Name>
+					<Abstract type="html">идентификатор заметки</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/noteWithID:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/noteWithID:wiki:</TokenIdentifier>
+			<Abstract type="html">Возвращает заметку по её id, владельцем является текущий пользователь</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)noteWithID:(NSUInteger)noteID wiki:(NSUInteger)wiki</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>noteID</Name>
+					<Abstract type="html">идентификатор заметки</Abstract>
+				</Parameter><Parameter>
+					<Name>wiki</Name>
+					<Abstract type="html">определяет, требуется ли в ответе wiki-представление заметки (работает, только если запрашиваются заметки текущего пользователя)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/noteWithID:wiki:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/noteWithID:wiki:ownerID:</TokenIdentifier>
+			<Abstract type="html">Возвращает заметку по её id</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)noteWithID:(NSUInteger)noteID wiki:(NSUInteger)wiki ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>noteID</Name>
+					<Abstract type="html">идентификатор заметки</Abstract>
+				</Parameter><Parameter>
+					<Name>wiki</Name>
+					<Abstract type="html">определяет, требуется ли в ответе wiki-представление заметки (работает, только если запрашиваются заметки текущего пользователя)</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца заметки</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/noteWithID:wiki:ownerID:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/friendsNotesCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список заметок друзей пользователя</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)friendsNotesCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество заметок, информацию о которых необходимо получить.</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества заметок</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/friendsNotesCount:offset:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/addTitle:text:privacy:commentPrivacy:</TokenIdentifier>
+			<Abstract type="html">Создает новую заметку у текущего пользователя</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)addTitle:(NSString *)title text:(NSString *)text privacy:(NSUInteger)privacy commentPrivacy:(NSUInteger)commentPrivacy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">заголовок заметки</Abstract>
+				</Parameter><Parameter>
+					<Name>text</Name>
+					<Abstract type="html">текст заметки</Abstract>
+				</Parameter><Parameter>
+					<Name>privacy</Name>
+					<Abstract type="html">уровень доступа к заметке. Возможные значения:
+0 — все пользователи, 1 — только друзья, 2 — друзья и друзья друзей, 3 — только пользователь.</Abstract>
+				</Parameter><Parameter>
+					<Name>commentPrivacy</Name>
+					<Abstract type="html">уровень доступа к комментированию заметки. Возможные значения:
+0 — все пользователи, 1 — только друзья, 2 — друзья и друзья друзей, 3 — только пользователь.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addTitle:text:privacy:commentPrivacy:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/editWithID:title:text:privacy:commentPrivacy:</TokenIdentifier>
+			<Abstract type="html">Редактирует заметку текущего пользователя</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)editWithID:(NSUInteger)noteID title:(NSString *)title text:(NSString *)text privacy:(NSUInteger)privacy commentPrivacy:(NSUInteger)commentPrivacy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>noteID</Name>
+					<Abstract type="html">идентификатор редактируемой заметки.</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">заголовок заметки</Abstract>
+				</Parameter><Parameter>
+					<Name>text</Name>
+					<Abstract type="html">текст заметки</Abstract>
+				</Parameter><Parameter>
+					<Name>privacy</Name>
+					<Abstract type="html">уровень доступа к заметке. Возможные значения:
+0 — все пользователи, 1 — только друзья, 2 — друзья и друзья друзей, 3 — только пользователь</Abstract>
+				</Parameter><Parameter>
+					<Name>commentPrivacy</Name>
+					<Abstract type="html">уровень доступа к комментированию заметки. Возможные значения:
+0 — все пользователи, 1 — только друзья, 2 — друзья и друзья друзей, 3 — только пользователь</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editWithID:title:text:privacy:commentPrivacy:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/deleteWithID:</TokenIdentifier>
+			<Abstract type="html">Удаляет заметку текущего пользователя</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteWithID:(NSUInteger)noteID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>noteID</Name>
+					<Abstract type="html">идентификатор заметки</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteWithID:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/commentsWithID:count:offset:sort:</TokenIdentifier>
+			<Abstract type="html">Возвращает список комментариев к заметке</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)commentsWithID:(NSUInteger)noteID count:(NSUInteger)count offset:(NSUInteger)offset sort:(NSUInteger)sort</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>noteID</Name>
+					<Abstract type="html">идентификатор заметки, информацию о комментариях к которой нужно вернуть</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество комментариев, которое необходимо получить</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества комментариев</Abstract>
+				</Parameter><Parameter>
+					<Name>sort</Name>
+					<Abstract type="html">сортировка результатов (0 — по дате добавления в порядке возрастания, 1 — по дате добавления в порядке убывания)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/commentsWithID:count:offset:sort:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/addComment:noteID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Добавляет новый комментарий к заметке</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)addComment:(NSString *)comment noteID:(NSUInteger)noteID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>comment</Name>
+					<Abstract type="html">текст комментария</Abstract>
+				</Parameter><Parameter>
+					<Name>noteID</Name>
+					<Abstract type="html">идентификатор заметки</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца заметки</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addComment:noteID:ownerID:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/addComment:noteID:ownerID:replyToUserID:</TokenIdentifier>
+			<Abstract type="html">Добавляет новый комментарий к заметке</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)addComment:(NSString *)comment noteID:(NSUInteger)noteID ownerID:(NSUInteger)ownerID replyToUserID:(NSUInteger)userID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>comment</Name>
+					<Abstract type="html">текст комментария</Abstract>
+				</Parameter><Parameter>
+					<Name>noteID</Name>
+					<Abstract type="html">идентификатор заметки</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца заметки</Abstract>
+				</Parameter><Parameter>
+					<Name>userID</Name>
+					<Abstract type="html">идентификатор пользователя, ответом на комментарий которого является добавляемый комментарий (не передаётся, если комментарий не является ответом)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addComment:noteID:ownerID:replyToUserID:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/editCommentWithID:comment:</TokenIdentifier>
+			<Abstract type="html">Редактирует указанный комментарий у заметки</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)editCommentWithID:(NSUInteger)commentID comment:(NSString *)comment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commentID</Name>
+					<Abstract type="html">идентификатор комментария</Abstract>
+				</Parameter><Parameter>
+					<Name>comment</Name>
+					<Abstract type="html">новый текст комментария</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editCommentWithID:comment:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/deleteCommentWithID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Удаляет комментарий к заметке</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteCommentWithID:(NSUInteger)commentID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commentID</Name>
+					<Abstract type="html">идентификатор комментария</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца заметки</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteCommentWithID:ownerID:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNotes/restoreCommentWithID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Восстанавливает удалённый комментарий</Abstract>
+			<DeclaredIn>VKNotes.h</DeclaredIn>			
+			
+			<Declaration>- (id)restoreCommentWithID:(NSUInteger)commentID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commentID</Name>
+					<Abstract type="html">идентификатор удаленного комментария</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца заметки</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/restoreCommentWithID:ownerID:</Anchor>
+            <NodeRef refid="11"/>
+		</Token>
 		
 	</File>
 </Tokens>
