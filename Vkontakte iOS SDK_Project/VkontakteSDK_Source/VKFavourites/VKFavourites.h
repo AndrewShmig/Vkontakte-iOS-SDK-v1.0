@@ -28,7 +28,8 @@
 //
 #import <Foundation/Foundation.h>
 
-
+/** Класс предназначен для работы с закладками пользователя
+ */
 @interface VKFavourites : NSObject
 
 /**

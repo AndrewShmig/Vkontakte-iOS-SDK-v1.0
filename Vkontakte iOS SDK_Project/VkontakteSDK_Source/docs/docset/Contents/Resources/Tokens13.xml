@@ -4,12 +4,369 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKPlaces</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для работы с пользовательскими местами (добавление нового места,
+осуществления chekinа и тд)</Abstract>
 			<DeclaredIn>VKPlaces.h</DeclaredIn>
 			
 			<NodeRef refid="13"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/addType:title:latitude:longitude:</TokenIdentifier>
+			<Abstract type="html">Добавляет новое место в базу географических мест</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)addType:(NSUInteger)type title:(NSString *)title latitude:(CGFloat)latitude longitude:(CGFloat)longitude</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">идентификатор типа нового места, полученный методом types:</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">название нового места</Abstract>
+				</Parameter><Parameter>
+					<Name>latitude</Name>
+					<Abstract type="html">географическая широта нового места, заданная в градусах (от -90 до 90)</Abstract>
+				</Parameter><Parameter>
+					<Name>longitude</Name>
+					<Abstract type="html">географическая долгота нового места, заданная в градусах (от -180 до 180)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в ввиде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addType:title:latitude:longitude:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/addType:title:latitude:longitude:country:city:</TokenIdentifier>
+			<Abstract type="html">Добавляет новое место в базу географических мест</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)addType:(NSUInteger)type title:(NSString *)title latitude:(CGFloat)latitude longitude:(CGFloat)longitude country:(NSUInteger)country city:(NSUInteger)city</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">идентификатор типа нового места, полученный методом types:</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">название нового места</Abstract>
+				</Parameter><Parameter>
+					<Name>latitude</Name>
+					<Abstract type="html">географическая широта нового места, заданная в градусах (от -90 до 90)</Abstract>
+				</Parameter><Parameter>
+					<Name>longitude</Name>
+					<Abstract type="html">географическая долгота нового места, заданная в градусах (от -180 до 180)</Abstract>
+				</Parameter><Parameter>
+					<Name>country</Name>
+					<Abstract type="html">идентификатор страны нового места, полученный методом countries:</Abstract>
+				</Parameter><Parameter>
+					<Name>city</Name>
+					<Abstract type="html">идентификатор города нового места, полученный методом citiesCountryID:</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в ввиде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addType:title:latitude:longitude:country:city:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/addType:title:latitude:longitude:country:city:address:</TokenIdentifier>
+			<Abstract type="html">Добавляет новое место в базу географических мест</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)addType:(NSUInteger)type title:(NSString *)title latitude:(CGFloat)latitude longitude:(CGFloat)longitude country:(NSUInteger)country city:(NSUInteger)city address:(NSString *)address</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">идентификатор типа нового места, полученный методом types:</Abstract>
+				</Parameter><Parameter>
+					<Name>title</Name>
+					<Abstract type="html">название нового места</Abstract>
+				</Parameter><Parameter>
+					<Name>latitude</Name>
+					<Abstract type="html">географическая широта нового места, заданная в градусах (от -90 до 90)</Abstract>
+				</Parameter><Parameter>
+					<Name>longitude</Name>
+					<Abstract type="html">географическая долгота нового места, заданная в градусах (от -180 до 180)</Abstract>
+				</Parameter><Parameter>
+					<Name>country</Name>
+					<Abstract type="html">идентификатор страны нового места, полученный методом countries:</Abstract>
+				</Parameter><Parameter>
+					<Name>city</Name>
+					<Abstract type="html">идентификатор города нового места, полученный методом citiesCountryID:</Abstract>
+				</Parameter><Parameter>
+					<Name>address</Name>
+					<Abstract type="html">строка с адресом нового места (например, Невский просп. 1)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в ввиде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addType:title:latitude:longitude:country:city:address:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/byIDs:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию о местах по их идентификаторам</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)byIDs:(NSArray *)placesIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>placesIDs</Name>
+					<Abstract type="html">идентификаторы мест</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/byIDs:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/searchCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список мест, найденных по заданным условиям поиска</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значение, с полным списком можно ознакомиться по ссылке: https://vk.com/dev/places.search</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchCustomOptions:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/checkInPlaceID:text:latitude:longitude:friendsOnly:</TokenIdentifier>
+			<Abstract type="html">Отмечает пользователя в указанном месте</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)checkInPlaceID:(NSUInteger)placeID text:(NSString *)text latitude:(CGFloat)latitude longitude:(CGFloat)longitude friendsOnly:(NSUInteger)friendsOnly</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>placeID</Name>
+					<Abstract type="html">идентификатор места</Abstract>
+				</Parameter><Parameter>
+					<Name>text</Name>
+					<Abstract type="html">комментарий к отметке длиной до 255 символов (переводы строк не поддерживаются)</Abstract>
+				</Parameter><Parameter>
+					<Name>latitude</Name>
+					<Abstract type="html">географическая широта отметки, заданная в градусах (от -90 до 90)</Abstract>
+				</Parameter><Parameter>
+					<Name>longitude</Name>
+					<Abstract type="html">географическая долгота отметки, заданная в градусах (от -180 до 180)</Abstract>
+				</Parameter><Parameter>
+					<Name>friendsOnly</Name>
+					<Abstract type="html">1 — отметка будет доступна только друзьям, 0 — отметка будет доступна всем пользователям</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/checkInPlaceID:text:latitude:longitude:friendsOnly:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/checkInCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Отмечает пользователя в указанном месте</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)checkInCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по ссылке: https://vk.com/dev/places.checkin</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/checkInCustomOptions:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/checkinsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список отметок пользователей в местах согласно заданным параметрам</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)checkinsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по ссылке: http://vk.com/dev/places.getCheckins</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/checkinsCustomOptions:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/types</TokenIdentifier>
+			<Abstract type="html">Возвращает список всех возможных типов мест</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)types</Declaration>
+			
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/types</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/countries</TokenIdentifier>
+			<Abstract type="html">Возвращает список стран</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)countries</Declaration>
+			
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/countries</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/countriesCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список стран</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)countriesCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным спсиком можно ознакомиться по ссылке: https://vk.com/dev/places.getCountries</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/countriesCustomOptions:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/regionsCuntryID:</TokenIdentifier>
+			<Abstract type="html">Возвращает список регионов</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)regionsCuntryID:(NSUInteger)countryID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>countryID</Name>
+					<Abstract type="html">идентификатор страны, полученный в методе countries:</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/regionsCuntryID:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/regionsCuntryID:searchQuery:</TokenIdentifier>
+			<Abstract type="html">Возвращает список регионов</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)regionsCuntryID:(NSUInteger)countryID searchQuery:(NSString *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>countryID</Name>
+					<Abstract type="html">идентификатор страны, полученный в методе countries:</Abstract>
+				</Parameter><Parameter>
+					<Name>query</Name>
+					<Abstract type="html">строка поискового запроса. Например, Лен.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/regionsCuntryID:searchQuery:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/streetsByIDs:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию об улицах по их идентификаторам</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)streetsByIDs:(NSArray *)streetsIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>streetsIDs</Name>
+					<Abstract type="html">идентификаторы улиц</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/streetsByIDs:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/countriesByIDs:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию о странах по их идентификаторам</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)countriesByIDs:(NSArray *)countriesIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>countriesIDs</Name>
+					<Abstract type="html">идентификаторы стран</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/countriesByIDs:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/citiesCountryID:</TokenIdentifier>
+			<Abstract type="html">Возвращает список городов</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)citiesCountryID:(NSUInteger)countryID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>countryID</Name>
+					<Abstract type="html">идентификатор страны, полученный в методе countries:</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/citiesCountryID:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/citiesCountryID:searchQuery:</TokenIdentifier>
+			<Abstract type="html">Возвращает список городов</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)citiesCountryID:(NSUInteger)countryID searchQuery:(NSString *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>countryID</Name>
+					<Abstract type="html">идентификатор страны, полученный в методе countries:</Abstract>
+				</Parameter><Parameter>
+					<Name>query</Name>
+					<Abstract type="html">строка поискового запроса. Например, Санкт.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/citiesCountryID:searchQuery:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPlaces/citiesByIDs:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию о городах по их идентификаторам</Abstract>
+			<DeclaredIn>VKPlaces.h</DeclaredIn>			
+			
+			<Declaration>- (id)citiesByIDs:(NSArray *)citiesIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>citiesIDs</Name>
+					<Abstract type="html">идентификаторы городов</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/citiesByIDs:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
 		
 	</File>
 </Tokens>

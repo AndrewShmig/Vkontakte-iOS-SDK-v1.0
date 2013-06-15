@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKFavourites</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для работы с закладками пользователя</Abstract>
 			<DeclaredIn>VKFavourites.h</DeclaredIn>
 			
 			<NodeRef refid="5"/>

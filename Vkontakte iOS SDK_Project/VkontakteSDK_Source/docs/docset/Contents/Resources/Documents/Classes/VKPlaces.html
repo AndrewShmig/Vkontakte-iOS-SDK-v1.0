@@ -26,6 +26,12 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
 	
 	
 	
@@ -35,6 +41,43 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addType:title:latitude:longitude:">&nbsp;&nbsp;&nbsp;&nbsp;- addType:title:latitude:longitude:</option>
+	
+	<option value="//api/name/addType:title:latitude:longitude:country:city:">&nbsp;&nbsp;&nbsp;&nbsp;- addType:title:latitude:longitude:country:city:</option>
+	
+	<option value="//api/name/addType:title:latitude:longitude:country:city:address:">&nbsp;&nbsp;&nbsp;&nbsp;- addType:title:latitude:longitude:country:city:address:</option>
+	
+	<option value="//api/name/byIDs:">&nbsp;&nbsp;&nbsp;&nbsp;- byIDs:</option>
+	
+	<option value="//api/name/checkInCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- checkInCustomOptions:</option>
+	
+	<option value="//api/name/checkInPlaceID:text:latitude:longitude:friendsOnly:">&nbsp;&nbsp;&nbsp;&nbsp;- checkInPlaceID:text:latitude:longitude:friendsOnly:</option>
+	
+	<option value="//api/name/checkinsCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- checkinsCustomOptions:</option>
+	
+	<option value="//api/name/citiesByIDs:">&nbsp;&nbsp;&nbsp;&nbsp;- citiesByIDs:</option>
+	
+	<option value="//api/name/citiesCountryID:">&nbsp;&nbsp;&nbsp;&nbsp;- citiesCountryID:</option>
+	
+	<option value="//api/name/citiesCountryID:searchQuery:">&nbsp;&nbsp;&nbsp;&nbsp;- citiesCountryID:searchQuery:</option>
+	
+	<option value="//api/name/countries">&nbsp;&nbsp;&nbsp;&nbsp;- countries</option>
+	
+	<option value="//api/name/countriesByIDs:">&nbsp;&nbsp;&nbsp;&nbsp;- countriesByIDs:</option>
+	
+	<option value="//api/name/countriesCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- countriesCustomOptions:</option>
+	
+	<option value="//api/name/regionsCuntryID:">&nbsp;&nbsp;&nbsp;&nbsp;- regionsCuntryID:</option>
+	
+	<option value="//api/name/regionsCuntryID:searchQuery:">&nbsp;&nbsp;&nbsp;&nbsp;- regionsCuntryID:searchQuery:</option>
+	
+	<option value="//api/name/searchCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- searchCustomOptions:</option>
+	
+	<option value="//api/name/streetsByIDs:">&nbsp;&nbsp;&nbsp;&nbsp;- streetsByIDs:</option>
+	
+	<option value="//api/name/types">&nbsp;&nbsp;&nbsp;&nbsp;- types</option>
 	
 	
 	
@@ -45,6 +88,38 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.add">places.add</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.getById">places.getById</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.search">places.search</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.checkin">places.checkin</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.getCheckins">places.getCheckins</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.getTypes">places.getTypes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.getCountries">places.getCountries</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.getRegions">places.getRegions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.getStreetById">places.getStreetById</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.getCountryById">places.getCountryById</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.getCities">places.getCities</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_places.getCityById">places.getCityById</a></span></li>
+	
+</ul></li>
 
 
 
@@ -54,7 +129,45 @@
 
 
 
-
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addType:title:latitude:longitude:">addType:title:latitude:longitude:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addType:title:latitude:longitude:country:city:">addType:title:latitude:longitude:country:city:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addType:title:latitude:longitude:country:city:address:">addType:title:latitude:longitude:country:city:address:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/byIDs:">byIDs:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkInCustomOptions:">checkInCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkInPlaceID:text:latitude:longitude:friendsOnly:">checkInPlaceID:text:latitude:longitude:friendsOnly:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkinsCustomOptions:">checkinsCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/citiesByIDs:">citiesByIDs:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/citiesCountryID:">citiesCountryID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/citiesCountryID:searchQuery:">citiesCountryID:searchQuery:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/countries">countries</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/countriesByIDs:">countriesByIDs:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/countriesCustomOptions:">countriesCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/regionsCuntryID:">regionsCuntryID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/regionsCuntryID:searchQuery:">regionsCuntryID:searchQuery:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchCustomOptions:">searchCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/streetsByIDs:">streetsByIDs:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/types">types</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -88,6 +201,244 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс предназначен для работы с пользовательскими местами (добавление нового места,
+осуществления chekinа и тд)</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="places.add" name="task_places.add"></a>
+						<h3 class="subsubtitle task-title">places.add</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addType:title:latitude:longitude:">&ndash;&nbsp;addType:title:latitude:longitude:</a></code>
+		<span class="tooltip"><p>Добавляет новое место в базу географических мест</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addType:title:latitude:longitude:country:city:">&ndash;&nbsp;addType:title:latitude:longitude:country:city:</a></code>
+		<span class="tooltip"><p>Добавляет новое место в базу географических мест</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addType:title:latitude:longitude:country:city:address:">&ndash;&nbsp;addType:title:latitude:longitude:country:city:address:</a></code>
+		<span class="tooltip"><p>Добавляет новое место в базу географических мест</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="places.getById" name="task_places.getById"></a>
+						<h3 class="subsubtitle task-title">places.getById</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/byIDs:">&ndash;&nbsp;byIDs:</a></code>
+		<span class="tooltip"><p>Возвращает информацию о местах по их идентификаторам</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="places.search" name="task_places.search"></a>
+						<h3 class="subsubtitle task-title">places.search</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchCustomOptions:">&ndash;&nbsp;searchCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список мест, найденных по заданным условиям поиска</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="places.checkin" name="task_places.checkin"></a>
+						<h3 class="subsubtitle task-title">places.checkin</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkInPlaceID:text:latitude:longitude:friendsOnly:">&ndash;&nbsp;checkInPlaceID:text:latitude:longitude:friendsOnly:</a></code>
+		<span class="tooltip"><p>Отмечает пользователя в указанном месте</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkInCustomOptions:">&ndash;&nbsp;checkInCustomOptions:</a></code>
+		<span class="tooltip"><p>Отмечает пользователя в указанном месте</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="places.getCheckins" name="task_places.getCheckins"></a>
+						<h3 class="subsubtitle task-title">places.getCheckins</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkinsCustomOptions:">&ndash;&nbsp;checkinsCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список отметок пользователей в местах согласно заданным параметрам</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="places.getTypes" name="task_places.getTypes"></a>
+						<h3 class="subsubtitle task-title">places.getTypes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/types">&ndash;&nbsp;types</a></code>
+		<span class="tooltip"><p>Возвращает список всех возможных типов мест</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="places.getCountries" name="task_places.getCountries"></a>
+						<h3 class="subsubtitle task-title">places.getCountries</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/countries">&ndash;&nbsp;countries</a></code>
+		<span class="tooltip"><p>Возвращает список стран</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/countriesCustomOptions:">&ndash;&nbsp;countriesCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список стран</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="places.getRegions" name="task_places.getRegions"></a>
+						<h3 class="subsubtitle task-title">places.getRegions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/regionsCuntryID:">&ndash;&nbsp;regionsCuntryID:</a></code>
+		<span class="tooltip"><p>Возвращает список регионов</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/regionsCuntryID:searchQuery:">&ndash;&nbsp;regionsCuntryID:searchQuery:</a></code>
+		<span class="tooltip"><p>Возвращает список регионов</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="places.getStreetById" name="task_places.getStreetById"></a>
+						<h3 class="subsubtitle task-title">places.getStreetById</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/streetsByIDs:">&ndash;&nbsp;streetsByIDs:</a></code>
+		<span class="tooltip"><p>Возвращает информацию об улицах по их идентификаторам</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="places.getCountryById" name="task_places.getCountryById"></a>
+						<h3 class="subsubtitle task-title">places.getCountryById</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/countriesByIDs:">&ndash;&nbsp;countriesByIDs:</a></code>
+		<span class="tooltip"><p>Возвращает информацию о странах по их идентификаторам</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="places.getCities" name="task_places.getCities"></a>
+						<h3 class="subsubtitle task-title">places.getCities</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/citiesCountryID:">&ndash;&nbsp;citiesCountryID:</a></code>
+		<span class="tooltip"><p>Возвращает список городов</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/citiesCountryID:searchQuery:">&ndash;&nbsp;citiesCountryID:searchQuery:</a></code>
+		<span class="tooltip"><p>Возвращает список городов</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="places.getCityById" name="task_places.getCityById"></a>
+						<h3 class="subsubtitle task-title">places.getCityById</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/citiesByIDs:">&ndash;&nbsp;citiesByIDs:</a></code>
+		<span class="tooltip"><p>Возвращает информацию о городах по их идентификаторам</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
@@ -97,6 +448,1009 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addType:title:latitude:longitude:" title="addType:title:latitude:longitude:"></a>
+	<h3 class="subsubtitle method-title">addType:title:latitude:longitude:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Добавляет новое место в базу географических мест</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addType:(NSUInteger)<em>type</em> title:(NSString *)<em>title</em> latitude:(CGFloat)<em>latitude</em> longitude:(CGFloat)<em>longitude</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>идентификатор типа нового места, полученный методом types:</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>название нового места</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>latitude</em></dt>
+			<dd><p>географическая широта нового места, заданная в градусах (от -90 до 90)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>longitude</em></dt>
+			<dd><p>географическая долгота нового места, заданная в градусах (от -180 до 180)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в ввиде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addType:title:latitude:longitude:country:city:" title="addType:title:latitude:longitude:country:city:"></a>
+	<h3 class="subsubtitle method-title">addType:title:latitude:longitude:country:city:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Добавляет новое место в базу географических мест</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addType:(NSUInteger)<em>type</em> title:(NSString *)<em>title</em> latitude:(CGFloat)<em>latitude</em> longitude:(CGFloat)<em>longitude</em> country:(NSUInteger)<em>country</em> city:(NSUInteger)<em>city</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>идентификатор типа нового места, полученный методом types:</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>название нового места</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>latitude</em></dt>
+			<dd><p>географическая широта нового места, заданная в градусах (от -90 до 90)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>longitude</em></dt>
+			<dd><p>географическая долгота нового места, заданная в градусах (от -180 до 180)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>country</em></dt>
+			<dd><p>идентификатор страны нового места, полученный методом countries:</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>city</em></dt>
+			<dd><p>идентификатор города нового места, полученный методом <a href="#//api/name/citiesCountryID:">citiesCountryID:</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в ввиде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addType:title:latitude:longitude:country:city:address:" title="addType:title:latitude:longitude:country:city:address:"></a>
+	<h3 class="subsubtitle method-title">addType:title:latitude:longitude:country:city:address:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Добавляет новое место в базу географических мест</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addType:(NSUInteger)<em>type</em> title:(NSString *)<em>title</em> latitude:(CGFloat)<em>latitude</em> longitude:(CGFloat)<em>longitude</em> country:(NSUInteger)<em>country</em> city:(NSUInteger)<em>city</em> address:(NSString *)<em>address</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>идентификатор типа нового места, полученный методом types:</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>название нового места</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>latitude</em></dt>
+			<dd><p>географическая широта нового места, заданная в градусах (от -90 до 90)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>longitude</em></dt>
+			<dd><p>географическая долгота нового места, заданная в градусах (от -180 до 180)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>country</em></dt>
+			<dd><p>идентификатор страны нового места, полученный методом countries:</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>city</em></dt>
+			<dd><p>идентификатор города нового места, полученный методом <a href="#//api/name/citiesCountryID:">citiesCountryID:</a></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>address</em></dt>
+			<dd><p>строка с адресом нового места (например, Невский просп. 1)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в ввиде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/byIDs:" title="byIDs:"></a>
+	<h3 class="subsubtitle method-title">byIDs:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает информацию о местах по их идентификаторам</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)byIDs:(NSArray *)<em>placesIDs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>placesIDs</em></dt>
+			<dd><p>идентификаторы мест</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkInCustomOptions:" title="checkInCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">checkInCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Отмечает пользователя в указанном месте</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)checkInCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по ссылке: <a href="https://vk.com/dev/places.checkin">https://vk.com/dev/places.checkin</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkInPlaceID:text:latitude:longitude:friendsOnly:" title="checkInPlaceID:text:latitude:longitude:friendsOnly:"></a>
+	<h3 class="subsubtitle method-title">checkInPlaceID:text:latitude:longitude:friendsOnly:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Отмечает пользователя в указанном месте</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)checkInPlaceID:(NSUInteger)<em>placeID</em> text:(NSString *)<em>text</em> latitude:(CGFloat)<em>latitude</em> longitude:(CGFloat)<em>longitude</em> friendsOnly:(NSUInteger)<em>friendsOnly</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>placeID</em></dt>
+			<dd><p>идентификатор места</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>комментарий к отметке длиной до 255 символов (переводы строк не поддерживаются)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>latitude</em></dt>
+			<dd><p>географическая широта отметки, заданная в градусах (от -90 до 90)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>longitude</em></dt>
+			<dd><p>географическая долгота отметки, заданная в градусах (от -180 до 180)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>friendsOnly</em></dt>
+			<dd><p>1 — отметка будет доступна только друзьям, 0 — отметка будет доступна всем пользователям</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkinsCustomOptions:" title="checkinsCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">checkinsCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список отметок пользователей в местах согласно заданным параметрам</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)checkinsCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по ссылке: <a href="http://vk.com/dev/places.getCheckins">http://vk.com/dev/places.getCheckins</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/citiesByIDs:" title="citiesByIDs:"></a>
+	<h3 class="subsubtitle method-title">citiesByIDs:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает информацию о городах по их идентификаторам</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)citiesByIDs:(NSArray *)<em>citiesIDs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>citiesIDs</em></dt>
+			<dd><p>идентификаторы городов</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/citiesCountryID:" title="citiesCountryID:"></a>
+	<h3 class="subsubtitle method-title">citiesCountryID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список городов</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)citiesCountryID:(NSUInteger)<em>countryID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>countryID</em></dt>
+			<dd><p>идентификатор страны, полученный в методе countries:</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/citiesCountryID:searchQuery:" title="citiesCountryID:searchQuery:"></a>
+	<h3 class="subsubtitle method-title">citiesCountryID:searchQuery:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список городов</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)citiesCountryID:(NSUInteger)<em>countryID</em> searchQuery:(NSString *)<em>query</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>countryID</em></dt>
+			<dd><p>идентификатор страны, полученный в методе countries:</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>строка поискового запроса. Например, Санкт.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/countries" title="countries"></a>
+	<h3 class="subsubtitle method-title">countries</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список стран</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)countries</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/countriesByIDs:" title="countriesByIDs:"></a>
+	<h3 class="subsubtitle method-title">countriesByIDs:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает информацию о странах по их идентификаторам</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)countriesByIDs:(NSArray *)<em>countriesIDs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>countriesIDs</em></dt>
+			<dd><p>идентификаторы стран</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/countriesCustomOptions:" title="countriesCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">countriesCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список стран</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)countriesCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным спсиком можно ознакомиться по ссылке: <a href="https://vk.com/dev/places.getCountries">https://vk.com/dev/places.getCountries</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/regionsCuntryID:" title="regionsCuntryID:"></a>
+	<h3 class="subsubtitle method-title">regionsCuntryID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список регионов</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)regionsCuntryID:(NSUInteger)<em>countryID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>countryID</em></dt>
+			<dd><p>идентификатор страны, полученный в методе countries:</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/regionsCuntryID:searchQuery:" title="regionsCuntryID:searchQuery:"></a>
+	<h3 class="subsubtitle method-title">regionsCuntryID:searchQuery:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список регионов</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)regionsCuntryID:(NSUInteger)<em>countryID</em> searchQuery:(NSString *)<em>query</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>countryID</em></dt>
+			<dd><p>идентификатор страны, полученный в методе countries:</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>строка поискового запроса. Например, Лен.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchCustomOptions:" title="searchCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">searchCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список мест, найденных по заданным условиям поиска</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значение, с полным списком можно ознакомиться по ссылке: <a href="https://vk.com/dev/places.search">https://vk.com/dev/places.search</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/streetsByIDs:" title="streetsByIDs:"></a>
+	<h3 class="subsubtitle method-title">streetsByIDs:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает информацию об улицах по их идентификаторам</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)streetsByIDs:(NSArray *)<em>streetsIDs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>streetsIDs</em></dt>
+			<dd><p>идентификаторы улиц</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/types" title="types"></a>
+	<h3 class="subsubtitle method-title">types</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список всех возможных типов мест</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)types</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPlaces.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>
