@@ -506,11 +506,11 @@ random - возвращает друзей в случайном порядке.
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/friendsEditListCustomOptions:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFriends/editListCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Редактирует существующий список друзей текущего пользователя</Abstract>
 			<DeclaredIn>VKFriends.h</DeclaredIn>			
 			
-			<Declaration>- (id)friendsEditListCustomOptions:(NSDictionary *)options</Declaration>
+			<Declaration>- (id)editListCustomOptions:(NSDictionary *)options</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>options</Name>
@@ -518,7 +518,7 @@ random - возвращает друзей в случайном порядке.
 				</Parameter>
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/friendsEditListCustomOptions:</Anchor>
+			<Anchor>//api/name/editListCustomOptions:</Anchor>
             <NodeRef refid="6"/>
 		</Token>
 		
