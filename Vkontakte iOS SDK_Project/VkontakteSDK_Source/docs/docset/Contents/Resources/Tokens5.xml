@@ -11,5 +11,188 @@
 		</Token>
 		
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/usersCount:</TokenIdentifier>
+			<Abstract type="html">Возвращает список пользователей, добавленных текущим пользователем в закладки</Abstract>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>			
+			
+			<Declaration>- (id)usersCount:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество пользователей, информацию о которых необходимо вернуть</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/usersCount:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/usersCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список пользователей, добавленных текущим пользователем в закладки</Abstract>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>			
+			
+			<Declaration>- (id)usersCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество пользователей, информацию о которых необходимо вернуть</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества пользователей</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/usersCount:offset:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/photosCount:</TokenIdentifier>
+			<Abstract type="html">Возвращает фотографии, на которых текущий пользователь поставил отметку &quot;Мне нравится&quot;</Abstract>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>			
+			
+			<Declaration>- (id)photosCount:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">Число фотографий, информацию о которых необходимо вернуть</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/photosCount:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/photosCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает фотографии, на которых текущий пользователь поставил отметку &quot;Мне нравится&quot;</Abstract>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>			
+			
+			<Declaration>- (id)photosCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">Число фотографий, информацию о которых необходимо вернуть</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества фотографий</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/photosCount:offset:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/postsCount:</TokenIdentifier>
+			<Abstract type="html">Возвращает записи, на которых текущий пользователь поставил отметку «Мне нравится»</Abstract>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>			
+			
+			<Declaration>- (id)postsCount:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество записей, информацию о которых нужно вернуть (но не более 100)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/postsCount:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/postsCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает записи, на которых текущий пользователь поставил отметку «Мне нравится»</Abstract>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>			
+			
+			<Declaration>- (id)postsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество записей, информацию о которых нужно вернуть (но не более 100)</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимо для выборки определенного подмножества записей</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/postsCount:offset:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/postsCount:offset:extended:</TokenIdentifier>
+			<Abstract type="html">Возвращает записи, на которых текущий пользователь поставил отметку «Мне нравится»</Abstract>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>			
+			
+			<Declaration>- (id)postsCount:(NSUInteger)count offset:(NSUInteger)offset extended:(NSUInteger)extended</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество записей, информацию о которых нужно вернуть (но не более 100)</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимо для выборки определенного подмножества записей</Abstract>
+				</Parameter><Parameter>
+					<Name>extended</Name>
+					<Abstract type="html">1 — будут возвращены три массива wall, profiles и groups. 0 - дополнительные поля не будут возвращены.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/postsCount:offset:extended:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/videosCount:</TokenIdentifier>
+			<Abstract type="html">Возвращает список видеозаписей, на которых текущий пользователь поставил отметку «Мне нравится»</Abstract>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>			
+			
+			<Declaration>- (id)videosCount:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество видеозаписей, информацию о которых необходимо вернуть</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/videosCount:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/videosCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список видеозаписей, на которых текущий пользователь поставил отметку «Мне нравится»</Abstract>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>			
+			
+			<Declaration>- (id)videosCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество видеозаписей, информацию о которых необходимо вернуть</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества видеозаписей</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/videosCount:offset:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKFavourites/links</TokenIdentifier>
+			<Abstract type="html">Возвращает ссылки, добавленные в закладки текущим пользователем</Abstract>
+			<DeclaredIn>VKFavourites.h</DeclaredIn>			
+			
+			<Declaration>- (id)links</Declaration>
+			
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/links</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
 	</File>
 </Tokens>
