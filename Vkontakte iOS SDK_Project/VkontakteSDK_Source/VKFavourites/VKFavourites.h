@@ -31,4 +31,35 @@
 
 @interface VKFavourites : NSObject
 
+/**
+ @name Users
+ */
+- (id)usersCount:(NSUInteger)count;
+- (id)usersCount:(NSUInteger)count offset:(NSUInteger)offset;
+
+/**
+ @name Photos
+ */
+- (id)photosCount:(NSUInteger)count;
+- (id)photosCount:(NSUInteger)count offset:(NSUInteger)offset;
+
+/**
+ @name Posts
+ */
+- (id)postsCount:(NSUInteger)count;
+- (id)postsCount:(NSUInteger)count offset:(NSUInteger)offset;
+- (id)postsCount:(NSUInteger)count offset:(NSUInteger)offset extended:(NSUInteger)extended;
+
+/**
+ @name Videos
+ */
+- (id)videosCount:(NSUInteger)count;
+- (id)videosCount:(NSUInteger)count offset:(NSUInteger)offset;
+
+/**
+ @name Links
+ */
+- (id)links;
+
+
 @end

@@ -47,6 +47,8 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
 {
     NSLog(@"%s", __FUNCTION__);
     NSLog(@"%@", accessToken);
+    
+    NSLog(@"===> %@", [[[VKUser currentUser] favourites] photosCount:5]);
 }
 
 - (void)VKConnector:(VKConnector *)connector connectionErrorOccured:(NSError *)error

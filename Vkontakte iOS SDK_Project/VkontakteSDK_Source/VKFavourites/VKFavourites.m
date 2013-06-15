@@ -27,8 +27,102 @@
 //
 //
 #import "VKFavourites.h"
+#import "VKConnector.h"
 
 
 @implementation VKFavourites
+{
+    
+}
+
+#pragma mark Visible VKFavourites methods
+#pragma mark - Users
+
+- (id)usersCount:(NSUInteger)count offset:(NSUInteger)offset
+{
+    NSDictionary *options = @{@"count": @(count),
+                              @"offset": @(offset)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKFaveGetUsers
+                                                 options:options
+                                                   error:nil];
+}
+
+- (id)usersCount:(NSUInteger)count
+{
+    return [self usersCount:count
+                     offset:0];
+}
+
+#pragma mark - Photos
+
+- (id)photosCount:(NSUInteger)count offset:(NSUInteger)offset
+{
+    NSDictionary *options = @{@"count": @(count),
+                              @"offset": @(offset)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKFaveGetPhotos
+                                                 options:options
+                                                   error:nil];
+}
+
+- (id)photosCount:(NSUInteger)count
+{
+    return [self photosCount:count
+                      offset:0];
+}
+
+#pragma mark - Posts
+
+- (id)postsCount:(NSUInteger)count offset:(NSUInteger)offset extended:(NSUInteger)extended
+{
+    NSDictionary *options = @{@"count": @(count),
+                              @"offset": @(offset),
+                              @"extended": @(extended)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKFaveGetPosts
+                                                 options:options
+                                                   error:nil];
+}
+
+- (id)postsCount:(NSUInteger)count offset:(NSUInteger)offset
+{
+    return [self postsCount:count
+                     offset:offset
+                   extended:1];
+}
+
+- (id)postsCount:(NSUInteger)count
+{
+    return [self postsCount:count
+                     offset:0];
+}
+
+#pragma mark - Video
+
+- (id)videosCount:(NSUInteger)count offset:(NSUInteger)offset
+{
+    NSDictionary *options = @{@"count": @(count),
+                              @"offset": @(offset)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKFaveGetVideos
+                                                 options:options
+                                                   error:nil];
+}
+
+- (id)videosCount:(NSUInteger)count
+{
+    return [self videosCount:count
+                      offset:0];
+}
+
+#pragma mark - Links
+
+- (id)links
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKFaveGetLinks
+                                                 options:@{}
+                                                   error:nil];
+}
 
 @end
