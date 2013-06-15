@@ -106,7 +106,7 @@
 
 #pragma mark notes.getFriendsNotes
 
-- (id)friendNotesCount:(NSUInteger)count offset:(NSUInteger)offset
+- (id)friendsNotesCount:(NSUInteger)count offset:(NSUInteger)offset
 {
     NSDictionary *options = @{@"count": @(count),
                               @"offset": @(offset)};

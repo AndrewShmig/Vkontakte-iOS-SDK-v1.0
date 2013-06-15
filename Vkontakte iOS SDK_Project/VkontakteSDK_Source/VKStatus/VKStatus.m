@@ -39,12 +39,12 @@
     return [self obtainStatusWithGroupOrUserID:[[VKUser currentUser] userID]];
 }
 
-- (id)statusGroupID:(NSUInteger)groupID
+- (id)groupID:(NSUInteger)groupID
 {
     return [self obtainStatusWithGroupOrUserID:groupID];
 }
 
-- (id)statusUserID:(NSUInteger)userID
+- (id)userID:(NSUInteger)userID
 {
     return [self obtainStatusWithGroupOrUserID:userID];
 }

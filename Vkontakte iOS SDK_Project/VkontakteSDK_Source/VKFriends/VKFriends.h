@@ -308,7 +308,7 @@
  @param options словарь ключей-значений, детальная информация по этой ссылке : https://vk.com/dev/friends.editList
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)friendsEditListCustomOptions:(NSDictionary *)options;
+- (id)editListCustomOptions:(NSDictionary *)options;
 
 /**
  @name friends.deleteList
