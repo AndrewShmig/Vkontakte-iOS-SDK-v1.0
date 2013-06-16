@@ -4,12 +4,241 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKNewsfeed</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для работы с новостями пользователя.</Abstract>
 			<DeclaredIn>VKNewsfeed.h</DeclaredIn>
 			
 			<NodeRef refid="10"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/filterCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает данные, необходимые для показа списка новостей для текущего пользователя</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)filterCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/newsfeed.get</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/filterCustomOptions:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/recommendedCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Получает список новостей, рекомендованных пользователю</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)recommendedCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/newsfeed.getRecommended</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/recommendedCustomOptions:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/commentsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает данные, необходимые для показа раздела комментариев в новостях пользователя</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)commentsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/newsfeed.getComments</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/commentsCustomOptions:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/mentionsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список записей пользователей на своих стенах, в которых упоминается указанный пользователь.</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)mentionsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/newsfeed.getMentions</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/mentionsCustomOptions:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/banned</TokenIdentifier>
+			<Abstract type="html">Возвращает список пользователей и групп, которые текущий пользователь скрыл из ленты новостей</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)banned</Declaration>
+			
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/banned</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/bannedExtended</TokenIdentifier>
+			<Abstract type="html">Возвращает список пользователей и групп, которые текущий пользователь скрыл из ленты новостей</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)bannedExtended</Declaration>
+			
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/bannedExtended</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/bannedCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список пользователей и групп, которые текущий пользователь скрыл из ленты новосте</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)bannedCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/newsfeed.getBanned</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/bannedCustomOptions:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/banUsers:</TokenIdentifier>
+			<Abstract type="html">Запрещает показывать новости от заданных пользователей и групп в ленте новостей текущего пользователя</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)banUsers:(NSArray *)usersIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>usersIDs</Name>
+					<Abstract type="html">перечисленные через запятую идентификаторы друзей пользователя, новости от которых необходимо скрыть из ленты новостей текущего пользователя</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/banUsers:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/banGroups:</TokenIdentifier>
+			<Abstract type="html">Запрещает показывать новости от заданных пользователей и групп в ленте новостей текущего пользователя</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)banGroups:(NSArray *)groupsIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupsIDs</Name>
+					<Abstract type="html">перечисленные через запятую идентификаторы групп пользователя, новости от которых необходимо скрыть из ленты новостей текущего пользователя</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/banGroups:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/unbanUsers:</TokenIdentifier>
+			<Abstract type="html">Разрешает показывать новости от заданных пользователей и групп в ленте новостей текущего пользователя</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)unbanUsers:(NSArray *)usersIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>usersIDs</Name>
+					<Abstract type="html">идентификаторы пользователей, новости от которых необходимо вернуть в ленту.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/unbanUsers:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/unbanGroups:</TokenIdentifier>
+			<Abstract type="html">Разрешает показывать новости от заданных пользователей и групп в ленте новостей текущего пользователя</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)unbanGroups:(NSArray *)groupsIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupsIDs</Name>
+					<Abstract type="html">идентификаторы сообществ, новости от которых необходимо вернуть в ленту</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/unbanGroups:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/searchCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает результаты поиска по статусам</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значени, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/newsfeed.search</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchCustomOptions:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/lists</TokenIdentifier>
+			<Abstract type="html">Возвращает пользовательские списки новостей</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)lists</Declaration>
+			
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/lists</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKNewsfeed/unsibscribeType:ownerID:objectID:</TokenIdentifier>
+			<Abstract type="html">Отписывает текущего пользователя от комментариев к заданному объекту</Abstract>
+			<DeclaredIn>VKNewsfeed.h</DeclaredIn>			
+			
+			<Declaration>- (id)unsibscribeType:(NSString *)type ownerID:(NSUInteger)ownerID objectID:(NSUInteger)objectID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>type</Name>
+					<Abstract type="html">тип объекта, от комментариев к которому необходимо отписаться (детально : https://vk.com/dev/newsfeed.unsubscribe)</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца объекта</Abstract>
+				</Parameter><Parameter>
+					<Name>objectID</Name>
+					<Abstract type="html">идентификатор объекта</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/unsibscribeType:ownerID:objectID:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
 		
 	</File>
 </Tokens>

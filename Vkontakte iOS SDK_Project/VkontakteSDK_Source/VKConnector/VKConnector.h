@@ -41,6 +41,9 @@
 @protocol VKConnectorProtocol <NSObject>
 
 @optional
+/**
+ @name Access token
+ */
 /** Метод, вызов которого сигнализирует о том, что токен стал недействительным,
  срок его действия истёк.
  
@@ -69,6 +72,9 @@ accessTokenInvalidated:(VKAccessToken *)accessToken;
 - (void)VKConnector:(VKConnector *)connector
 accessTokenRenewalFailed:(VKAccessToken *)accessToken;
 
+/**
+ @name Connection & Parsing
+ */
 /** Метод, вызов которого сигнализирует о том, что произошла ошибка соединения при попытке осуществить запрос
  
  @param connector объект класса VKConnector отправляющего сообщение
