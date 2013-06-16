@@ -53,6 +53,10 @@
 	
 	<option value="//api/name/VKConnector:parsingErrorOccured:">&nbsp;&nbsp;&nbsp;&nbsp;- VKConnector:parsingErrorOccured:</option>
 	
+	<option value="//api/name/VKConnector:willHideModalView:">&nbsp;&nbsp;&nbsp;&nbsp;- VKConnector:willHideModalView:</option>
+	
+	<option value="//api/name/VKConnector:willShowModalView:">&nbsp;&nbsp;&nbsp;&nbsp;- VKConnector:willShowModalView:</option>
+	
 	
 	
 </select>
@@ -68,6 +72,8 @@
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Modal view">Modal view</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Access token">Access token</a></span></li>
 	
@@ -94,6 +100,10 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/VKConnector:connectionErrorOccured:">VKConnector:connectionErrorOccured:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/VKConnector:parsingErrorOccured:">VKConnector:parsingErrorOccured:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/VKConnector:willHideModalView:">VKConnector:willHideModalView:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/VKConnector:willShowModalView:">VKConnector:willShowModalView:</a></span></li>
 	
 </ul></li>
 
@@ -143,6 +153,28 @@
 					<div class="section section-tasks">
 						<a title="Tasks" name="tasks"></a>
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Modal view" name="task_Modal view"></a>
+						<h3 class="subsubtitle task-title">Modal view</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/VKConnector:willShowModalView:">&ndash;&nbsp;VKConnector:willShowModalView:</a></code>
+		<span class="tooltip"><p>Метод вызывается до того, как произойдет отображение модального окна авторизации</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/VKConnector:willHideModalView:">&ndash;&nbsp;VKConnector:willHideModalView:</a></code>
+		<span class="tooltip"><p>Метод вызывается до того, как произойдет скрытие модального окна авторизации</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
 						
 						
 						<a title="Access token" name="task_Access token"></a>
@@ -448,6 +480,108 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>error</em></dt>
 			<dd><p>объект ошибки содержащий описание причины возникновения ошибки</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/VKConnector:willHideModalView:" title="VKConnector:willHideModalView:"></a>
+	<h3 class="subsubtitle method-title">VKConnector:willHideModalView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Метод вызывается до того, как произойдет скрытие модального окна авторизации</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)VKConnector:(VKConnector *)<em>connector</em> willHideModalView:(KGModal *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connector</em></dt>
+			<dd><p>объект класса <a href="../Classes/VKConnector.html">VKConnector</a> отправляющий сообщение</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>модальное окно</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/VKConnector:willShowModalView:" title="VKConnector:willShowModalView:"></a>
+	<h3 class="subsubtitle method-title">VKConnector:willShowModalView:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Метод вызывается до того, как произойдет отображение модального окна авторизации</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)VKConnector:(VKConnector *)<em>connector</em> willShowModalView:(KGModal *)<em>view</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>connector</em></dt>
+			<dd><p>объект класса <a href="../Classes/VKConnector.html">VKConnector</a> отправляющий сообщение</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>модальное окно</p></dd>
 		</dl>
 		
 	</div>

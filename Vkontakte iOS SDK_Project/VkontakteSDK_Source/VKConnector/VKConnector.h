@@ -33,6 +33,7 @@
 
 @class VKAccessToken;
 @class VKConnector;
+@class KGModal;
 
 
 /** Протокол объявляет методы отслеживания изменения статуса токена доступа
@@ -41,6 +42,25 @@
 @protocol VKConnectorProtocol <NSObject>
 
 @optional
+/**
+ @name Modal view
+ */
+/** Метод вызывается до того, как произойдет отображение модального окна авторизации
+ 
+ @param connector объект класса VKConnector отправляющий сообщение
+ @param view модальное окно
+ */
+- (void)VKConnector:(VKConnector *)connector
+  willShowModalView:(KGModal *)view;
+
+/** Метод вызывается до того, как произойдет скрытие модального окна авторизации
+ 
+ @param connector объект класса VKConnector отправляющий сообщение
+ @param view модальное окно
+ */
+- (void)VKConnector:(VKConnector *)connector
+  willHideModalView:(KGModal *)view;
+
 /**
  @name Access token
  */

@@ -133,12 +133,17 @@
 //    запрос на страницу авторизации приложения
     NSURL *url = [NSURL URLWithString:urlAsString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [_innerWebView loadRequest:request];
     
 //    отображаем попап, если токен недействителен
-    if(![_accessToken load] || ![_accessToken isValid])
+    if(![_accessToken load] || ![_accessToken isValid]){
+        [_innerWebView loadRequest:request];
+        
+        if([self.delegate respondsToSelector:@selector(VKConnector:willShowModalView:)])
+            [self.delegate VKConnector:self willShowModalView:[KGModal sharedInstance]];
+        
         [[KGModal sharedInstance] showWithContentView:_mainView
                                           andAnimated:YES];
+    }
 }
 
 - (id)performVKMethod:(NSString *)methodName
@@ -251,6 +256,13 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
                 [self.delegate VKConnector:self
                   accessTokenRenewalFailed:nil];
         }
+    }
+    
+    if([url hasPrefix:@"https://oauth.vk.com/blank.html"]){
+        if([self.delegate respondsToSelector:@selector(VKConnector:willHideModalView:)])
+            [self.delegate VKConnector:self willHideModalView:[KGModal sharedInstance]];
+        
+        [[KGModal sharedInstance] hideAnimated:YES];
     }
 
     return YES;

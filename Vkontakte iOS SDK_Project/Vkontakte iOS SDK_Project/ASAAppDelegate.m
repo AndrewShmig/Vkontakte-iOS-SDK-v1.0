@@ -21,15 +21,25 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    [[VKConnector sharedInstance] setDelegate:self];
     [[VKConnector sharedInstance] startWithAppID:kVKAppID
                                       permissons:[kVKPermissionsArray componentsSeparatedByString:@","]];
-    [[VKConnector sharedInstance] setDelegate:self];
 
     // Override point for customization after application launch.
     self.viewController = [[ASAViewController alloc] initWithNibName:@"ASAViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)VKConnector:(VKConnector *)connector willShowModalView:(KGModal *)view
+{
+    NSLog(@"%s", __FUNCTION__);
+}
+
+- (void)VKConnector:(VKConnector *)connector willHideModalView:(KGModal *)view
+{
+    NSLog(@"%s", __FUNCTION__);
 }
 
 - (void)VKConnector:(VKConnector *)connector accessTokenInvalidated:(VKAccessToken *)accessToken
@@ -46,9 +56,8 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
 - (void)VKConnector:(VKConnector *)connector accessTokenRenewalSucceeded:(VKAccessToken *)accessToken
 {
     NSLog(@"%s", __FUNCTION__);
-    NSLog(@"%@", accessToken);
     
-    NSLog(@"===> %@", [[[VKUser currentUser] favourites] photosCount:5]);
+//    NSLog(@"%@", [[[VKUser currentUser] newsfeed] banned]);
 }
 
 - (void)VKConnector:(VKConnector *)connector connectionErrorOccured:(NSError *)error
