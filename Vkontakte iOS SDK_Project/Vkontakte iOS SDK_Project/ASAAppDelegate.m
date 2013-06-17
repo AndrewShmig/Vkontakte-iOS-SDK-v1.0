@@ -57,7 +57,7 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
 {
     NSLog(@"%s", __FUNCTION__);
     
-//    NSLog(@"%@", [[[VKUser currentUser] newsfeed] banned]);
+    NSLog(@"%@", [[[VKUser currentUser] newsfeed] banned]);
 }
 
 - (void)VKConnector:(VKConnector *)connector connectionErrorOccured:(NSError *)error

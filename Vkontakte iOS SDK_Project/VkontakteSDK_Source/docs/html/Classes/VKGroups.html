@@ -26,6 +26,12 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
 	
 	
 	
@@ -35,6 +41,45 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/byIDs:">&nbsp;&nbsp;&nbsp;&nbsp;- byIDs:</option>
+	
+	<option value="//api/name/byIDs:fields:">&nbsp;&nbsp;&nbsp;&nbsp;- byIDs:fields:</option>
+	
+	<option value="//api/name/invites">&nbsp;&nbsp;&nbsp;&nbsp;- invites</option>
+	
+	<option value="//api/name/invitesCount:">&nbsp;&nbsp;&nbsp;&nbsp;- invitesCount:</option>
+	
+	<option value="//api/name/invitesCount:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- invitesCount:offset:</option>
+	
+	<option value="//api/name/isMemberGroupID:">&nbsp;&nbsp;&nbsp;&nbsp;- isMemberGroupID:</option>
+	
+	<option value="//api/name/isMemberGroupID:userID:">&nbsp;&nbsp;&nbsp;&nbsp;- isMemberGroupID:userID:</option>
+	
+	<option value="//api/name/joinGroupID:">&nbsp;&nbsp;&nbsp;&nbsp;- joinGroupID:</option>
+	
+	<option value="//api/name/joinMeetingID:notSure:">&nbsp;&nbsp;&nbsp;&nbsp;- joinMeetingID:notSure:</option>
+	
+	<option value="//api/name/leaveGroupID:">&nbsp;&nbsp;&nbsp;&nbsp;- leaveGroupID:</option>
+	
+	<option value="//api/name/listCount:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- listCount:offset:</option>
+	
+	<option value="//api/name/listCount:offset:filter:fields:">&nbsp;&nbsp;&nbsp;&nbsp;- listCount:offset:filter:fields:</option>
+	
+	<option value="//api/name/listCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- listCustomOptions:</option>
+	
+	<option value="//api/name/membersCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- membersCustomOptions:</option>
+	
+	<option value="//api/name/membersGroupID:count:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- membersGroupID:count:offset:</option>
+	
+	<option value="//api/name/searchQuery:">&nbsp;&nbsp;&nbsp;&nbsp;- searchQuery:</option>
+	
+	<option value="//api/name/searchQuery:count:">&nbsp;&nbsp;&nbsp;&nbsp;- searchQuery:count:</option>
+	
+	<option value="//api/name/searchQuery:count:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- searchQuery:count:offset:</option>
+	
+	<option value="//api/name/searchQuery:sort:count:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- searchQuery:sort:count:offset:</option>
 	
 	
 	
@@ -45,6 +90,30 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_groups.isMember">groups.isMember</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_groups.getById">groups.getById</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_groups.get">groups.get</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_groups.getMembers">groups.getMembers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_groups.join">groups.join</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_groups.leave">groups.leave</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_groups.search">groups.search</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_groups.getInvites">groups.getInvites</a></span></li>
+	
+</ul></li>
 
 
 
@@ -54,7 +123,47 @@
 
 
 
-
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/byIDs:">byIDs:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/byIDs:fields:">byIDs:fields:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invites">invites</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invitesCount:">invitesCount:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invitesCount:offset:">invitesCount:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isMemberGroupID:">isMemberGroupID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isMemberGroupID:userID:">isMemberGroupID:userID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joinGroupID:">joinGroupID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joinMeetingID:notSure:">joinMeetingID:notSure:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/leaveGroupID:">leaveGroupID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listCount:offset:">listCount:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listCount:offset:filter:fields:">listCount:offset:filter:fields:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listCustomOptions:">listCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/membersCustomOptions:">membersCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/membersGroupID:count:offset:">membersGroupID:count:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchQuery:">searchQuery:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchQuery:count:">searchQuery:count:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchQuery:count:offset:">searchQuery:count:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchQuery:sort:count:offset:">searchQuery:sort:count:offset:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -88,6 +197,218 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс предназначен для работы с группами от лица текущего пользователя</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="groups.isMember" name="task_groups.isMember"></a>
+						<h3 class="subsubtitle task-title">groups.isMember</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isMemberGroupID:">&ndash;&nbsp;isMemberGroupID:</a></code>
+		<span class="tooltip"><p>Возвращает информацию о том, является ли пользователь участником сообщества</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isMemberGroupID:userID:">&ndash;&nbsp;isMemberGroupID:userID:</a></code>
+		<span class="tooltip"><p>Возвращает информацию о том, является ли пользователь участником сообщества</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="groups.getById" name="task_groups.getById"></a>
+						<h3 class="subsubtitle task-title">groups.getById</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/byIDs:">&ndash;&nbsp;byIDs:</a></code>
+		<span class="tooltip"><p>Возвращает информацию о заданном сообществе или о нескольких сообществах</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/byIDs:fields:">&ndash;&nbsp;byIDs:fields:</a></code>
+		<span class="tooltip"><p>Возвращает информацию о заданном сообществе или о нескольких сообществах</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="groups.get" name="task_groups.get"></a>
+						<h3 class="subsubtitle task-title">groups.get</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listCount:offset:">&ndash;&nbsp;listCount:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список сообществ указанного пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listCount:offset:filter:fields:">&ndash;&nbsp;listCount:offset:filter:fields:</a></code>
+		<span class="tooltip"><p>Возвращает список сообществ указанного пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listCustomOptions:">&ndash;&nbsp;listCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список сообществ указанного пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="groups.getMembers" name="task_groups.getMembers"></a>
+						<h3 class="subsubtitle task-title">groups.getMembers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/membersGroupID:count:offset:">&ndash;&nbsp;membersGroupID:count:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список участников сообщества</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/membersCustomOptions:">&ndash;&nbsp;membersCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список цчастников сообщества</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="groups.join" name="task_groups.join"></a>
+						<h3 class="subsubtitle task-title">groups.join</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/joinGroupID:">&ndash;&nbsp;joinGroupID:</a></code>
+		<span class="tooltip"><p>Данный метод позволяет вступить в группу, публичную страницу, а также подтвердить участие во встрече</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/joinMeetingID:notSure:">&ndash;&nbsp;joinMeetingID:notSure:</a></code>
+		<span class="tooltip"><p>Данный метод позволяет подтвердить участие во встрече</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="groups.leave" name="task_groups.leave"></a>
+						<h3 class="subsubtitle task-title">groups.leave</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/leaveGroupID:">&ndash;&nbsp;leaveGroupID:</a></code>
+		<span class="tooltip"><p>Данный метод позволяет выходить из группы, публичной страницы, или встречи</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="groups.search" name="task_groups.search"></a>
+						<h3 class="subsubtitle task-title">groups.search</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchQuery:">&ndash;&nbsp;searchQuery:</a></code>
+		<span class="tooltip"><p>Осуществляет поиск сообществ по заданной подстроке</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchQuery:count:">&ndash;&nbsp;searchQuery:count:</a></code>
+		<span class="tooltip"><p>Осуществляет поиск сообществ по заданной подстроке</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchQuery:count:offset:">&ndash;&nbsp;searchQuery:count:offset:</a></code>
+		<span class="tooltip"><p>Осуществляет поиск сообществ по заданной подстроке</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchQuery:sort:count:offset:">&ndash;&nbsp;searchQuery:sort:count:offset:</a></code>
+		<span class="tooltip"><p>Осуществляет поиск сообществ по заданной подстроке</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="groups.getInvites" name="task_groups.getInvites"></a>
+						<h3 class="subsubtitle task-title">groups.getInvites</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invites">&ndash;&nbsp;invites</a></code>
+		<span class="tooltip"><p>Данный метод возвращает список приглашений в сообщества и встречи</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invitesCount:">&ndash;&nbsp;invitesCount:</a></code>
+		<span class="tooltip"><p>Данный метод возвращает список приглашений в сообщества и встречи</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invitesCount:offset:">&ndash;&nbsp;invitesCount:offset:</a></code>
+		<span class="tooltip"><p>Данный метод возвращает список приглашений в сообщества и встречи</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
@@ -97,6 +418,1058 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/byIDs:" title="byIDs:"></a>
+	<h3 class="subsubtitle method-title">byIDs:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает информацию о заданном сообществе или о нескольких сообществах</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)byIDs:(NSArray *)<em>groupsIDs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupsIDs</em></dt>
+			<dd><p>идентификаторы или короткие имена сообществ</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/byIDs:fields:" title="byIDs:fields:"></a>
+	<h3 class="subsubtitle method-title">byIDs:fields:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает информацию о заданном сообществе или о нескольких сообществах</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)byIDs:(NSArray *)<em>groupsIDs</em> fields:(NSArray *)<em>fields</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupsIDs</em></dt>
+			<dd><p>идентификаторы или короткие имена сообществ</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fields</em></dt>
+			<dd><p>список полей, которые необходимо вернуть</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/invites" title="invites"></a>
+	<h3 class="subsubtitle method-title">invites</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Данный метод возвращает список приглашений в сообщества и встречи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)invites</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/invitesCount:" title="invitesCount:"></a>
+	<h3 class="subsubtitle method-title">invitesCount:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Данный метод возвращает список приглашений в сообщества и встречи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)invitesCount:(NSUInteger)<em>count</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество приглашений, которое необходимо вернуть</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/invitesCount:offset:" title="invitesCount:offset:"></a>
+	<h3 class="subsubtitle method-title">invitesCount:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Данный метод возвращает список приглашений в сообщества и встречи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)invitesCount:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество приглашений, которое необходимо вернуть</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определённого подмножества приглашений</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isMemberGroupID:" title="isMemberGroupID:"></a>
+	<h3 class="subsubtitle method-title">isMemberGroupID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает информацию о том, является ли пользователь участником сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)isMemberGroupID:(NSUInteger)<em>groupID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupID</em></dt>
+			<dd><p>идентификатор или короткое имя сообщества</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isMemberGroupID:userID:" title="isMemberGroupID:userID:"></a>
+	<h3 class="subsubtitle method-title">isMemberGroupID:userID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает информацию о том, является ли пользователь участником сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)isMemberGroupID:(NSUInteger)<em>groupID</em> userID:(NSUInteger)<em>userID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupID</em></dt>
+			<dd><p>идентификатор или короткое имя сообщества</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userID</em></dt>
+			<dd><p>идентификатор пользователя</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/joinGroupID:" title="joinGroupID:"></a>
+	<h3 class="subsubtitle method-title">joinGroupID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Данный метод позволяет вступить в группу, публичную страницу, а также подтвердить участие во встрече</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)joinGroupID:(NSUInteger)<em>groupID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupID</em></dt>
+			<dd><p>идентификатор сообщества</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/joinMeetingID:notSure:" title="joinMeetingID:notSure:"></a>
+	<h3 class="subsubtitle method-title">joinMeetingID:notSure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Данный метод позволяет подтвердить участие во встрече</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)joinMeetingID:(NSUInteger)<em>meetingID</em> notSure:(NSUInteger)<em>notSure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>meetingID</em></dt>
+			<dd><p>идентификатор сообщества</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>notSure</em></dt>
+			<dd><p>опциональный параметр, учитываемый, если gid принадлежит встрече. 1 — Возможно пойду. 0 — Точно пойду.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/leaveGroupID:" title="leaveGroupID:"></a>
+	<h3 class="subsubtitle method-title">leaveGroupID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Данный метод позволяет выходить из группы, публичной страницы, или встречи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)leaveGroupID:(NSUInteger)<em>groupID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupID</em></dt>
+			<dd><p>идентификатор сообщества</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listCount:offset:" title="listCount:offset:"></a>
+	<h3 class="subsubtitle method-title">listCount:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список сообществ указанного пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)listCount:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество сообществ, информацию о которых нужно вернуть, не более 1000</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определённого подмножества групп</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listCount:offset:filter:fields:" title="listCount:offset:filter:fields:"></a>
+	<h3 class="subsubtitle method-title">listCount:offset:filter:fields:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список сообществ указанного пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)listCount:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em> filter:(NSArray *)<em>filter</em> fields:(NSArray *)<em>fields</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество сообществ, информацию о которых нужно вернуть, не более 1000</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определённого подмножества групп</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filter</em></dt>
+			<dd><p>список фильтров сообществ, которые необходимо вернуть, перечисленные через запятую. Доступны значения admin, groups, publics, events.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fields</em></dt>
+			<dd><p>список полей, которые необходимо вернуть</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listCustomOptions:" title="listCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">listCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список сообществ указанного пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)listCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/groups.get">https://vk.com/dev/groups.get</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/membersCustomOptions:" title="membersCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">membersCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список цчастников сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)membersCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, полный список : <a href="https://vk.com/dev/groups.getMembers">https://vk.com/dev/groups.getMembers</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/membersGroupID:count:offset:" title="membersGroupID:count:offset:"></a>
+	<h3 class="subsubtitle method-title">membersGroupID:count:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список участников сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)membersGroupID:(NSUInteger)<em>groupID</em> count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupID</em></dt>
+			<dd><p>идентификатор или короткое имя сообщества</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество участников сообщества, информацию о которых необходимо получить. Максимальное значение 1000.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества участников</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchQuery:" title="searchQuery:"></a>
+	<h3 class="subsubtitle method-title">searchQuery:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Осуществляет поиск сообществ по заданной подстроке</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchQuery:(NSString *)<em>query</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>текст поискового запроса</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchQuery:count:" title="searchQuery:count:"></a>
+	<h3 class="subsubtitle method-title">searchQuery:count:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Осуществляет поиск сообществ по заданной подстроке</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchQuery:(NSString *)<em>query</em> count:(NSUInteger)<em>count</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>текст поискового запроса</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество результатов поиска, которое необходимо вернуть.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchQuery:count:offset:" title="searchQuery:count:offset:"></a>
+	<h3 class="subsubtitle method-title">searchQuery:count:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Осуществляет поиск сообществ по заданной подстроке</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchQuery:(NSString *)<em>query</em> count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>текст поискового запроса</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество результатов поиска, которое необходимо вернуть.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определённого подмножества результатов поиска.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchQuery:sort:count:offset:" title="searchQuery:sort:count:offset:"></a>
+	<h3 class="subsubtitle method-title">searchQuery:sort:count:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Осуществляет поиск сообществ по заданной подстроке</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchQuery:(NSString *)<em>query</em> sort:(NSUInteger)<em>sort</em> count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>текст поискового запроса</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sort</em></dt>
+			<dd><p>параметр сортировки</p>
+
+<pre><code> 0 - сортировать по количеству пользователей (по умолчанию)
+ 1 - сортировать по скорости роста
+ 2 - сортировать по отношению дневной посещаемости ко количеству пользователей
+ 3 - сортировать по отношению количества лайков к количеству пользователей
+ 4 - сортировать по отношению количества комментариев к количеству пользователей
+ 5 - сортировать по отношению количества записей в обсуждениях к количеству пользователей
+</code></pre></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество результатов поиска, которое необходимо вернуть.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определённого подмножества результатов поиска.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKGroups.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>
@@ -109,7 +1482,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-16)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-17)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

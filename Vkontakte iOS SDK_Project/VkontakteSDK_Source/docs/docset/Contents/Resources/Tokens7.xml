@@ -4,12 +4,385 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKGroups</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для работы с группами от лица текущего пользователя</Abstract>
 			<DeclaredIn>VKGroups.h</DeclaredIn>
 			
 			<NodeRef refid="7"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/isMemberGroupID:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию о том, является ли пользователь участником сообщества</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)isMemberGroupID:(NSUInteger)groupID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupID</Name>
+					<Abstract type="html">идентификатор или короткое имя сообщества</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/isMemberGroupID:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/isMemberGroupID:userID:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию о том, является ли пользователь участником сообщества</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)isMemberGroupID:(NSUInteger)groupID userID:(NSUInteger)userID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupID</Name>
+					<Abstract type="html">идентификатор или короткое имя сообщества</Abstract>
+				</Parameter><Parameter>
+					<Name>userID</Name>
+					<Abstract type="html">идентификатор пользователя</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/isMemberGroupID:userID:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/byIDs:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию о заданном сообществе или о нескольких сообществах</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)byIDs:(NSArray *)groupsIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupsIDs</Name>
+					<Abstract type="html">идентификаторы или короткие имена сообществ</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/byIDs:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/byIDs:fields:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию о заданном сообществе или о нескольких сообществах</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)byIDs:(NSArray *)groupsIDs fields:(NSArray *)fields</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupsIDs</Name>
+					<Abstract type="html">идентификаторы или короткие имена сообществ</Abstract>
+				</Parameter><Parameter>
+					<Name>fields</Name>
+					<Abstract type="html">список полей, которые необходимо вернуть</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/byIDs:fields:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/listCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список сообществ указанного пользователя</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)listCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество сообществ, информацию о которых нужно вернуть, не более 1000</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определённого подмножества групп</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/listCount:offset:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/listCount:offset:filter:fields:</TokenIdentifier>
+			<Abstract type="html">Возвращает список сообществ указанного пользователя</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)listCount:(NSUInteger)count offset:(NSUInteger)offset filter:(NSArray *)filter fields:(NSArray *)fields</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество сообществ, информацию о которых нужно вернуть, не более 1000</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определённого подмножества групп</Abstract>
+				</Parameter><Parameter>
+					<Name>filter</Name>
+					<Abstract type="html">список фильтров сообществ, которые необходимо вернуть, перечисленные через запятую. Доступны значения admin, groups, publics, events.</Abstract>
+				</Parameter><Parameter>
+					<Name>fields</Name>
+					<Abstract type="html">список полей, которые необходимо вернуть</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/listCount:offset:filter:fields:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/listCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список сообществ указанного пользователя</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)listCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/groups.get</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/listCustomOptions:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/membersGroupID:count:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список участников сообщества</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)membersGroupID:(NSUInteger)groupID count:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupID</Name>
+					<Abstract type="html">идентификатор или короткое имя сообщества</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество участников сообщества, информацию о которых необходимо получить. Максимальное значение 1000.</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества участников</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/membersGroupID:count:offset:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/membersCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список цчастников сообщества</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)membersCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, полный список : https://vk.com/dev/groups.getMembers</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/membersCustomOptions:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/joinGroupID:</TokenIdentifier>
+			<Abstract type="html">Данный метод позволяет вступить в группу, публичную страницу, а также подтвердить участие во встрече</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)joinGroupID:(NSUInteger)groupID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupID</Name>
+					<Abstract type="html">идентификатор сообщества</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/joinGroupID:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/joinMeetingID:notSure:</TokenIdentifier>
+			<Abstract type="html">Данный метод позволяет подтвердить участие во встрече</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)joinMeetingID:(NSUInteger)meetingID notSure:(NSUInteger)notSure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>meetingID</Name>
+					<Abstract type="html">идентификатор сообщества</Abstract>
+				</Parameter><Parameter>
+					<Name>notSure</Name>
+					<Abstract type="html">опциональный параметр, учитываемый, если gid принадлежит встрече. 1 — Возможно пойду. 0 — Точно пойду.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/joinMeetingID:notSure:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/leaveGroupID:</TokenIdentifier>
+			<Abstract type="html">Данный метод позволяет выходить из группы, публичной страницы, или встречи</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)leaveGroupID:(NSUInteger)groupID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupID</Name>
+					<Abstract type="html">идентификатор сообщества</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/leaveGroupID:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/searchQuery:</TokenIdentifier>
+			<Abstract type="html">Осуществляет поиск сообществ по заданной подстроке</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchQuery:(NSString *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">текст поискового запроса</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchQuery:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/searchQuery:count:</TokenIdentifier>
+			<Abstract type="html">Осуществляет поиск сообществ по заданной подстроке</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchQuery:(NSString *)query count:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">текст поискового запроса</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество результатов поиска, которое необходимо вернуть.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchQuery:count:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/searchQuery:count:offset:</TokenIdentifier>
+			<Abstract type="html">Осуществляет поиск сообществ по заданной подстроке</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchQuery:(NSString *)query count:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">текст поискового запроса</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество результатов поиска, которое необходимо вернуть.</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определённого подмножества результатов поиска.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchQuery:count:offset:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/searchQuery:sort:count:offset:</TokenIdentifier>
+			<Abstract type="html">Осуществляет поиск сообществ по заданной подстроке</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchQuery:(NSString *)query sort:(NSUInteger)sort count:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">текст поискового запроса</Abstract>
+				</Parameter><Parameter>
+					<Name>sort</Name>
+					<Abstract type="html">параметр сортировки
+
+     0 - сортировать по количеству пользователей (по умолчанию)
+     1 - сортировать по скорости роста
+     2 - сортировать по отношению дневной посещаемости ко количеству пользователей
+     3 - сортировать по отношению количества лайков к количеству пользователей
+     4 - сортировать по отношению количества комментариев к количеству пользователей
+     5 - сортировать по отношению количества записей в обсуждениях к количеству пользователей</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество результатов поиска, которое необходимо вернуть.</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определённого подмножества результатов поиска.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchQuery:sort:count:offset:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/invites</TokenIdentifier>
+			<Abstract type="html">Данный метод возвращает список приглашений в сообщества и встречи</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)invites</Declaration>
+			
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/invites</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/invitesCount:</TokenIdentifier>
+			<Abstract type="html">Данный метод возвращает список приглашений в сообщества и встречи</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)invitesCount:(NSUInteger)count</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество приглашений, которое необходимо вернуть</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/invitesCount:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKGroups/invitesCount:offset:</TokenIdentifier>
+			<Abstract type="html">Данный метод возвращает список приглашений в сообщества и встречи</Abstract>
+			<DeclaredIn>VKGroups.h</DeclaredIn>			
+			
+			<Declaration>- (id)invitesCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество приглашений, которое необходимо вернуть</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определённого подмножества приглашений</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/invitesCount:offset:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
 		
 	</File>
 </Tokens>
