@@ -4,12 +4,196 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKDocs</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для работы с документами пользователя.</Abstract>
 			<DeclaredIn>VKDocs.h</DeclaredIn>
 			
 			<NodeRef refid="4"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/list</TokenIdentifier>
+			<Abstract type="html">Возвращает расширенную информацию о документах пользователя или сообщества</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)list</Declaration>
+			
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/list</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/listCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает расширенную информацию о документах пользователя или сообщества</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)listCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество документов, информацию о которых нужно вернуть</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества документов</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/listCount:offset:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/byIDs:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию о документах по их идентификаторам</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)byIDs:(NSArray *)docsIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>docsIDs</Name>
+					<Abstract type="html">идентификаторы документов, информацию о которых нужно вернуть ( Пример значения docs: 6674891488,6674891455 )</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/byIDs:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/uploadServer</TokenIdentifier>
+			<Abstract type="html">Возвращает адрес сервера для загрузки документов</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)uploadServer</Declaration>
+			
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/uploadServer</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/uploadServerGroupID:</TokenIdentifier>
+			<Abstract type="html">Возвращает адрес сервера для загрузки документов</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)uploadServerGroupID:(NSUInteger)groupID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupID</Name>
+					<Abstract type="html">идентификатор сообщества (если необходимо загрузить документ в сообщество)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/uploadServerGroupID:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/wallUploadServer</TokenIdentifier>
+			<Abstract type="html">Возвращает адрес сервера для загрузки документов в папку Отправленные, для последующей отправки документа на стену или личным сообщением</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)wallUploadServer</Declaration>
+			
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/wallUploadServer</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/wallUploadServerGroupID:</TokenIdentifier>
+			<Abstract type="html">Возвращает адрес сервера для загрузки документов в папку Отправленные, для последующей отправки документа на стену или личным сообщением</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)wallUploadServerGroupID:(NSUInteger)groupID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupID</Name>
+					<Abstract type="html">идентификатор сообщества, в которое нужно загрузить документ</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/wallUploadServerGroupID:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/save:</TokenIdentifier>
+			<Abstract type="html">Сохраняет документ после его успешной загрузки на сервер</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)save:(NSString *)file</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>file</Name>
+					<Abstract type="html">параметр, возвращаемый в результате загрузки файла на сервер</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/save:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/removeDocumentID:</TokenIdentifier>
+			<Abstract type="html">Удаляет документ пользователя или группы</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)removeDocumentID:(NSUInteger)documentID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>documentID</Name>
+					<Abstract type="html">идентификатор документа</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/removeDocumentID:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/addDocumentID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Копирует документ в документы текущего пользователя</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)addDocumentID:(NSUInteger)documentID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>documentID</Name>
+					<Abstract type="html">идентификатор документа</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор пользователя или сообщества, которому принадлежит документ</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addDocumentID:ownerID:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/addDocumentID:ownerID:accessKey:</TokenIdentifier>
+			<Abstract type="html">Копирует документ в документы текущего пользователя</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)addDocumentID:(NSUInteger)documentID ownerID:(NSUInteger)ownerID accessKey:(NSString *)accessKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>documentID</Name>
+					<Abstract type="html">идентификатор документа</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор пользователя или сообщества, которому принадлежит документ</Abstract>
+				</Parameter><Parameter>
+					<Name>accessKey</Name>
+					<Abstract type="html">ключ доступа документа. Этот параметр следует передать, если вместе с остальными данными о документе было возвращено поле access_key.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addDocumentID:ownerID:accessKey:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
 		
 	</File>
 </Tokens>

@@ -27,7 +27,125 @@
 //
 //
 #import "VKDocs.h"
+#import "VKConnector.h"
+#import "VKUser.h"
+
 
 @implementation VKDocs
+
+#pragma mark Visible VKDocs methods
+#pragma mark - docs.get
+
+- (id)list
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKDocsGet
+                                                 options:@{}
+                                                   error:nil];
+}
+
+- (id)listCount:(NSUInteger)count offset:(NSUInteger)offset
+{
+    NSDictionary *options = @{@"count": @(count),
+                              @"offset": @(offset)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKDocsGet
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - docs.getById
+
+- (id)byIDs:(NSArray *)docsIDs
+{
+    NSDictionary *options = @{@"docs": [docsIDs componentsJoinedByString:@","]};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKDocsGetById
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - docs.getUploadServer
+
+- (id)uploadServer
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKDocsGetUploadServer
+                                                 options:@{}
+                                                   error:nil];
+}
+
+- (id)uploadServerGroupID:(NSUInteger)groupID
+{
+    NSDictionary *options = @{@"gid": @(groupID)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKDocsGetUploadServer
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - docs.getWallUploadServer
+
+- (id)wallUploadServer
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKDocsGetWallUloadServer
+                                                 options:@{}
+                                                   error:nil];
+}
+
+- (id)wallUploadServerGroupID:(NSUInteger)groupID
+{
+    NSDictionary *options = @{};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKDocsGetWallUloadServer
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - docs.save
+
+- (id)save:(NSString *)file
+{
+    NSDictionary *options = @{@"file": file};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKDocsSave
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - docs.delete
+
+- (id)removeDocumentID:(NSUInteger)documentID
+{
+    NSUInteger currentUserID = [[VKUser currentUser] userID];
+    
+    NSDictionary *options = @{@"oid": @(currentUserID),
+                              @"did": @(documentID)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKDocsDelete
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - docs.add
+
+- (id)addDocumentID:(NSUInteger)documentID ownerID:(NSUInteger)ownerID
+{
+    NSDictionary *options = @{@"oid": @(ownerID),
+                              @"did": @(documentID)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKDocsAdd
+                                                 options:options
+                                                   error:nil];
+}
+
+- (id)addDocumentID:(NSUInteger)documentID ownerID:(NSUInteger)ownerID accessKey:(NSString *)accessKey
+{
+    NSDictionary *options = @{@"oid": @(ownerID),
+                              @"did": @(documentID),
+                              @"access_key": accessKey};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKDocsAdd
+                                                 options:options
+                                                   error:nil];
+}
 
 @end

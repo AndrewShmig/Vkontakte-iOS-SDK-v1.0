@@ -26,6 +26,12 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
 	
 	
 	
@@ -35,6 +41,29 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addDocumentID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- addDocumentID:ownerID:</option>
+	
+	<option value="//api/name/addDocumentID:ownerID:accessKey:">&nbsp;&nbsp;&nbsp;&nbsp;- addDocumentID:ownerID:accessKey:</option>
+	
+	<option value="//api/name/byIDs:">&nbsp;&nbsp;&nbsp;&nbsp;- byIDs:</option>
+	
+	<option value="//api/name/list">&nbsp;&nbsp;&nbsp;&nbsp;- list</option>
+	
+	<option value="//api/name/listCount:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- listCount:offset:</option>
+	
+	<option value="//api/name/removeDocumentID:">&nbsp;&nbsp;&nbsp;&nbsp;- removeDocumentID:</option>
+	
+	<option value="//api/name/save:">&nbsp;&nbsp;&nbsp;&nbsp;- save:</option>
+	
+	<option value="//api/name/uploadServer">&nbsp;&nbsp;&nbsp;&nbsp;- uploadServer</option>
+	
+	<option value="//api/name/uploadServerGroupID:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadServerGroupID:</option>
+	
+	<option value="//api/name/wallUploadServer">&nbsp;&nbsp;&nbsp;&nbsp;- wallUploadServer</option>
+	
+	<option value="//api/name/wallUploadServerGroupID:">&nbsp;&nbsp;&nbsp;&nbsp;- wallUploadServerGroupID:</option>
 	
 	
 	
@@ -45,6 +74,28 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_docs.get">docs.get</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_docs.getById">docs.getById</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_docs.getUploadServer">docs.getUploadServer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_docs.getWallUploadServer">docs.getWallUploadServer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_docs.save">docs.save</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_docs.delete">docs.delete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_docs.add">docs.add</a></span></li>
+	
+</ul></li>
 
 
 
@@ -54,7 +105,31 @@
 
 
 
-
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addDocumentID:ownerID:">addDocumentID:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addDocumentID:ownerID:accessKey:">addDocumentID:ownerID:accessKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/byIDs:">byIDs:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/list">list</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/listCount:offset:">listCount:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeDocumentID:">removeDocumentID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/save:">save:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadServer">uploadServer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadServerGroupID:">uploadServerGroupID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wallUploadServer">wallUploadServer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wallUploadServerGroupID:">wallUploadServerGroupID:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -88,6 +163,155 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс предназначен для работы с документами пользователя.</p><div class="warning"><p><strong>Warning:</strong> Пока класс не реализует функционал загрузки самих документов на сервер,
+но в скором времени это будет.</p></div>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="docs.get" name="task_docs.get"></a>
+						<h3 class="subsubtitle task-title">docs.get</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/list">&ndash;&nbsp;list</a></code>
+		<span class="tooltip"><p>Возвращает расширенную информацию о документах пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/listCount:offset:">&ndash;&nbsp;listCount:offset:</a></code>
+		<span class="tooltip"><p>Возвращает расширенную информацию о документах пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="docs.getById" name="task_docs.getById"></a>
+						<h3 class="subsubtitle task-title">docs.getById</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/byIDs:">&ndash;&nbsp;byIDs:</a></code>
+		<span class="tooltip"><p>Возвращает информацию о документах по их идентификаторам</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="docs.getUploadServer" name="task_docs.getUploadServer"></a>
+						<h3 class="subsubtitle task-title">docs.getUploadServer</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadServer">&ndash;&nbsp;uploadServer</a></code>
+		<span class="tooltip"><p>Возвращает адрес сервера для загрузки документов</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadServerGroupID:">&ndash;&nbsp;uploadServerGroupID:</a></code>
+		<span class="tooltip"><p>Возвращает адрес сервера для загрузки документов</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="docs.getWallUploadServer" name="task_docs.getWallUploadServer"></a>
+						<h3 class="subsubtitle task-title">docs.getWallUploadServer</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wallUploadServer">&ndash;&nbsp;wallUploadServer</a></code>
+		<span class="tooltip"><p>Возвращает адрес сервера для загрузки документов в папку Отправленные, для последующей отправки документа на стену или личным сообщением</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/wallUploadServerGroupID:">&ndash;&nbsp;wallUploadServerGroupID:</a></code>
+		<span class="tooltip"><p>Возвращает адрес сервера для загрузки документов в папку Отправленные, для последующей отправки документа на стену или личным сообщением</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="docs.save" name="task_docs.save"></a>
+						<h3 class="subsubtitle task-title">docs.save</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/save:">&ndash;&nbsp;save:</a></code>
+		<span class="tooltip"><p>Сохраняет документ после его успешной загрузки на сервер</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="docs.delete" name="task_docs.delete"></a>
+						<h3 class="subsubtitle task-title">docs.delete</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeDocumentID:">&ndash;&nbsp;removeDocumentID:</a></code>
+		<span class="tooltip"><p>Удаляет документ пользователя или группы</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="docs.add" name="task_docs.add"></a>
+						<h3 class="subsubtitle task-title">docs.add</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addDocumentID:ownerID:">&ndash;&nbsp;addDocumentID:ownerID:</a></code>
+		<span class="tooltip"><p>Копирует документ в документы текущего пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addDocumentID:ownerID:accessKey:">&ndash;&nbsp;addDocumentID:ownerID:accessKey:</a></code>
+		<span class="tooltip"><p>Копирует документ в документы текущего пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
@@ -97,6 +321,562 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addDocumentID:ownerID:" title="addDocumentID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">addDocumentID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Копирует документ в документы текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addDocumentID:(NSUInteger)<em>documentID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>documentID</em></dt>
+			<dd><p>идентификатор документа</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор пользователя или сообщества, которому принадлежит документ</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKDocs.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addDocumentID:ownerID:accessKey:" title="addDocumentID:ownerID:accessKey:"></a>
+	<h3 class="subsubtitle method-title">addDocumentID:ownerID:accessKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Копирует документ в документы текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addDocumentID:(NSUInteger)<em>documentID</em> ownerID:(NSUInteger)<em>ownerID</em> accessKey:(NSString *)<em>accessKey</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>documentID</em></dt>
+			<dd><p>идентификатор документа</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор пользователя или сообщества, которому принадлежит документ</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>accessKey</em></dt>
+			<dd><p>ключ доступа документа. Этот параметр следует передать, если вместе с остальными данными о документе было возвращено поле access_key.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKDocs.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/byIDs:" title="byIDs:"></a>
+	<h3 class="subsubtitle method-title">byIDs:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает информацию о документах по их идентификаторам</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)byIDs:(NSArray *)<em>docsIDs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>docsIDs</em></dt>
+			<dd><p>идентификаторы документов, информацию о которых нужно вернуть ( Пример значения docs: 66748_91488,66748_91455 )</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKDocs.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/list" title="list"></a>
+	<h3 class="subsubtitle method-title">list</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает расширенную информацию о документах пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)list</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKDocs.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/listCount:offset:" title="listCount:offset:"></a>
+	<h3 class="subsubtitle method-title">listCount:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает расширенную информацию о документах пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)listCount:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество документов, информацию о которых нужно вернуть</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества документов</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKDocs.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeDocumentID:" title="removeDocumentID:"></a>
+	<h3 class="subsubtitle method-title">removeDocumentID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет документ пользователя или группы</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)removeDocumentID:(NSUInteger)<em>documentID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>documentID</em></dt>
+			<dd><p>идентификатор документа</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKDocs.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/save:" title="save:"></a>
+	<h3 class="subsubtitle method-title">save:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Сохраняет документ после его успешной загрузки на сервер</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)save:(NSString *)<em>file</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>file</em></dt>
+			<dd><p>параметр, возвращаемый в результате загрузки файла на сервер</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKDocs.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadServer" title="uploadServer"></a>
+	<h3 class="subsubtitle method-title">uploadServer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает адрес сервера для загрузки документов</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)uploadServer</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKDocs.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadServerGroupID:" title="uploadServerGroupID:"></a>
+	<h3 class="subsubtitle method-title">uploadServerGroupID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает адрес сервера для загрузки документов</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)uploadServerGroupID:(NSUInteger)<em>groupID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupID</em></dt>
+			<dd><p>идентификатор сообщества (если необходимо загрузить документ в сообщество)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKDocs.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wallUploadServer" title="wallUploadServer"></a>
+	<h3 class="subsubtitle method-title">wallUploadServer</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает адрес сервера для загрузки документов в папку Отправленные, для последующей отправки документа на стену или личным сообщением</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)wallUploadServer</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKDocs.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/wallUploadServerGroupID:" title="wallUploadServerGroupID:"></a>
+	<h3 class="subsubtitle method-title">wallUploadServerGroupID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает адрес сервера для загрузки документов в папку Отправленные, для последующей отправки документа на стену или личным сообщением</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)wallUploadServerGroupID:(NSUInteger)<em>groupID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>groupID</em></dt>
+			<dd><p>идентификатор сообщества, в которое нужно загрузить документ</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKDocs.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>
@@ -109,7 +889,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-17)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-18)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

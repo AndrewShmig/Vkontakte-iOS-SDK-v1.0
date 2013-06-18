@@ -328,6 +328,7 @@ static NSString *const kVKDocsGetUploadServer = @"docs.getUploadServer";
 static NSString *const kVKDocsGetWallUloadServer = @"docs.getWallUploadServer";
 static NSString *const kVKDocsSave = @"docs.save";
 static NSString *const kVKDocsDelete = @"docs.delete";
+static NSString *const kVKDocsAdd = @"docs.add";
 
 // -----------------------------------------------------------------------------
 // Fave
