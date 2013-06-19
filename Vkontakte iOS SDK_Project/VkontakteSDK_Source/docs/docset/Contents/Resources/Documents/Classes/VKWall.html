@@ -26,6 +26,12 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
 	
 	
 	
@@ -35,6 +41,41 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addCommentCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- addCommentCustomOptions:</option>
+	
+	<option value="//api/name/addCommentPostID:ownerID:text:">&nbsp;&nbsp;&nbsp;&nbsp;- addCommentPostID:ownerID:text:</option>
+	
+	<option value="//api/name/byIDs:">&nbsp;&nbsp;&nbsp;&nbsp;- byIDs:</option>
+	
+	<option value="//api/name/commentsCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- commentsCustomOptions:</option>
+	
+	<option value="//api/name/commentsPostID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- commentsPostID:ownerID:</option>
+	
+	<option value="//api/name/count:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- count:offset:</option>
+	
+	<option value="//api/name/count:offset:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- count:offset:ownerID:</option>
+	
+	<option value="//api/name/customOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- customOptions:</option>
+	
+	<option value="//api/name/editCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- editCustomOptions:</option>
+	
+	<option value="//api/name/postCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- postCustomOptions:</option>
+	
+	<option value="//api/name/removeCommentID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- removeCommentID:ownerID:</option>
+	
+	<option value="//api/name/removePostID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- removePostID:ownerID:</option>
+	
+	<option value="//api/name/repostObjectID:message:">&nbsp;&nbsp;&nbsp;&nbsp;- repostObjectID:message:</option>
+	
+	<option value="//api/name/repostsOwnerID:postID:count:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- repostsOwnerID:postID:count:offset:</option>
+	
+	<option value="//api/name/restoreCommentID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- restoreCommentID:ownerID:</option>
+	
+	<option value="//api/name/restorePostID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- restorePostID:ownerID:</option>
+	
+	<option value="//api/name/savePostCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- savePostCustomOptions:</option>
 	
 	
 	
@@ -45,6 +86,40 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.get">wall.get</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.getById">wall.getById</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.savePost">wall.savePost</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.post">wall.post</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.repost">wall.repost</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.getReposts">wall.getReposts</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.edit">wall.edit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.delete">wall.delete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.restore">wall.restore</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.getComments">wall.getComments</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.addComment">wall.addComment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.deleteComment">wall.deleteComment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_wall.restoreComment">wall.restoreComment</a></span></li>
+	
+</ul></li>
 
 
 
@@ -54,7 +129,43 @@
 
 
 
-
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addCommentCustomOptions:">addCommentCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addCommentPostID:ownerID:text:">addCommentPostID:ownerID:text:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/byIDs:">byIDs:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/commentsCustomOptions:">commentsCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/commentsPostID:ownerID:">commentsPostID:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/count:offset:">count:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/count:offset:ownerID:">count:offset:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/customOptions:">customOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editCustomOptions:">editCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postCustomOptions:">postCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeCommentID:ownerID:">removeCommentID:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removePostID:ownerID:">removePostID:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/repostObjectID:message:">repostObjectID:message:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/repostsOwnerID:postID:count:offset:">repostsOwnerID:postID:count:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreCommentID:ownerID:">restoreCommentID:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restorePostID:ownerID:">restorePostID:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/savePostCustomOptions:">savePostCustomOptions:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -88,6 +199,245 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс предназначен для работы со стеной пользователя.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="wall.get" name="task_wall.get"></a>
+						<h3 class="subsubtitle task-title">wall.get</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/count:offset:">&ndash;&nbsp;count:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список записей со стены пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/count:offset:ownerID:">&ndash;&nbsp;count:offset:ownerID:</a></code>
+		<span class="tooltip"><p>Возвращает список записей со стены пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/customOptions:">&ndash;&nbsp;customOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список записей со стены пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.getById" name="task_wall.getById"></a>
+						<h3 class="subsubtitle task-title">wall.getById</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/byIDs:">&ndash;&nbsp;byIDs:</a></code>
+		<span class="tooltip"><p>Возвращает список записей со стен пользователей по их идентификаторам</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.savePost" name="task_wall.savePost"></a>
+						<h3 class="subsubtitle task-title">wall.savePost</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/savePostCustomOptions:">&ndash;&nbsp;savePostCustomOptions:</a></code>
+		<span class="tooltip"><p>Сохраняет запись на стене пользователя. Запись может содержать фотографию, ранее загруженную на сервер ВКонтакте, или любую доступную фотографию из альбома пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.post" name="task_wall.post"></a>
+						<h3 class="subsubtitle task-title">wall.post</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postCustomOptions:">&ndash;&nbsp;postCustomOptions:</a></code>
+		<span class="tooltip"><p>Публикует новую запись на своей или чужой стене.
+Данный метод позволяет создать новую запись на стене, а также опубликовать предложенную новость или отложенную запись</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.repost" name="task_wall.repost"></a>
+						<h3 class="subsubtitle task-title">wall.repost</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/repostObjectID:message:">&ndash;&nbsp;repostObjectID:message:</a></code>
+		<span class="tooltip"><p>Копирует объект на стену пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.getReposts" name="task_wall.getReposts"></a>
+						<h3 class="subsubtitle task-title">wall.getReposts</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/repostsOwnerID:postID:count:offset:">&ndash;&nbsp;repostsOwnerID:postID:count:offset:</a></code>
+		<span class="tooltip"><p>Позволяет получать список репостов заданной записи</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.edit" name="task_wall.edit"></a>
+						<h3 class="subsubtitle task-title">wall.edit</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editCustomOptions:">&ndash;&nbsp;editCustomOptions:</a></code>
+		<span class="tooltip"><p>Редактирует запись на стене</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.delete" name="task_wall.delete"></a>
+						<h3 class="subsubtitle task-title">wall.delete</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removePostID:ownerID:">&ndash;&nbsp;removePostID:ownerID:</a></code>
+		<span class="tooltip"><p>Удаляет запись со стены.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.restore" name="task_wall.restore"></a>
+						<h3 class="subsubtitle task-title">wall.restore</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restorePostID:ownerID:">&ndash;&nbsp;restorePostID:ownerID:</a></code>
+		<span class="tooltip"><p>Восстанавливает удаленную запись на стене пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.getComments" name="task_wall.getComments"></a>
+						<h3 class="subsubtitle task-title">wall.getComments</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/commentsPostID:ownerID:">&ndash;&nbsp;commentsPostID:ownerID:</a></code>
+		<span class="tooltip"><p>Возвращает список комментариев к записи на стене пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/commentsCustomOptions:">&ndash;&nbsp;commentsCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список комментариев к записи на стене пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.addComment" name="task_wall.addComment"></a>
+						<h3 class="subsubtitle task-title">wall.addComment</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addCommentPostID:ownerID:text:">&ndash;&nbsp;addCommentPostID:ownerID:text:</a></code>
+		<span class="tooltip"><p>Добавляет комментарий к записи на стене пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addCommentCustomOptions:">&ndash;&nbsp;addCommentCustomOptions:</a></code>
+		<span class="tooltip"><p>Добавляет комментарий к записи на стене пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.deleteComment" name="task_wall.deleteComment"></a>
+						<h3 class="subsubtitle task-title">wall.deleteComment</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeCommentID:ownerID:">&ndash;&nbsp;removeCommentID:ownerID:</a></code>
+		<span class="tooltip"><p>Удаляет комментарий текущего пользователя к записи на своей или чужой стене</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="wall.restoreComment" name="task_wall.restoreComment"></a>
+						<h3 class="subsubtitle task-title">wall.restoreComment</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restoreCommentID:ownerID:">&ndash;&nbsp;restoreCommentID:ownerID:</a></code>
+		<span class="tooltip"><p>Восстанавливает комментарий текущего пользователя к записи на своей или чужой стене</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
@@ -97,6 +447,949 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addCommentCustomOptions:" title="addCommentCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">addCommentCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Добавляет комментарий к записи на стене пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addCommentCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="http://vk.com/dev/wall.addComment">http://vk.com/dev/wall.addComment</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addCommentPostID:ownerID:text:" title="addCommentPostID:ownerID:text:"></a>
+	<h3 class="subsubtitle method-title">addCommentPostID:ownerID:text:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Добавляет комментарий к записи на стене пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addCommentPostID:(NSUInteger)<em>postID</em> ownerID:(NSUInteger)<em>ownerID</em> text:(NSString *)<em>text</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>postID</em></dt>
+			<dd><p>идентификатор записи на стене пользователя или сообщества</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор пользователя или сообщества, на чьей стене находится запись, к которой необходимо добавить комментарий</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>text</em></dt>
+			<dd><p>текст комментария к записи</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/byIDs:" title="byIDs:"></a>
+	<h3 class="subsubtitle method-title">byIDs:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список записей со стен пользователей по их идентификаторам</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)byIDs:(NSArray *)<em>postsIDs</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>postsIDs</em></dt>
+			<dd><p>перечисленные через запятую идентификаторы, которые представляют собой идущие через знак подчеркивания id владельцев стен и id самих записей на стене</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/commentsCustomOptions:" title="commentsCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">commentsCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список комментариев к записи на стене пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)commentsCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/wall.getComments">https://vk.com/dev/wall.getComments</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/commentsPostID:ownerID:" title="commentsPostID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">commentsPostID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список комментариев к записи на стене пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)commentsPostID:(NSUInteger)<em>postID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>postID</em></dt>
+			<dd><p>идентификатор записи на стене</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор пользователя или сообщества, на чьей стене находится запись, к которой необходимо получить комментарии</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/count:offset:" title="count:offset:"></a>
+	<h3 class="subsubtitle method-title">count:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список записей со стены пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество записей, которое необходимо получить (но не более 100)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества записей</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/count:offset:ownerID:" title="count:offset:ownerID:"></a>
+	<h3 class="subsubtitle method-title">count:offset:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список записей со стены пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество записей, которое необходимо получить (но не более 100)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества записей</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор пользователя или сообщества, со стены которого необходимо получить записи</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/customOptions:" title="customOptions:"></a>
+	<h3 class="subsubtitle method-title">customOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список записей со стены пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)customOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/wall.get">https://vk.com/dev/wall.get</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editCustomOptions:" title="editCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">editCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Редактирует запись на стене</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)editCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/wall.edit">https://vk.com/dev/wall.edit</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postCustomOptions:" title="postCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">postCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Публикует новую запись на своей или чужой стене.
+Данный метод позволяет создать новую запись на стене, а также опубликовать предложенную новость или отложенную запись</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)postCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/wall.post">https://vk.com/dev/wall.post</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeCommentID:ownerID:" title="removeCommentID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">removeCommentID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет комментарий текущего пользователя к записи на своей или чужой стене</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)removeCommentID:(NSUInteger)<em>commentID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>commentID</em></dt>
+			<dd><p>идентификатор комментария</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор пользователя, на чьей стене находится комментарий к записи</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removePostID:ownerID:" title="removePostID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">removePostID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет запись со стены.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)removePostID:(NSUInteger)<em>postID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>postID</em></dt>
+			<dd><p>идентификатор записи на стене</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор пользователя или сообщества, на стене которого находится запись</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/repostObjectID:message:" title="repostObjectID:message:"></a>
+	<h3 class="subsubtitle method-title">repostObjectID:message:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Копирует объект на стену пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)repostObjectID:(NSUInteger)<em>objectID</em> message:(NSString *)<em>message</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>objectID</em></dt>
+			<dd><p>строковый идентификатор объекта, который необходимо разместить на стене, например wall66748_3675</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>сопроводительный текст, который будет добавлен к записи с объектом</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/repostsOwnerID:postID:count:offset:" title="repostsOwnerID:postID:count:offset:"></a>
+	<h3 class="subsubtitle method-title">repostsOwnerID:postID:count:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Позволяет получать список репостов заданной записи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)repostsOwnerID:(NSUInteger)<em>ownerID</em> postID:(NSUInteger)<em>postID</em> count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор пользователя или сообщества, на стене которого находится запись</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>postID</em></dt>
+			<dd><p>идентификатор записи на стене</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество записей, которое необходимо получить</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества записей</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restoreCommentID:ownerID:" title="restoreCommentID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">restoreCommentID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Восстанавливает комментарий текущего пользователя к записи на своей или чужой стене</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)restoreCommentID:(NSUInteger)<em>commentID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>commentID</em></dt>
+			<dd><p>идентификатор комментария на стене</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор пользователя или сообщества, на стене которого находится комментарий к записи</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restorePostID:ownerID:" title="restorePostID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">restorePostID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Восстанавливает удаленную запись на стене пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)restorePostID:(NSUInteger)<em>postID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>postID</em></dt>
+			<dd><p>идентификатор записи на стене</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор пользователя или сообщества, на стене которого находилась удаленная запись</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/savePostCustomOptions:" title="savePostCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">savePostCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Сохраняет запись на стене пользователя. Запись может содержать фотографию, ранее загруженную на сервер ВКонтакте, или любую доступную фотографию из альбома пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)savePostCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/wall.savePost">https://vk.com/dev/wall.savePost</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKWall.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>
@@ -109,7 +1402,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-18)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

@@ -4,12 +4,344 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKWall</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для работы со стеной пользователя.</Abstract>
 			<DeclaredIn>VKWall.h</DeclaredIn>
 			
 			<NodeRef refid="17"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/count:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список записей со стены пользователя</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)count:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество записей, которое необходимо получить (но не более 100)</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества записей</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/count:offset:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/count:offset:ownerID:</TokenIdentifier>
+			<Abstract type="html">Возвращает список записей со стены пользователя</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)count:(NSUInteger)count offset:(NSUInteger)offset ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество записей, которое необходимо получить (но не более 100)</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества записей</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор пользователя или сообщества, со стены которого необходимо получить записи</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/count:offset:ownerID:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/customOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список записей со стены пользователя или сообщества</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)customOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/wall.get</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/customOptions:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/byIDs:</TokenIdentifier>
+			<Abstract type="html">Возвращает список записей со стен пользователей по их идентификаторам</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)byIDs:(NSArray *)postsIDs</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>postsIDs</Name>
+					<Abstract type="html">перечисленные через запятую идентификаторы, которые представляют собой идущие через знак подчеркивания id владельцев стен и id самих записей на стене</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/byIDs:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/savePostCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Сохраняет запись на стене пользователя. Запись может содержать фотографию, ранее загруженную на сервер ВКонтакте, или любую доступную фотографию из альбома пользователя</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)savePostCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/wall.savePost</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/savePostCustomOptions:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/postCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Публикует новую запись на своей или чужой стене.
+Данный метод позволяет создать новую запись на стене, а также опубликовать предложенную новость или отложенную запись</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)postCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/wall.post</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/postCustomOptions:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/repostObjectID:message:</TokenIdentifier>
+			<Abstract type="html">Копирует объект на стену пользователя или сообщества</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)repostObjectID:(NSUInteger)objectID message:(NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>objectID</Name>
+					<Abstract type="html">строковый идентификатор объекта, который необходимо разместить на стене, например wall66748_3675</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">сопроводительный текст, который будет добавлен к записи с объектом</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/repostObjectID:message:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/repostsOwnerID:postID:count:offset:</TokenIdentifier>
+			<Abstract type="html">Позволяет получать список репостов заданной записи</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)repostsOwnerID:(NSUInteger)ownerID postID:(NSUInteger)postID count:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор пользователя или сообщества, на стене которого находится запись</Abstract>
+				</Parameter><Parameter>
+					<Name>postID</Name>
+					<Abstract type="html">идентификатор записи на стене</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество записей, которое необходимо получить</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества записей</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/repostsOwnerID:postID:count:offset:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/editCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Редактирует запись на стене</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)editCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/wall.edit</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editCustomOptions:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/removePostID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Удаляет запись со стены.</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)removePostID:(NSUInteger)postID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>postID</Name>
+					<Abstract type="html">идентификатор записи на стене</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор пользователя или сообщества, на стене которого находится запись</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/removePostID:ownerID:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/restorePostID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Восстанавливает удаленную запись на стене пользователя</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)restorePostID:(NSUInteger)postID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>postID</Name>
+					<Abstract type="html">идентификатор записи на стене</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор пользователя или сообщества, на стене которого находилась удаленная запись</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/restorePostID:ownerID:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/commentsPostID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Возвращает список комментариев к записи на стене пользователя</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)commentsPostID:(NSUInteger)postID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>postID</Name>
+					<Abstract type="html">идентификатор записи на стене</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор пользователя или сообщества, на чьей стене находится запись, к которой необходимо получить комментарии</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/commentsPostID:ownerID:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/commentsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список комментариев к записи на стене пользователя</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)commentsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/wall.getComments</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/commentsCustomOptions:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/addCommentPostID:ownerID:text:</TokenIdentifier>
+			<Abstract type="html">Добавляет комментарий к записи на стене пользователя или сообщества</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)addCommentPostID:(NSUInteger)postID ownerID:(NSUInteger)ownerID text:(NSString *)text</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>postID</Name>
+					<Abstract type="html">идентификатор записи на стене пользователя или сообщества</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор пользователя или сообщества, на чьей стене находится запись, к которой необходимо добавить комментарий</Abstract>
+				</Parameter><Parameter>
+					<Name>text</Name>
+					<Abstract type="html">текст комментария к записи</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addCommentPostID:ownerID:text:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/addCommentCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Добавляет комментарий к записи на стене пользователя или сообщества</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)addCommentCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: http://vk.com/dev/wall.addComment</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addCommentCustomOptions:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/removeCommentID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Удаляет комментарий текущего пользователя к записи на своей или чужой стене</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)removeCommentID:(NSUInteger)commentID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commentID</Name>
+					<Abstract type="html">идентификатор комментария</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор пользователя, на чьей стене находится комментарий к записи</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/removeCommentID:ownerID:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKWall/restoreCommentID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Восстанавливает комментарий текущего пользователя к записи на своей или чужой стене</Abstract>
+			<DeclaredIn>VKWall.h</DeclaredIn>			
+			
+			<Declaration>- (id)restoreCommentID:(NSUInteger)commentID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commentID</Name>
+					<Abstract type="html">идентификатор комментария на стене</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор пользователя или сообщества, на стене которого находится комментарий к записи</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/restoreCommentID:ownerID:</Anchor>
+            <NodeRef refid="17"/>
+		</Token>
 		
 	</File>
 </Tokens>

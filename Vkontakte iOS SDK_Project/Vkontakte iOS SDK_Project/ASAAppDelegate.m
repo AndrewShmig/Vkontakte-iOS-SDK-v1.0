@@ -57,7 +57,8 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
 {
     NSLog(@"%s", __FUNCTION__);
     
-    NSLog(@"%@", [[[VKUser currentUser] docs] listCount:3 offset:0]);
+    id tmp = [[[VKUser currentUser] friends] count:5];
+    NSLog(@"%@", tmp);
 }
 
 - (void)VKConnector:(VKConnector *)connector connectionErrorOccured:(NSError *)error

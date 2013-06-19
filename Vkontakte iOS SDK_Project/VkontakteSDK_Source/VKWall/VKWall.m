@@ -28,8 +28,191 @@
 //
 
 #import "VKWall.h"
-#import "VKAccessToken.h"
+#import "VKConnector.h"
+#import "VKUser.h"
 
 @implementation VKWall
+
+#pragma mark Visible VKWall methods
+#pragma mark - wall.get
+
+- (id)count:(NSUInteger)count offset:(NSUInteger)offset
+{
+    NSDictionary *options = @{@"count": @(count),
+                              @"offset": @(offset)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallGet
+                                                 options:options
+                                                   error:nil];
+}
+
+- (id)count:(NSUInteger)count offset:(NSUInteger)offset ownerID:(NSUInteger)ownerID
+{
+    NSDictionary *options = @{@"count": @(count),
+                              @"offset": @(offset),
+                              @"owner_id": @(ownerID)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallGet
+                                                 options:options
+                                                   error:nil];
+}
+
+- (id)customOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallGet
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.getById
+
+- (id)byIDs:(NSArray *)postsIDs
+{
+    NSDictionary *options = @{@"posts": [postsIDs componentsJoinedByString:@","]};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallGetById
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.savePost
+
+- (id)savePostCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallSavePost
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.post
+
+- (id)postCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallPost
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.repost
+
+- (id)repostObjectID:(NSUInteger)objectID message:(NSString *)message
+{
+    NSDictionary *options = @{@"object": @(objectID),
+                              @"message": message};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallRepost
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.getReposts
+
+- (id)repostsOwnerID:(NSUInteger)ownerID postID:(NSUInteger)postID count:(NSUInteger)count offset:(NSUInteger)offset
+{
+    NSDictionary *options = @{@"owner_id": @(ownerID),
+                              @"post_id": @(postID),
+                              @"count": @(count),
+                              @"offset": @(offset)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallGetReposts
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.edit
+
+- (id)editCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallEdit
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.delete
+
+- (id)removePostID:(NSUInteger)postID ownerID:(NSUInteger)ownerID
+{
+    NSDictionary *options = @{@"owner_id": @(ownerID),
+                              @"post_id": @(postID)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallDelete
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.restore
+
+- (id)restorePostID:(NSUInteger)postID ownerID:(NSUInteger)ownerID
+{
+    NSDictionary *options = @{@"owner_id": @(ownerID),
+                              @"post_id": @(postID)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallRestore
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.getComments
+
+- (id)commentsCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallGetComments
+                                                 options:options
+                                                   error:nil];
+}
+
+- (id)commentsPostID:(NSUInteger)postID ownerID:(NSUInteger)ownerID
+{
+    NSDictionary *options = @{@"post_id": @(postID),
+                              @"owner_id": @(ownerID)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallGetComments
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.addComment
+
+- (id)addCommentCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallAddComment
+                                                 options:options
+                                                   error:nil];
+}
+
+- (id)addCommentPostID:(NSUInteger)postID ownerID:(NSUInteger)ownerID text:(NSString *)text
+{
+    NSDictionary *options = @{@"post_id": @(postID),
+                              @"owner_id": @(ownerID),
+                              @"text": text};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallAddComment
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.deleteComment
+
+- (id)removeCommentID:(NSUInteger)commentID ownerID:(NSUInteger)ownerID
+{
+    NSDictionary *options = @{@"owner_id": @(ownerID),
+                              @"cid": @(commentID)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallDeleteComment
+                                                 options:options
+                                                   error:nil];
+}
+
+#pragma mark - wall.restoreComment
+
+- (id)restoreCommentID:(NSUInteger)commentID ownerID:(NSUInteger)ownerID
+{
+    NSDictionary *options = @{@"owner_id": @(ownerID),
+                              @"cid": @(commentID)};
+    
+    return [[VKConnector sharedInstance] performVKMethod:kVKWallRestoreComment
+                                                 options:options
+                                                   error:nil];
+}
 
 @end
