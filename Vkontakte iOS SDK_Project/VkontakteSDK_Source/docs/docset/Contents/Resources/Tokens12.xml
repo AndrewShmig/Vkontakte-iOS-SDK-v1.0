@@ -4,12 +4,612 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKPhotoAlbums</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс позволяет работать с фотографиями и альбомами пользователя.</Abstract>
 			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>
 			
 			<NodeRef refid="12"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/createTitle:description:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)createTitle:(NSString *)title description:(NSString *)description</Declaration>
+			
+			
+			<Anchor>//api/name/createTitle:description:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/createTitle:description:commentPrivacy:privacy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)createTitle:(NSString *)title description:(NSString *)description commentPrivacy:(NSUInteger)commentPrivacy privacy:(NSUInteger)privacy</Declaration>
+			
+			
+			<Anchor>//api/name/createTitle:description:commentPrivacy:privacy:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/createCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)createCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/createCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/editAlbumID:title:description:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editAlbumID:(NSUInteger)albumID title:(NSString *)title description:(NSString *)description</Declaration>
+			
+			
+			<Anchor>//api/name/editAlbumID:title:description:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/editAlbumID:title:description:commentPrivacy:privacy:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editAlbumID:(NSUInteger)albumID title:(NSString *)title description:(NSString *)description commentPrivacy:(NSUInteger)commentPrivacy privacy:(NSUInteger)privcay</Declaration>
+			
+			
+			<Anchor>//api/name/editAlbumID:title:description:commentPrivacy:privacy:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/editCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/editCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/listCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)listCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/listCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/listPhotosCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)listPhotosCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/listPhotosCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/count</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)count</Declaration>
+			
+			
+			<Anchor>//api/name/count</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/profileCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)profileCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/profileCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/photosByIDs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)photosByIDs:(NSArray *)photosIDs</Declaration>
+			
+			
+			<Anchor>//api/name/photosByIDs:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/photosByIDsCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)photosByIDsCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/photosByIDsCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/uploadServer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)uploadServer</Declaration>
+			
+			
+			<Anchor>//api/name/uploadServer</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/uploadServerCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)uploadServerCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/uploadServerCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/profileUploadServer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)profileUploadServer</Declaration>
+			
+			
+			<Anchor>//api/name/profileUploadServer</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/saveProfilePhotoCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)saveProfilePhotoCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/saveProfilePhotoCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/saveProfilePhoto:server:hash:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)saveProfilePhoto:(NSString *)photo server:(NSString *)server hash:(NSString *)hash</Declaration>
+			
+			
+			<Anchor>//api/name/saveProfilePhoto:server:hash:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/saveWallPhotoCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)saveWallPhotoCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/saveWallPhotoCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/wallUploadServer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)wallUploadServer</Declaration>
+			
+			
+			<Anchor>//api/name/wallUploadServer</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/wallUploadServerCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)wallUploadServerCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/wallUploadServerCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/messagesUploadServer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)messagesUploadServer</Declaration>
+			
+			
+			<Anchor>//api/name/messagesUploadServer</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/messagesUploadServerCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)messagesUploadServerCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/messagesUploadServerCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/saveMessagesPhotoCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)saveMessagesPhotoCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/saveMessagesPhotoCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/searchQuery:latitude:longitude:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchQuery:(NSString *)searchQuery latitude:(CGFloat)latitude longitude:(CGFloat)longitude</Declaration>
+			
+			
+			<Anchor>//api/name/searchQuery:latitude:longitude:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/searchQuery:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchQuery:(NSString *)searchQuery</Declaration>
+			
+			
+			<Anchor>//api/name/searchQuery:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/savePhotoCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)savePhotoCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/savePhotoCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/editPhotoCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editPhotoCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/editPhotoCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/editPhotoID:ownerID:caption:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editPhotoID:(NSUInteger)photoID ownerID:(NSUInteger)ownerID caption:(NSString *)caption</Declaration>
+			
+			
+			<Anchor>//api/name/editPhotoID:ownerID:caption:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/movePhotoCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)movePhotoCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/movePhotoCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/movePhotoID:toAlbumID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)movePhotoID:(NSUInteger)photoID toAlbumID:(NSUInteger)albumID</Declaration>
+			
+			
+			<Anchor>//api/name/movePhotoID:toAlbumID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/makeCoverCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)makeCoverCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/makeCoverCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/makeCoverPhotoID:albumID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)makeCoverPhotoID:(NSUInteger)photoID albumID:(NSUInteger)albumID</Declaration>
+			
+			
+			<Anchor>//api/name/makeCoverPhotoID:albumID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/reorderCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)reorderCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/reorderCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/reorderPhotosCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)reorderPhotosCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/reorderPhotosCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/allPhotosCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)allPhotosCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/allPhotosCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/taggedPhotosCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)taggedPhotosCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/taggedPhotosCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/removeAlbumID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)removeAlbumID:(NSUInteger)albumID</Declaration>
+			
+			
+			<Anchor>//api/name/removeAlbumID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/removePhotoID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)removePhotoID:(NSUInteger)photoID</Declaration>
+			
+			
+			<Anchor>//api/name/removePhotoID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/confirmTagID:photoID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)confirmTagID:(NSUInteger)tagID photoID:(NSUInteger)photoID</Declaration>
+			
+			
+			<Anchor>//api/name/confirmTagID:photoID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/photoCommentsCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)photoCommentsCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/photoCommentsCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/allCommentsCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)allCommentsCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/allCommentsCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/addCommentCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)addCommentCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/addCommentCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/removeCommentID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)removeCommentID:(NSUInteger)commentID</Declaration>
+			
+			
+			<Anchor>//api/name/removeCommentID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/restoreCommentID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)restoreCommentID:(NSUInteger)commentID</Declaration>
+			
+			
+			<Anchor>//api/name/restoreCommentID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/editCommentCustomOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editCommentCustomOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/editCommentCustomOptions:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/tagsPhotoID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)tagsPhotoID:(NSUInteger)photoID</Declaration>
+			
+			
+			<Anchor>//api/name/tagsPhotoID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/addTagPhotoID:userID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)addTagPhotoID:(NSUInteger)photoID userID:(NSUInteger)userID</Declaration>
+			
+			
+			<Anchor>//api/name/addTagPhotoID:userID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/removeTagID:photoID:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)removeTagID:(NSUInteger)tagID photoID:(NSUInteger)photoID</Declaration>
+			
+			
+			<Anchor>//api/name/removeTagID:photoID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/unseenPhotoTags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)unseenPhotoTags</Declaration>
+			
+			
+			<Anchor>//api/name/unseenPhotoTags</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/unseenPhotoTagsCount:offset:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)unseenPhotoTagsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			
+			
+			<Anchor>//api/name/unseenPhotoTagsCount:offset:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
 		
 	</File>
 </Tokens>

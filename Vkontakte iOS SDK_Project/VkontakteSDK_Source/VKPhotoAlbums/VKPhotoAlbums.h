@@ -35,7 +35,7 @@
 @interface VKPhotoAlbums : NSObject
 
 /**
-* @name photos.createAlbum
+ @name photos.createAlbum
 */
 - (id)createTitle:(NSString *)title
       description:(NSString *)description;
@@ -48,7 +48,7 @@
 - (id)createCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.editAlbum
+  @name photos.editAlbum
 */
 - (id)editAlbumID:(NSUInteger)albumID
             title:(NSString *)title
@@ -63,46 +63,46 @@
 - (id)editCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.getAlbums
+  @name photos.getAlbums
 */
 - (id)listCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.get
+  @name photos.get
 */
 - (id)listPhotosCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.getAlbumsCount
+  @name photos.getAlbumsCount
 */
 - (id)count;
 
 /**
-* @name photos.getProfile
+  @name photos.getProfile
 */
 - (id)profileCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.getById
+  @name photos.getById
 */
 - (id)photosByIDs:(NSArray *)photosIDs;
 
 - (id)photosByIDsCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.getUploadServer
+  @name photos.getUploadServer
 */
 - (id)uploadServer;
 
 - (id)uploadServerCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.getProfileUploadServer
+  @name photos.getProfileUploadServer
 */
 - (id)profileUploadServer;
 
 /**
-* @name photos.saveProfilePhoto
+  @name photos.saveProfilePhoto
 */
 - (id)saveProfilePhotoCustomOptions:(NSDictionary *)options;
 
@@ -111,31 +111,31 @@
                   hash:(NSString *)hash;
 
 /**
-* @name photos.saveWallPhoto
+  @name photos.saveWallPhoto
 */
 - (id)saveWallPhotoCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.getWallUploadServer
+  @name photos.getWallUploadServer
 */
 - (id)wallUploadServer;
 
 - (id)wallUploadServerCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.getMessagesUploadServer
+  @name photos.getMessagesUploadServer
 */
 - (id)messagesUploadServer;
 
 - (id)messagesUploadServerCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.saveMessagesPhoto
+  @name photos.saveMessagesPhoto
 */
 - (id)saveMessagesPhotoCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.search
+  @name photos.search
 */
 - (id)searchQuery:(NSString *)searchQuery
          latitude:(CGFloat)latitude
@@ -144,12 +144,12 @@
 - (id)searchQuery:(NSString *)searchQuery;
 
 /**
-* @name photos.save
+  @name photos.save
 */
 - (id)savePhotoCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.edit
+  @name photos.edit
 */
 - (id)editPhotoCustomOptions:(NSDictionary *)options;
 
@@ -158,7 +158,7 @@
           caption:(NSString *)caption;
 
 /**
-* @name photos.move
+  @name photos.move
 */
 - (id)movePhotoCustomOptions:(NSDictionary *)options;
 
@@ -166,7 +166,7 @@
         toAlbumID:(NSUInteger)albumID;
 
 /**
-* @name photos.makeCover
+  @name photos.makeCover
 */
 - (id)makeCoverCustomOptions:(NSDictionary *)options;
 
@@ -174,90 +174,90 @@
                albumID:(NSUInteger)albumID;
 
 /**
-* @name photos.reorderAlbums
+  @name photos.reorderAlbums
 */
 - (id)reorderCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.reorderPhotos
+  @name photos.reorderPhotos
 */
 - (id)reorderPhotosCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.getAll
+  @name photos.getAll
 */
 - (id)allPhotosCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.getUserPhotos
+  @name photos.getUserPhotos
 */
 - (id)taggedPhotosCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.deleteAlbum
+  @name photos.deleteAlbum
 */
 - (id)removeAlbumID:(NSUInteger)albumID;
 
 /**
-* @name photos.delete
+  @name photos.delete
 */
 - (id)removePhotoID:(NSUInteger)photoID;
 
 /**
-* @name photos.confirmTag
+  @name photos.confirmTag
 */
 - (id)confirmTagID:(NSUInteger)tagID
            photoID:(NSUInteger)photoID;
 
 /**
-* @name photos.getComments
+  @name photos.getComments
 */
 - (id)photoCommentsCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.getAllComments
+  @name photos.getAllComments
 */
 - (id)allCommentsCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.createComment
+  @name photos.createComment
 */
 - (id)addCommentCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.deleteComment
+  @name photos.deleteComment
 */
 - (id)removeCommentID:(NSUInteger)commentID;
 
 /**
-* @name photos.restoreComment
+  @name photos.restoreComment
 */
 - (id)restoreCommentID:(NSUInteger)commentID;
 
 /**
-* @name photos.editComment
+  @name photos.editComment
 */
 - (id)editCommentCustomOptions:(NSDictionary *)options;
 
 /**
-* @name photos.getTags
+  @name photos.getTags
 */
 - (id)tagsPhotoID:(NSUInteger)photoID;
 
 /**
-* @name photos.putTag
+  @name photos.putTag
 */
 - (id)addTagPhotoID:(NSUInteger)photoID
              userID:(NSUInteger)userID;
 
 /**
-* @name photos.removeTag
+  @name photos.removeTag
 */
 - (id)removeTagID:(NSUInteger)tagID
           photoID:(NSUInteger)photoID;
 
 /**
-* @name photos.getNewTags
+  @name photos.getNewTags
 */
 - (id)unseenPhotoTags;
 
