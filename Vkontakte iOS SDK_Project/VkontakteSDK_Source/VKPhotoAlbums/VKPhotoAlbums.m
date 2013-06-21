@@ -448,10 +448,13 @@
 
 #pragma mark - photos.confirmTag
 
-- (id)confirmTagID:(NSUInteger)tagID photoID:(NSUInteger)photoID
+- (id)confirmTagID:(NSUInteger)tagID
+           ownerID:(NSUInteger)ownerID
+           photoID:(NSUInteger)photoID
 {
-    NSDictionary *options = @{@"pid"    : @(photoID),
-                              @"tag_id" : @(tagID)};
+    NSDictionary *options = @{@"pid"      : @(photoID),
+                              @"tag_id"   : @(tagID),
+                              @"owner_id" : @(ownerID)};
 
     return [[VKConnector sharedInstance]
                          performVKMethod:kVKPhotosConfirmTag
