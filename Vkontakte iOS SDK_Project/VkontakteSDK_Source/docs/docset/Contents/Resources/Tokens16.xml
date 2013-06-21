@@ -4,12 +4,386 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKVideoAlbums</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для работы с пользовательскими видео альбомами.</Abstract>
 			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>
 			
 			<NodeRef refid="16"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию о видеозаписях</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.get</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/editCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Редактирует данные видеозаписи на странице пользователя</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.edit</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/addCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Добавляет видеозапись в список пользователя</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)addCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.add</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/saveCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает адрес сервера (необходимый для загрузки) и данные видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)saveCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.save</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/saveCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/deleteCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Удаляет видеозапись со страницы пользователя</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.delete</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/restoreCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Восстанавливает удаленную видеозапись</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)restoreCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.restore</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/restoreCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/searchCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список видеозаписей в соответствии с заданным критерием поиска</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.search</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getUserVideosCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список видеозаписей, на которых отмечен пользователь</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getUserVideosCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.getUserVideos</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getUserVideosCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getAlbumsCustomtOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список альбомов видеозаписей пользователя или сообщества</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getAlbumsCustomtOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.getAlbums</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getAlbumsCustomtOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/addAlbumCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Создает пустой альбом видеозаписей</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)addAlbumCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.addAlbum</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addAlbumCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/editAlbumCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Редактирует название альбома видеозаписей</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editAlbumCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.editAlbum</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editAlbumCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/deleteAlbumCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Удаляет альбом видеозаписей</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteAlbumCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.deleteAlbum</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteAlbumCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/moveToAlbumCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Перемещает видеозаписи в альбом</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)moveToAlbumCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.moveToAlbum</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/moveToAlbumCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getCommentsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список комментариев к видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getCommentsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.getComments</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getCommentsCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/createCommentCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Cоздает новый комментарий к видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)createCommentCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.createComment</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/createCommentCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/deleteCommentCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Удаляет комментарий к видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteCommentCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.deleteComment</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteCommentCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/restoreCommentCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Восстанавливает удаленный комментарий к видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)restoreCommentCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.restoreComment</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/restoreCommentCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/editCommentCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Изменяет текст комментария к видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editCommentCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.editComment</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editCommentCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getTagsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список отметок на видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getTagsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.getTags</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getTagsCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/putTagCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Добавляет отметку на видеозапись</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)putTagCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.putTag</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/putTagCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/removeTagCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Удаляет отметку с видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)removeTagCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.removeTag</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/removeTagCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getNewTagsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список видеозаписей, на которых есть непросмотренные отметки</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getNewTagsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, со списком можно ознакомиться по этой ссылке: https://vk.com/dev/video.getNewTags</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getNewTagsCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
 		
 	</File>
 </Tokens>

@@ -28,8 +28,230 @@
 //
 
 #import "VKVideoAlbums.h"
+#import "VKConnector.h"
 
 
 @implementation VKVideoAlbums
+
+#pragma mark Visible VKVideoAlbums methods
+#pragma mark - video.get
+
+- (id)getCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoGet
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.edit
+
+- (id)editCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoEdit
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.add
+
+- (id)addCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoAdd
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.save
+
+- (id)saveCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoSave
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.delete
+
+- (id)deleteCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoDelete
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.restore
+
+- (id)restoreCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoRestore
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.search
+
+- (id)searchCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoSearch
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.getUserVideos
+
+- (id)getUserVideosCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoGetUserVideos
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.getAlbums
+
+- (id)getAlbumsCustomtOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoGetAlbums
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.addAlbum
+
+- (id)addAlbumCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoAddAlbum
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.editAlbum
+
+- (id)editAlbumCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoEditAlbum
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.deleteAlbum
+
+- (id)deleteAlbumCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoDeleteAlbum
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.moveToAlbum
+
+- (id)moveToAlbumCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoMoveToAlbum
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.getComments
+
+- (id)getCommentsCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoGetComments
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.createComment
+
+- (id)createCommentCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoCreateComment
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.deleteComment
+
+- (id)deleteCommentCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoDeleteComment
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.restoreComment
+
+- (id)restoreCommentCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoRestoreComment
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.editComment
+
+- (id)editCommentCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoEditComment
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.getTags
+
+- (id)getTagsCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoGetTags
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.putTag
+
+- (id)putTagCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoPutTag
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.removeTag
+
+- (id)removeTagCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoRemoveTag
+                                 options:options
+                                   error:nil];
+}
+
+#pragma mark - video.getNewTags
+
+- (id)getNewTagsCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+                         performVKMethod:kVKVideoGetNewTags
+                                 options:options
+                                   error:nil];
+}
 
 @end

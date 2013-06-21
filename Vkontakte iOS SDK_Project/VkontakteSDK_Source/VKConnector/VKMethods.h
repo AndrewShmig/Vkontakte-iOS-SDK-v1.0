@@ -155,6 +155,7 @@ static NSString *const kVKVideoGetComments = @"video.getComments";
 static NSString *const kVKVideoCreateComment = @"video.createComment";
 static NSString *const kVKVideoDeleteComment = @"video.deleteComment";
 static NSString *const kVKVideoEditComment = @"video.editComment";
+static NSString *const kVKVideoRestoreComment = @"video.restoreComment";
 static NSString *const kVKVideoGetTags = @"video.getTags";
 static NSString *const kVKVideoPutTag = @"video.putTag";
 static NSString *const kVKVideoRemoveTag = @"video.removeTag";
