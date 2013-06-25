@@ -35,21 +35,6 @@
 @implementation VKUser
 {
     VKAccessToken *_accessToken;
-    
-    VKStatus *_status;
-    VKWall *_wall;
-    VKPhotoAlbums *_photoAlbums;
-    VKAudioAlbums *_audioAlbums;
-    VKVideoAlbums *_videoAlbums;
-    VKFriends *_friends;
-    VKGroups *_groups;
-    VKNotes *_notes;
-    VKPlaces *_places;
-    VKMessages *_messages;
-    VKNewsfeed *_newsfeed;
-    VKLikes *_likes;
-    VKDocs *_docs;
-    VKFavourites *_favourites;
 }
 
 #pragma mark - Init methods
@@ -61,8 +46,25 @@
     if(nil != self){
         _accessToken = [[VKAccessToken alloc] init];
         
-        if([_accessToken load])
-            return self;
+        if(![_accessToken load])
+            return nil;
+
+//        создаем связанные объекты
+        _status = [[VKStatus alloc] init];
+        _wall = [[VKWall alloc] init];
+        _photoAlbums = [[VKPhotoAlbums alloc] init];
+        _audioAlbums = [[VKAudioAlbums alloc] init];
+        _videoAlbums = [[VKVideoAlbums alloc] init];
+        _friends = [[VKFriends alloc] init];
+        _groups = [[VKGroups alloc] init];
+        _notes = [[VKNotes alloc] init];
+        _places = [[VKPlaces alloc] init];
+        _messages = [[VKMessages alloc] init];
+        _newsfeed = [[VKNewsfeed alloc] init];
+        _likes = [[VKLikes alloc] init];
+        _docs = [[VKDocs alloc] init];
+        _favourites = [[VKFavourites alloc] init];
+
     }
     
     return nil;
@@ -92,118 +94,6 @@
 - (NSArray *)userPermissions
 {
     return _accessToken.permissions;
-}
-
-- (VKStatus *)status
-{
-    if(nil == _status)
-        _status = [[VKStatus alloc] init];
-    
-    return _status;
-}
-
-- (VKWall *)wall
-{
-    if(nil == _wall)
-        _wall = [[VKWall alloc] init];
-    
-    return _wall;
-}
-
-- (VKPhotoAlbums *)photoAlbums
-{
-    if(nil == _photoAlbums)
-        _photoAlbums = [[VKPhotoAlbums alloc] init];
-    
-    return _photoAlbums;
-}
-
-- (VKAudioAlbums *)audioAlbums
-{
-    if(nil == _audioAlbums)
-        _audioAlbums = [[VKAudioAlbums alloc] init];
-    
-    return _audioAlbums;
-}
-
-- (VKVideoAlbums *)videoAlbums
-{
-    if(nil == _videoAlbums)
-        _videoAlbums = [[VKVideoAlbums alloc] init];
-    
-    return _videoAlbums;
-}
-
-- (VKFriends *)friends
-{
-    if(nil == _friends)
-        _friends = [[VKFriends alloc] init];
-    
-    return _friends;
-}
-
-- (VKGroups *)groups
-{
-    if(nil == _groups)
-        _groups = [[VKGroups alloc] init];
-    
-    return _groups;
-}
-
-- (VKNotes *)notes
-{
-    if(nil == _notes)
-        _notes = [[VKNotes alloc] init];
-    
-    return _notes;
-}
-
-- (VKPlaces *)places
-{
-    if(nil == _places)
-        _places = [[VKPlaces alloc] init];
-    
-    return _places;
-}
-
-- (VKMessages *)messages
-{
-    if(nil == _messages)
-        _messages = [[VKMessages alloc] init];
-    
-    return _messages;
-}
-
-- (VKNewsfeed *)newsfeed
-{
-    if(nil == _newsfeed)
-        _newsfeed = [[VKNewsfeed alloc] init];
-    
-    return _newsfeed;
-}
-
-- (VKLikes *)likes
-{
-    if(nil == _likes)
-        _likes = [[VKLikes alloc] init];
-    
-    return _likes;
-}
-
-- (VKDocs *)docs
-{
-    if(nil == _docs)
-        _docs = [[VKDocs alloc] init];
-    
-    return _docs;
-}
-
-- (VKFavourites *)favourites
-{
-    if(nil == _favourites)
-        _favourites = [[VKFavourites alloc] init];
-    
-    return _favourites;
 }
 
 #pragma mark - VKUser methods

@@ -58,20 +58,7 @@ static NSString *const kVKPermissionsArray = @"photos,friends,wall,audio,video,d
     NSLog(@"%s", __FUNCTION__);
 
     VKUser *me = [VKUser currentUser];
-
-    NSURL *url = [NSURL URLWithString:@"http://metoyou.mole.ru/pictures/images/185.jpg"];
-    NSData *photo = [NSData dataWithContentsOfURL:url];
-
-    NSLog(@"====> %@", [[me photoAlbums]
-                            uploadMessagePhoto:photo
-                                 photoFileName:@"me.jpg"]);
-
-//    NSLog(@"====> %@", [[me photoAlbums] uploadWallPhoto:photo
-//                                           photoFileName:@"me.jpg"]);
-
-//    NSLog(@"====>%@", [[me photoAlbums] uploadPhoto:photo
-//                                      photoFileName:@"me.jpg"
-//                                            albumID:167233642]);
+    NSLog(@"%@", [[me friends] online]);
 }
 
 - (void)VKConnector:(VKConnector *)connector connectionErrorOccured:(NSError *)error

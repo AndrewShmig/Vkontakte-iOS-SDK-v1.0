@@ -33,21 +33,6 @@
 
 
 @implementation VKAccessToken
-{
-    NSArray *_permissions;
-    NSTimeInterval _expirationTime;
-    NSTimeInterval _creationTime;
-    NSUInteger _userID;
-    NSString *_token;
-}
-
-
-@synthesize permissions = _permissions;
-@synthesize expirationTime = _expirationTime;
-@synthesize userID = _userID;
-@synthesize token = _token;
-@synthesize creationTime = _creationTime;
-
 
 #pragma mark - Init methods
 
@@ -56,8 +41,6 @@
       expirationTime:(NSTimeInterval)expirationTime
          permissions:(NSArray *)permissions
 {
-    NSLog(@"%s", __FUNCTION__);
-    
     if(self = [super init]){
         _userID = userID;
         _token = [token copy];
@@ -89,8 +72,6 @@
 
 - (id)init
 {
-    NSLog(@"%s", __FUNCTION__);
-    
     return [self initWithUserID:0
                     accessToken:@""
                  expirationTime:0
@@ -101,8 +82,6 @@
 
 - (NSString *)description
 {
-    NSLog(@"%s", __FUNCTION__);
-    
     NSDictionary *desc = @{
             @"User ID": @(self.userID),
             @"Expiration time": @(self.expirationTime),
@@ -115,8 +94,6 @@
 
 - (VKAccessToken *)copyWithZone:(NSZone *)zone
 {
-    NSLog(@"%s", __FUNCTION__);
-    
     VKAccessToken *copyToken = [[VKAccessToken alloc] initWithUserID:self.userID
                                                          accessToken:self.token
                                                       expirationTime:self.expirationTime
@@ -129,34 +106,26 @@
 
 - (BOOL)hasPermission:(NSString *)permission
 {
-    NSLog(@"%s", __FUNCTION__);
-    
-    return [_permissions containsObject:permission];
+    return [self.permissions containsObject:permission];
 }
 
 - (BOOL)isExpired
 {
-    NSLog(@"%s", __FUNCTION__);
-    
     NSTimeInterval currentTimestamp = [[NSDate date] timeIntervalSince1970];
 
-    if(_expirationTime == 0 && [self hasPermission:@"offline"])
+    if(self.expirationTime == 0 && [self hasPermission:@"offline"])
         return NO;
     else
-        return ((_expirationTime + _creationTime) < currentTimestamp);
+        return ((self.expirationTime + self.creationTime) < currentTimestamp);
 }
 
 - (BOOL)isValid
 {
-    NSLog(@"%s", __FUNCTION__);
-    
-    return (nil != _token && ![self isExpired]);
+    return (nil != self.token && ![self isExpired]);
 }
 
 - (BOOL)load
 {
-    NSLog(@"%s", __FUNCTION__);
-    
     NSDictionary *loadedToken = [[NSUserDefaults standardUserDefaults]
                                  objectForKey:VkontakteSDKTokenKey];
     
@@ -173,8 +142,6 @@
 
 - (void)save
 {
-    NSLog(@"%s", __FUNCTION__);
-    
     NSDictionary *tokenDescription = @{@"userID": @(self.userID),
                                        @"expirationTime": @(self.expirationTime),
                                        @"permissions": self.permissions,
@@ -186,8 +153,6 @@
 
 - (void)remove
 {
-    NSLog(@"%s", __FUNCTION__);
-    
     [[NSUserDefaults standardUserDefaults]
      removeObjectForKey:VkontakteSDKTokenKey];
 }

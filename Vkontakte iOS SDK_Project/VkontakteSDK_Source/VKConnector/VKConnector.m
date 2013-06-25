@@ -41,90 +41,82 @@
 
 @implementation VKConnector
 {
-    NSString *_appID;
     NSString *_settings;
     NSString *_redirectURL;
-    NSArray *_permissions;
 
     UIWebView *_innerWebView;
     UIActivityIndicatorView *_activityIndicator;
     UIView *_mainView;
-    
+
     VKAccessToken *_accessToken;
 }
 
-
-@synthesize appID = _appID,
-            permissions = _permissions;
-
-
 #pragma mark - Init methods
 
-+ (id) sharedInstance
++ (id)sharedInstance
 {
     static VKConnector *instanceVKConnector = nil;
-    
-	@synchronized(self) {
-		if (instanceVKConnector == nil) {
-			instanceVKConnector = [[self alloc] init];
-		}
-	}
-    
-	return instanceVKConnector;
+
+    @synchronized (self) {
+        if (instanceVKConnector == nil) {
+            instanceVKConnector = [[self alloc] init];
+        }
+    }
+
+    return instanceVKConnector;
 }
 
 #pragma mark - VKConnector public methods
 
-- (void)startWithAppID:(NSString*)appID
-            permissons:(NSArray*)permissions
+- (void)startWithAppID:(NSString *)appID
+            permissons:(NSArray *)permissions
 {
-    NSLog(@"%s", __FUNCTION__);
-    
-	_permissions = permissions;
-	_appID = appID;
+    _permissions = permissions;
+    _appID = appID;
 
-    _settings = [_permissions componentsJoinedByString:@","];
+    _settings = [self.permissions componentsJoinedByString:@","];
     _redirectURL = @"https://oauth.vk.com/blank.html";
-    
-    if(nil == _mainView){
+
+    if (nil == _mainView) {
         // настраиваем попап окно для отображения UIWebView
         CGRect frame = [[UIScreen mainScreen] bounds];
         frame.size.height -= MARGIN_HEIGHT;
         frame.size.width -= MARGIN_WIDTH;
         _mainView = [[UIView alloc] initWithFrame:frame];
-        
-        if(nil == _innerWebView){
+
+        if (nil == _innerWebView) {
             _innerWebView = [[UIWebView alloc] initWithFrame:_mainView.frame];
             [_innerWebView setDelegate:self];
         }
-        
+
         CGPoint centerPoint = [_innerWebView center];
         CGRect activityIndicatorFrame = CGRectMake(centerPoint.x - 20, centerPoint.y - 50, 30, 30);
-        
-        if(nil == _activityIndicator){
+
+        if (nil == _activityIndicator) {
             _activityIndicator = [[UIActivityIndicatorView alloc]
-                                  initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+                                                           initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
             [_activityIndicator setColor:[UIColor darkGrayColor]];
             [_activityIndicator setFrame:activityIndicatorFrame];
             [_activityIndicator setHidesWhenStopped:YES];
             [_activityIndicator startAnimating];
         }
-        
+
         [_innerWebView addSubview:_activityIndicator];
         [_mainView addSubview:_innerWebView];
     }
-    
+
 //    преобразование словаря параметров в строку параметров
-    NSDictionary *params = @{@"client_id": _appID,
-                             @"redirect_uri": _redirectURL,
-                             @"scope": _settings,
-                             @"response_type": @"token",
-                             @"display": @"touch"};
+    NSDictionary *params = @{@"client_id"     : self.appID,
+                             @"redirect_uri"  : _redirectURL,
+                             @"scope"         : _settings,
+                             @"response_type" : @"token",
+                             @"display"       : @"touch"};
     NSMutableString *urlAsString = [[NSMutableString alloc] init];
     NSMutableArray *urlParams = [[NSMutableArray alloc] init];
-    
+
     [urlAsString appendString:@"https://oauth.vk.com/authorize?"];
-    [params enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+    [params enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
+    {
         [urlParams addObject:[NSString stringWithFormat:@"%@=%@", key, obj]];
     }];
     [urlAsString appendString:[urlParams componentsJoinedByString:@"&"]];
@@ -132,13 +124,14 @@
 //    запрос на страницу авторизации приложения
     NSURL *url = [NSURL URLWithString:urlAsString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
+
 //    отображаем попап, если токен недействителен
-    if(![_accessToken load] || ![_accessToken isValid]){
+    if (![_accessToken load] || ![_accessToken isValid]) {
         [_innerWebView loadRequest:request];
-        
-        if([self.delegate respondsToSelector:@selector(VKConnector:willShowModalView:)])
-            [self.delegate VKConnector:self willShowModalView:[KGModal sharedInstance]];
+
+        if ([self.delegate respondsToSelector:@selector(VKConnector:willShowModalView:)])
+            [self.delegate VKConnector:self
+                     willShowModalView:[KGModal sharedInstance]];
 
         [[KGModal sharedInstance] showWithContentView:_mainView
                                           andAnimated:YES];
@@ -149,11 +142,9 @@
               options:(NSDictionary *)options
                 error:(NSError **)error
 {
-    NSLog(@"%s", __FUNCTION__);
+    if (![_accessToken isValid]) {
 
-    if(![_accessToken isValid]){
-        
-        if([self.delegate respondsToSelector:@selector(VKConnector:accessTokenInvalidated:)])
+        if ([self.delegate respondsToSelector:@selector(VKConnector:accessTokenInvalidated:)])
             [self.delegate VKConnector:self
                 accessTokenInvalidated:_accessToken];
 
@@ -162,17 +153,20 @@
 
 //    формируем УРЛ на который буде отправлен запрос
     NSMutableString *fullRequestURL = [NSMutableString stringWithFormat:@"%@%@",
-                                       kVkontakteAPIURL, methodName];
-    
+                                                                        kVkontakteAPIURL,
+                                                                        methodName];
+
     [fullRequestURL appendString:@"?"];
-    
+
     [options enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop)
-     {
-         [fullRequestURL appendFormat:@"%@=%@&", key, [[obj description] encodeURL]];
-     }];
-    
+    {
+        [fullRequestURL appendFormat:@"%@=%@&",
+                                     key,
+                                     [[obj description] encodeURL]];
+    }];
+
     [fullRequestURL appendFormat:@"access_token=%@", _accessToken.token];
-    
+
     NSURL *url = [NSURL URLWithString:fullRequestURL];
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
 
@@ -181,8 +175,6 @@
 
 - (id)performVKRequest:(NSMutableURLRequest *)request
 {
-    NSLog(@"%s", __FUNCTION__);
-
     //    отправка запроса
     NSHTTPURLResponse *httpResponse;
     NSError *requestError;
@@ -191,8 +183,8 @@
                                                          error:&requestError];
 
 //    во время запроса произошла ошибка
-    if(nil != requestError){
-        if([self.delegate respondsToSelector:@selector(VKConnector:connectionErrorOccured:)])
+    if (nil != requestError) {
+        if ([self.delegate respondsToSelector:@selector(VKConnector:connectionErrorOccured:)])
             [self.delegate VKConnector:self
                 connectionErrorOccured:requestError];
 
@@ -205,8 +197,8 @@
                                                         error:&jsonParsingError];
 
 //    ошибка парсинга ответа сервера
-    if(nil != jsonParsingError){
-        if([self.delegate respondsToSelector:@selector(VKConnector:parsingErrorOccured:)])
+    if (nil != jsonParsingError) {
+        if ([self.delegate respondsToSelector:@selector(VKConnector:parsingErrorOccured:)])
             [self.delegate VKConnector:self
                    parsingErrorOccured:jsonParsingError];
 
@@ -223,8 +215,6 @@
      contentType:(NSString *)contentType
        fieldName:(NSString *)fieldName
 {
-    NSLog(@"%s", __FUNCTION__);
-
     // формируем запрос
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     NSString *boundary = [[NSProcessInfo processInfo] globallyUniqueString];
@@ -250,7 +240,8 @@
     // заголовки
     [request setHTTPMethod:@"POST"];
 
-    [request setValue:[NSString stringWithFormat:@"multipart/form-data; boundary=\"%@\"", boundary]
+    [request setValue:[NSString stringWithFormat:@"multipart/form-data; boundary=\"%@\"",
+                                                 boundary]
    forHTTPHeaderField:@"Content-Type"];
 
     [request setValue:[NSString stringWithFormat:@"%d", [body length]]
@@ -266,13 +257,11 @@
 shouldStartLoadWithRequest:(NSURLRequest *)request
             navigationType:(UIWebViewNavigationType)navigationType
 {
-    NSLog(@"%s", __FUNCTION__);
-    
     NSString *url = [[request URL] absoluteString];
 
     if ([url hasPrefix:_redirectURL]) {
         NSString *query_string = [url componentsSeparatedByString:@"#"][1];
-        
+
 //        проверяем одобрил ли пользователь наше приложение или нет
         if ([query_string hasPrefix:@"access_token"]) {
             NSArray *parts = [query_string componentsSeparatedByString:@"&"];
@@ -281,34 +270,35 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
             NSString *access_token = [parts[0] componentsSeparatedByString:@"="][1];
             NSTimeInterval expiration_time = [[parts[1] componentsSeparatedByString:@"="][1] doubleValue];
             NSUInteger user_id = [[parts[2] componentsSeparatedByString:@"="][1] unsignedIntValue];
-            
+
             _accessToken = [[VKAccessToken alloc]
-                            initWithUserID:user_id
-                            accessToken:access_token
-                            expirationTime:expiration_time
-                            permissions:[_settings componentsSeparatedByString:@","]];
-            
+                                           initWithUserID:user_id
+                                              accessToken:access_token
+                                           expirationTime:expiration_time
+                                              permissions:[_settings componentsSeparatedByString:@","]];
+
 //            сохраняем токен доступа
             [_accessToken save];
-            
+
 //            уведомляем программиста, что токен был обновлён
-            if([self.delegate respondsToSelector:@selector(VKConnector:accessTokenRenewalSucceeded:)])
+            if ([self.delegate respondsToSelector:@selector(VKConnector:accessTokenRenewalSucceeded:)])
                 [self.delegate VKConnector:self
                accessTokenRenewalSucceeded:_accessToken];
 
         } else {
 //            пользователь отказался авторизовать приложение
 //            не удалось обновить/получить токен доступа
-            if([self.delegate respondsToSelector:@selector(VKConnector:accessTokenRenewalFailed:)])
+            if ([self.delegate respondsToSelector:@selector(VKConnector:accessTokenRenewalFailed:)])
                 [self.delegate VKConnector:self
                   accessTokenRenewalFailed:nil];
         }
     }
-    
-    if([url hasPrefix:@"https://oauth.vk.com/blank.html"]){
-        if([self.delegate respondsToSelector:@selector(VKConnector:willHideModalView:)])
-            [self.delegate VKConnector:self willHideModalView:[KGModal sharedInstance]];
-        
+
+    if ([url hasPrefix:@"https://oauth.vk.com/blank.html"]) {
+        if ([self.delegate respondsToSelector:@selector(VKConnector:willHideModalView:)])
+            [self.delegate VKConnector:self
+                     willHideModalView:[KGModal sharedInstance]];
+
         [[KGModal sharedInstance] hideAnimated:YES];
     }
 
