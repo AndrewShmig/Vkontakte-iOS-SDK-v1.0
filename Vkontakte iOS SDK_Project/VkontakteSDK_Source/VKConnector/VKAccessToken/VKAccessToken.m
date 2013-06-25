@@ -84,7 +84,8 @@
 {
     NSDictionary *desc = @{
             @"User ID"         : @(self.userID),
-            @"Expiration time" : @(self.expirationTime),
+            @"Expiration time" : @(((NSUInteger) (self.creationTime + self.expirationTime))),
+            @"Creation time"   : @(((NSUInteger) self.creationTime)),
             @"Permissions"     : self.permissions,
             @"Token"           : self.token
     };

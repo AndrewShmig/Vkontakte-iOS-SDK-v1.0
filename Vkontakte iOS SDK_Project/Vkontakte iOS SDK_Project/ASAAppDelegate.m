@@ -58,6 +58,7 @@ static NSString *const kVKPermissionsArray = @"photos,friends,wall,audio,video,d
     NSLog(@"%s", __FUNCTION__);
 
     VKUser *me = [VKUser currentUser];
+    NSLog(@"me: %@", me);
     NSLog(@"%@", [[me friends] online]);
 }
 

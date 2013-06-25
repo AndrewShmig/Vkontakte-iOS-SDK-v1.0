@@ -42,13 +42,9 @@
 - (instancetype)init
 {
     self = [super init];
-    
-    if(nil != self){
-        _accessToken = [[VKAccessToken alloc] init];
-        
-        if(![_accessToken load])
-            return nil;
+    _accessToken = [[VKAccessToken alloc] init];
 
+    if(nil != self && [_accessToken load]){
 //        создаем связанные объекты
         _status = [[VKStatus alloc] init];
         _wall = [[VKWall alloc] init];
@@ -65,6 +61,7 @@
         _docs = [[VKDocs alloc] init];
         _favourites = [[VKFavourites alloc] init];
 
+        return self;
     }
     
     return nil;
@@ -94,6 +91,12 @@
 - (NSArray *)userPermissions
 {
     return _accessToken.permissions;
+}
+#pragma mark - Overriden methods
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@", _accessToken];
 }
 
 #pragma mark - VKUser methods
