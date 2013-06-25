@@ -110,8 +110,8 @@ static NSString *const kVKPhotosGetProfileUploadServer = @"photos.getProfileUplo
 static NSString *const kVKPhotosSaveProfilePhoto = @"photos.saveProfilePhoto";
 static NSString *const kVKPhotosSaveWallPhoto = @"photos.saveWallPhoto";
 static NSString *const kVKPhotosGetWallUploadServer = @"photos.getWallUploadServer";
-static NSString *const kVKPhotosGetMessageUploadServer = @"photos.getMessageUploadServer";
-static NSString *const kVKPhotosSaveMessagePhoto = @"photos.saveMessagePhoto";
+static NSString *const kVKPhotosGetMessagesUploadServer = @"photos.getMessagesUploadServer";
+static NSString *const kVKPhotosSaveMessagesPhoto = @"photos.saveMessagesPhoto";
 static NSString *const kVKPhotosSearch = @"photos.search";
 static NSString *const kVKPhotosSave = @"photos.save";
 static NSString *const kVKPhotosEdit = @"photos.edit";
@@ -183,6 +183,7 @@ static NSString *const kVKAudioMoveToAlbum = @"audio.moveToAlbum";
 static NSString *const kVKAudioGetBroadcast = @"audio.getBroadcast";
 static NSString *const kVKAudioSetBroadcast = @"audio.setBroadcast";
 static NSString *const kVKAudioGetRecommendations = @"audio.getRecommendations";
+static NSString *const kVKAudioGetPopular = @"audio.getPopular";
 static NSString *const kVKAudioGetCount = @"audio.getCount";
 
 // -----------------------------------------------------------------------------

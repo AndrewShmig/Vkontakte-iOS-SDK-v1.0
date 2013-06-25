@@ -1,8 +1,6 @@
 ##Vkontakte iOS SDK
 
-Мы переехали сюда: https://bitbucket.org/AndrewShmig/vkontakte-ios-sdk
-
-* Appledoc по [этой](https://github.com/AndrewShmig/Vkontakte-iOS-SDK/tree/master/Vkontakte%20iOS%20SDK_Project/VkontakteSDK_Source/docs) ссылке.
+* Appledoc по [этой](https://bitbucket.org/AndrewShmig/vkontakte-ios-sdk-v1.0/src/21796ca5f0372945c2ee2b2be685e8821019b804/Vkontakte%20iOS%20SDK_Project/VkontakteSDK_Source/docs?at=master) ссылке.
 * [Введение во Vkontakte iOS SDK v1.0](http://developing-ios-apps-with-andrew-shmig.blogspot.ru/2013/06/vkontakte-ios-sdk-v10.html)
 
 ##License

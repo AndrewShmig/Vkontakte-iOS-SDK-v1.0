@@ -46,6 +46,29 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/editVideoID:newName:newDescription:</TokenIdentifier>
+			<Abstract type="html">Редактирует данные видеозаписи на странице пользователя</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editVideoID:(NSUInteger)videoID newName:(NSString *)newName newDescription:(NSString *)newDescription</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>videoID</Name>
+					<Abstract type="html">идентификатор видеозаписи</Abstract>
+				</Parameter><Parameter>
+					<Name>newName</Name>
+					<Abstract type="html">новое название для видеозаписи</Abstract>
+				</Parameter><Parameter>
+					<Name>newDescription</Name>
+					<Abstract type="html">новое описание для видеозаписи</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editVideoID:newName:newDescription:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/addCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Добавляет видеозапись в список пользователя</Abstract>
 			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
@@ -131,6 +154,49 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/searchQuery:</TokenIdentifier>
+			<Abstract type="html">Возвращает список видеозаписей в соответствии с заданным критерием поиска</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchQuery:(NSString *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">строка поискового запроса. Например, The Beatles</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchQuery:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/searchQuery:sort:count:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список видеозаписей в соответствии с заданным критерием поиска</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchQuery:(NSString *)query sort:(NSUInteger)sort count:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">строка поискового запроса. Например, The Beatles</Abstract>
+				</Parameter><Parameter>
+					<Name>sort</Name>
+					<Abstract type="html">вид сортировки. 0 — по дате добавления видеозаписи, 1 — по длительности, 2 — по релевантности.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество возвращаемых видеозаписей (максимум 200)</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение относительно первой найденной видеозаписи для выборки определенного подмножества.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchQuery:sort:count:offset:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getUserVideosCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Возвращает список видеозаписей, на которых отмечен пользователь</Abstract>
 			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
@@ -144,6 +210,26 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
 			<Anchor>//api/name/getUserVideosCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getUserVideosCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список видеозаписей, на которых отмечен пользователь</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getUserVideosCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество возвращаемых видеозаписей</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение относительно первой найденной видеозаписи для выборки определенного подмножества</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getUserVideosCount:offset:</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
@@ -165,6 +251,26 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getAlbumsCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список альбомов видеозаписей пользователя или сообщества</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getAlbumsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество альбомов, информацию о которых нужно вернуть. По умолчанию — не больше 50, максимум — 100)</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества альбомов.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getAlbumsCount:offset:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/addAlbumCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Создает пустой альбом видеозаписей</Abstract>
 			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
@@ -178,6 +284,23 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
 			<Anchor>//api/name/addAlbumCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/addAlbum:</TokenIdentifier>
+			<Abstract type="html">Создает пустой альбом видеозаписей</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)addAlbum:(NSString *)albumName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>albumName</Name>
+					<Abstract type="html">название альбома</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addAlbum:</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
@@ -199,6 +322,26 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/editAlbumID:newTitle:</TokenIdentifier>
+			<Abstract type="html">Редактирует название альбома видеозаписей</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editAlbumID:(NSUInteger)albumID newTitle:(NSString *)newTitle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>albumID</Name>
+					<Abstract type="html">идентификатор альбома</Abstract>
+				</Parameter><Parameter>
+					<Name>newTitle</Name>
+					<Abstract type="html">новое название для альбома</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editAlbumID:newTitle:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/deleteAlbumCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Удаляет альбом видеозаписей</Abstract>
 			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
@@ -212,6 +355,23 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
 			<Anchor>//api/name/deleteAlbumCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/deleteAlbumID:</TokenIdentifier>
+			<Abstract type="html">Удаляет альбом видеозаписей</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteAlbumID:(NSUInteger)albumID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>albumID</Name>
+					<Abstract type="html">идентификатор альбома</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteAlbumID:</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
@@ -284,6 +444,23 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/deleteCommentID:</TokenIdentifier>
+			<Abstract type="html">Удаляет комментарий к видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteCommentID:(NSUInteger)commentID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commentID</Name>
+					<Abstract type="html">идентификатор комментария</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteCommentID:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/restoreCommentCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Восстанавливает удаленный комментарий к видеозаписи</Abstract>
 			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
@@ -297,6 +474,23 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
 			<Anchor>//api/name/restoreCommentCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/restoreCommentID:</TokenIdentifier>
+			<Abstract type="html">Восстанавливает удаленный комментарий к видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)restoreCommentID:(NSUInteger)commentID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>commentID</Name>
+					<Abstract type="html">идентификатор удаленного комментария</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/restoreCommentID:</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
@@ -335,6 +529,26 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getTagsVideoID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Возвращает список отметок на видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getTagsVideoID:(NSUInteger)videoID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>videoID</Name>
+					<Abstract type="html">идентификатор видеозаписи</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца видеозаписи (пользователь или сообщество). По умолчанию — идентификатор текущего пользователя</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getTagsVideoID:ownerID:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/putTagCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Добавляет отметку на видеозапись</Abstract>
 			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
@@ -348,6 +562,32 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
 			<Anchor>//api/name/putTagCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/putTagName:videoID:userID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Добавляет отметку на видеозапись</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)putTagName:(NSString *)tagName videoID:(NSUInteger)videoID userID:(NSUInteger)userID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tagName</Name>
+					<Abstract type="html">текст отметки</Abstract>
+				</Parameter><Parameter>
+					<Name>videoID</Name>
+					<Abstract type="html">идентификатор видеозаписи</Abstract>
+				</Parameter><Parameter>
+					<Name>userID</Name>
+					<Abstract type="html">идентификатор пользователя, которого нужно отметить</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца видеозаписи (пользователь или сообщество</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/putTagName:videoID:userID:ownerID:</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		
@@ -369,6 +609,26 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/removeTagID:videoID:</TokenIdentifier>
+			<Abstract type="html">Удаляет отметку с видеозаписи</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)removeTagID:(NSUInteger)tagID videoID:(NSUInteger)videoID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tagID</Name>
+					<Abstract type="html">идентификатор отметки</Abstract>
+				</Parameter><Parameter>
+					<Name>videoID</Name>
+					<Abstract type="html">идентификатор видеозаписи</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/removeTagID:videoID:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getNewTagsCustomOptions:</TokenIdentifier>
 			<Abstract type="html">Возвращает список видеозаписей, на которых есть непросмотренные отметки</Abstract>
 			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
@@ -382,6 +642,46 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
 			<Anchor>//api/name/getNewTagsCustomOptions:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/getNewTagsCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список видеозаписей, на которых есть непросмотренные отметки</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getNewTagsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество видеозаписей, которые необходимо вернуть</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для получения определённого подмножества видеозаписей</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getNewTagsCount:offset:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKVideoAlbums/uploadVideo:name:</TokenIdentifier>
+			<Abstract type="html">Загрузка видео на сервер ВК</Abstract>
+			<DeclaredIn>VKVideoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)uploadVideo:(NSData *)videoData name:(NSString *)videoFileName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>videoData</Name>
+					<Abstract type="html">байтовое представление видео</Abstract>
+				</Parameter><Parameter>
+					<Name>videoFileName</Name>
+					<Abstract type="html">наименование файла видео</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/uploadVideo:name:</Anchor>
             <NodeRef refid="16"/>
 		</Token>
 		

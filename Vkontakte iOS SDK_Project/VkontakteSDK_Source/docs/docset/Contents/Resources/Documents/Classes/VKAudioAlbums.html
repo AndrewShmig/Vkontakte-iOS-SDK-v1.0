@@ -26,6 +26,12 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
 	
 	
 	
@@ -35,6 +41,77 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addAlbumCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- addAlbumCustomOptions:</option>
+	
+	<option value="//api/name/addAlbumTitle:">&nbsp;&nbsp;&nbsp;&nbsp;- addAlbumTitle:</option>
+	
+	<option value="//api/name/addAudioID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- addAudioID:ownerID:</option>
+	
+	<option value="//api/name/addCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- addCustomOptions:</option>
+	
+	<option value="//api/name/deleteAlbumCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteAlbumCustomOptions:</option>
+	
+	<option value="//api/name/deleteAlbumID:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteAlbumID:</option>
+	
+	<option value="//api/name/deleteCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteCustomOptions:</option>
+	
+	<option value="//api/name/editAlbumCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- editAlbumCustomOptions:</option>
+	
+	<option value="//api/name/editAlbumID:newTitle:">&nbsp;&nbsp;&nbsp;&nbsp;- editAlbumID:newTitle:</option>
+	
+	<option value="//api/name/editAudioID:ownerID:newArtist:newTitle:newText:">&nbsp;&nbsp;&nbsp;&nbsp;- editAudioID:ownerID:newArtist:newTitle:newText:</option>
+	
+	<option value="//api/name/editCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- editCustomOptions:</option>
+	
+	<option value="//api/name/getAlbumsCount:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- getAlbumsCount:offset:</option>
+	
+	<option value="//api/name/getAlbumsCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getAlbumsCustomOptions:</option>
+	
+	<option value="//api/name/getBroadcastListCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getBroadcastListCustomOptions:</option>
+	
+	<option value="//api/name/getByIDCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getByIDCustomOptions:</option>
+	
+	<option value="//api/name/getCount">&nbsp;&nbsp;&nbsp;&nbsp;- getCount</option>
+	
+	<option value="//api/name/getCountCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getCountCustomOptions:</option>
+	
+	<option value="//api/name/getCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getCustomOptions:</option>
+	
+	<option value="//api/name/getLyricsCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getLyricsCustomOptions:</option>
+	
+	<option value="//api/name/getLyricsID:">&nbsp;&nbsp;&nbsp;&nbsp;- getLyricsID:</option>
+	
+	<option value="//api/name/getPopularCount:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- getPopularCount:offset:</option>
+	
+	<option value="//api/name/getPopularCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getPopularCustomOptions:</option>
+	
+	<option value="//api/name/getRecommendationsCount:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- getRecommendationsCount:offset:</option>
+	
+	<option value="//api/name/getRecommendationsCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getRecommendationsCustomOptions:</option>
+	
+	<option value="//api/name/getUploadServerCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getUploadServerCustomOptions:</option>
+	
+	<option value="//api/name/moveToAlbumCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- moveToAlbumCustomOptions:</option>
+	
+	<option value="//api/name/reorderCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- reorderCustomOptions:</option>
+	
+	<option value="//api/name/restoreAudioID:">&nbsp;&nbsp;&nbsp;&nbsp;- restoreAudioID:</option>
+	
+	<option value="//api/name/restoreCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- restoreCustomOptions:</option>
+	
+	<option value="//api/name/saveCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- saveCustomOptions:</option>
+	
+	<option value="//api/name/searchCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- searchCustomOptions:</option>
+	
+	<option value="//api/name/searchQuery:">&nbsp;&nbsp;&nbsp;&nbsp;- searchQuery:</option>
+	
+	<option value="//api/name/searchQuery:sort:count:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- searchQuery:sort:count:offset:</option>
+	
+	<option value="//api/name/setBroadcastCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- setBroadcastCustomOptions:</option>
+	
+	<option value="//api/name/uploadAudio:name:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadAudio:name:</option>
 	
 	
 	
@@ -45,6 +122,58 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.get">audio.get</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.getById">audio.getById</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.getLyrics">audio.getLyrics</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.search">audio.search</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.getUploadServer">audio.getUploadServer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.save">audio.save</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.add">audio.add</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.delete">audio.delete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.edit">audio.edit</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.reorder">audio.reorder</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.restore">audio.restore</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.getAlbums">audio.getAlbums</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.addAlbum">audio.addAlbum</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.editAlbum">audio.editAlbum</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.deleteAlbum">audio.deleteAlbum</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.moveToAlbum">audio.moveToAlbum</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.setBroadcast">audio.setBroadcast</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.getBroadcastList">audio.getBroadcastList</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.getRecommendations">audio.getRecommendations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.getPopular">audio.getPopular</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_audio.getCount">audio.getCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Загрузка аудио">Загрузка аудио</a></span></li>
+	
+</ul></li>
 
 
 
@@ -54,7 +183,79 @@
 
 
 
-
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAlbumCustomOptions:">addAlbumCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAlbumTitle:">addAlbumTitle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAudioID:ownerID:">addAudioID:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addCustomOptions:">addCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteAlbumCustomOptions:">deleteAlbumCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteAlbumID:">deleteAlbumID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteCustomOptions:">deleteCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editAlbumCustomOptions:">editAlbumCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editAlbumID:newTitle:">editAlbumID:newTitle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editAudioID:ownerID:newArtist:newTitle:newText:">editAudioID:ownerID:newArtist:newTitle:newText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editCustomOptions:">editCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAlbumsCount:offset:">getAlbumsCount:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAlbumsCustomOptions:">getAlbumsCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getBroadcastListCustomOptions:">getBroadcastListCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getByIDCustomOptions:">getByIDCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getCount">getCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getCountCustomOptions:">getCountCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getCustomOptions:">getCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getLyricsCustomOptions:">getLyricsCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getLyricsID:">getLyricsID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getPopularCount:offset:">getPopularCount:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getPopularCustomOptions:">getPopularCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRecommendationsCount:offset:">getRecommendationsCount:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getRecommendationsCustomOptions:">getRecommendationsCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUploadServerCustomOptions:">getUploadServerCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/moveToAlbumCustomOptions:">moveToAlbumCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reorderCustomOptions:">reorderCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreAudioID:">restoreAudioID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreCustomOptions:">restoreCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveCustomOptions:">saveCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchCustomOptions:">searchCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchQuery:">searchQuery:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchQuery:sort:count:offset:">searchQuery:sort:count:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBroadcastCustomOptions:">setBroadcastCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadAudio:name:">uploadAudio:name:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -88,6 +289,442 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс предназначен для работы с пользовательскими аудио файлами и аудио альбомами.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="audio.get" name="task_audio.get"></a>
+						<h3 class="subsubtitle task-title">audio.get</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getCustomOptions:">&ndash;&nbsp;getCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список аудиозаписей пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.getById" name="task_audio.getById"></a>
+						<h3 class="subsubtitle task-title">audio.getById</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getByIDCustomOptions:">&ndash;&nbsp;getByIDCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает информацию об аудиозаписях</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.getLyrics" name="task_audio.getLyrics"></a>
+						<h3 class="subsubtitle task-title">audio.getLyrics</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getLyricsCustomOptions:">&ndash;&nbsp;getLyricsCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает текст аудиозаписи</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getLyricsID:">&ndash;&nbsp;getLyricsID:</a></code>
+		<span class="tooltip"><p>Возвращает текст аудиозаписи</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.search" name="task_audio.search"></a>
+						<h3 class="subsubtitle task-title">audio.search</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchCustomOptions:">&ndash;&nbsp;searchCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список аудиозаписей в соответствии с заданным критерием поиска</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchQuery:">&ndash;&nbsp;searchQuery:</a></code>
+		<span class="tooltip"><p>Возвращает список аудиозаписей в соответствии с заданным критерием поиска</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchQuery:sort:count:offset:">&ndash;&nbsp;searchQuery:sort:count:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список аудиозаписей в соответствии с заданным критерием поиска</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.getUploadServer" name="task_audio.getUploadServer"></a>
+						<h3 class="subsubtitle task-title">audio.getUploadServer</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getUploadServerCustomOptions:">&ndash;&nbsp;getUploadServerCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает адрес сервера для загрузки аудиозаписей</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.save" name="task_audio.save"></a>
+						<h3 class="subsubtitle task-title">audio.save</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveCustomOptions:">&ndash;&nbsp;saveCustomOptions:</a></code>
+		<span class="tooltip"><p>Сохраняет аудиозаписи после успешной загрузки</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.add" name="task_audio.add"></a>
+						<h3 class="subsubtitle task-title">audio.add</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addCustomOptions:">&ndash;&nbsp;addCustomOptions:</a></code>
+		<span class="tooltip"><p>Копирует аудиозапись на страницу пользователя или группы</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAudioID:ownerID:">&ndash;&nbsp;addAudioID:ownerID:</a></code>
+		<span class="tooltip"><p>Копирует аудиозапись на страницу пользователя или группы</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.delete" name="task_audio.delete"></a>
+						<h3 class="subsubtitle task-title">audio.delete</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteCustomOptions:">&ndash;&nbsp;deleteCustomOptions:</a></code>
+		<span class="tooltip"><p>Удаляет аудиозапись со страницы пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.edit" name="task_audio.edit"></a>
+						<h3 class="subsubtitle task-title">audio.edit</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editCustomOptions:">&ndash;&nbsp;editCustomOptions:</a></code>
+		<span class="tooltip"><p>Редактирует данные аудиозаписи на странице пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editAudioID:ownerID:newArtist:newTitle:newText:">&ndash;&nbsp;editAudioID:ownerID:newArtist:newTitle:newText:</a></code>
+		<span class="tooltip"><p>Редактирует данные аудиозаписи на странице пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.reorder" name="task_audio.reorder"></a>
+						<h3 class="subsubtitle task-title">audio.reorder</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reorderCustomOptions:">&ndash;&nbsp;reorderCustomOptions:</a></code>
+		<span class="tooltip"><p>Изменяет порядок аудиозаписи, перенося ее между аудиозаписями, идентификаторы которых переданы параметрами after и before</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.restore" name="task_audio.restore"></a>
+						<h3 class="subsubtitle task-title">audio.restore</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restoreCustomOptions:">&ndash;&nbsp;restoreCustomOptions:</a></code>
+		<span class="tooltip"><p>Восстанавливает аудиозапись после удаления</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restoreAudioID:">&ndash;&nbsp;restoreAudioID:</a></code>
+		<span class="tooltip"><p>Восстанавливает аудиозапись после удаления</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.getAlbums" name="task_audio.getAlbums"></a>
+						<h3 class="subsubtitle task-title">audio.getAlbums</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAlbumsCustomOptions:">&ndash;&nbsp;getAlbumsCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список альбомов аудиозаписей пользователя или группы</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAlbumsCount:offset:">&ndash;&nbsp;getAlbumsCount:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список альбомов аудиозаписей пользователя или группы</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.addAlbum" name="task_audio.addAlbum"></a>
+						<h3 class="subsubtitle task-title">audio.addAlbum</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAlbumCustomOptions:">&ndash;&nbsp;addAlbumCustomOptions:</a></code>
+		<span class="tooltip"><p>Создает пустой альбом аудиозаписей</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAlbumTitle:">&ndash;&nbsp;addAlbumTitle:</a></code>
+		<span class="tooltip"><p>смещение, необходимое для выборки определенного подмножества альбомов</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.editAlbum" name="task_audio.editAlbum"></a>
+						<h3 class="subsubtitle task-title">audio.editAlbum</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editAlbumCustomOptions:">&ndash;&nbsp;editAlbumCustomOptions:</a></code>
+		<span class="tooltip"><p>Редактирует название альбома аудиозаписей</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editAlbumID:newTitle:">&ndash;&nbsp;editAlbumID:newTitle:</a></code>
+		<span class="tooltip"><p>Редактирует название альбома аудиозаписей</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.deleteAlbum" name="task_audio.deleteAlbum"></a>
+						<h3 class="subsubtitle task-title">audio.deleteAlbum</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteAlbumCustomOptions:">&ndash;&nbsp;deleteAlbumCustomOptions:</a></code>
+		<span class="tooltip"><p>Удаляет альбом аудиозаписей</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteAlbumID:">&ndash;&nbsp;deleteAlbumID:</a></code>
+		<span class="tooltip"><p>Удаляет альбом аудиозаписей</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.moveToAlbum" name="task_audio.moveToAlbum"></a>
+						<h3 class="subsubtitle task-title">audio.moveToAlbum</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/moveToAlbumCustomOptions:">&ndash;&nbsp;moveToAlbumCustomOptions:</a></code>
+		<span class="tooltip"><p>Перемещает аудиозаписи в альбом</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.setBroadcast" name="task_audio.setBroadcast"></a>
+						<h3 class="subsubtitle task-title">audio.setBroadcast</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBroadcastCustomOptions:">&ndash;&nbsp;setBroadcastCustomOptions:</a></code>
+		<span class="tooltip"><p>Транслирует аудиозапись в статус пользователю или сообществу</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.getBroadcastList" name="task_audio.getBroadcastList"></a>
+						<h3 class="subsubtitle task-title">audio.getBroadcastList</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getBroadcastListCustomOptions:">&ndash;&nbsp;getBroadcastListCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список друзей и сообществ пользователя, которые транслируют музыку в статус</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.getRecommendations" name="task_audio.getRecommendations"></a>
+						<h3 class="subsubtitle task-title">audio.getRecommendations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRecommendationsCustomOptions:">&ndash;&nbsp;getRecommendationsCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список рекомендуемых аудиозаписей на основе списка воспроизведения заданного пользователя или на основе одной выбранной аудиозаписи</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getRecommendationsCount:offset:">&ndash;&nbsp;getRecommendationsCount:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список рекомендуемых аудиозаписей на основе списка воспроизведения заданного пользователя или на основе одной выбранной аудиозаписи</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.getPopular" name="task_audio.getPopular"></a>
+						<h3 class="subsubtitle task-title">audio.getPopular</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getPopularCustomOptions:">&ndash;&nbsp;getPopularCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список аудиозаписей из раздела &ldquo;Популярное&rdquo;</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getPopularCount:offset:">&ndash;&nbsp;getPopularCount:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список аудиозаписей из раздела &ldquo;Популярное&rdquo;</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="audio.getCount" name="task_audio.getCount"></a>
+						<h3 class="subsubtitle task-title">audio.getCount</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getCountCustomOptions:">&ndash;&nbsp;getCountCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает количество аудиозаписей пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getCount">&ndash;&nbsp;getCount</a></code>
+		<span class="tooltip"><p>Возвращает количество аудиозаписей пользователя или сообщества</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Загрузка аудио" name="task_Загрузка аудио"></a>
+						<h3 class="subsubtitle task-title">Загрузка аудио</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadAudio:name:">&ndash;&nbsp;uploadAudio:name:</a></code>
+		<span class="tooltip"><p>Загружает аудио на сервер ВК</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
@@ -97,6 +734,1851 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addAlbumCustomOptions:" title="addAlbumCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">addAlbumCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Создает пустой альбом аудиозаписей</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addAlbumCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.addAlbum">https://vk.com/dev/audio.addAlbum</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addAlbumTitle:" title="addAlbumTitle:"></a>
+	<h3 class="subsubtitle method-title">addAlbumTitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>смещение, необходимое для выборки определенного подмножества альбомов</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addAlbumTitle:(NSString *)<em>albumTitle</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>albumTitle</em></dt>
+			<dd><p>название альбома</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addAudioID:ownerID:" title="addAudioID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">addAudioID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Копирует аудиозапись на страницу пользователя или группы</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addAudioID:(NSUInteger)<em>audioID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>audioID</em></dt>
+			<dd><p>идентификатор аудиозаписи</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца аудиозаписи (пользователь или сообщество)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addCustomOptions:" title="addCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">addCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Копирует аудиозапись на страницу пользователя или группы</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.add">https://vk.com/dev/audio.add</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteAlbumCustomOptions:" title="deleteAlbumCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">deleteAlbumCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет альбом аудиозаписей</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)deleteAlbumCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.deleteAlbum">https://vk.com/dev/audio.deleteAlbum</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteAlbumID:" title="deleteAlbumID:"></a>
+	<h3 class="subsubtitle method-title">deleteAlbumID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет альбом аудиозаписей</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)deleteAlbumID:(NSUInteger)<em>albumID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>albumID</em></dt>
+			<dd><p>идентификатор альбома</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteCustomOptions:" title="deleteCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">deleteCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет аудиозапись со страницы пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)deleteCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.delete">https://vk.com/dev/audio.delete</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editAlbumCustomOptions:" title="editAlbumCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">editAlbumCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Редактирует название альбома аудиозаписей</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)editAlbumCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.editAlbum">https://vk.com/dev/audio.editAlbum</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editAlbumID:newTitle:" title="editAlbumID:newTitle:"></a>
+	<h3 class="subsubtitle method-title">editAlbumID:newTitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Редактирует название альбома аудиозаписей</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)editAlbumID:(NSUInteger)<em>albumID</em> newTitle:(NSString *)<em>newTitle</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>albumID</em></dt>
+			<dd><p>идентификатор альбома</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newTitle</em></dt>
+			<dd><p>новое название для альбома</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editAudioID:ownerID:newArtist:newTitle:newText:" title="editAudioID:ownerID:newArtist:newTitle:newText:"></a>
+	<h3 class="subsubtitle method-title">editAudioID:ownerID:newArtist:newTitle:newText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Редактирует данные аудиозаписи на странице пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)editAudioID:(NSUInteger)<em>audioID</em> ownerID:(NSUInteger)<em>ownerID</em> newArtist:(NSString *)<em>newArtist</em> newTitle:(NSString *)<em>newTitle</em> newText:(NSString *)<em>newText</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>audioID</em></dt>
+			<dd><p>идентификатор аудиозаписи</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца аудиозаписи (пользователь или сообщество)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newArtist</em></dt>
+			<dd><p>новое название исполнителя</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newTitle</em></dt>
+			<dd><p>новое название композиции</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newText</em></dt>
+			<dd><p>новый текст аудиозаписи</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editCustomOptions:" title="editCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">editCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Редактирует данные аудиозаписи на странице пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)editCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.edit">https://vk.com/dev/audio.edit</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAlbumsCount:offset:" title="getAlbumsCount:offset:"></a>
+	<h3 class="subsubtitle method-title">getAlbumsCount:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список альбомов аудиозаписей пользователя или группы</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getAlbumsCount:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество альбомов, которое необходимо вернуть</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества альбомов</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAlbumsCustomOptions:" title="getAlbumsCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getAlbumsCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список альбомов аудиозаписей пользователя или группы</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getAlbumsCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.getAlbums">https://vk.com/dev/audio.getAlbums</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getBroadcastListCustomOptions:" title="getBroadcastListCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getBroadcastListCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список друзей и сообществ пользователя, которые транслируют музыку в статус</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getBroadcastListCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.getBroadcastList">https://vk.com/dev/audio.getBroadcastList</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getByIDCustomOptions:" title="getByIDCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getByIDCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает информацию об аудиозаписях</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getByIDCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.getById">https://vk.com/dev/audio.getById</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getCount" title="getCount"></a>
+	<h3 class="subsubtitle method-title">getCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает количество аудиозаписей пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getCount</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getCountCustomOptions:" title="getCountCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getCountCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает количество аудиозаписей пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getCountCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.getCount">https://vk.com/dev/audio.getCount</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getCustomOptions:" title="getCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список аудиозаписей пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.get">https://vk.com/dev/audio.get</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getLyricsCustomOptions:" title="getLyricsCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getLyricsCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает текст аудиозаписи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getLyricsCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.getLyrics">https://vk.com/dev/audio.getLyrics</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getLyricsID:" title="getLyricsID:"></a>
+	<h3 class="subsubtitle method-title">getLyricsID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает текст аудиозаписи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getLyricsID:(NSUInteger)<em>lyricsID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>lyricsID</em></dt>
+			<dd><p>идентификатор текста аудиозаписи, информацию о котором необходимо вернуть</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getPopularCount:offset:" title="getPopularCount:offset:"></a>
+	<h3 class="subsubtitle method-title">getPopularCount:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список аудиозаписей из раздела &ldquo;Популярное&rdquo;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getPopularCount:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество возвращаемых аудиозаписей</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества аудиозаписей</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getPopularCustomOptions:" title="getPopularCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getPopularCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список аудиозаписей из раздела &ldquo;Популярное&rdquo;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getPopularCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.getPopular">https://vk.com/dev/audio.getPopular</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRecommendationsCount:offset:" title="getRecommendationsCount:offset:"></a>
+	<h3 class="subsubtitle method-title">getRecommendationsCount:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список рекомендуемых аудиозаписей на основе списка воспроизведения заданного пользователя или на основе одной выбранной аудиозаписи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getRecommendationsCount:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество возвращаемых аудиозаписей</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение относительно первой найденной аудиозаписи для выборки определенного подмножества</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getRecommendationsCustomOptions:" title="getRecommendationsCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getRecommendationsCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список рекомендуемых аудиозаписей на основе списка воспроизведения заданного пользователя или на основе одной выбранной аудиозаписи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getRecommendationsCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.getRecommendations">https://vk.com/dev/audio.getRecommendations</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getUploadServerCustomOptions:" title="getUploadServerCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getUploadServerCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает адрес сервера для загрузки аудиозаписей</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getUploadServerCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.getUploadServer">https://vk.com/dev/audio.getUploadServer</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/moveToAlbumCustomOptions:" title="moveToAlbumCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">moveToAlbumCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Перемещает аудиозаписи в альбом</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)moveToAlbumCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.moveToAlbum">https://vk.com/dev/audio.moveToAlbum</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reorderCustomOptions:" title="reorderCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">reorderCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Изменяет порядок аудиозаписи, перенося ее между аудиозаписями, идентификаторы которых переданы параметрами after и before</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)reorderCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.reorder">https://vk.com/dev/audio.reorder</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restoreAudioID:" title="restoreAudioID:"></a>
+	<h3 class="subsubtitle method-title">restoreAudioID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Восстанавливает аудиозапись после удаления</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)restoreAudioID:(NSUInteger)<em>audioID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>audioID</em></dt>
+			<dd><p>идентификатор аудиозаписи</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restoreCustomOptions:" title="restoreCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">restoreCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Восстанавливает аудиозапись после удаления</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)restoreCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.restore">https://vk.com/dev/audio.restore</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveCustomOptions:" title="saveCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">saveCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Сохраняет аудиозаписи после успешной загрузки</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)saveCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.save">https://vk.com/dev/audio.save</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchCustomOptions:" title="searchCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">searchCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список аудиозаписей в соответствии с заданным критерием поиска</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.search">https://vk.com/dev/audio.search</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchQuery:" title="searchQuery:"></a>
+	<h3 class="subsubtitle method-title">searchQuery:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список аудиозаписей в соответствии с заданным критерием поиска</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchQuery:(NSString *)<em>query</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>текст поискового запроса, например, The Beatles</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchQuery:sort:count:offset:" title="searchQuery:sort:count:offset:"></a>
+	<h3 class="subsubtitle method-title">searchQuery:sort:count:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список аудиозаписей в соответствии с заданным критерием поиска</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchQuery:(NSString *)<em>query</em> sort:(NSUInteger)<em>sort</em> count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>текст поискового запроса, например, The Beatles</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sort</em></dt>
+			<dd><p>Вид сортировки. 2 — по популярности, 1 — по длительности аудиозаписи, 0 — по дате добавления.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество аудиозаписей, информацию о которых необходимо вернуть</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножетсва аудиозаписей</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBroadcastCustomOptions:" title="setBroadcastCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">setBroadcastCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Транслирует аудиозапись в статус пользователю или сообществу</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)setBroadcastCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/audio.setBroadcast">https://vk.com/dev/audio.setBroadcast</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadAudio:name:" title="uploadAudio:name:"></a>
+	<h3 class="subsubtitle method-title">uploadAudio:name:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Загружает аудио на сервер ВК</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)uploadAudio:(NSData *)<em>audioData</em> name:(NSString *)<em>audioFileName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>audioData</em></dt>
+			<dd><p>байтовое представление аудио файла</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>audioFileName</em></dt>
+			<dd><p>наименование файла аудио</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKAudioAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>
@@ -109,7 +2591,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-21)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-24)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

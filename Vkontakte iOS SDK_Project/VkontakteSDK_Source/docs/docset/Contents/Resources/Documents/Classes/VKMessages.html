@@ -26,6 +26,12 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
 	
 	
 	
@@ -35,6 +41,51 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addChatUserCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- addChatUserCustomOptions:</option>
+	
+	<option value="//api/name/createChatCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- createChatCustomOptions:</option>
+	
+	<option value="//api/name/deleteCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteCustomOptions:</option>
+	
+	<option value="//api/name/deleteDialogCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteDialogCustomOptions:</option>
+	
+	<option value="//api/name/editChatCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- editChatCustomOptions:</option>
+	
+	<option value="//api/name/getByIdCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getByIdCustomOptions:</option>
+	
+	<option value="//api/name/getChatCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getChatCustomOptions:</option>
+	
+	<option value="//api/name/getChatUsersCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getChatUsersCustomOptions:</option>
+	
+	<option value="//api/name/getCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getCustomOptions:</option>
+	
+	<option value="//api/name/getDialogsCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getDialogsCustomOptions:</option>
+	
+	<option value="//api/name/getHistoryCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getHistoryCustomOptions:</option>
+	
+	<option value="//api/name/getLastActivityCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getLastActivityCustomOptions:</option>
+	
+	<option value="//api/name/getLongPollHistoryCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getLongPollHistoryCustomOptions:</option>
+	
+	<option value="//api/name/getLongPollServerCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getLongPollServerCustomOptions:</option>
+	
+	<option value="//api/name/markAsNewCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- markAsNewCustomOptions:</option>
+	
+	<option value="//api/name/markAsReadCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- markAsReadCustomOptions:</option>
+	
+	<option value="//api/name/removeChatUserCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- removeChatUserCustomOptions:</option>
+	
+	<option value="//api/name/restoreCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- restoreCustomOptions:</option>
+	
+	<option value="//api/name/searchCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- searchCustomOptions:</option>
+	
+	<option value="//api/name/searchDialogsCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- searchDialogsCustomOptions:</option>
+	
+	<option value="//api/name/sendCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- sendCustomOptions:</option>
+	
+	<option value="//api/name/setActivityCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- setActivityCustomOptions:</option>
 	
 	
 	
@@ -45,6 +96,58 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.get">messages.get</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.getDialogs">messages.getDialogs</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.getById">messages.getById</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.search">messages.search</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.getHistory">messages.getHistory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.send">messages.send</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.delete">messages.delete</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.deleteDialog">messages.deleteDialog</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.restore">messages.restore</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.markAsNew">messages.markAsNew</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.markAsRead">messages.markAsRead</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.getLongPollServer">messages.getLongPollServer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.getLongPollHistory">messages.getLongPollHistory</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.getChat">messages.getChat</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.createChat">messages.createChat</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.editChat">messages.editChat</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.getChatUsers">messages.getChatUsers</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.setActivity">messages.setActivity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.searchDialogs">messages.searchDialogs</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.addChatUser">messages.addChatUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.removeChatUser">messages.removeChatUser</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_messages.getLastActivity">messages.getLastActivity</a></span></li>
+	
+</ul></li>
 
 
 
@@ -54,7 +157,53 @@
 
 
 
-
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addChatUserCustomOptions:">addChatUserCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createChatCustomOptions:">createChatCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteCustomOptions:">deleteCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteDialogCustomOptions:">deleteDialogCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editChatCustomOptions:">editChatCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getByIdCustomOptions:">getByIdCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getChatCustomOptions:">getChatCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getChatUsersCustomOptions:">getChatUsersCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getCustomOptions:">getCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDialogsCustomOptions:">getDialogsCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getHistoryCustomOptions:">getHistoryCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getLastActivityCustomOptions:">getLastActivityCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getLongPollHistoryCustomOptions:">getLongPollHistoryCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getLongPollServerCustomOptions:">getLongPollServerCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/markAsNewCustomOptions:">markAsNewCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/markAsReadCustomOptions:">markAsReadCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeChatUserCustomOptions:">removeChatUserCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreCustomOptions:">restoreCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchCustomOptions:">searchCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchDialogsCustomOptions:">searchDialogsCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendCustomOptions:">sendCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setActivityCustomOptions:">setActivityCustomOptions:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -88,6 +237,351 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Класс предназначен для работы с пользовательскими сообщения, групповыми чатами и тд.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="messages.get" name="task_messages.get"></a>
+						<h3 class="subsubtitle task-title">messages.get</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getCustomOptions:">&ndash;&nbsp;getCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список входящих либо исходящих личных сообщений текущего пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.getDialogs" name="task_messages.getDialogs"></a>
+						<h3 class="subsubtitle task-title">messages.getDialogs</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDialogsCustomOptions:">&ndash;&nbsp;getDialogsCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список диалогов текущего пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.getById" name="task_messages.getById"></a>
+						<h3 class="subsubtitle task-title">messages.getById</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getByIdCustomOptions:">&ndash;&nbsp;getByIdCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает сообщения по их id</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.search" name="task_messages.search"></a>
+						<h3 class="subsubtitle task-title">messages.search</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchCustomOptions:">&ndash;&nbsp;searchCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список найденных личных сообщений текущего пользователя по введенной строке поиска</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.getHistory" name="task_messages.getHistory"></a>
+						<h3 class="subsubtitle task-title">messages.getHistory</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getHistoryCustomOptions:">&ndash;&nbsp;getHistoryCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает историю сообщений для указанного пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.send" name="task_messages.send"></a>
+						<h3 class="subsubtitle task-title">messages.send</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendCustomOptions:">&ndash;&nbsp;sendCustomOptions:</a></code>
+		<span class="tooltip"><p>Отправляет сообщение</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.delete" name="task_messages.delete"></a>
+						<h3 class="subsubtitle task-title">messages.delete</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteCustomOptions:">&ndash;&nbsp;deleteCustomOptions:</a></code>
+		<span class="tooltip"><p>Удаляет сообщение</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.deleteDialog" name="task_messages.deleteDialog"></a>
+						<h3 class="subsubtitle task-title">messages.deleteDialog</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteDialogCustomOptions:">&ndash;&nbsp;deleteDialogCustomOptions:</a></code>
+		<span class="tooltip"><p>Удаляет все личные сообщения в диалоге</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.restore" name="task_messages.restore"></a>
+						<h3 class="subsubtitle task-title">messages.restore</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restoreCustomOptions:">&ndash;&nbsp;restoreCustomOptions:</a></code>
+		<span class="tooltip"><p>Восстанавливает удаленное сообщение</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.markAsNew" name="task_messages.markAsNew"></a>
+						<h3 class="subsubtitle task-title">messages.markAsNew</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/markAsNewCustomOptions:">&ndash;&nbsp;markAsNewCustomOptions:</a></code>
+		<span class="tooltip"><p>Помечает сообщения как непрочитанные</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.markAsRead" name="task_messages.markAsRead"></a>
+						<h3 class="subsubtitle task-title">messages.markAsRead</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/markAsReadCustomOptions:">&ndash;&nbsp;markAsReadCustomOptions:</a></code>
+		<span class="tooltip"><p>Помечает сообщения как прочитанные</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.getLongPollServer" name="task_messages.getLongPollServer"></a>
+						<h3 class="subsubtitle task-title">messages.getLongPollServer</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getLongPollServerCustomOptions:">&ndash;&nbsp;getLongPollServerCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает данные, необходимые для подключения к Long Poll серверу</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.getLongPollHistory" name="task_messages.getLongPollHistory"></a>
+						<h3 class="subsubtitle task-title">messages.getLongPollHistory</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getLongPollHistoryCustomOptions:">&ndash;&nbsp;getLongPollHistoryCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает обновления в личных сообщениях пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.getChat" name="task_messages.getChat"></a>
+						<h3 class="subsubtitle task-title">messages.getChat</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getChatCustomOptions:">&ndash;&nbsp;getChatCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает информацию о беседе</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.createChat" name="task_messages.createChat"></a>
+						<h3 class="subsubtitle task-title">messages.createChat</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createChatCustomOptions:">&ndash;&nbsp;createChatCustomOptions:</a></code>
+		<span class="tooltip"><p>Создаёт беседу с несколькими участниками</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.editChat" name="task_messages.editChat"></a>
+						<h3 class="subsubtitle task-title">messages.editChat</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editChatCustomOptions:">&ndash;&nbsp;editChatCustomOptions:</a></code>
+		<span class="tooltip"><p>Изменяет название беседы</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.getChatUsers" name="task_messages.getChatUsers"></a>
+						<h3 class="subsubtitle task-title">messages.getChatUsers</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getChatUsersCustomOptions:">&ndash;&nbsp;getChatUsersCustomOptions:</a></code>
+		<span class="tooltip"><p>Позволяет получить список пользователей мультидиалога по его id</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.setActivity" name="task_messages.setActivity"></a>
+						<h3 class="subsubtitle task-title">messages.setActivity</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setActivityCustomOptions:">&ndash;&nbsp;setActivityCustomOptions:</a></code>
+		<span class="tooltip"><p>Изменяет статус набора текста пользователем в диалоге</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.searchDialogs" name="task_messages.searchDialogs"></a>
+						<h3 class="subsubtitle task-title">messages.searchDialogs</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchDialogsCustomOptions:">&ndash;&nbsp;searchDialogsCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список найденных диалогов текущего пользователя по введенной строке поиска</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.addChatUser" name="task_messages.addChatUser"></a>
+						<h3 class="subsubtitle task-title">messages.addChatUser</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addChatUserCustomOptions:">&ndash;&nbsp;addChatUserCustomOptions:</a></code>
+		<span class="tooltip"><p>Добавляет в мультидиалог нового пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.removeChatUser" name="task_messages.removeChatUser"></a>
+						<h3 class="subsubtitle task-title">messages.removeChatUser</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeChatUserCustomOptions:">&ndash;&nbsp;removeChatUserCustomOptions:</a></code>
+		<span class="tooltip"><p>Исключает из мультидиалога пользователя, если текущий пользователь был создателем беседы либо пригласил исключаемого пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="messages.getLastActivity" name="task_messages.getLastActivity"></a>
+						<h3 class="subsubtitle task-title">messages.getLastActivity</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getLastActivityCustomOptions:">&ndash;&nbsp;getLastActivityCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает текущий статус и дату последней активности указанного пользователя</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
@@ -97,6 +591,1133 @@
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addChatUserCustomOptions:" title="addChatUserCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">addChatUserCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Добавляет в мультидиалог нового пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addChatUserCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.addChatUser">https://vk.com/dev/messages.addChatUser</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createChatCustomOptions:" title="createChatCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">createChatCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Создаёт беседу с несколькими участниками</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)createChatCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.createChat">https://vk.com/dev/messages.createChat</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteCustomOptions:" title="deleteCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">deleteCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет сообщение</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)deleteCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.delete">https://vk.com/dev/messages.delete</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteDialogCustomOptions:" title="deleteDialogCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">deleteDialogCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет все личные сообщения в диалоге</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)deleteDialogCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.deleteDialog">https://vk.com/dev/messages.deleteDialog</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editChatCustomOptions:" title="editChatCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">editChatCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Изменяет название беседы</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)editChatCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.editChat">https://vk.com/dev/messages.editChat</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getByIdCustomOptions:" title="getByIdCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getByIdCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает сообщения по их id</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getByIdCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.getById">https://vk.com/dev/messages.getById</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getChatCustomOptions:" title="getChatCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getChatCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает информацию о беседе</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getChatCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.getChat">https://vk.com/dev/messages.getChat</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getChatUsersCustomOptions:" title="getChatUsersCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getChatUsersCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Позволяет получить список пользователей мультидиалога по его id</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getChatUsersCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.getChatUsers">https://vk.com/dev/messages.getChatUsers</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getCustomOptions:" title="getCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список входящих либо исходящих личных сообщений текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.get">https://vk.com/dev/messages.get</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDialogsCustomOptions:" title="getDialogsCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getDialogsCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список диалогов текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getDialogsCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.getDialogs">https://vk.com/dev/messages.getDialogs</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getHistoryCustomOptions:" title="getHistoryCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getHistoryCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает историю сообщений для указанного пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getHistoryCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.getHistory">https://vk.com/dev/messages.getHistory</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getLastActivityCustomOptions:" title="getLastActivityCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getLastActivityCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает текущий статус и дату последней активности указанного пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getLastActivityCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.getLastActivity">https://vk.com/dev/messages.getLastActivity</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getLongPollHistoryCustomOptions:" title="getLongPollHistoryCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getLongPollHistoryCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает обновления в личных сообщениях пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getLongPollHistoryCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.getLongPollHistory">https://vk.com/dev/messages.getLongPollHistory</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getLongPollServerCustomOptions:" title="getLongPollServerCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">getLongPollServerCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает данные, необходимые для подключения к Long Poll серверу</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getLongPollServerCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.getLongPollServer">https://vk.com/dev/messages.getLongPollServer</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/markAsNewCustomOptions:" title="markAsNewCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">markAsNewCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Помечает сообщения как непрочитанные</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)markAsNewCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.markAsNew">https://vk.com/dev/messages.markAsNew</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/markAsReadCustomOptions:" title="markAsReadCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">markAsReadCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Помечает сообщения как прочитанные</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)markAsReadCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.markAsRead">https://vk.com/dev/messages.markAsRead</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeChatUserCustomOptions:" title="removeChatUserCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">removeChatUserCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Исключает из мультидиалога пользователя, если текущий пользователь был создателем беседы либо пригласил исключаемого пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)removeChatUserCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.removeChatUser">https://vk.com/dev/messages.removeChatUser</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restoreCustomOptions:" title="restoreCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">restoreCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Восстанавливает удаленное сообщение</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)restoreCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.restore">https://vk.com/dev/messages.restore</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchCustomOptions:" title="searchCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">searchCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список найденных личных сообщений текущего пользователя по введенной строке поиска</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.search">https://vk.com/dev/messages.search</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchDialogsCustomOptions:" title="searchDialogsCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">searchDialogsCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список найденных диалогов текущего пользователя по введенной строке поиска</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchDialogsCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.searchDialogs">https://vk.com/dev/messages.searchDialogs</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendCustomOptions:" title="sendCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">sendCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Отправляет сообщение</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)sendCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.send">https://vk.com/dev/messages.send</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setActivityCustomOptions:" title="setActivityCustomOptions:"></a>
+	<h3 class="subsubtitle method-title">setActivityCustomOptions:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Изменяет статус набора текста пользователем в диалоге</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)setActivityCustomOptions:(NSDictionary *)<em>options</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>options</em></dt>
+			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/messages.setActivity">https://vk.com/dev/messages.setActivity</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKMessages.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>
@@ -109,7 +1730,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-21)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-24)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

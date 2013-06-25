@@ -29,6 +29,7 @@
 
 #import "VKPhotoAlbums.h"
 #import "VKConnector.h"
+#import "VKUser.h"
 
 @implementation VKPhotoAlbums
 
@@ -174,11 +175,14 @@
 
 #pragma mark - photos.getUploadServer
 
-- (id)uploadServer
+- (id)uploadServerAlbumID:(NSUInteger)albumID
 {
+    NSDictionary *options = @{@"aid"      : @(albumID),
+                              @"save_big" : @1};
+
     return [[VKConnector sharedInstance]
                          performVKMethod:kVKPhotosGetUploadServer
-                                 options:@{}
+                                 options:options
                                    error:nil];
 }
 
@@ -257,7 +261,7 @@
 - (id)messagesUploadServer
 {
     return [[VKConnector sharedInstance]
-                         performVKMethod:kVKPhotosGetMessageUploadServer
+                         performVKMethod:kVKPhotosGetMessagesUploadServer
                                  options:@{}
                                    error:nil];
 }
@@ -265,7 +269,7 @@
 - (id)messagesUploadServerCustomOptions:(NSDictionary *)options
 {
     return [[VKConnector sharedInstance]
-                         performVKMethod:kVKPhotosGetMessageUploadServer
+                         performVKMethod:kVKPhotosGetMessagesUploadServer
                                  options:options
                                    error:nil];
 }
@@ -275,7 +279,7 @@
 - (id)saveMessagesPhotoCustomOptions:(NSDictionary *)options
 {
     return [[VKConnector sharedInstance]
-                         performVKMethod:kVKPhotosSaveMessagePhoto
+                         performVKMethod:kVKPhotosSaveMessagesPhoto
                                  options:options
                                    error:nil];
 }
@@ -583,6 +587,90 @@
                          performVKMethod:kVKPhotosGetNewTags
                                  options:options
                                    error:nil];
+}
+
+#pragma mark - Uploading pictures
+
+- (id)uploadPhoto:(NSData *)photoData
+    photoFileName:(NSString *)photoFileName
+          albumID:(NSUInteger)albumID
+{
+    id uploadServer = [self uploadServerAlbumID:albumID];
+    NSURL *uploadURL = [NSURL URLWithString:uploadServer[@"response"][@"upload_url"]];
+
+    id responseUpload = [[VKConnector sharedInstance]
+                                      uploadFile:photoData
+                                            name:photoFileName
+                                             URL:uploadURL
+                                     contentType:@"application/octet-stream"
+                                       fieldName:@"file1"];
+
+    NSString *server = responseUpload[@"server"];
+    NSString *photosList = responseUpload[@"photos_list"];
+    NSString *aid = responseUpload[@"aid"];
+    NSString *hash = responseUpload[@"hash"];
+
+    id finalResponse = [self savePhotoCustomOptions:@{
+            @"aid": aid,
+            @"server": server,
+            @"photos_list": photosList,
+            @"hash": hash
+    }];
+
+    return finalResponse;
+}
+
+- (id)uploadWallPhoto:(NSData *)photoData
+        photoFileName:(NSString *)photoFileName
+{
+    id uploadServer = [self wallUploadServer];
+    NSURL *uploadURL = [NSURL URLWithString:uploadServer[@"response"][@"upload_url"]];
+
+    id responseUpload = [[VKConnector sharedInstance]
+                                      uploadFile:photoData
+                                            name:photoFileName
+                                             URL:uploadURL
+                                     contentType:@"application/octet-stream"
+                                       fieldName:@"photo"];
+
+    NSString *server = responseUpload[@"server"];
+    NSString *photo = responseUpload[@"photo"];
+    NSString *hash = responseUpload[@"hash"];
+
+    id finalResponse = [self saveWallPhotoCustomOptions:@{
+            @"uid": @([[VKUser currentUser] userID]),
+            @"photo": photo,
+            @"server": server,
+            @"hash": hash
+    }];
+
+    return finalResponse;
+}
+
+- (id)uploadMessagePhoto:(NSData *)photoData
+           photoFileName:(NSString *)photoFileName
+{
+    id uploadServer = [self messagesUploadServer];
+    NSURL *uploadURL = [NSURL URLWithString:uploadServer[@"response"][@"upload_url"]];
+
+    id responseUpload = [[VKConnector sharedInstance]
+            uploadFile:photoData
+                  name:photoFileName
+                   URL:uploadURL
+           contentType:@"application/octet-stream"
+             fieldName:@"photo"];
+
+    NSString *server = responseUpload[@"server"];
+    NSString *hash = responseUpload[@"hash"];
+    NSString *photo = responseUpload[@"photo"];
+
+    id finalResponse = [self saveMessagesPhotoCustomOptions:@{
+            @"server": server,
+            @"hash": hash,
+            @"photo": photo
+    }];
+
+    return finalResponse;
 }
 
 @end

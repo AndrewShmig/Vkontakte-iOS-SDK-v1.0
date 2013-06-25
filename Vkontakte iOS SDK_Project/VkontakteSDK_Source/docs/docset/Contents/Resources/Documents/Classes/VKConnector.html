@@ -59,7 +59,11 @@
 	
 	<option value="//api/name/performVKMethod:options:error:">&nbsp;&nbsp;&nbsp;&nbsp;- performVKMethod:options:error:</option>
 	
+	<option value="//api/name/performVKRequest:">&nbsp;&nbsp;&nbsp;&nbsp;- performVKRequest:</option>
+	
 	<option value="//api/name/startWithAppID:permissons:">&nbsp;&nbsp;&nbsp;&nbsp;- startWithAppID:permissons:</option>
+	
+	<option value="//api/name/uploadFile:name:URL:contentType:fieldName:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadFile:name:URL:contentType:fieldName:</option>
 	
 	
 	
@@ -76,6 +80,14 @@
 
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Свойства">Свойства</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Методы класса">Методы класса</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Авторизация пользователем приложения">Авторизация пользователем приложения</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Осуществление запросов">Осуществление запросов</a></span></li>
 	
 </ul></li>
 
@@ -107,7 +119,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performVKMethod:options:error:">performVKMethod:options:error:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performVKRequest:">performVKRequest:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startWithAppID:permissons:">startWithAppID:permissons:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadFile:name:URL:contentType:fieldName:">uploadFile:name:URL:contentType:fieldName:</a></span></li>
 	
 </ul></li>
 
@@ -169,8 +185,8 @@
 						<h2 class="subtitle subtitle-tasks">Tasks</h2>
 						
 						
-						
-						
+						<a title="Свойства" name="task_Свойства"></a>
+						<h3 class="subsubtitle task-title">Свойства</h3>
 
 						<ul class="task-list">
 							<li>
@@ -194,7 +210,15 @@
 	</span>
 	<span class="task-item-suffix">property</span>
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Методы класса" name="task_Методы класса"></a>
+						<h3 class="subsubtitle task-title">Методы класса</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
 		<span class="tooltip"><p>Метод класса для получения экземпляра сиглтона.
@@ -202,17 +226,47 @@
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Авторизация пользователем приложения" name="task_Авторизация пользователем приложения"></a>
+						<h3 class="subsubtitle task-title">Авторизация пользователем приложения</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/startWithAppID:permissons:">&ndash;&nbsp;startWithAppID:permissons:</a></code>
 		<span class="tooltip"><p>Инициализирует запуск коннектора с заданными параметрами</p></span>
 	</span>
 	
 	
-</li><li>
+</li>
+						</ul>
+						
+						
+						<a title="Осуществление запросов" name="task_Осуществление запросов"></a>
+						<h3 class="subsubtitle task-title">Осуществление запросов</h3>
+
+						<ul class="task-list">
+							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/performVKMethod:options:error:">&ndash;&nbsp;performVKMethod:options:error:</a></code>
 		<span class="tooltip"><p>Основной метод осуществления GET запросов.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performVKRequest:">&ndash;&nbsp;performVKRequest:</a></code>
+		<span class="tooltip"><p>Осуществляет переданый запрос</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadFile:name:URL:contentType:fieldName:">&ndash;&nbsp;uploadFile:name:URL:contentType:fieldName:</a></code>
+		<span class="tooltip"><p>Загружает файл на указанный адрес</p></span>
 	</span>
 	
 	
@@ -454,6 +508,57 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/performVKRequest:" title="performVKRequest:"></a>
+	<h3 class="subsubtitle method-title">performVKRequest:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Осуществляет переданый запрос</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)performVKRequest:(NSMutableURLRequest *)<em>request</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>request</em></dt>
+			<dd><p>запрос, который необходимо осуществить</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/startWithAppID:permissons:" title="startWithAppID:permissons:"></a>
 	<h3 class="subsubtitle method-title">startWithAppID:permissons:</h3>
 	
@@ -504,6 +609,77 @@
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/uploadFile:name:URL:contentType:fieldName:" title="uploadFile:name:URL:contentType:fieldName:"></a>
+	<h3 class="subsubtitle method-title">uploadFile:name:URL:contentType:fieldName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Загружает файл на указанный адрес</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)uploadFile:(NSData *)<em>file</em> name:(NSString *)<em>fileName</em> URL:(NSURL *)<em>url</em> contentType:(NSString *)<em>contentType</em> fieldName:(NSString *)<em>fieldName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>file</em></dt>
+			<dd><p>байтовое представление газружаемого файла</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fileName</em></dt>
+			<dd><p>наименование файла</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>URL на который необходимо отправить данные</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>contentType</em></dt>
+			<dd><p>тип загружаемого содержимого (application/octet-stream, image/jpeg и тд)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fieldName</em></dt>
+			<dd><p>наименования поля загрузки (file, picture, pics и тд)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKConnector.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -517,7 +693,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-21)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-24)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

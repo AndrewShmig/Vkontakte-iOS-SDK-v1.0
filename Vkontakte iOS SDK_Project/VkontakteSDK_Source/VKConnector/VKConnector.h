@@ -130,6 +130,9 @@ parsingErrorOccured:(NSError *)error;
  */
 @interface VKConnector : NSObject <UIWebViewDelegate>
 
+/**
+@name Свойства
+*/
 /** Делегат VKConnector
  */
 @property (nonatomic, weak) id<VKConnectorProtocol> delegate;
@@ -142,11 +145,17 @@ parsingErrorOccured:(NSError *)error;
  */
 @property (nonatomic, strong, readonly) NSArray *permissions;
 
+/**
+@name Методы класса
+*/
 /** Метод класса для получения экземпляра сиглтона.
 * Если объект отсутствует, то он будет создан. Не может быть равен nil или NULL.
 */
 + (id) sharedInstance;
 
+/**
+@name Авторизация пользователем приложения
+*/
 /** Инициализирует запуск коннектора с заданными параметрами
 
  @param appID Идентификатор приложения полученный при регистрации.
@@ -155,6 +164,9 @@ parsingErrorOccured:(NSError *)error;
 - (void)startWithAppID:(NSString *)appID
             permissons:(NSArray *)permissions;
 
+/**
+@name Осуществление запросов
+*/
 /** Основной метод осуществления GET запросов.
  
  @param methodName Наименование метода к которому необходимо осуществить запрос.
@@ -173,5 +185,28 @@ parsingErrorOccured:(NSError *)error;
 - (id)performVKMethod:(NSString *)methodName
               options:(NSDictionary *)options
                 error:(NSError **)error;
+
+/** Осуществляет переданый запрос
+
+@param request запрос, который необходимо осуществить
+@return ответ на запрос в виде Foundation объекта
+*/
+- (id)performVKRequest:(NSMutableURLRequest *)request;
+
+/** Загружает файл на указанный адрес
+
+@param file байтовое представление газружаемого файла
+@param fileName наименование файла
+@param url URL на который необходимо отправить данные
+@param contentType тип загружаемого содержимого (application/octet-stream, image/jpeg и тд)
+@param fieldName наименования поля загрузки (file, picture, pics и тд)
+
+@return ответ на запрос в виде Foundation объекта
+*/
+- (id)uploadFile:(NSData *)file
+            name:(NSString *)fileName
+             URL:(NSURL *)url
+     contentType:(NSString *)contentType
+       fieldName:(NSString *)fieldName;
 
 @end

@@ -29,9 +29,6 @@
 #import <Foundation/Foundation.h>
 
 /** Класс предназначен для работы с документами пользователя.
- 
- @warning Пока класс не реализует функционал загрузки самих документов на сервер,
- но в скором времени это будет.
  */
 @interface VKDocs : NSObject
 
@@ -132,6 +129,18 @@
  @param accessKey ключ доступа документа. Этот параметр следует передать, если вместе с остальными данными о документе было возвращено поле access_key.
  @return ответ на запрос в виде Foundation объекта
  */
-- (id)addDocumentID:(NSUInteger)documentID ownerID:(NSUInteger)ownerID accessKey:(NSString *)accessKey;
+- (id)addDocumentID:(NSUInteger)documentID
+            ownerID:(NSUInteger)ownerID
+          accessKey:(NSString *)accessKey;
+
+/**
+@name Uploading documents
+*/
+/** Загружает документ на сервер и возвращает ссылку на него + дополнительную информацию.
+@param document байтовое представление документа
+@param documentName имя документа
+@return ответ на запрос в виде Foundation объекта
+*/
+- (id)uploadDocument:(NSData *)document name:(NSString *)documentName;
 
 @end

@@ -27,7 +27,230 @@
 //
 //
 #import "VKMessages.h"
+#import "VKConnector.h"
+
 
 @implementation VKMessages
+
+#pragma mark Visible VKMessages methods
+#pragma mark - messages.get
+
+- (id)getCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesGet
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.getDialogs
+
+- (id)getDialogsCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesGetDialogs
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.getById
+
+- (id)getByIdCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesGetById
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.search
+
+- (id)searchCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesSearch
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.getHistory
+
+- (id)getHistoryCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesGetHistory
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.send
+
+- (id)sendCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesSend
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.delete
+
+- (id)deleteCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesDelete
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.deleteDialog
+
+- (id)deleteDialogCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesDeleteDialog
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.restore
+
+- (id)restoreCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesRestore
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.markAsRead
+
+- (id)markAsReadCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesMarkAsRead
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.markAsNew
+
+- (id)markAsNewCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesMarkAsNew
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.getLongPollServer
+
+- (id)getLongPollServerCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesGetLongPollServer
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.getLongPollHistoryServer
+
+- (id)getLongPollHistoryCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesGetLongPollHistory
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.getChat
+
+- (id)getChatCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesGetChat
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.createChat
+
+- (id)createChatCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesCreateChat
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.editChat
+
+- (id)editChatCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesEditChat
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.getChatUsers
+
+- (id)getChatUsersCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesGetChatUsers
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.setActivity
+
+- (id)setActivityCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesSetActivity
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.searchDialogs
+
+- (id)searchDialogsCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesSearchDialogs
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.addChatUser
+
+- (id)addChatUserCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesAddChatUser
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.removeChatUser
+
+- (id)removeChatUserCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesRemoveChatUser
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - messages.getLastActivity
+
+- (id)getLastActivityCustomOptions:(NSDictionary *)options
+{
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKMessagesGetLastActivity
+                    options:options
+                      error:nil];
+}
 
 @end

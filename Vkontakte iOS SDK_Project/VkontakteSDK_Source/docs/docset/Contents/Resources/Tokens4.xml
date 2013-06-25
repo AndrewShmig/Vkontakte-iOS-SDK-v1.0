@@ -195,5 +195,25 @@
             <NodeRef refid="4"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKDocs/uploadDocument:name:</TokenIdentifier>
+			<Abstract type="html">Загружает документ на сервер и возвращает ссылку на него + дополнительную информацию.</Abstract>
+			<DeclaredIn>VKDocs.h</DeclaredIn>			
+			
+			<Declaration>- (id)uploadDocument:(NSData *)document name:(NSString *)documentName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>document</Name>
+					<Abstract type="html">байтовое представление документа</Abstract>
+				</Parameter><Parameter>
+					<Name>documentName</Name>
+					<Abstract type="html">имя документа</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/uploadDocument:name:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
 	</File>
 </Tokens>

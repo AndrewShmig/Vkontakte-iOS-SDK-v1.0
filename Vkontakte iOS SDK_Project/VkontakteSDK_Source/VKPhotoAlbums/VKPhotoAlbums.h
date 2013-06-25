@@ -150,9 +150,10 @@
   @name photos.getUploadServer
 */
 /** Возвращает адрес сервера для загрузки фотографий
+@param albumID идентификатор альбома
 @return ответ на запрос в виде Foundation объекта
 */
-- (id)uploadServer;
+- (id)uploadServerAlbumID:(NSUInteger)albumID;
 
 /** Возвращает адрес сервера для загрузки фотографий
 @param options ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/photos.getUploadServer
@@ -481,5 +482,40 @@
 */
 - (id)unseenPhotoTagsCount:(NSUInteger)count
                     offset:(NSUInteger)offset;
+
+/**
+@name Загрузка изображений
+*/
+/** Загружает фотографию пользователя в указаный альбом
+
+@param photoData байтовое представление загружаемой фотографии
+@param photoFileName наименование файла фотографии
+@param albumID идентификатор альбома в который будет загружена фотография
+
+@return ответ на запрос в виде Foundation объекта
+*/
+- (id)uploadPhoto:(NSData *)photoData
+    photoFileName:(NSString *)photoFileName
+          albumID:(NSUInteger)albumID;
+
+/** Загрузка изображения на сервер "стен" ( https://vk.com/dev/upload_files ) текущего пользователя
+
+@param photoData байтовое представление загружаемой фотографии
+@param photoFileName наименование файла фотографии
+
+@return ответ на запрос в виде Foundation объекта
+*/
+- (id)uploadWallPhoto:(NSData *)photoData
+        photoFileName:(NSString *)photoFileName;
+
+/** Загрузка изображения на сервер "личных сообщений" ( https://vk.com/dev/upload_files )
+
+@param photoData байтовое представление загружаемой фотографии
+@param photoFileName наименование файла фотографии
+
+@return ответ на запрсо в виде Foundation объекта
+*/
+- (id)uploadMessagePhoto:(NSData *)photoData
+           photoFileName:(NSString *)photoFileName;
 
 @end

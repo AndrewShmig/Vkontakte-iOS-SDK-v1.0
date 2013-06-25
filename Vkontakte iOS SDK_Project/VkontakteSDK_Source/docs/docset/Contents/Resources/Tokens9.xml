@@ -4,12 +4,386 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKMessages</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для работы с пользовательскими сообщения, групповыми чатами и тд.</Abstract>
 			<DeclaredIn>VKMessages.h</DeclaredIn>
 			
 			<NodeRef refid="9"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/getCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список входящих либо исходящих личных сообщений текущего пользователя</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)getCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.get</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/getDialogsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список диалогов текущего пользователя</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)getDialogsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.getDialogs</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getDialogsCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/getByIdCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает сообщения по их id</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)getByIdCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.getById</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getByIdCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/searchCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список найденных личных сообщений текущего пользователя по введенной строке поиска</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.search</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/getHistoryCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает историю сообщений для указанного пользователя</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)getHistoryCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.getHistory</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getHistoryCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/sendCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Отправляет сообщение</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)sendCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.send</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/sendCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/deleteCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Удаляет сообщение</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.delete</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/deleteDialogCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Удаляет все личные сообщения в диалоге</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteDialogCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.deleteDialog</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteDialogCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/restoreCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Восстанавливает удаленное сообщение</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)restoreCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.restore</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/restoreCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/markAsNewCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Помечает сообщения как непрочитанные</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)markAsNewCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.markAsNew</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/markAsNewCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/markAsReadCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Помечает сообщения как прочитанные</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)markAsReadCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.markAsRead</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/markAsReadCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/getLongPollServerCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает данные, необходимые для подключения к Long Poll серверу</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)getLongPollServerCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.getLongPollServer</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getLongPollServerCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/getLongPollHistoryCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает обновления в личных сообщениях пользователя</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)getLongPollHistoryCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.getLongPollHistory</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getLongPollHistoryCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/getChatCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию о беседе</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)getChatCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.getChat</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getChatCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/createChatCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Создаёт беседу с несколькими участниками</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)createChatCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.createChat</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/createChatCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/editChatCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Изменяет название беседы</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)editChatCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.editChat</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editChatCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/getChatUsersCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Позволяет получить список пользователей мультидиалога по его id</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)getChatUsersCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.getChatUsers</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getChatUsersCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/setActivityCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Изменяет статус набора текста пользователем в диалоге</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)setActivityCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.setActivity</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/setActivityCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/searchDialogsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список найденных диалогов текущего пользователя по введенной строке поиска</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchDialogsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.searchDialogs</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchDialogsCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/addChatUserCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Добавляет в мультидиалог нового пользователя</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)addChatUserCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.addChatUser</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addChatUserCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/removeChatUserCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Исключает из мультидиалога пользователя, если текущий пользователь был создателем беседы либо пригласил исключаемого пользователя</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)removeChatUserCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.removeChatUser</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/removeChatUserCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKMessages/getLastActivityCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает текущий статус и дату последней активности указанного пользователя</Abstract>
+			<DeclaredIn>VKMessages.h</DeclaredIn>			
+			
+			<Declaration>- (id)getLastActivityCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/messages.getLastActivity</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getLastActivityCustomOptions:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
 		
 	</File>
 </Tokens>

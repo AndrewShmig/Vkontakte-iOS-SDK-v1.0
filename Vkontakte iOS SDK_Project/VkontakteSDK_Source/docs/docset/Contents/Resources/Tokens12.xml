@@ -241,14 +241,19 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/uploadServer</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/uploadServerAlbumID:</TokenIdentifier>
 			<Abstract type="html">Возвращает адрес сервера для загрузки фотографий</Abstract>
 			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
 			
-			<Declaration>- (id)uploadServer</Declaration>
-			
+			<Declaration>- (id)uploadServerAlbumID:(NSUInteger)albumID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>albumID</Name>
+					<Abstract type="html">идентификатор альбома</Abstract>
+				</Parameter>
+			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
-			<Anchor>//api/name/uploadServer</Anchor>
+			<Anchor>//api/name/uploadServerAlbumID:</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		
@@ -897,6 +902,69 @@
 			</Parameters>
 			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
 			<Anchor>//api/name/unseenPhotoTagsCount:offset:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/uploadPhoto:photoFileName:albumID:</TokenIdentifier>
+			<Abstract type="html">Загружает фотографию пользователя в указаный альбом</Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)uploadPhoto:(NSData *)photoData photoFileName:(NSString *)photoFileName albumID:(NSUInteger)albumID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>photoData</Name>
+					<Abstract type="html">байтовое представление загружаемой фотографии</Abstract>
+				</Parameter><Parameter>
+					<Name>photoFileName</Name>
+					<Abstract type="html">наименование файла фотографии</Abstract>
+				</Parameter><Parameter>
+					<Name>albumID</Name>
+					<Abstract type="html">идентификатор альбома в который будет загружена фотография</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/uploadPhoto:photoFileName:albumID:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/uploadWallPhoto:photoFileName:</TokenIdentifier>
+			<Abstract type="html">Загрузка изображения на сервер &quot;стен&quot; ( https://vk.com/dev/upload_files ) текущего пользователя</Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)uploadWallPhoto:(NSData *)photoData photoFileName:(NSString *)photoFileName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>photoData</Name>
+					<Abstract type="html">байтовое представление загружаемой фотографии</Abstract>
+				</Parameter><Parameter>
+					<Name>photoFileName</Name>
+					<Abstract type="html">наименование файла фотографии</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/uploadWallPhoto:photoFileName:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKPhotoAlbums/uploadMessagePhoto:photoFileName:</TokenIdentifier>
+			<Abstract type="html">Загрузка изображения на сервер &quot;личных сообщений&quot; ( https://vk.com/dev/upload_files )</Abstract>
+			<DeclaredIn>VKPhotoAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)uploadMessagePhoto:(NSData *)photoData photoFileName:(NSString *)photoFileName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>photoData</Name>
+					<Abstract type="html">байтовое представление загружаемой фотографии</Abstract>
+				</Parameter><Parameter>
+					<Name>photoFileName</Name>
+					<Abstract type="html">наименование файла фотографии</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрсо в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/uploadMessagePhoto:photoFileName:</Anchor>
             <NodeRef refid="12"/>
 		</Token>
 		

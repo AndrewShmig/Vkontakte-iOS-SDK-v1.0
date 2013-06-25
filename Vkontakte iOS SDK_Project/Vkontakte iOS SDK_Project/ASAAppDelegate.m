@@ -12,7 +12,7 @@
 
 
 static NSString *const kVKAppID = @"3541027";
-static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offline,photos,docs,audio";
+static NSString *const kVKPermissionsArray = @"photos,friends,wall,audio,video,docs,notes,pages,status,groups,messages";
 
 
 @implementation ASAAppDelegate
@@ -56,9 +56,22 @@ static NSString *const kVKPermissionsArray = @"friends,status,wall,messages,offl
 - (void)VKConnector:(VKConnector *)connector accessTokenRenewalSucceeded:(VKAccessToken *)accessToken
 {
     NSLog(@"%s", __FUNCTION__);
-    
-    id tmp = [[[VKUser currentUser] friends] count:5];
-    NSLog(@"%@", tmp);
+
+    VKUser *me = [VKUser currentUser];
+
+    NSURL *url = [NSURL URLWithString:@"http://metoyou.mole.ru/pictures/images/185.jpg"];
+    NSData *photo = [NSData dataWithContentsOfURL:url];
+
+    NSLog(@"====> %@", [[me photoAlbums]
+                            uploadMessagePhoto:photo
+                                 photoFileName:@"me.jpg"]);
+
+//    NSLog(@"====> %@", [[me photoAlbums] uploadWallPhoto:photo
+//                                           photoFileName:@"me.jpg"]);
+
+//    NSLog(@"====>%@", [[me photoAlbums] uploadPhoto:photo
+//                                      photoFileName:@"me.jpg"
+//                                            albumID:167233642]);
 }
 
 - (void)VKConnector:(VKConnector *)connector connectionErrorOccured:(NSError *)error

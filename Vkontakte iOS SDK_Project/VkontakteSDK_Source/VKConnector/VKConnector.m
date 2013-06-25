@@ -34,7 +34,9 @@
 #import "KGModal.h"
 
 
-#define MARGIN_WIDTH 50.0f // ширина отступа от границ экрана
+#define MARGIN_WIDTH 25.0 // ширина отступа от границ экрана
+#define MARGIN_HEIGHT 50.0 // высота отступа
+#define DEFAULT_TIMEOUTINTERVAL 5 * 60.0 // 5 минут
 
 
 @implementation VKConnector
@@ -49,9 +51,6 @@
     UIView *_mainView;
     
     VKAccessToken *_accessToken;
-
-    void (^_cancelBlock) (void);
-    void (^_acceptedBlock) (VKAccessToken *);
 }
 
 
@@ -90,7 +89,7 @@
     if(nil == _mainView){
         // настраиваем попап окно для отображения UIWebView
         CGRect frame = [[UIScreen mainScreen] bounds];
-        frame.size.height -= MARGIN_WIDTH;
+        frame.size.height -= MARGIN_HEIGHT;
         frame.size.width -= MARGIN_WIDTH;
         _mainView = [[UIView alloc] initWithFrame:frame];
         
@@ -140,7 +139,7 @@
         
         if([self.delegate respondsToSelector:@selector(VKConnector:willShowModalView:)])
             [self.delegate VKConnector:self willShowModalView:[KGModal sharedInstance]];
-        
+
         [[KGModal sharedInstance] showWithContentView:_mainView
                                           andAnimated:YES];
     }
@@ -150,15 +149,17 @@
               options:(NSDictionary *)options
                 error:(NSError **)error
 {
+    NSLog(@"%s", __FUNCTION__);
+
     if(![_accessToken isValid]){
         
         if([self.delegate respondsToSelector:@selector(VKConnector:accessTokenInvalidated:)])
             [self.delegate VKConnector:self
                 accessTokenInvalidated:_accessToken];
-        
+
         return nil;
     }
-    
+
 //    формируем УРЛ на который буде отправлен запрос
     NSMutableString *fullRequestURL = [NSMutableString stringWithFormat:@"%@%@",
                                        kVkontakteAPIURL, methodName];
@@ -173,44 +174,90 @@
     [fullRequestURL appendFormat:@"access_token=%@", _accessToken.token];
     
     NSURL *url = [NSURL URLWithString:fullRequestURL];
-    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
-    
-//    отправка запроса
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+
+    return [self performVKRequest:urlRequest];
+}
+
+- (id)performVKRequest:(NSMutableURLRequest *)request
+{
+    NSLog(@"%s", __FUNCTION__);
+
+    //    отправка запроса
     NSHTTPURLResponse *httpResponse;
     NSError *requestError;
-    NSData *response = [NSURLConnection sendSynchronousRequest:urlRequest
+    NSData *response = [NSURLConnection sendSynchronousRequest:request
                                              returningResponse:&httpResponse
                                                          error:&requestError];
-    
+
 //    во время запроса произошла ошибка
     if(nil != requestError){
-        *error = requestError;
-        
         if([self.delegate respondsToSelector:@selector(VKConnector:connectionErrorOccured:)])
             [self.delegate VKConnector:self
-                connectionErrorOccured:*error];
-        
+                connectionErrorOccured:requestError];
+
         return nil;
     }
-    
+
     NSError *jsonParsingError;
     id jsonResponse = [NSJSONSerialization JSONObjectWithData:response
                                                       options:NSJSONReadingMutableContainers
                                                         error:&jsonParsingError];
-    
+
 //    ошибка парсинга ответа сервера
     if(nil != jsonParsingError){
-        *error = jsonParsingError;
-        
         if([self.delegate respondsToSelector:@selector(VKConnector:parsingErrorOccured:)])
             [self.delegate VKConnector:self
-                   parsingErrorOccured:*error];
-        
+                   parsingErrorOccured:jsonParsingError];
+
         return nil;
     }
-    
+
 //    результат
     return jsonResponse;
+}
+
+- (id)uploadFile:(NSData *)file
+            name:(NSString *)fileName
+             URL:(NSURL *)url
+     contentType:(NSString *)contentType
+       fieldName:(NSString *)fieldName
+{
+    NSLog(@"%s", __FUNCTION__);
+
+    // формируем запрос
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    NSString *boundary = [[NSProcessInfo processInfo] globallyUniqueString];
+    NSMutableData *body = [NSMutableData data];
+
+    [request setTimeoutInterval:DEFAULT_TIMEOUTINTERVAL];
+
+    // тело
+    [body appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary]
+                                dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n",
+                                                 fieldName, fileName]
+                                                 dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[[NSString stringWithFormat:@"Content-Type: %@\r\n\r\n",
+                                                 contentType]
+                                                 dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:file];
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n", boundary]
+                                dataUsingEncoding:NSUTF8StringEncoding]];
+
+    [request setHTTPBody:body];
+
+    // заголовки
+    [request setHTTPMethod:@"POST"];
+
+    [request setValue:[NSString stringWithFormat:@"multipart/form-data; boundary=\"%@\"", boundary]
+   forHTTPHeaderField:@"Content-Type"];
+
+    [request setValue:[NSString stringWithFormat:@"%d", [body length]]
+   forHTTPHeaderField:@"Content-Length"];
+
+    // отправка запроса
+    return [self performVKRequest:request];
 }
 
 #pragma mark - WebView delegate methods

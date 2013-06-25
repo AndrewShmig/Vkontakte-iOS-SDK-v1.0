@@ -54,6 +54,20 @@
                                    error:nil];
 }
 
+- (id)editVideoID:(NSUInteger)videoID
+          newName:(NSString *)newName
+   newDescription:(NSString *)newDescription
+{
+    NSDictionary *options = @{@"video_id" : @(videoID),
+                              @"name"     : newName,
+                              @"desc"     : newDescription};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoEdit
+                    options:options
+                      error:nil];
+}
+
 #pragma mark - video.add
 
 - (id)addCustomOptions:(NSDictionary *)options
@@ -104,6 +118,32 @@
                                    error:nil];
 }
 
+- (id)searchQuery:(NSString *)query
+{
+    NSDictionary *options = @{@"q": query};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoSearch
+                    options:options
+                      error:nil];
+}
+
+- (id)searchQuery:(NSString *)query
+             sort:(NSUInteger)sort
+            count:(NSUInteger)count
+           offset:(NSUInteger)offset
+{
+    NSDictionary *options = @{@"q"      : query,
+                              @"sort"   : @(sort),
+                              @"count"  : @(count),
+                              @"offset" : @(offset)};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoSearch
+                    options:options
+                      error:nil];
+}
+
 #pragma mark - video.getUserVideos
 
 - (id)getUserVideosCustomOptions:(NSDictionary *)options
@@ -112,6 +152,17 @@
                          performVKMethod:kVKVideoGetUserVideos
                                  options:options
                                    error:nil];
+}
+
+- (id)getUserVideosCount:(NSUInteger)count offset:(NSUInteger)offset
+{
+    NSDictionary *options = @{@"count"  : @(count),
+                              @"offset" : @(offset)};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoGetUserVideos
+                    options:options
+                      error:nil];
 }
 
 #pragma mark - video.getAlbums
@@ -124,6 +175,17 @@
                                    error:nil];
 }
 
+- (id)getAlbumsCount:(NSUInteger)count offset:(NSUInteger)offset
+{
+    NSDictionary *options = @{@"count"  : @(count),
+                              @"offset" : @(offset)};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoGetAlbums
+                    options:options
+                      error:nil];
+}
+
 #pragma mark - video.addAlbum
 
 - (id)addAlbumCustomOptions:(NSDictionary *)options
@@ -132,6 +194,16 @@
                          performVKMethod:kVKVideoAddAlbum
                                  options:options
                                    error:nil];
+}
+
+- (id)addAlbum:(NSString *)albumName
+{
+    NSDictionary *options = @{@"title": albumName};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoAddAlbum
+                    options:options
+                      error:nil];
 }
 
 #pragma mark - video.editAlbum
@@ -144,6 +216,17 @@
                                    error:nil];
 }
 
+- (id)editAlbumID:(NSUInteger)albumID newTitle:(NSString *)newTitle
+{
+    NSDictionary *options = @{@"album_id" : @(albumID),
+                              @"title"    : newTitle};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoEditAlbum
+                    options:options
+                      error:nil];
+}
+
 #pragma mark - video.deleteAlbum
 
 - (id)deleteAlbumCustomOptions:(NSDictionary *)options
@@ -152,6 +235,16 @@
                          performVKMethod:kVKVideoDeleteAlbum
                                  options:options
                                    error:nil];
+}
+
+- (id)deleteAlbumID:(NSUInteger)albumID
+{
+    NSDictionary *options = @{@"album_id": @(albumID)};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoDeleteAlbum
+                    options:options
+                      error:nil];
 }
 
 #pragma mark - video.moveToAlbum
@@ -194,6 +287,16 @@
                                    error:nil];
 }
 
+- (id)deleteCommentID:(NSUInteger)commentID
+{
+    NSDictionary *options = @{@"comment_id": @(commentID)};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoDeleteComment
+                    options:options
+                      error:nil];
+}
+
 #pragma mark - video.restoreComment
 
 - (id)restoreCommentCustomOptions:(NSDictionary *)options
@@ -202,6 +305,16 @@
                          performVKMethod:kVKVideoRestoreComment
                                  options:options
                                    error:nil];
+}
+
+- (id)restoreCommentID:(NSUInteger)commentID
+{
+    NSDictionary *options = @{@"comment_id": @(commentID)};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoRestoreComment
+                    options:options
+                      error:nil];
 }
 
 #pragma mark - video.editComment
@@ -224,6 +337,17 @@
                                    error:nil];
 }
 
+- (id)getTagsVideoID:(NSUInteger)videoID ownerID:(NSUInteger)ownerID
+{
+    NSDictionary *options = @{@"owner_id" : @(ownerID),
+                              @"video_id" : @(videoID)};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoGetTags
+                    options:options
+                      error:nil];
+}
+
 #pragma mark - video.putTag
 
 - (id)putTagCustomOptions:(NSDictionary *)options
@@ -232,6 +356,22 @@
                          performVKMethod:kVKVideoPutTag
                                  options:options
                                    error:nil];
+}
+
+- (id)putTagName:(NSString *)tagName
+         videoID:(NSUInteger)videoID
+          userID:(NSUInteger)userID
+         ownerID:(NSUInteger)ownerID
+{
+    NSDictionary *options = @{@"tagged_name" : tagName,
+                              @"video_id"    : @(videoID),
+                              @"owner_id"    : @(ownerID),
+                              @"user_id"     : @(userID)};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoPutTag
+                    options:options
+                      error:nil];
 }
 
 #pragma mark - video.removeTag
@@ -244,6 +384,17 @@
                                    error:nil];
 }
 
+- (id)removeTagID:(NSUInteger)tagID videoID:(NSUInteger)videoID
+{
+    NSDictionary *options = @{@"tag_id"   : @(tagID),
+                              @"video_id" : @(videoID)};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoRemoveTag
+                    options:options
+                      error:nil];
+}
+
 #pragma mark - video.getNewTags
 
 - (id)getNewTagsCustomOptions:(NSDictionary *)options
@@ -252,6 +403,34 @@
                          performVKMethod:kVKVideoGetNewTags
                                  options:options
                                    error:nil];
+}
+
+- (id)getNewTagsCount:(NSUInteger)count offset:(NSUInteger)offset
+{
+    NSDictionary *options = @{@"count"  : @(count),
+                              @"offset" : @(offset)};
+
+    return [[VKConnector sharedInstance]
+            performVKMethod:kVKVideoGetNewTags
+                    options:options
+                      error:nil];
+}
+
+#pragma mark - Uploading video
+
+- (id)uploadVideo:(NSData *)videoData name:(NSString *)videoFileName
+{
+    id uploadServer = [self saveCustomOptions:@{@"name": videoFileName}];
+    NSURL *uploadURL = [NSURL URLWithString:uploadServer[@"response"][@"upload_url"]];
+
+    id responseUpload = [[VKConnector sharedInstance]
+                                      uploadFile:videoData
+                                            name:videoFileName
+                                             URL:uploadURL
+                                     contentType:@"application/octet-stream"
+                                       fieldName:@"video_file"];
+
+    return responseUpload;
 }
 
 @end

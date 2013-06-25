@@ -43,6 +43,8 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/addAlbum:">&nbsp;&nbsp;&nbsp;&nbsp;- addAlbum:</option>
+	
 	<option value="//api/name/addAlbumCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- addAlbumCustomOptions:</option>
 	
 	<option value="//api/name/addCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- addCustomOptions:</option>
@@ -51,15 +53,25 @@
 	
 	<option value="//api/name/deleteAlbumCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteAlbumCustomOptions:</option>
 	
+	<option value="//api/name/deleteAlbumID:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteAlbumID:</option>
+	
 	<option value="//api/name/deleteCommentCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteCommentCustomOptions:</option>
+	
+	<option value="//api/name/deleteCommentID:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteCommentID:</option>
 	
 	<option value="//api/name/deleteCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteCustomOptions:</option>
 	
 	<option value="//api/name/editAlbumCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- editAlbumCustomOptions:</option>
 	
+	<option value="//api/name/editAlbumID:newTitle:">&nbsp;&nbsp;&nbsp;&nbsp;- editAlbumID:newTitle:</option>
+	
 	<option value="//api/name/editCommentCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- editCommentCustomOptions:</option>
 	
 	<option value="//api/name/editCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- editCustomOptions:</option>
+	
+	<option value="//api/name/editVideoID:newName:newDescription:">&nbsp;&nbsp;&nbsp;&nbsp;- editVideoID:newName:newDescription:</option>
+	
+	<option value="//api/name/getAlbumsCount:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- getAlbumsCount:offset:</option>
 	
 	<option value="//api/name/getAlbumsCustomtOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getAlbumsCustomtOptions:</option>
 	
@@ -67,9 +79,15 @@
 	
 	<option value="//api/name/getCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getCustomOptions:</option>
 	
+	<option value="//api/name/getNewTagsCount:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- getNewTagsCount:offset:</option>
+	
 	<option value="//api/name/getNewTagsCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getNewTagsCustomOptions:</option>
 	
 	<option value="//api/name/getTagsCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getTagsCustomOptions:</option>
+	
+	<option value="//api/name/getTagsVideoID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- getTagsVideoID:ownerID:</option>
+	
+	<option value="//api/name/getUserVideosCount:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- getUserVideosCount:offset:</option>
 	
 	<option value="//api/name/getUserVideosCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- getUserVideosCustomOptions:</option>
 	
@@ -77,15 +95,27 @@
 	
 	<option value="//api/name/putTagCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- putTagCustomOptions:</option>
 	
+	<option value="//api/name/putTagName:videoID:userID:ownerID:">&nbsp;&nbsp;&nbsp;&nbsp;- putTagName:videoID:userID:ownerID:</option>
+	
 	<option value="//api/name/removeTagCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- removeTagCustomOptions:</option>
 	
+	<option value="//api/name/removeTagID:videoID:">&nbsp;&nbsp;&nbsp;&nbsp;- removeTagID:videoID:</option>
+	
 	<option value="//api/name/restoreCommentCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- restoreCommentCustomOptions:</option>
+	
+	<option value="//api/name/restoreCommentID:">&nbsp;&nbsp;&nbsp;&nbsp;- restoreCommentID:</option>
 	
 	<option value="//api/name/restoreCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- restoreCustomOptions:</option>
 	
 	<option value="//api/name/saveCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- saveCustomOptions:</option>
 	
 	<option value="//api/name/searchCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- searchCustomOptions:</option>
+	
+	<option value="//api/name/searchQuery:">&nbsp;&nbsp;&nbsp;&nbsp;- searchQuery:</option>
+	
+	<option value="//api/name/searchQuery:sort:count:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- searchQuery:sort:count:offset:</option>
+	
+	<option value="//api/name/uploadVideo:name:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadVideo:name:</option>
 	
 	
 	
@@ -147,6 +177,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_video.getNewTags">video.getNewTags</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Загрузка видео">Загрузка видео</a></span></li>
+	
 </ul></li>
 
 
@@ -159,6 +191,8 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAlbum:">addAlbum:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAlbumCustomOptions:">addAlbumCustomOptions:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addCustomOptions:">addCustomOptions:</a></span></li>
@@ -167,15 +201,25 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteAlbumCustomOptions:">deleteAlbumCustomOptions:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteAlbumID:">deleteAlbumID:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteCommentCustomOptions:">deleteCommentCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteCommentID:">deleteCommentID:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteCustomOptions:">deleteCustomOptions:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editAlbumCustomOptions:">editAlbumCustomOptions:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editAlbumID:newTitle:">editAlbumID:newTitle:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editCommentCustomOptions:">editCommentCustomOptions:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editCustomOptions:">editCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/editVideoID:newName:newDescription:">editVideoID:newName:newDescription:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAlbumsCount:offset:">getAlbumsCount:offset:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getAlbumsCustomtOptions:">getAlbumsCustomtOptions:</a></span></li>
 	
@@ -183,9 +227,15 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getCustomOptions:">getCustomOptions:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getNewTagsCount:offset:">getNewTagsCount:offset:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getNewTagsCustomOptions:">getNewTagsCustomOptions:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getTagsCustomOptions:">getTagsCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getTagsVideoID:ownerID:">getTagsVideoID:ownerID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUserVideosCount:offset:">getUserVideosCount:offset:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getUserVideosCustomOptions:">getUserVideosCustomOptions:</a></span></li>
 	
@@ -193,15 +243,27 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putTagCustomOptions:">putTagCustomOptions:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putTagName:videoID:userID:ownerID:">putTagName:videoID:userID:ownerID:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeTagCustomOptions:">removeTagCustomOptions:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeTagID:videoID:">removeTagID:videoID:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreCommentCustomOptions:">restoreCommentCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreCommentID:">restoreCommentID:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/restoreCustomOptions:">restoreCustomOptions:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveCustomOptions:">saveCustomOptions:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchCustomOptions:">searchCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchQuery:">searchQuery:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchQuery:sort:count:offset:">searchQuery:sort:count:offset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadVideo:name:">uploadVideo:name:</a></span></li>
 	
 </ul></li>
 
@@ -274,6 +336,13 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/editCustomOptions:">&ndash;&nbsp;editCustomOptions:</a></code>
+		<span class="tooltip"><p>Редактирует данные видеозаписи на странице пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editVideoID:newName:newDescription:">&ndash;&nbsp;editVideoID:newName:newDescription:</a></code>
 		<span class="tooltip"><p>Редактирует данные видеозаписи на странице пользователя</p></span>
 	</span>
 	
@@ -353,6 +422,20 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchQuery:">&ndash;&nbsp;searchQuery:</a></code>
+		<span class="tooltip"><p>Возвращает список видеозаписей в соответствии с заданным критерием поиска</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchQuery:sort:count:offset:">&ndash;&nbsp;searchQuery:sort:count:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список видеозаписей в соответствии с заданным критерием поиска</p></span>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -364,6 +447,13 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/getUserVideosCustomOptions:">&ndash;&nbsp;getUserVideosCustomOptions:</a></code>
+		<span class="tooltip"><p>Возвращает список видеозаписей, на которых отмечен пользователь</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getUserVideosCount:offset:">&ndash;&nbsp;getUserVideosCount:offset:</a></code>
 		<span class="tooltip"><p>Возвращает список видеозаписей, на которых отмечен пользователь</p></span>
 	</span>
 	
@@ -383,6 +473,13 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getAlbumsCount:offset:">&ndash;&nbsp;getAlbumsCount:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список альбомов видеозаписей пользователя или сообщества</p></span>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -394,6 +491,13 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/addAlbumCustomOptions:">&ndash;&nbsp;addAlbumCustomOptions:</a></code>
+		<span class="tooltip"><p>Создает пустой альбом видеозаписей</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAlbum:">&ndash;&nbsp;addAlbum:</a></code>
 		<span class="tooltip"><p>Создает пустой альбом видеозаписей</p></span>
 	</span>
 	
@@ -413,6 +517,13 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/editAlbumID:newTitle:">&ndash;&nbsp;editAlbumID:newTitle:</a></code>
+		<span class="tooltip"><p>Редактирует название альбома видеозаписей</p></span>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -424,6 +535,13 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/deleteAlbumCustomOptions:">&ndash;&nbsp;deleteAlbumCustomOptions:</a></code>
+		<span class="tooltip"><p>Удаляет альбом видеозаписей</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteAlbumID:">&ndash;&nbsp;deleteAlbumID:</a></code>
 		<span class="tooltip"><p>Удаляет альбом видеозаписей</p></span>
 	</span>
 	
@@ -488,6 +606,13 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteCommentID:">&ndash;&nbsp;deleteCommentID:</a></code>
+		<span class="tooltip"><p>Удаляет комментарий к видеозаписи</p></span>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -499,6 +624,13 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/restoreCommentCustomOptions:">&ndash;&nbsp;restoreCommentCustomOptions:</a></code>
+		<span class="tooltip"><p>Восстанавливает удаленный комментарий к видеозаписи</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/restoreCommentID:">&ndash;&nbsp;restoreCommentID:</a></code>
 		<span class="tooltip"><p>Восстанавливает удаленный комментарий к видеозаписи</p></span>
 	</span>
 	
@@ -533,6 +665,13 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getTagsVideoID:ownerID:">&ndash;&nbsp;getTagsVideoID:ownerID:</a></code>
+		<span class="tooltip"><p>Возвращает список отметок на видеозаписи</p></span>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -544,6 +683,13 @@
 							<li>
 	<span class="tooltip">
 		<code><a href="#//api/name/putTagCustomOptions:">&ndash;&nbsp;putTagCustomOptions:</a></code>
+		<span class="tooltip"><p>Добавляет отметку на видеозапись</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putTagName:videoID:userID:ownerID:">&ndash;&nbsp;putTagName:videoID:userID:ownerID:</a></code>
 		<span class="tooltip"><p>Добавляет отметку на видеозапись</p></span>
 	</span>
 	
@@ -563,6 +709,13 @@
 	</span>
 	
 	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeTagID:videoID:">&ndash;&nbsp;removeTagID:videoID:</a></code>
+		<span class="tooltip"><p>Удаляет отметку с видеозаписи</p></span>
+	</span>
+	
+	
 </li>
 						</ul>
 						
@@ -575,6 +728,28 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/getNewTagsCustomOptions:">&ndash;&nbsp;getNewTagsCustomOptions:</a></code>
 		<span class="tooltip"><p>Возвращает список видеозаписей, на которых есть непросмотренные отметки</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getNewTagsCount:offset:">&ndash;&nbsp;getNewTagsCount:offset:</a></code>
+		<span class="tooltip"><p>Возвращает список видеозаписей, на которых есть непросмотренные отметки</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Загрузка видео" name="task_Загрузка видео"></a>
+						<h3 class="subsubtitle task-title">Загрузка видео</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadVideo:name:">&ndash;&nbsp;uploadVideo:name:</a></code>
+		<span class="tooltip"><p>Загрузка видео на сервер ВК</p></span>
 	</span>
 	
 	
@@ -594,6 +769,57 @@
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addAlbum:" title="addAlbum:"></a>
+	<h3 class="subsubtitle method-title">addAlbum:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Создает пустой альбом видеозаписей</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)addAlbum:(NSString *)<em>albumName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>albumName</em></dt>
+			<dd><p>название альбома</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/addAlbumCustomOptions:" title="addAlbumCustomOptions:"></a>
@@ -800,6 +1026,57 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/deleteAlbumID:" title="deleteAlbumID:"></a>
+	<h3 class="subsubtitle method-title">deleteAlbumID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет альбом видеозаписей</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)deleteAlbumID:(NSUInteger)<em>albumID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>albumID</em></dt>
+			<dd><p>идентификатор альбома</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/deleteCommentCustomOptions:" title="deleteCommentCustomOptions:"></a>
 	<h3 class="subsubtitle method-title">deleteCommentCustomOptions:</h3>
 	
@@ -821,6 +1098,57 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>options</em></dt>
 			<dd><p>ключи-значения, со списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/video.deleteComment">https://vk.com/dev/video.deleteComment</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteCommentID:" title="deleteCommentID:"></a>
+	<h3 class="subsubtitle method-title">deleteCommentID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет комментарий к видеозаписи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)deleteCommentID:(NSUInteger)<em>commentID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>commentID</em></dt>
+			<dd><p>идентификатор комментария</p></dd>
 		</dl>
 		
 	</div>
@@ -953,6 +1281,62 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/editAlbumID:newTitle:" title="editAlbumID:newTitle:"></a>
+	<h3 class="subsubtitle method-title">editAlbumID:newTitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Редактирует название альбома видеозаписей</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)editAlbumID:(NSUInteger)<em>albumID</em> newTitle:(NSString *)<em>newTitle</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>albumID</em></dt>
+			<dd><p>идентификатор альбома</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newTitle</em></dt>
+			<dd><p>новое название для альбома</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/editCommentCustomOptions:" title="editCommentCustomOptions:"></a>
 	<h3 class="subsubtitle method-title">editCommentCustomOptions:</h3>
 	
@@ -1025,6 +1409,123 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>options</em></dt>
 			<dd><p>ключи-значения, со списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/video.edit">https://vk.com/dev/video.edit</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/editVideoID:newName:newDescription:" title="editVideoID:newName:newDescription:"></a>
+	<h3 class="subsubtitle method-title">editVideoID:newName:newDescription:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Редактирует данные видеозаписи на странице пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)editVideoID:(NSUInteger)<em>videoID</em> newName:(NSString *)<em>newName</em> newDescription:(NSString *)<em>newDescription</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>videoID</em></dt>
+			<dd><p>идентификатор видеозаписи</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newName</em></dt>
+			<dd><p>новое название для видеозаписи</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newDescription</em></dt>
+			<dd><p>новое описание для видеозаписи</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getAlbumsCount:offset:" title="getAlbumsCount:offset:"></a>
+	<h3 class="subsubtitle method-title">getAlbumsCount:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список альбомов видеозаписей пользователя или сообщества</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getAlbumsCount:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество альбомов, информацию о которых нужно вернуть. По умолчанию — не больше 50, максимум — 100)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для выборки определенного подмножества альбомов.</p></dd>
 		</dl>
 		
 	</div>
@@ -1208,6 +1709,62 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/getNewTagsCount:offset:" title="getNewTagsCount:offset:"></a>
+	<h3 class="subsubtitle method-title">getNewTagsCount:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список видеозаписей, на которых есть непросмотренные отметки</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getNewTagsCount:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество видеозаписей, которые необходимо вернуть</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение, необходимое для получения определённого подмножества видеозаписей</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/getNewTagsCustomOptions:" title="getNewTagsCustomOptions:"></a>
 	<h3 class="subsubtitle method-title">getNewTagsCustomOptions:</h3>
 	
@@ -1280,6 +1837,118 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>options</em></dt>
 			<dd><p>ключи-значения, со списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/video.getTags">https://vk.com/dev/video.getTags</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getTagsVideoID:ownerID:" title="getTagsVideoID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">getTagsVideoID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список отметок на видеозаписи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getTagsVideoID:(NSUInteger)<em>videoID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>videoID</em></dt>
+			<dd><p>идентификатор видеозаписи</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца видеозаписи (пользователь или сообщество). По умолчанию — идентификатор текущего пользователя</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getUserVideosCount:offset:" title="getUserVideosCount:offset:"></a>
+	<h3 class="subsubtitle method-title">getUserVideosCount:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список видеозаписей, на которых отмечен пользователь</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)getUserVideosCount:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество возвращаемых видеозаписей</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение относительно первой найденной видеозаписи для выборки определенного подмножества</p></dd>
 		</dl>
 		
 	</div>
@@ -1463,6 +2132,72 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/putTagName:videoID:userID:ownerID:" title="putTagName:videoID:userID:ownerID:"></a>
+	<h3 class="subsubtitle method-title">putTagName:videoID:userID:ownerID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Добавляет отметку на видеозапись</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)putTagName:(NSString *)<em>tagName</em> videoID:(NSUInteger)<em>videoID</em> userID:(NSUInteger)<em>userID</em> ownerID:(NSUInteger)<em>ownerID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tagName</em></dt>
+			<dd><p>текст отметки</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>videoID</em></dt>
+			<dd><p>идентификатор видеозаписи</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>userID</em></dt>
+			<dd><p>идентификатор пользователя, которого нужно отметить</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>ownerID</em></dt>
+			<dd><p>идентификатор владельца видеозаписи (пользователь или сообщество</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/removeTagCustomOptions:" title="removeTagCustomOptions:"></a>
 	<h3 class="subsubtitle method-title">removeTagCustomOptions:</h3>
 	
@@ -1514,6 +2249,62 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/removeTagID:videoID:" title="removeTagID:videoID:"></a>
+	<h3 class="subsubtitle method-title">removeTagID:videoID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Удаляет отметку с видеозаписи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)removeTagID:(NSUInteger)<em>tagID</em> videoID:(NSUInteger)<em>videoID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tagID</em></dt>
+			<dd><p>идентификатор отметки</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>videoID</em></dt>
+			<dd><p>идентификатор видеозаписи</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/restoreCommentCustomOptions:" title="restoreCommentCustomOptions:"></a>
 	<h3 class="subsubtitle method-title">restoreCommentCustomOptions:</h3>
 	
@@ -1535,6 +2326,57 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>options</em></dt>
 			<dd><p>ключи-значения, со списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/video.restoreComment">https://vk.com/dev/video.restoreComment</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/restoreCommentID:" title="restoreCommentID:"></a>
+	<h3 class="subsubtitle method-title">restoreCommentID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Восстанавливает удаленный комментарий к видеозаписи</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)restoreCommentID:(NSUInteger)<em>commentID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>commentID</em></dt>
+			<dd><p>идентификатор удаленного комментария</p></dd>
 		</dl>
 		
 	</div>
@@ -1717,6 +2559,179 @@
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/searchQuery:" title="searchQuery:"></a>
+	<h3 class="subsubtitle method-title">searchQuery:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список видеозаписей в соответствии с заданным критерием поиска</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchQuery:(NSString *)<em>query</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>строка поискового запроса. Например, The Beatles</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchQuery:sort:count:offset:" title="searchQuery:sort:count:offset:"></a>
+	<h3 class="subsubtitle method-title">searchQuery:sort:count:offset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Возвращает список видеозаписей в соответствии с заданным критерием поиска</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)searchQuery:(NSString *)<em>query</em> sort:(NSUInteger)<em>sort</em> count:(NSUInteger)<em>count</em> offset:(NSUInteger)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>query</em></dt>
+			<dd><p>строка поискового запроса. Например, The Beatles</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sort</em></dt>
+			<dd><p>вид сортировки. 0 — по дате добавления видеозаписи, 1 — по длительности, 2 — по релевантности.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>количество возвращаемых видеозаписей (максимум 200)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>смещение относительно первой найденной видеозаписи для выборки определенного подмножества.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadVideo:name:" title="uploadVideo:name:"></a>
+	<h3 class="subsubtitle method-title">uploadVideo:name:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Загрузка видео на сервер ВК</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)uploadVideo:(NSData *)<em>videoData</em> name:(NSString *)<em>videoFileName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>videoData</em></dt>
+			<dd><p>байтовое представление видео</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>videoFileName</em></dt>
+			<dd><p>наименование файла видео</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKVideoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -1730,7 +2745,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-21)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-24)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

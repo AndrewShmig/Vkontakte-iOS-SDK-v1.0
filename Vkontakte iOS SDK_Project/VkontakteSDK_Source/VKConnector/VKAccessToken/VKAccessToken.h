@@ -52,6 +52,11 @@
 @property (nonatomic, readonly) NSArray *permissions;
 
 /**
+Время создания токена
+*/
+@property (nonatomic, readonly) NSTimeInterval creationTime;
+
+/**
  Время истечения действия токена.
  */
 @property (nonatomic, readonly) NSTimeInterval expirationTime;

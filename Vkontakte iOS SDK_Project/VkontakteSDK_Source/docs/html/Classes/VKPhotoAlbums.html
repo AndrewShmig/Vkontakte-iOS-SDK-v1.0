@@ -135,9 +135,15 @@
 	
 	<option value="//api/name/unseenPhotoTagsCount:offset:">&nbsp;&nbsp;&nbsp;&nbsp;- unseenPhotoTagsCount:offset:</option>
 	
-	<option value="//api/name/uploadServer">&nbsp;&nbsp;&nbsp;&nbsp;- uploadServer</option>
+	<option value="//api/name/uploadMessagePhoto:photoFileName:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadMessagePhoto:photoFileName:</option>
+	
+	<option value="//api/name/uploadPhoto:photoFileName:albumID:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadPhoto:photoFileName:albumID:</option>
+	
+	<option value="//api/name/uploadServerAlbumID:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadServerAlbumID:</option>
 	
 	<option value="//api/name/uploadServerCustomOptions:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadServerCustomOptions:</option>
+	
+	<option value="//api/name/uploadWallPhoto:photoFileName:">&nbsp;&nbsp;&nbsp;&nbsp;- uploadWallPhoto:photoFileName:</option>
 	
 	<option value="//api/name/wallUploadServer">&nbsp;&nbsp;&nbsp;&nbsp;- wallUploadServer</option>
 	
@@ -230,6 +236,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_photos.removeTag">photos.removeTag</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_photos.getNewTags">photos.getNewTags</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Загрузка изображений">Загрузка изображений</a></span></li>
 	
 </ul></li>
 
@@ -335,9 +343,15 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unseenPhotoTagsCount:offset:">unseenPhotoTagsCount:offset:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadServer">uploadServer</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadMessagePhoto:photoFileName:">uploadMessagePhoto:photoFileName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadPhoto:photoFileName:albumID:">uploadPhoto:photoFileName:albumID:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadServerAlbumID:">uploadServerAlbumID:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadServerCustomOptions:">uploadServerCustomOptions:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/uploadWallPhoto:photoFileName:">uploadWallPhoto:photoFileName:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/wallUploadServer">wallUploadServer</a></span></li>
 	
@@ -538,7 +552,7 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/uploadServer">&ndash;&nbsp;uploadServer</a></code>
+		<code><a href="#//api/name/uploadServerAlbumID:">&ndash;&nbsp;uploadServerAlbumID:</a></code>
 		<span class="tooltip"><p>Возвращает адрес сервера для загрузки фотографий</p></span>
 	</span>
 	
@@ -1023,6 +1037,35 @@
 	<span class="tooltip">
 		<code><a href="#//api/name/unseenPhotoTagsCount:offset:">&ndash;&nbsp;unseenPhotoTagsCount:offset:</a></code>
 		<span class="tooltip"><p>Возвращает список фотографий, на которых есть непросмотренные отметки</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Загрузка изображений" name="task_Загрузка изображений"></a>
+						<h3 class="subsubtitle task-title">Загрузка изображений</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadPhoto:photoFileName:albumID:">&ndash;&nbsp;uploadPhoto:photoFileName:albumID:</a></code>
+		<span class="tooltip"><p>Загружает фотографию пользователя в указаный альбом</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadWallPhoto:photoFileName:">&ndash;&nbsp;uploadWallPhoto:photoFileName:</a></code>
+		<span class="tooltip"><p>Загрузка изображения на сервер &ldquo;стен&rdquo; ( <a href="https://vk.com/dev/upload_files">https://vk.com/dev/upload_files</a> ) текущего пользователя</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/uploadMessagePhoto:photoFileName:">&ndash;&nbsp;uploadMessagePhoto:photoFileName:</a></code>
+		<span class="tooltip"><p>Загрузка изображения на сервер &ldquo;личных сообщений&rdquo; ( <a href="https://vk.com/dev/upload_files">https://vk.com/dev/upload_files</a> )</p></span>
 	</span>
 	
 	
@@ -3465,8 +3508,125 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/uploadServer" title="uploadServer"></a>
-	<h3 class="subsubtitle method-title">uploadServer</h3>
+	<a name="//api/name/uploadMessagePhoto:photoFileName:" title="uploadMessagePhoto:photoFileName:"></a>
+	<h3 class="subsubtitle method-title">uploadMessagePhoto:photoFileName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Загрузка изображения на сервер &ldquo;личных сообщений&rdquo; ( <a href="https://vk.com/dev/upload_files">https://vk.com/dev/upload_files</a> )</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)uploadMessagePhoto:(NSData *)<em>photoData</em> photoFileName:(NSString *)<em>photoFileName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>photoData</em></dt>
+			<dd><p>байтовое представление загружаемой фотографии</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>photoFileName</em></dt>
+			<dd><p>наименование файла фотографии</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрсо в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPhotoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadPhoto:photoFileName:albumID:" title="uploadPhoto:photoFileName:albumID:"></a>
+	<h3 class="subsubtitle method-title">uploadPhoto:photoFileName:albumID:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Загружает фотографию пользователя в указаный альбом</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)uploadPhoto:(NSData *)<em>photoData</em> photoFileName:(NSString *)<em>photoFileName</em> albumID:(NSUInteger)<em>albumID</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>photoData</em></dt>
+			<dd><p>байтовое представление загружаемой фотографии</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>photoFileName</em></dt>
+			<dd><p>наименование файла фотографии</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>albumID</em></dt>
+			<dd><p>идентификатор альбома в который будет загружена фотография</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPhotoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadServerAlbumID:" title="uploadServerAlbumID:"></a>
+	<h3 class="subsubtitle method-title">uploadServerAlbumID:</h3>
 	
 	
 	
@@ -3476,9 +3636,19 @@
 	
     
 
-	<div class="method-subsection method-declaration"><code>- (id)uploadServer</code></div>
+	<div class="method-subsection method-declaration"><code>- (id)uploadServerAlbumID:(NSUInteger)<em>albumID</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>albumID</em></dt>
+			<dd><p>идентификатор альбома</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	
@@ -3527,6 +3697,62 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>options</em></dt>
 			<dd><p>ключи-значения, с полным списком можно ознакомиться по этой ссылке: <a href="https://vk.com/dev/photos.getUploadServer">https://vk.com/dev/photos.getUploadServer</a></p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>ответ на запрос в виде Foundation объекта</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">VKPhotoAlbums.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/uploadWallPhoto:photoFileName:" title="uploadWallPhoto:photoFileName:"></a>
+	<h3 class="subsubtitle method-title">uploadWallPhoto:photoFileName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Загрузка изображения на сервер &ldquo;стен&rdquo; ( <a href="https://vk.com/dev/upload_files">https://vk.com/dev/upload_files</a> ) текущего пользователя</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)uploadWallPhoto:(NSData *)<em>photoData</em> photoFileName:(NSString *)<em>photoFileName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>photoData</em></dt>
+			<dd><p>байтовое представление загружаемой фотографии</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>photoFileName</em></dt>
+			<dd><p>наименование файла фотографии</p></dd>
 		</dl>
 		
 	</div>
@@ -3661,7 +3887,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-21)</span><br />
+						<p><span class="copyright">&copy; 2013 AndrewShmig. All rights reserved. (Last updated: 2013-06-24)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						

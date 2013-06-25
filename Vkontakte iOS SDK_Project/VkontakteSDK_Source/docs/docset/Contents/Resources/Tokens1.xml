@@ -48,6 +48,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/setCreationTime:</TokenIdentifier>
+			<Abstract type="html">Время создания токена</Abstract>
+			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval creationTime</Declaration>
+			
+			
+			<Anchor>//api/name/creationTime</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/creationTime</TokenIdentifier>
+			<Abstract type="html">Время создания токена</Abstract>
+			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval creationTime</Declaration>
+			
+			
+			<Anchor>//api/name/creationTime</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/VKAccessToken/creationTime</TokenIdentifier>
+			<Abstract type="html">Время создания токена</Abstract>
+			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval creationTime</Declaration>
+			
+			
+			<Anchor>//api/name/creationTime</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKAccessToken/setExpirationTime:</TokenIdentifier>
 			<Abstract type="html">Время истечения действия токена.</Abstract>
 			<DeclaredIn>VKAccessToken.h</DeclaredIn>			

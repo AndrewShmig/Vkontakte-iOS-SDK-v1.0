@@ -183,5 +183,51 @@
             <NodeRef refid="3"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/performVKRequest:</TokenIdentifier>
+			<Abstract type="html">Осуществляет переданый запрос</Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>- (id)performVKRequest:(NSMutableURLRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">запрос, который необходимо осуществить</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/performVKRequest:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/uploadFile:name:URL:contentType:fieldName:</TokenIdentifier>
+			<Abstract type="html">Загружает файл на указанный адрес</Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>- (id)uploadFile:(NSData *)file name:(NSString *)fileName URL:(NSURL *)url contentType:(NSString *)contentType fieldName:(NSString *)fieldName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>file</Name>
+					<Abstract type="html">байтовое представление газружаемого файла</Abstract>
+				</Parameter><Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">наименование файла</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">URL на который необходимо отправить данные</Abstract>
+				</Parameter><Parameter>
+					<Name>contentType</Name>
+					<Abstract type="html">тип загружаемого содержимого (application/octet-stream, image/jpeg и тд)</Abstract>
+				</Parameter><Parameter>
+					<Name>fieldName</Name>
+					<Abstract type="html">наименования поля загрузки (file, picture, pics и тд)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/uploadFile:name:URL:contentType:fieldName:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
 	</File>
 </Tokens>

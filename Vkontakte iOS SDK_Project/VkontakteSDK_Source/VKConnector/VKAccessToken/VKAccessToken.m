@@ -36,6 +36,7 @@
 {
     NSArray *_permissions;
     NSTimeInterval _expirationTime;
+    NSTimeInterval _creationTime;
     NSUInteger _userID;
     NSString *_token;
 }
@@ -45,6 +46,7 @@
 @synthesize expirationTime = _expirationTime;
 @synthesize userID = _userID;
 @synthesize token = _token;
+@synthesize creationTime = _creationTime;
 
 
 #pragma mark - Init methods
@@ -61,6 +63,7 @@
         _token = [token copy];
         _expirationTime = expirationTime;
         _permissions = [permissions copy];
+        _creationTime = [[NSDate date] timeIntervalSince1970];
     }
 
     return self;
@@ -140,7 +143,7 @@
     if(_expirationTime == 0 && [self hasPermission:@"offline"])
         return NO;
     else
-        return (_expirationTime < currentTimestamp);
+        return ((_expirationTime + _creationTime) < currentTimestamp);
 }
 
 - (BOOL)isValid
@@ -160,7 +163,7 @@
     if(nil == loadedToken)
         return NO;
     
-    _userID = [loadedToken[@"userID"] integerValue];
+    _userID = (NSUInteger)[loadedToken[@"userID"] integerValue];
     _expirationTime = [loadedToken[@"expirationTime"] doubleValue];
     _token = loadedToken[@"token"];
     _permissions = loadedToken[@"permissions"];

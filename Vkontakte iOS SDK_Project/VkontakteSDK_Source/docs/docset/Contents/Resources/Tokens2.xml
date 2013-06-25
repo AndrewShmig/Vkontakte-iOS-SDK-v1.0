@@ -4,12 +4,641 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/VKAudioAlbums</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">Класс предназначен для работы с пользовательскими аудио файлами и аудио альбомами.</Abstract>
 			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>
 			
 			<NodeRef refid="2"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список аудиозаписей пользователя или сообщества</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.get</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getByIDCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает информацию об аудиозаписях</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getByIDCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.getById</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getByIDCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getLyricsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает текст аудиозаписи</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getLyricsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.getLyrics</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getLyricsCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getLyricsID:</TokenIdentifier>
+			<Abstract type="html">Возвращает текст аудиозаписи</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getLyricsID:(NSUInteger)lyricsID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>lyricsID</Name>
+					<Abstract type="html">идентификатор текста аудиозаписи, информацию о котором необходимо вернуть</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getLyricsID:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/searchCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список аудиозаписей в соответствии с заданным критерием поиска</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.search</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/searchQuery:</TokenIdentifier>
+			<Abstract type="html">Возвращает список аудиозаписей в соответствии с заданным критерием поиска</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchQuery:(NSString *)query</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">текст поискового запроса, например, The Beatles</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchQuery:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/searchQuery:sort:count:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список аудиозаписей в соответствии с заданным критерием поиска</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)searchQuery:(NSString *)query sort:(NSUInteger)sort count:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>query</Name>
+					<Abstract type="html">текст поискового запроса, например, The Beatles</Abstract>
+				</Parameter><Parameter>
+					<Name>sort</Name>
+					<Abstract type="html">Вид сортировки. 2 — по популярности, 1 — по длительности аудиозаписи, 0 — по дате добавления.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество аудиозаписей, информацию о которых необходимо вернуть</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножетсва аудиозаписей</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/searchQuery:sort:count:offset:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getUploadServerCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает адрес сервера для загрузки аудиозаписей</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getUploadServerCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.getUploadServer</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getUploadServerCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/saveCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Сохраняет аудиозаписи после успешной загрузки</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)saveCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.save</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/saveCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/addCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Копирует аудиозапись на страницу пользователя или группы</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)addCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.add</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/addAudioID:ownerID:</TokenIdentifier>
+			<Abstract type="html">Копирует аудиозапись на страницу пользователя или группы</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)addAudioID:(NSUInteger)audioID ownerID:(NSUInteger)ownerID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>audioID</Name>
+					<Abstract type="html">идентификатор аудиозаписи</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца аудиозаписи (пользователь или сообщество)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addAudioID:ownerID:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/deleteCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Удаляет аудиозапись со страницы пользователя или сообщества</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.delete</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/editCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Редактирует данные аудиозаписи на странице пользователя или сообщества</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.edit</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/editAudioID:ownerID:newArtist:newTitle:newText:</TokenIdentifier>
+			<Abstract type="html">Редактирует данные аудиозаписи на странице пользователя или сообщества</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editAudioID:(NSUInteger)audioID ownerID:(NSUInteger)ownerID newArtist:(NSString *)newArtist newTitle:(NSString *)newTitle newText:(NSString *)newText</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>audioID</Name>
+					<Abstract type="html">идентификатор аудиозаписи</Abstract>
+				</Parameter><Parameter>
+					<Name>ownerID</Name>
+					<Abstract type="html">идентификатор владельца аудиозаписи (пользователь или сообщество)</Abstract>
+				</Parameter><Parameter>
+					<Name>newArtist</Name>
+					<Abstract type="html">новое название исполнителя</Abstract>
+				</Parameter><Parameter>
+					<Name>newTitle</Name>
+					<Abstract type="html">новое название композиции</Abstract>
+				</Parameter><Parameter>
+					<Name>newText</Name>
+					<Abstract type="html">новый текст аудиозаписи</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editAudioID:ownerID:newArtist:newTitle:newText:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/reorderCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Изменяет порядок аудиозаписи, перенося ее между аудиозаписями, идентификаторы которых переданы параметрами after и before</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)reorderCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.reorder</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/reorderCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/restoreCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Восстанавливает аудиозапись после удаления</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)restoreCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.restore</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/restoreCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/restoreAudioID:</TokenIdentifier>
+			<Abstract type="html">Восстанавливает аудиозапись после удаления</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)restoreAudioID:(NSUInteger)audioID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>audioID</Name>
+					<Abstract type="html">идентификатор аудиозаписи</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/restoreAudioID:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getAlbumsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список альбомов аудиозаписей пользователя или группы</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getAlbumsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.getAlbums</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getAlbumsCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getAlbumsCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список альбомов аудиозаписей пользователя или группы</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getAlbumsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество альбомов, которое необходимо вернуть</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества альбомов</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getAlbumsCount:offset:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/addAlbumCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Создает пустой альбом аудиозаписей</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)addAlbumCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.addAlbum</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addAlbumCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/addAlbumTitle:</TokenIdentifier>
+			<Abstract type="html">смещение, необходимое для выборки определенного подмножества альбомов</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)addAlbumTitle:(NSString *)albumTitle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>albumTitle</Name>
+					<Abstract type="html">название альбома</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/addAlbumTitle:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/editAlbumCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Редактирует название альбома аудиозаписей</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editAlbumCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.editAlbum</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editAlbumCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/editAlbumID:newTitle:</TokenIdentifier>
+			<Abstract type="html">Редактирует название альбома аудиозаписей</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)editAlbumID:(NSUInteger)albumID newTitle:(NSString *)newTitle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>albumID</Name>
+					<Abstract type="html">идентификатор альбома</Abstract>
+				</Parameter><Parameter>
+					<Name>newTitle</Name>
+					<Abstract type="html">новое название для альбома</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/editAlbumID:newTitle:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/deleteAlbumCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Удаляет альбом аудиозаписей</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteAlbumCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.deleteAlbum</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteAlbumCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/deleteAlbumID:</TokenIdentifier>
+			<Abstract type="html">Удаляет альбом аудиозаписей</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)deleteAlbumID:(NSUInteger)albumID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>albumID</Name>
+					<Abstract type="html">идентификатор альбома</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/deleteAlbumID:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/moveToAlbumCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Перемещает аудиозаписи в альбом</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)moveToAlbumCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.moveToAlbum</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/moveToAlbumCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/setBroadcastCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Транслирует аудиозапись в статус пользователю или сообществу</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)setBroadcastCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.setBroadcast</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/setBroadcastCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getBroadcastListCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список друзей и сообществ пользователя, которые транслируют музыку в статус</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getBroadcastListCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.getBroadcastList</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getBroadcastListCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getRecommendationsCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список рекомендуемых аудиозаписей на основе списка воспроизведения заданного пользователя или на основе одной выбранной аудиозаписи</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getRecommendationsCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.getRecommendations</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getRecommendationsCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getRecommendationsCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список рекомендуемых аудиозаписей на основе списка воспроизведения заданного пользователя или на основе одной выбранной аудиозаписи</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getRecommendationsCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество возвращаемых аудиозаписей</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение относительно первой найденной аудиозаписи для выборки определенного подмножества</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getRecommendationsCount:offset:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getPopularCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает список аудиозаписей из раздела &quot;Популярное&quot;</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getPopularCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.getPopular</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getPopularCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getPopularCount:offset:</TokenIdentifier>
+			<Abstract type="html">Возвращает список аудиозаписей из раздела &quot;Популярное&quot;</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getPopularCount:(NSUInteger)count offset:(NSUInteger)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>count</Name>
+					<Abstract type="html">количество возвращаемых аудиозаписей</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">смещение, необходимое для выборки определенного подмножества аудиозаписей</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getPopularCount:offset:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getCountCustomOptions:</TokenIdentifier>
+			<Abstract type="html">Возвращает количество аудиозаписей пользователя или сообщества</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getCountCustomOptions:(NSDictionary *)options</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>options</Name>
+					<Abstract type="html">ключи-значения, с полным списком можно ознакомиться по этой ссылке: https://vk.com/dev/audio.getCount</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getCountCustomOptions:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/getCount</TokenIdentifier>
+			<Abstract type="html">Возвращает количество аудиозаписей пользователя или сообщества</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)getCount</Declaration>
+			
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/getCount</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKAudioAlbums/uploadAudio:name:</TokenIdentifier>
+			<Abstract type="html">Загружает аудио на сервер ВК</Abstract>
+			<DeclaredIn>VKAudioAlbums.h</DeclaredIn>			
+			
+			<Declaration>- (id)uploadAudio:(NSData *)audioData name:(NSString *)audioFileName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>audioData</Name>
+					<Abstract type="html">байтовое представление аудио файла</Abstract>
+				</Parameter><Parameter>
+					<Name>audioFileName</Name>
+					<Abstract type="html">наименование файла аудио</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ответ на запрос в виде Foundation объекта</Abstract></ReturnValue>
+			<Anchor>//api/name/uploadAudio:name:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
 		
 	</File>
 </Tokens>
