@@ -102,10 +102,10 @@
  @param permissions Список полученных приложением прав.
  @return Объект VKAccessToken класса.
  */
-- (id)initWithUserID:(NSUInteger)userID
-         accessToken:(NSString *)token
-      expirationTime:(NSTimeInterval)expirationTime
-         permissions:(NSArray *)permissions;
+- (instancetype)initWithUserID:(NSUInteger)userID
+                   accessToken:(NSString *)token
+                expirationTime:(NSTimeInterval)expirationTime
+                   permissions:(NSArray *)permissions;
 
 /**
  Вторичный метод инициализации класса.
@@ -119,9 +119,9 @@
  @param expirationTime Время истечения действия токена доступа.
  @return Объект VKAccessToken класса.
  */
-- (id)initWithUserID:(NSUInteger)userID
-         accessToken:(NSString *)token
-      expirationTime:(NSTimeInterval)expirationTime;
+- (instancetype)initWithUserID:(NSUInteger)userID
+                   accessToken:(NSString *)token
+                expirationTime:(NSTimeInterval)expirationTime;
 
 /**
 Вторичный метод инициализации класса.
@@ -136,8 +136,8 @@
  @param token Токен доступа.
  @return Объект VKAccessToken класса.
  */
-- (id)initWithUserID:(NSUInteger)userID
-         accessToken:(NSString *)token;
+- (instancetype)initWithUserID:(NSUInteger)userID
+                   accessToken:(NSString *)token;
 
 /**
  @name Перегруженные методы

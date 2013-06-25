@@ -39,7 +39,7 @@
 
 #pragma mark - Init methods
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
     

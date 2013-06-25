@@ -53,7 +53,7 @@
 
 #pragma mark - Init methods
 
-+ (id)sharedInstance
++ (instancetype)sharedInstance
 {
     static VKConnector *instanceVKConnector = nil;
 
