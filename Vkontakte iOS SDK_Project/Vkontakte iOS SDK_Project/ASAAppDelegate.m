@@ -56,10 +56,6 @@ static NSString *const kVKPermissionsArray = @"photos,friends,wall,audio,video,d
 - (void)VKConnector:(VKConnector *)connector accessTokenRenewalSucceeded:(VKAccessToken *)accessToken
 {
     NSLog(@"%s", __FUNCTION__);
-
-    VKUser *me = [VKUser currentUser];
-    NSLog(@"me: %@", me);
-    NSLog(@"%@", [[me friends] online]);
 }
 
 - (void)VKConnector:(VKConnector *)connector connectionErrorOccured:(NSError *)error
