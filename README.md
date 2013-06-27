@@ -44,6 +44,7 @@ static NSString *const kVKPermissionsArray = @"photos,friends,wall,audio,video,d
 Детали можно узнать из документации ````VKConnectorProtocol````.
 
 После запуска приложения появится такое окно авторизации:
+
 ![modal view](http://s1.ipicture.ru/uploads/20130627/RHRTb93X.png)
 
 Если пользователь авторизует наше приложение, что вызывается метод делегата ````VKConnector:accessTokenRenewalSucceeded:````,
@@ -57,6 +58,9 @@ static NSString *const kVKPermissionsArray = @"photos,friends,wall,audio,video,d
 ````
 id myFriends = [[[VKUser currentUser] friends] online];
 ````
+Если перед осуществление запроса выяснилось, что срок действия токена истёк, то будет вызван метод делегата 
+````VKConnector:accessTokenInvalidated:```` в котором вы должны вызвать метод ````startWithAppID:permissions:```` класса
+VKConnector, чтобы обносить токен доступа.
 
 Запросы осуществляются *синхронно*, об этом не стоит забывать.
 
