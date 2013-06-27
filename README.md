@@ -4,6 +4,9 @@
 * [Введение во Vkontakte iOS SDK v1.0](http://developing-ios-apps-with-andrew-shmig.blogspot.ru/2013/06/vkontakte-ios-sdk-v10.html)
 * [Введение во Vkontakte iOS SDK v1.0 Хабр](http://habrahabr.ru/post/184560/)
 
+#Типичная установка
+
+
 ##License
 Copyright (c) 2013 Andrew Shmig
 
