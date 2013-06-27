@@ -33,6 +33,7 @@ static NSString *const kVKPermissionsArray = @"photos,friends,wall,audio,video,d
 
 Устанавливая делегатом текущий класс мы можем обрабатывать 7 типов "уведомлений" в процессе авторизации (и в процессе 
 осуществления запросов тоже) пользователем приложения:
+
 1. VKConnector:willShowModalView:
 2. VKConnector:willHideModalView:
 3. VKConnector:accessTokenInvalidated:
