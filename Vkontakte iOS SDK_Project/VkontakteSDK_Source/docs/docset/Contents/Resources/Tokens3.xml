@@ -154,6 +154,18 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/logout</TokenIdentifier>
+			<Abstract type="html">Производит выход текущего пользователя из учетной записи - удаляет куки.</Abstract>
+			<DeclaredIn>VKConnector.h</DeclaredIn>			
+			
+			<Declaration>- (void)logout</Declaration>
+			
+			
+			<Anchor>//api/name/logout</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/VKConnector/performVKMethod:options:error:</TokenIdentifier>
 			<Abstract type="html">Основной метод осуществления GET запросов.</Abstract>
 			<DeclaredIn>VKConnector.h</DeclaredIn>			

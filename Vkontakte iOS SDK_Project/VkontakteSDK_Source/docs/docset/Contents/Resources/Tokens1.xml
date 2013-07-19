@@ -271,7 +271,7 @@ NO - если токен всё еще действует, иначе - YES.</Ab
 			<Abstract type="html">Основной метод инициализации.</Abstract>
 			<DeclaredIn>VKAccessToken.h</DeclaredIn>			
 			
-			<Declaration>- (id)initWithUserID:(NSUInteger)userID accessToken:(NSString *)token expirationTime:(NSTimeInterval)expirationTime permissions:(NSArray *)permissions</Declaration>
+			<Declaration>- (instancetype)initWithUserID:(NSUInteger)userID accessToken:(NSString *)token expirationTime:(NSTimeInterval)expirationTime permissions:(NSArray *)permissions</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>userID</Name>
@@ -302,7 +302,7 @@ NO - если токен всё еще действует, иначе - YES.</Ab
 		
 	</RelatedTokens>
 	
-			<Declaration>- (id)initWithUserID:(NSUInteger)userID accessToken:(NSString *)token expirationTime:(NSTimeInterval)expirationTime</Declaration>
+			<Declaration>- (instancetype)initWithUserID:(NSUInteger)userID accessToken:(NSString *)token expirationTime:(NSTimeInterval)expirationTime</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>userID</Name>
@@ -330,7 +330,7 @@ NO - если токен всё еще действует, иначе - YES.</Ab
 		
 	</RelatedTokens>
 	
-			<Declaration>- (id)initWithUserID:(NSUInteger)userID accessToken:(NSString *)token</Declaration>
+			<Declaration>- (instancetype)initWithUserID:(NSUInteger)userID accessToken:(NSString *)token</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>userID</Name>

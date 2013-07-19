@@ -164,6 +164,10 @@ parsingErrorOccured:(NSError *)error;
 - (void)startWithAppID:(NSString *)appID
             permissons:(NSArray *)permissions;
 
+/** Производит выход текущего пользователя из учетной записи - удаляет куки.
+*/
+- (void)logout;
+
 /**
 @name Осуществление запросов
 */

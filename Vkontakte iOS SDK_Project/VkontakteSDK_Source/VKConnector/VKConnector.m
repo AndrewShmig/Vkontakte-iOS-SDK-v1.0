@@ -138,6 +138,18 @@
     }
 }
 
+- (void)logout
+{
+    NSArray *cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
+
+    for (NSHTTPCookie *cookie in cookies) {
+        if (NSNotFound != [cookie.domain rangeOfString:@"vk.com"].location) {
+            [[NSHTTPCookieStorage sharedHTTPCookieStorage]
+                                  deleteCookie:cookie];
+        }
+    }
+}
+
 - (id)performVKMethod:(NSString *)methodName
               options:(NSDictionary *)options
                 error:(NSError **)error
