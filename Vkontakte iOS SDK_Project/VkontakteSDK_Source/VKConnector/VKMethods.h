@@ -76,7 +76,7 @@ static NSString *const kVKFriendsGetSuggestions = @"friends.getSuggestions";
 static NSString *const kVKFriendsAreFriends = @"friends.areFriends";
 
 // -----------------------------------------------------------------------------
-// Wall
+// Wall 
 // -----------------------------------------------------------------------------
 static NSString *const kVKWallGet = @"wall.get";
 static NSString *const kVKWallGetById = @"wall.getById";
